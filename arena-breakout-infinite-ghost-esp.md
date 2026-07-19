@@ -1,4 +1,4 @@
-# Arena Breakout Infinite – Arena Breakout Infinite [ ☢ Ghost ESP ]
+# Arena Breakout Infinite [ ☢ Ghost ESP ]
 
 ## 📸 Скриншоты
 
@@ -6,7 +6,7 @@
 
 * ункционал Arena Breakout Infinite [ ☢ Ghost ESP ]:
 
-### 👤 Visuals
+## 👤 Visuals
 
 * **Esp on players** – отображение игроков
 * **Esp on bots** – отображение ботов
@@ -17,13 +17,13 @@
 * **Player level** – уровень игрока
 * **Player health** – здоровье игрока
 
-### 🔎 Loot
+## 🔎 Loot
 
 * **Filter by rarity: common → legendary → mythic → red** – фильтр по редкости: обычный → легендарный → мифический → красный
 * **Item names** – названия предметов
 * **Show armor** – отображение брони
 
-### 📦 Other
+## 📦 Other
 
 * **Menu key (Insert), DPI Scale** – клавиша меню Insert, масштаб DPI
 * **Create/delete/save/load configs** – создание, удаление, сохранение и загрузка конфигов

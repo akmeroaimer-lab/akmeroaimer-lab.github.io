@@ -1,4 +1,4 @@
-# Apex – Apex Legends [ ☢ Phoenix X-RAY ]
+# Apex Legends [ ☢ Phoenix X-RAY ]
 
 ## 📸 Скриншоты
 

@@ -1,4 +1,4 @@
-# DayZ – DayZ [ ☢ Xernel ]
+# DayZ [ ☢ Xernel ]
 
 ## 📸 Скриншоты
 
@@ -6,7 +6,7 @@
 
 * Функционал DayZ [ ☢ Xernel ]:
 
-### 🎯 Aimbot
+## 🎯 Aimbot
 
 * **Enable Player Aim** – включение аима по игрокам
 * **Target Bone Selection** – выбор части тела для наведения
@@ -14,7 +14,7 @@
 * **FOV Setting** – настройка радиуса FOV
 * **Draw FOV** – отображение круга FOV
 
-### 👤 Visuals / ESP
+## 👤 Visuals / ESP
 
 * **Enable Players** – отображение игроков
 * **Player Box** – рамка вокруг игрока
@@ -34,7 +34,7 @@
 * **Enable Animals** – отображение животных
 * **Enable Vehicles** – отображение транспорта
 
-### 📦 Items ESP
+## 📦 Items ESP
 
 * **Show Weapon** – отображение оружия
 * **Show Clothing** – отображение одежды
@@ -43,9 +43,7 @@
 * **Show Car Wheel** – отображение колёс
 * **Show Other Items** – отображение других предметов
 * **Max Distance Settings** – настройка максимальной дистанции отображения
-
-### ⚙️ Miscellaneous
-
+* ⚙️ Miscellaneous
 * **SpeedHack** – ускорение передвижения
 * **Force Third Person** – принудительный вид от третьего лица
 * **Custom Crosshair** – настраиваемый прицел

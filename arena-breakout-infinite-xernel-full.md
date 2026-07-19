@@ -1,4 +1,4 @@
-# Arena Breakout Infinite – Arena Breakout Infinite [ ☢ Xernel Full ]
+# Arena Breakout Infinite [ ☢ Xernel Full ]
 
 ## 📸 Скриншоты
 
@@ -6,7 +6,7 @@
 
 * Функционал Arena Breakout Infinite [ ☢ Xernel Full ]:
 
-### 👤Visuals
+## 👤Visuals
 
 * **Player ESP** – отображение игроков
 * **Bot ESP** – отображение ботов
@@ -20,14 +20,14 @@
 * **Inventory Viewer** – просмотр инвентаря
 * **Corpse ESP** – отображение трупов
 
-### 🎯Aimbot
+## 🎯Aimbot
 
 * **Target Bone Selection** – выбор кости для наведения
 * **Aimbot FOV** – радиус работы аимбота
 * **Draw FOV** – отображение радиуса аимбота
 * **Aimbot Smooth** – плавность наведения
 
-### 🔎Loot
+## 🔎Loot
 
 * **Container ESP** – отображение контейнеров
 * **Weapon Cases ESP** – отображение оружейных кейсов
@@ -38,7 +38,7 @@
 * **Custom Loot Colors** – пользовательские цвета лута
 * **Smart Loot Filter** – умный фильтр лута
 
-### 🖲Radar
+## 🖲Radar
 
 * **2D Radar** – 2D-радар
 * **Radar Zoom** – масштаб радара

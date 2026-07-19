@@ -1,4 +1,4 @@
-# rust – Rust [ ☢ Rampart Full ]
+# Rust [ ☢ Rampart Full ]
 
 ## 📸 Скриншоты
 
@@ -6,7 +6,7 @@
 
 * Функционал Rust [ ☢ Rampart Full ]:
 
-### 🎯 Aim
+## 🎯 Aim
 
 * **Aimbot** – основной режим аима
 * **Silent Aim** – скрытое наведение без резких движений камеры
@@ -21,13 +21,13 @@
 * **Hitbox** – выбор зоны попадания: Head / Chest / Pelvis / Legs
 * **Filters** – игнорирование Sleepers / NPC / Teammates
 
-### 👁 Aim Visuals
+## 👁 Aim Visuals
 
 * **FOV Circle** – отображение круга FOV на экране
 * **Aiming Line** – линия наведения до цели
 * **Predicted Position Marker** – маркер предсказанной позиции цели
 
-### 🔫 Weapon
+## 🔫 Weapon
 
 * **No Recoil** – отключение отдачи
 * **No Spread** – отключение разброса
@@ -37,7 +37,7 @@
 * **Instant Compound Bow** – мгновенное натяжение Compound Bow
 * **Instant Eoka** – мгновенное срабатывание Eoka
 
-### 👤 Player ESP
+## 👤 Player ESP
 
 * **Boxes** – отображение игроков в 2D / 3D / Corner боксах
 * **Skeleton** – отображение скелета игрока
@@ -52,7 +52,7 @@
 * **Separate colors** – отдельные цвета для Teammates / Wounded / Sleepers / Bots
 * **Separate bot distance** – отдельная дистанция отображения для ботов
 
-### 🧭 Radar
+## 🧭 Radar
 
 * **Minimap** – круглая или квадратная мини-карта
 * **Adjustable** – настройка размера, масштаба и позиции
@@ -64,7 +64,7 @@
 * **Show** – отображение Teammates / NPCs / Distance / Names
 * **Show on radar** – отображение World Items / Farm / AI на радаре
 
-### 🌍 World ESP
+## 🌍 World ESP
 
 * **Tool Cupboard** – отображение шкафа с upkeep
 * **Sleeping Bags** – отображение спальных мешков
@@ -77,9 +77,7 @@
 * **Motion Sensor** – отображение датчиков движения
 * **Raid ESP** – отображение рейда с таймером
 * **Individual distance** – отдельная дистанция по каждой категории
-
-### ⚠️ Traps ESP
-
+* ⚠️ Traps ESP
 * **Auto Turret** – отображение авто-турелей
 * **Shotgun Trap** – отображение дробовых ловушек
 * **SAM Site** – отображение SAM Site
@@ -91,7 +89,7 @@
 * **Trap Status / Health** – отображение статуса и здоровья ловушек
 * **Individual distance** – отдельная дистанция для каждого типа ловушек
 
-### 🚗 Vehicle ESP
+## 🚗 Vehicle ESP
 
 * **Minicopter / Scrap Heli / Attack Heli** – отображение воздушного транспорта
 * **Bicycle / Motorbike / Snowmobile** – отображение наземного транспорта
@@ -100,9 +98,7 @@
 * **Submarine / Diver Propulsion** – отображение подводного транспорта
 * **Drone** – отображение дронов
 * **Individual distance + color** – отдельная дистанция и цвет для каждого транспорта
-
-### ⛏️ Farm ESP
-
+* ⛏️ Farm ESP
 * **Ores** – отображение Sulfur / Metal / Stone
 * **Trees / Wood** – отображение деревьев и древесины
 * **Collectibles** – отображение Hemp / Metal / Stone / Wood / Sulfur
@@ -113,7 +109,7 @@
 * **Chinook Crate** – отображение Chinook Crate с таймером блокировки
 * **Individual distance + color** – отдельная дистанция и цвет для каждого предмета
 
-### 🐻 Animals ESP
+## 🐻 Animals ESP
 
 * **Horse** – отображение лошадей
 * **Bear** – отображение медведей
@@ -124,7 +120,7 @@
 * **Shark** – отображение акул
 * **Chicken** – отображение куриц
 
-### 🎨 Visual
+## 🎨 Visual
 
 * **Custom Crosshair** – несколько видов прицела с настройкой цвета
 * **Hotbar Widget** – виджет хотбара на экране
@@ -133,15 +129,13 @@
 * **Bright Night / Ambient** – яркая ночь и настройка освещения
 * **Local Player Chams** – подсветка локального игрока
 * **Remove Layers** – отключение слоёв по выбранной клавише
-
-### ⚙️ Misc
-
+* ⚙️ Misc
 * **Fast Loot** – быстрый лут
 * **Spider** – передвижение по поверхностям без урона от падения
 * **Third Person** – режим третьего лица по клавише
 * **Admin Camera** – админ-камера по клавише
 
-### 🛠 Settings
+## 🛠 Settings
 
 * **Config Save / Load** – сохранение и загрузка конфигов
 * **Menu toggle** – открытие меню по клавише

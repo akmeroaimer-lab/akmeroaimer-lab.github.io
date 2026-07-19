@@ -1,11 +1,11 @@
-# Counter Strike 2 – Counter Strike 2 [ ☢ Arcane ]
+# Counter Strike 2 [ ☢ Arcane ]
 
 ## 📸 Скриншоты
 
 ![Скриншот 1](images/counter-strike-2-arcane/photo_2026-07-18_21-17-31.jpg) ![Скриншот 2](images/counter-strike-2-arcane/photo_2026-07-18_21-17-41.jpg)
 
 
-### 🎯 Aim
+## 🎯 Aim
 
 * **Enable** – активация аимбота
 * **Aim on Teammate** – наведение на союзников
@@ -20,7 +20,7 @@
 * **Player Lock** – фиксация на выбранной цели
 * **Keybind** – клавиша активации аимбота
 
-### 👁 ESP Players
+## 👁 ESP Players
 
 * **Enable** – активация ESP игроков
 * **Box Type** – выбор типа бокса: Box 2D / Box 3D
@@ -42,13 +42,13 @@
 * **Teammates Info** – информация о союзниках
 * **Snap Lines** – линии до игроков
 
-### 🔫 Players Weapon Settings
+## 🔫 Players Weapon Settings
 
 * **Show Weapon** – отображение оружия игрока
 * **Name Type** – тип отображения: Text / Icon
 * **Ammo** – отображение количества патронов
 
-### 📦 Items ESP
+## 📦 Items ESP
 
 * **Enable** – активация ESP предметов
 * **On Hovering** – отображение информации при наведении
@@ -56,7 +56,7 @@
 * **Show Item Visibility Circle** – отображение круга видимости предметов
 * **Name Type** – тип отображения названия: Text / Icon
 
-### 🎨 Custom ESP Colors
+## 🎨 Custom ESP Colors
 
 * **Sniper** – настройка цвета снайперских винтовок
 * **Rifle** – настройка цвета автоматических винтовок
@@ -71,7 +71,7 @@
 * **Work on Teammate** – срабатывание на союзниках
 * **Only Scoped** – работа только при включённом снайперском прицеле
 
-### 🛠 Misc
+## 🛠 Misc
 
 * **Bomb Timer** – таймер до взрыва бомбы
 * **Anti** – Flash — отключение или уменьшение эффекта ослепления
@@ -79,25 +79,23 @@
 * **Radar** – отображение дополнительного радара
 * **FPS Limit** – ограничение количества кадров в секунду
 
-### 🎯 Recoil Control
+## 🎯 Recoil Control
 
 * **Enable** – активация контроля отдачи
 * **Return Crosshair** – возврат прицела после стрельбы
 
-### 👁 Visibility Check
+## 👁 Visibility Check
 
 * **Type** – метод проверки видимости: Map Ray Tracer / Internal
 * **Map Selector** – выбор карты для Map Ray Tracer
 
-### 🔭 Sniper Scope Settings
+## 🔭 Sniper Scope Settings
 
 * **Draw Scope** – отображение пользовательского прицела
 * **Scope Type** – тип прицела: Plus / Circle / Dot / X Cross / Hollow Cross / Galactic Compass / Triangle
 * **Scope Size** – настройка размера прицела
 * **Scope Thickness** – настройка толщины линий
-
-### ⚙️ Config
-
+* ⚙️ Config
 * **Create** – создание новой конфигурации
 * **Save** – сохранение текущих настроек
 * **Load** – загрузка сохранённой конфигурации

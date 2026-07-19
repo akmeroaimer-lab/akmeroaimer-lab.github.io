@@ -1,4 +1,4 @@
-# Meccha Chameleon – Meccha Chameleon [ ☢ Arcane ]
+# Meccha Chameleon [ ☢ Arcane ]
 
 ## 📸 Скриншоты
 
@@ -6,7 +6,7 @@
 
 * Функционал Meccha Chameleon [ ☢ Arcane ]:
 
-### 👁 Entities ESP
+## 👁 Entities ESP
 
 * **Bounding Box** – отображение целей в виде 2D-бокса: Box / Corners
 * **Fill Box** – заливка бокса: Static / Gradient
@@ -19,13 +19,11 @@
 * **Visibility Check** – проверка видимости целей
 * **Max Distance** – настройка максимальной дистанции работы ESP
 
-### 🛠 Misc
+## 🛠 Misc
 
 * **No Gun Cooldown** – отключение задержки между выстрелами
 * **Infinity Ammo** – бесконечный запас боеприпасов
-
-### ⚙️ Settings
-
+* ⚙️ Settings
 * **Menu Keybind** – назначение клавиши открытия меню
 * **Unload Keybind** – назначение клавиши выгрузки продукта
 * **DPI Scale** – настройка размера интерфейса
@@ -34,7 +32,7 @@
 * **Watermark** – отображение водяного знака
 * **Language** – выбор языка меню: EN / RU / CN
 
-### 💾 Config
+## 💾 Config
 
 * **Create Config** – создание новой конфигурации
 * **Load Config** – загрузка сохранённой конфигурации

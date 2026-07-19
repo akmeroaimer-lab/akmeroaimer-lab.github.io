@@ -1,4 +1,4 @@
-# rust – Rust [ ☢ Rampart Lite ]
+# Rust [ ☢ Rampart Lite ]
 
 ## 📸 Скриншоты
 
@@ -6,7 +6,7 @@
 
 * Функционал Rust [ ☢ Rampart Lite ]:
 
-### 🎯 Aim
+## 🎯 Aim
 
 * **Silent Aim** – скрытое наведение
 * **NO PREDICT** – без предикта
@@ -16,11 +16,11 @@
 * **Hitbox: Head / Chest** – выбор зоны попадания: голова / грудь
 * **Filters: Ignore Sleepers / NPC / Teammates** – игнорирование Sleepers / NPC / Teammates
 
-### 👁 Aim Visuals
+## 👁 Aim Visuals
 
 * **Draw FOV** – отображение FOV
 
-### 👤 Player ESP
+## 👤 Player ESP
 
 * **Boxes: 2D / 3D / Corner** – отображение боксов 2D / 3D / Corner
 * **Filled Boxes** – заполненные боксы
@@ -36,7 +36,7 @@
 * **Separate colors** – отдельные цвета для Teammates / Wounded / Sleepers / Bots
 * **Separate bot distance** – отдельная дистанция отображения для ботов
 
-### 🌍 World ESP
+## 🌍 World ESP
 
 * **Tool Cupboard** – отображение шкафа
 * **Sleeping Bags** – отображение спальных мешков
@@ -46,9 +46,7 @@
 * **RF Receiver / Broadcaster** – отображение RF-устройств
 * **Motion Sensor** – отображение датчиков движения
 * **Individual distance** – отдельная дистанция для каждой категории
-
-### ⚠️ Traps ESP
-
+* ⚠️ Traps ESP
 * **Auto Turret** – отображение авто-турелей
 * **Shotgun Trap** – отображение дробовых ловушек
 * **SAM Site** – отображение SAM Site
@@ -59,7 +57,7 @@
 * **NPC Turret** – отображение NPC-турелей
 * **Individual distance** – отдельная дистанция для каждого типа ловушек
 
-### 🚗 Vehicle ESP
+## 🚗 Vehicle ESP
 
 * **Minicopter / Scrap Heli / Attack Heli / Hot Air Balloon** – отображение воздушного транспорта
 * **Bicycle / Motorbike / Snowmobile** – отображение наземного транспорта
@@ -68,9 +66,7 @@
 * **Submarine / Diver Propulsion** – отображение подводного транспорта
 * **Drone** – отображение дронов
 * **Individual distance + color** – отдельная дистанция и цвет для каждого транспорта
-
-### ⛏️ Farm ESP
-
+* ⛏️ Farm ESP
 * **Ores: Sulfur / Metal / Stone** – отображение Sulfur / Metal / Stone
 * **Collectibles: Hemp / Metal / Stone / Sulfur** – отображение собираемых ресурсов
 * **Diesel / Berries / Roses** – отображение дизеля, ягод и роз
@@ -80,7 +76,7 @@
 * **Chinook Crate** – отображение Chinook Crate
 * **Individual distance + color** – отдельная дистанция и цвет для каждого предмета
 
-### 🐻 Animals ESP & AI
+## 🐻 Animals ESP & AI
 
 * **Horse / Bear / Polar Bear / Boar / Stag / Wolf / Shark / Chicken / Crocodile / Snake** – отображение животных
 * **Bradley APC** – отображение Bradley APC
@@ -91,7 +87,7 @@
 * **Backpack / Loot Bag** – отображение рюкзаков
 * **Individual distance** – отдельная дистанция для каждого предмета
 
-### 🎨 Visual
+## 🎨 Visual
 
 * **Custom Crosshair** – кастомный прицел с несколькими видами и настройкой цвета
 * **No Weapon Animation** – отключение анимации оружия
@@ -101,9 +97,7 @@
 * **Zoom** – зум по клавише
 * **Remove Layers** – отключение слоёв по клавише
 * **Battle Mode** – боевой режим по клавише
-
-### 🛠 Settings — Config Save / Load - сохранение и загрузка конфигов
-
+* **🛠 Settings** – Config Save / Load - сохранение и загрузка конфигов
 
 ## 🖥 Системные требования
 

@@ -1,4 +1,4 @@
-# ARK Ascended – ARK Ascended [ ☢ Arcane ]
+# ARK Ascended [ ☢ Arcane ]
 
 ## 📸 Скриншоты
 
@@ -6,7 +6,7 @@
 
 * Функционал ARK Ascended [ ☢ Arcane ]:
 
-### 🎯 Aimbot
+## 🎯 Aimbot
 
 * **Enable** – включение аимбота
 * **Target** – выбор целей: Players / Dinosaurs
@@ -20,7 +20,7 @@
 * **Smoothness** – настройка плавности наведения
 * **Max Distance** – настройка максимальной дистанции работы аима
 
-### 👤 Players ESP
+## 👤 Players ESP
 
 * **Bounding Box** – отображение игроков с помощью 2D-боксов: Box / Corner
 * **Fill Box** – настройка фона бокса: Static / Gradient
@@ -37,7 +37,7 @@
 * **Line To Enemy** – отображение линий до игроков: Top / Bottom / Center
 * **Max Distance** – настройка максимальной дистанции работы Players ESP
 
-### 🦖 Dino ESP
+## 🦖 Dino ESP
 
 * **Bounding Box** – отображение динозавров с помощью 2D-боксов: Box / Corner
 * **Fill Box** – настройка фона бокса: Static / Gradient
@@ -55,7 +55,7 @@
 * **Min Level** – настройка минимального уровня динозавра
 * **Max Distance** – настройка максимальной дистанции работы Dino ESP
 
-### 🔎 Dino Filter
+## 🔎 Dino Filter
 
 * **Filter Mode** – выбор режима фильтрации: Match All / Match Any
 * **Carnivore** – отображение хищников
@@ -65,7 +65,7 @@
 * **Water Ridable** – отображение плавающих динозавров
 * **Agro** – отображение агрессивных динозавров
 
-### 📦 Items ESP
+## 📦 Items ESP
 
 * **Distance** – отображение дистанции до предметов
 * **Max Distance** – настройка максимальной дистанции работы Items ESP
@@ -78,7 +78,7 @@
 * **Artifacts** – отображение артефактов
 * **Skins** – отображение скинов
 
-### 🏗 Objects
+## 🏗 Objects
 
 * **Supply Crate** – отображение воздушных ящиков
 * **Sleeping Bag** – отображение спальных мешков
@@ -93,9 +93,7 @@
 * **Tek Generator** – отображение Tek-генераторов
 * **Cryo Fridge** – отображение крио-холодильников
 * **Turret** – отображение турелей
-
-### ⚙️ Misc
-
+* ⚙️ Misc
 * **Crosshair** – настройка прицела: Style / Size / Thickness
 * **Off** – Screen Arrows - отображение стрелок за пределами экрана с настройкой цвета, яркости, размера и расстояния
 * ⚔️ Battle Mode
@@ -105,21 +103,21 @@
 * **Hide Items** – скрытие предметов
 * **Hide Objects** – скрытие объектов
 
-### 🌍 World
+## 🌍 World
 
 * **Dino Size Changer** – изменение размера динозавров
 * **Disable Shadow** – отключение теней
 * **FOV Changer** – изменение угла обзора
 * **Zoom Hack (In Scope)** – дополнительное приближение в прицеле
 
-### 🛠 Exploits
+## 🛠 Exploits
 
 * **No Camera Shake** – отключение тряски камеры
 * **No Recoil** – отключение отдачи
 * **No Spread** – отключение разброса
 * **Rapid Fire** – увеличение скорости стрельбы
 
-### 🎮 Single Player & Host On Server
+## 🎮 Single Player & Host On Server
 
 * **Infinite Ammo** – бесконечные боеприпасы
 * **No Reload** – стрельба без перезарядки

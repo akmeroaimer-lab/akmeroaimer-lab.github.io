@@ -1,4 +1,4 @@
-# Pubg – Pubg [ ☢ Arcane Full ]
+# Pubg [ ☢ Arcane Full ]
 
 ## 📸 Скриншоты
 
@@ -6,7 +6,7 @@
 
 * Функционал Pubg [ ☢ Arcane Full ]:
 
-### 🎯 Aimbot
+## 🎯 Aimbot
 
 * **Keybind** – назначение клавиши активации аимбота
 * **Mode** – выбор режима работы: Hold / Toggle
@@ -23,7 +23,7 @@
 * **Smooth** – настройка плавности наведения
 * **Distance** – настройка максимальной дистанции работы аимбота
 
-### 👁 ESP Players
+## 👁 ESP Players
 
 * **2D Player Box** – отображение игроков в виде рамки: Box / Corners
 * **Box Fill** – заливка рамки: Static / Gradient
@@ -46,13 +46,13 @@
 * **Player Lines** – отображение линий до игроков: Middle Top / Center / Middle Down
 * **Render Distance** – настройка максимальной дистанции отображения
 
-### 📦 Items ESP
+## 📦 Items ESP
 
 * **Show Distance** – отображение расстояния до предметов
 * **Battle Mode** – скрытие предметов во время боя по назначенной клавише
 * **Render Distance** – настройка максимальной дистанции отображения лута
 
-### 🔎 Items Categories
+## 🔎 Items Categories
 
 * **Assault Rifle** – отображение штурмовых винтовок
 * **Marksman Rifle** – отображение марксманских винтовок
@@ -72,11 +72,11 @@
 * **Attachments** – отображение модулей и обвесов
 * **Misc** – отображение прочих предметов
 
-### 🎛 Items Filter
+## 🎛 Items Filter
 
 * **Selected Items** – возможность отображать только выбранные категории и предметы
 
-### 🚗 Vehicle ESP
+## 🚗 Vehicle ESP
 
 * **Show Distance** – отображение расстояния до транспорта
 * **Show Fuel** – отображение количества топлива
@@ -93,7 +93,7 @@
 * **Style** – выбор режима показа: Always / On Hover
 * **Render Distance** – настройка максимальной дистанции отображения
 
-### 💣 Throwable ESP
+## 💣 Throwable ESP
 
 * **Show Name** – отображение названия метательного предмета
 * **Show Distance** – отображение расстояния до него

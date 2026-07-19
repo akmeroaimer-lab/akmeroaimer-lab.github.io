@@ -1,4 +1,4 @@
-# Marvel Rivals – Marvel Rivals [ ☢ Phoenix ]
+# Marvel Rivals [ ☢ Phoenix ]
 
 ## 📸 Скриншоты
 
@@ -6,7 +6,7 @@
 
 * Функционал Marvel Rivals [ ☢ Phoenix ]:
 
-### 🎯 Aimbot
+## 🎯 Aimbot
 
 * **Enable** – включение / выключение Aimbot
 * **Vector Aimbot** – легитное наведение на игроков
@@ -26,7 +26,7 @@
 * **Spinbot** – rage-режим с несколькими вариантами вращения
 * **Magic Bullet** – попадание по цели через препятствия
 
-### 👁 Visuals
+## 👁 Visuals
 
 * **Players ESP** – отображение игроков
 * **Box** – боксы вокруг игроков
@@ -39,9 +39,7 @@
 * **Health Packs** – отображение аптечек, кд и дистанции
 * **Strange Portals** – отображение порталов и дистанции до них
 * **Portals Warning** – предупреждение об открытых порталах
-
-### ⚙️ Other
-
+* ⚙️ Other
 * **Scripts** – загрузка пользовательских .lua скриптов для героев
 * **SkinChanger** – бесплатные скины для любых героев
 * **BunnyHop** – автоматический прыжок

@@ -1,4 +1,4 @@
-# Arena Breakout Infinite – Arena Breakout Infinite [ ☢ KoenFlow ]
+# Arena Breakout Infinite [ ☢ KoenFlow ]
 
 ## 📸 Скриншоты
 

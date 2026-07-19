@@ -1,4 +1,4 @@
-# rust – Rust [ ☢ Arcane ]
+# Rust [ ☢ Arcane ]
 
 ## 📸 Скриншоты
 
@@ -6,7 +6,7 @@
 
 * Функционал Rust [ ☢ Arcane ]:
 
-### 🎯 Aimbot
+## 🎯 Aimbot
 
 * **Aimbot Type** – выбор типа наведения: Vector / Silent
 * **Target** – выбор доступных целей: Players / BOTs / Teams / Knocked
@@ -26,7 +26,7 @@
 * **Visibility Check** – наведение только на видимые цели
 * **Max Distance** – настройка максимальной дистанции работы аимбота
 
-### 👁 ESP Players
+## 👁 ESP Players
 
 * **Bounding Box** – отображение игроков в виде рамки: Box / Corner
 * **Fill Box** – заливка рамки: Static / Gradient
@@ -44,7 +44,7 @@
 * **Visibility Check** – разделение видимых и скрытых целей
 * **Max Distance** – настройка максимальной дистанции отображения
 
-### 🎒 Inventory
+## 🎒 Inventory
 
 * **Style Position** – выбор расположения инвентаря: Desktop / Player
 * **Draw Count** – отображение количества предметов
@@ -54,13 +54,13 @@
 * **Size** – настройка размера окна инвентаря
 * **Transparency** – настройка прозрачности окна
 
-### 📦 Items ESP
+## 📦 Items ESP
 
 * **Show Distance** – отображение расстояния до предметов
 * **Background Transparency** – настройка прозрачности фона
 * **Filter** – фильтрация отображаемых объектов: Weapon / Construction / Items / Resources / Attire / Tool / Medical и другие категории
 
-### 🌐 Objects ESP
+## 🌐 Objects ESP
 
 * **Resource** – отображение ресурсов: Wood / Stone / Metal и другие
 * **Eat** – отображение еды: Mushroom / Corn / Pumpkin и другие
@@ -73,20 +73,20 @@
 * **World Objects** – отображение объектов мира: Recycler / Airdrop / Drone и другие
 * **Middle Ages** – отображение осадных объектов: Catapult / Ballista / Siege Tower и другие
 
-### 📍 Waypoints
+## 📍 Waypoints
 
 * **Create Waypoint** – создание пользовательской точки
 * **Draw Name** – отображение названия точки
 * **Draw Distance** – отображение расстояния до точки
 * **Enable Compass** – включение встроенного компаса
 
-### 👥 Friends & Entities
+## 👥 Friends & Entities
 
 * **Teamcheck Game Party** – разделение союзников и противников разными цветами
 * **Add Friend** – добавление выбранного игрока в список друзей
 * **Add Enemy** – добавление выбранного игрока в список противников
 
-### 🛠 Misc
+## 🛠 Misc
 
 * **Battle Mode** – быстрое скрытие лишних визуальных функций во время боя
 * **No Recoil** – отключение отдачи оружия
@@ -100,9 +100,7 @@
 * **FOV Changer** – настройка угла обзора
 * **Super Zoom Scope** – усиленное приближение при прицеливании
 * **Thick Bullet** – увеличение эффективной области попадания пули
-
-### ⚙️ Settings
-
+* ⚙️ Settings
 * **Menu Keybind** – назначение клавиши открытия меню
 * **Unload Keybind** – назначение клавиши выгрузки продукта
 * **DPI Scale** – настройка масштаба интерфейса
@@ -111,7 +109,7 @@
 * **Watermark** – отображение водяного знака
 * **Language** – выбор языка интерфейса: EN / RU / CN
 
-### 💾 Config
+## 💾 Config
 
 * **Create Config** – создание новой конфигурации
 * **Load Config** – загрузка сохранённой конфигурации

@@ -1,4 +1,4 @@
-# Pubg – Pubg [ ☢ Arcane ESP ]
+# Pubg [ ☢ Arcane ESP ]
 
 ## 📸 Скриншоты
 
@@ -6,7 +6,7 @@
 
 * Функционал Pubg [ ☢ Arcane ESP ]:
 
-### 👁 ESP Players
+## 👁 ESP Players
 
 * **2D Player Box** – отображение игроков в виде рамки: Box / Corners
 * **Box Fill** – заливка рамки: Static / Gradient
@@ -26,14 +26,14 @@
 * **Player Lines** – отображение линий до игроков
 * **Render Distance** – настройка максимальной дистанции отображения
 
-### 📦 Items ESP
+## 📦 Items ESP
 
 * **Enable** – активация отображения предметов
 * **Show Distance** – отображение расстояния до предметов
 * **Battle Mode** – скрытие Item ESP во время боя по назначенной клавише
 * **Render Distance** – настройка максимальной дистанции отображения лута
 
-### 🔎 Items Categories
+## 🔎 Items Categories
 
 * **Assault Rifle** – отображение штурмовых винтовок
 * **Marksman Rifle** – отображение марксманских винтовок
@@ -53,7 +53,7 @@
 * **Attachments** – отображение модулей и обвесов
 * **Misc** – отображение прочих предметов
 
-### 🚗 Others ESP
+## 🚗 Others ESP
 
 * **Show Distance** – отображение расстояния до транспорта
 * **Show Land Vehicle** – отображение наземного транспорта
@@ -68,15 +68,13 @@
 * **Style** – выбор режима отображения: Always / On Hover
 * **Render Distance** – настройка максимальной дистанции отображения
 
-### 🛠 Misc
+## 🛠 Misc
 
 * **No Recoil** – отключение отдачи оружия
 * **Crosshair** – отображение статичного прицела в центре экрана
 * **Spectator Count** – отображение количества наблюдателей
 * **Off** – Screen Arrows — стрелки, указывающие направление игроков за пределами экрана
-
-### ⚙️ Settings
-
+* ⚙️ Settings
 * **Enable Particles** – включение частиц в интерфейсе
 * **Accent Color** – настройка акцентного цвета меню
 * **Theme** – выбор темы интерфейса: Light / Dark
@@ -87,7 +85,7 @@
 * **Watermark Position** – настройка положения водяного знака
 * **Notify Position** – настройка положения уведомлений
 
-### 💾 Config
+## 💾 Config
 
 * **Create Config** – создание новой конфигурации
 * **Delete Config** – удаление выбранной конфигурации

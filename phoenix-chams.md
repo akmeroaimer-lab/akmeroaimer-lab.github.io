@@ -1,13 +1,13 @@
-# Delta Force – ☢ Phoenix (CHAMS) ]
+# ☢ Phoenix (CHAMS) ]
 
 
-### 🎨 Chams / ESP
+## 🎨 Chams / ESP
 
 * **Chams Wallhack** – визуальная подсветка моделей игроков через игровые объекты
 * **Player Coloring** – полная окраска модели игрока с помощью игрового движка
 * **Visible Check** – видимые игроки и игроки за препятствиями отображаются разными цветами
 
-### 👥 Targets Display
+## 👥 Targets Display
 
 * **Players** – отображение игроков
 * **Bots** – отображение ботов отдельно от обычных игроков

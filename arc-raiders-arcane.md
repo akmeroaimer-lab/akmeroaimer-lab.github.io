@@ -1,4 +1,4 @@
-# ARC Raiders – ARC Raiders [ ☢ Arcane ]
+# ARC Raiders [ ☢ Arcane ]
 
 ## 📸 Скриншоты
 
@@ -6,7 +6,7 @@
 
 * Функционал ARC Raiders [ ☢ Arcane ]:
 
-### 🎯 Aim
+## 🎯 Aim
 
 * **Enable** – активация аимбота
 * **Always** – постоянная работа аима
@@ -22,7 +22,7 @@
 * **Smoothness** – настройка плавности наведения
 * **Max Distance** – настройка максимальной дистанции работы аима
 
-### 👁 ESP Players
+## 👁 ESP Players
 
 * **Bounding Box** – отображение 2D бокса: Box / Corner
 * **Fill Box** – фон бокса: Static / Gradient
@@ -38,7 +38,7 @@
 * **Bot Transparency** – настройка прозрачности ботов
 * **Max Distance** – максимальная дистанция отображения игроков
 
-### 📦 Items ESP
+## 📦 Items ESP
 
 * **Show Count** – отображение количества предметов
 * **Show Distance** – отображение дистанции до предметов
@@ -46,7 +46,7 @@
 * **Container** – отображение контейнеров
 * **Dropped Item** – отображение выброшенных предметов
 
-### 📡 Radar
+## 📡 Radar
 
 * **Enable** – активация радара
 * **Show Distance** – отображение дистанции на радаре
@@ -56,14 +56,12 @@
 * **Color Outline** – настройка цвета обводки
 * **Color Background** – настройка цвета фона
 
-### 📍 Radar Entities
+## 📍 Radar Entities
 
 * **Show Player** – отображение игроков
 * **Show AI** – отображение ботов
 * **Show Team** – отображение союзников
-
-### ⚙️ Settings
-
+* ⚙️ Settings
 * **Menu Keybind** – клавиша открытия меню
 * **Unload Keybind** – клавиша полной выгрузки меню
 * **DPI Scale** – настройка масштаба интерфейса

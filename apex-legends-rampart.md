@@ -1,4 +1,4 @@
-# Apex – Apex Legends [ ☢ Rampart ]
+# Apex Legends [ ☢ Rampart ]
 
 ## 📸 Скриншоты
 
@@ -6,7 +6,7 @@
 
 * Функционал Apex Legends [ ☢ Rampart ]:
 
-### 🎯 Aimbot
+## 🎯 Aimbot
 
 * **Aimbot** – основной режим аима
 * **FOV** – настройка радиуса FOV
@@ -17,7 +17,7 @@
 * **Lock Target** – захват цели
 * **RCS Control** – контроль отдачи
 
-### 🎯 Hitbox & Visuals
+## 🎯 Hitbox & Visuals
 
 * **Head** – наведение в голову
 * **Neck** – наведение в шею
@@ -26,7 +26,7 @@
 * **Draw FOV Circle** – отображение круга FOV
 * **Aiming Line** – линия наведения до цели
 
-### 👤 Players
+## 👤 Players
 
 * **Enable ESP** – включение ESP игроков
 * **Boxes** – отображение боксов
@@ -42,12 +42,12 @@
 * **Visible Check** – проверка видимости
 * **Max Distance** – максимальная дистанция отображения
 
-### 🎨 Chams
+## 🎨 Chams
 
 * **Chams** – подсветка моделей
 * **Loot Chams** – подсветка лута
 
-### 📦 Loot
+## 📦 Loot
 
 * **Enable Loot** – включение отображения лута
 * **Weapons** – отображение оружия
@@ -57,21 +57,19 @@
 * **Min Rarity** – минимальная редкость предметов
 * **Max Distance** – максимальная дистанция отображения
 
-### 🏃 Movement
+## 🏃 Movement
 
 * **Super Glide** – Super Glide
 * **Bhop** – Bunny Hop
 * **Aspect Ratio Changer** – изменение соотношения сторон
-
-### ⚙️ General
-
+* ⚙️ General
 * **Menu Key** – клавиша открытия меню
 * **Font Style** – стиль шрифта
 * **Font Size** – размер шрифта
 * **VSync** – вертикальная синхронизация
 * **FPS Limit** – лимит FPS
 
-### 🛠 Configs
+## 🛠 Configs
 
 * **Name** – название конфига
 * **Save** – сохранение конфига

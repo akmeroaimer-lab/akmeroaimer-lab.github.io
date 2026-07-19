@@ -1,4 +1,4 @@
-# Arma Reforger – Arma Reforger [ ☢ Arcane ]
+# Arma Reforger [ ☢ Arcane ]
 
 ## 📸 Скриншоты
 
@@ -6,7 +6,7 @@
 
 * Функционал Arma Reforger [ ☢ Arcane ]:
 
-### 🎯 Aimbot
+## 🎯 Aimbot
 
 * **Keybind** – настройка клавиши активации
 * **Target Bone** – выбор части тела: Head / Neck / Body / Pelvis
@@ -18,7 +18,7 @@
 * **Smoothness** – настройка плавности наведения
 * **Max Distance** – настройка максимальной дистанции работы аима
 
-### 👤 Players ESP
+## 👤 Players ESP
 
 * **ESP Style** – выбор стиля отображения: With Background / Without Background
 * **Bounding Box** – отображение игроков с помощью 2D-боксов: Box / Corner
@@ -32,9 +32,7 @@
 * **Distance** – отображение дистанции до игроков
 * **Show Team** – отображение членов команды
 * **Max Distance** – настройка максимальной дистанции работы ESP
-
-### ⚙️ Settings
-
+* ⚙️ Settings
 * **Menu Keybind** – настройка клавиши открытия меню
 * **Unload Keybind** – настройка клавиши полной выгрузки
 * **DPI Scale** – настройка размера интерфейса
@@ -43,7 +41,7 @@
 * **Watermark** – отображение водяного знака
 * **Language** – выбор языка интерфейса: EN / RU / CN
 
-### 📁 Config
+## 📁 Config
 
 * **Create Config** – создание новой конфигурации
 * **Load Config** – загрузка сохранённой конфигурации

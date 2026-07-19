@@ -1,13 +1,12 @@
-# Arena Breakout Infinite – Arena Breakout Infinite [ ☢ Ghost Full ]
+# Arena Breakout Infinite [ ☢ Ghost Full ]
 
 ## 📸 Скриншоты
 
 ![Скриншот 1](images/arena-breakout-infinite-ghost-full/photo_2026-06-18_01-23-37_2.jpg) ![Скриншот 2](images/arena-breakout-infinite-ghost-full/photo_2026-06-18_01-23-37_3.jpg) ![Скриншот 3](images/arena-breakout-infinite-ghost-full/photo_2026-06-18_01-23-37_4.jpg) ![Скриншот 4](images/arena-breakout-infinite-ghost-full/photo_2026-06-18_01-23-37.jpg)
 
-* Функцийй
 * ункционал Arena Breakout Infinite [ ☢ Ghost Full ]:
 
-### 🎯Aimbot
+## 🎯Aimbot
 
 * **Memory Aim / PSilent** – два режима аима: обычное наведение через память и скрытый PSilent без резких движений камеры
 * **Enable / Bind** – включение аимбота и назначение удобной клавиши активации
@@ -22,7 +21,7 @@
 * **Insta Kill Legit Mode** – более мягкий вариант Insta Kill для осторожной игры
 * **Recoil Control** – контроль отдачи с настройкой интенсивности от 0.0 до 1.0
 
-### 👤 Visuals
+## 👤 Visuals
 
 * **Player ESP** – отображение игроков через визуальные элементы на экране
 * **AI / Bot ESP** – отдельное отображение ботов и AI-противников
@@ -40,7 +39,7 @@
 * **Keybind List** – список активных биндов на экране
 * **Menu Key / DPI Scale** – настройка клавиши меню и масштаба интерфейса
 
-### 🔎 Loot
+## 🔎 Loot
 
 * **Rarity System** – система редкости Common, Rare, Epic, Legendary, Mythic и Exotic с красной подсветкой
 * **Dropped Items / Containers** – отображение выброшенных предметов и контейнеров с настройкой цвета
@@ -54,7 +53,7 @@
 * **Font Size** – размер шрифта от 8 до 25
 * **Battle Mode** – быстрый режим с биндом, который убирает лишний лут во время боя
 
-### 📦Other
+## 📦Other
 
 * **Config Name / Config List** – поле названия конфига и список сохранённых профилей
 * **Create / Delete / Save / Load** – создание, удаление, сохранение и загрузка конфигов
@@ -66,7 +65,7 @@
 * **Fast Reload / Fast Magazine** – ускоренная перезарядка и быстрая работа с магазином
 * **FOV Changer** – изменение угла обзора с диапазоном от 60 до 120
 
-### 🧩Misc
+## 🧩Misc
 
 * **Language Switcher** – переключение языка меню: EN / RU / ZH
 * **Hitbox Selector** – выбор хитбоксов: Head, Neck, Body, Arm R/L и Leg R/L
