@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>🛠 Решение проблем запуска | Aimer123213</title>
+    <meta name="description" content="Другие игры — 🛠 Решение проблем запуска. Aimer123213 docs, pricing and setup guide.">
+    <meta property="og:title" content="🛠 Решение проблем запуска | Aimer123213">
+    <meta property="og:description" content="Другие игры · docs, prices, launch guide">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="og/medusa-reshenie-problem.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="favicon.svg?v=202607192332" type="image/svg+xml">
+    <meta name="theme-color" content="#0e0f12">
+    <meta name="color-scheme" content="dark">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <meta name="build-id" content="202607192332">
+    <link rel="sitemap" type="application/xml" href="sitemap.xml">
+    <link rel="prefetch" href="1.html" as="document">
+<link rel="prefetch" href="README.html" as="document">
+<link rel="prefetch" href="SUMMARY.html" as="document">
+<link rel="prefetch" href="arcane-instruktsiya.html" as="document">
+<link rel="prefetch" href="arcane-reshenie-problem.html" as="document">
+<link rel="prefetch" href="arena-breakout-infinite-ghost-esp.html" as="document">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css?v=b26ed39009">
+    <script src="app.js?v=b26ed39009"></script>
+</head>
+<body>
+
+    <a class="skip-link" href="#main-content"><span data-lang="ru">К содержимому</span><span data-lang="en">Skip to content</span></a>
+    <div id="site-toast" class="site-toast" hidden></div>
+    <div id="command-palette" class="command-palette" hidden>
+  <div class="command-palette-card" role="dialog" aria-modal="true" aria-label="Command palette">
+    <input id="command-palette-input" type="search" autocomplete="off"
+      placeholder="Search pages, games, features..."
+      data-i18n-placeholder
+      data-i18n-placeholder-ru="Поиск страниц, игр, фич..."
+      data-i18n-placeholder-en="Search pages, games, features...">
+    <div id="command-palette-results" class="command-palette-results"></div>
+    <div class="command-palette-hint"><kbd>↑↓</kbd> <kbd>Enter</kbd> <kbd>Esc</kbd></div>
+  </div>
+</div>
+    <div id="lang-gate" class="lang-gate" role="dialog" aria-modal="true" aria-label="Language">
+        <div class="lang-gate-card">
+            <div class="lang-gate-kicker">Aimer123213 / FUNPAY</div>
+            <div class="lang-gate-title">Choose language</div>
+            <p class="lang-gate-text">Читать на русском или Read in English. Выбор сохранится для следующих визитов.</p>
+            <div class="lang-gate-actions">
+                <button type="button" class="lang-gate-btn primary" onclick="setSiteLang('ru')">Читать на русском</button>
+                <button type="button" class="lang-gate-btn" onclick="setSiteLang('en')">Read in English</button>
+            </div>
+        </div>
+    </div>
+    <div id="page-loader" class="loader-overlay">
+        <div class="loader-logo" aria-hidden="true">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="16" cy="16" r="6.5" stroke="currentColor" stroke-width="1.8"/>
+    <circle cx="16" cy="16" r="1.8" fill="currentColor"/>
+    <path d="M16 3v5.2M16 23.8V29M3 16h5.2M23.8 16H29" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/>
+  </svg>
+</div>
+        <div class="loader-text">Aimer123213 / FUNPAY</div>
+        <div class="loader-track"><span></span></div>
+    </div>
+    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Открыть меню" data-i18n-aria data-i18n-aria-ru="Открыть меню" data-i18n-aria-en="Open menu">☰</button>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-mark" aria-hidden="true">
+  <svg viewBox="0 0 32 32" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="16" cy="16" r="6.5" stroke="currentColor" stroke-width="1.8"/>
+    <circle cx="16" cy="16" r="1.8" fill="currentColor"/>
+    <path d="M16 3v5.2M16 23.8V29M3 16h5.2M23.8 16H29" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/>
+  </svg>
+</div>
+            <div class="brand-copy">
+                <strong>Aimer123213</strong>
+                <em>FUNPAY</em>
+            </div>
+        </div>
+        <div class='sidebar-search'>
+<input type='search' placeholder='Filter games...' data-i18n-placeholder data-i18n-placeholder-ru='Фильтр игр...' data-i18n-placeholder-en='Filter games...' oninput='filterSidebar(this.value)' aria-label='Filter sidebar'>
+</div>
+<div class='sidebar-category'>
+  <div class='sidebar-category-header static'>
+    <span class='nav-code'>00</span>
+    <span class='nav-name'><span data-lang="ru">Инфо</span><span data-lang="en">Info</span></span>
+  </div>
+  <div class='sidebar-category-items' style='max-height:120px; opacity:1;'>
+    <a href='index.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Статус продуктов</span><span data-lang="en">Product status</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>RST</span>
+    <span class='nav-name'><span data-lang="ru">Rust</span><span data-lang="en">Rust</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='rust-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Rust [ ☢ Arcane ]</span><span data-lang="en">Rust [ ☢ Arcane ]</span></span></a>
+    <a href='rust-rampart-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Rust [ ☢ Rampart Full ]</span><span data-lang="en">Rust [ ☢ Rampart Full ]</span></span></a>
+    <a href='rust-rampart-lite.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Rust [ ☢ Rampart Lite ]</span><span data-lang="en">Rust [ ☢ Rampart Lite ]</span></span></a>
+    <a href='rust-xernel.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Rust [ ☢ Xernel ]</span><span data-lang="en">Rust [ ☢ Xernel ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>APX</span>
+    <span class='nav-name'><span data-lang="ru">Apex Legends</span><span data-lang="en">Apex Legends</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='apex-legends-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Apex Legends [ ☢ Arcane ]</span><span data-lang="en">Apex Legends [ ☢ Arcane ]</span></span></a>
+    <a href='apex-legends-phoenix-x-ray.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Apex Legends [ ☢ Phoenix X-RAY ]</span><span data-lang="en">Apex Legends [ ☢ Phoenix X-RAY ]</span></span></a>
+    <a href='apex-legends-rampart.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Apex Legends [ ☢ Rampart ]</span><span data-lang="en">Apex Legends [ ☢ Rampart ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>ARC</span>
+    <span class='nav-name'><span data-lang="ru">ARC Raiders</span><span data-lang="en">ARC Raiders</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='arc-raiders-arcane-radar.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">ARC Raiders [ ☢ Arcane Radar ]</span><span data-lang="en">ARC Raiders [ ☢ Arcane Radar ]</span></span></a>
+    <a href='arc-raiders-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">ARC Raiders [ ☢ Arcane ]</span><span data-lang="en">ARC Raiders [ ☢ Arcane ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>ARK</span>
+    <span class='nav-name'><span data-lang="ru">ARK Ascended</span><span data-lang="en">ARK Ascended</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='ark-ascended-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">ARK Ascended [ ☢ Arcane ]</span><span data-lang="en">ARK Ascended [ ☢ Arcane ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>ARF</span>
+    <span class='nav-name'><span data-lang="ru">Arma Reforger</span><span data-lang="en">Arma Reforger</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='arma-reforger-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arma Reforger [ ☢ Arcane ]</span><span data-lang="en">Arma Reforger [ ☢ Arcane ]</span></span></a>
+    <a href='arma-reforger-xernel.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arma Reforger [ ☢ Xernel ]</span><span data-lang="en">Arma Reforger [ ☢ Xernel ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>CS2</span>
+    <span class='nav-name'><span data-lang="ru">Counter-Strike 2</span><span data-lang="en">Counter-Strike 2</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='counter-strike-2-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Counter Strike 2 [ ☢ Arcane ]</span><span data-lang="en">Counter Strike 2 [ ☢ Arcane ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>DAY</span>
+    <span class='nav-name'><span data-lang="ru">DayZ</span><span data-lang="en">DayZ</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='dayz-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">DayZ [ ☢ Arcane ]</span><span data-lang="en">DayZ [ ☢ Arcane ]</span></span></a>
+    <a href='dayz-medusa-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">DayZ [ ☢ Medusa Full ]</span><span data-lang="en">DayZ [ ☢ Medusa Full ]</span></span></a>
+    <a href='dayz-medusa-lite.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">DayZ [ ☢ Medusa Lite ]</span><span data-lang="en">DayZ [ ☢ Medusa Lite ]</span></span></a>
+    <a href='dayz-xernel.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">DayZ [ ☢ Xernel ]</span><span data-lang="en">DayZ [ ☢ Xernel ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>EFT</span>
+    <span class='nav-name'><span data-lang="ru">Escape from Tarkov</span><span data-lang="en">Escape from Tarkov</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='escape-from-tarkov-medusa-lite.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Escape from Tarkov [ ☢ Medusa Lite ]</span><span data-lang="en">Escape from Tarkov [ ☢ Medusa Lite ]</span></span></a>
+    <a href='escape-from-tarkov-medusa-rage.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Escape from Tarkov [ ☢ Medusa Rage ]</span><span data-lang="en">Escape from Tarkov [ ☢ Medusa Rage ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>FN</span>
+    <span class='nav-name'><span data-lang="ru">Fortnite</span><span data-lang="en">Fortnite</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='fortnite-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Fortnite [ ☢ Arcane ]</span><span data-lang="en">Fortnite [ ☢ Arcane ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>MR</span>
+    <span class='nav-name'><span data-lang="ru">Marvel Rivals</span><span data-lang="en">Marvel Rivals</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='marvel-rivals-ghost.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Marvel Rivals [ ☢ Ghost ]</span><span data-lang="en">Marvel Rivals [ ☢ Ghost ]</span></span></a>
+    <a href='marvel-rivals-phoenix.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Marvel Rivals [ ☢ Phoenix ]</span><span data-lang="en">Marvel Rivals [ ☢ Phoenix ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>MC</span>
+    <span class='nav-name'><span data-lang="ru">Meccha Chameleon</span><span data-lang="en">Meccha Chameleon</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='meccha-chameleon-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Meccha Chameleon [ ☢ Arcane ]</span><span data-lang="en">Meccha Chameleon [ ☢ Arcane ]</span></span></a>
+    <a href='meccha-chameleon-ghost.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Meccha Chameleon [ ☢ Ghost ]</span><span data-lang="en">Meccha Chameleon [ ☢ Ghost ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>PBG</span>
+    <span class='nav-name'><span data-lang="ru">PUBG</span><span data-lang="en">PUBG</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='pubg-arcane-esp.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Pubg [ ☢ Arcane ESP ]</span><span data-lang="en">Pubg [ ☢ Arcane ESP ]</span></span></a>
+    <a href='pubg-arcane-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Pubg [ ☢ Arcane Full ]</span><span data-lang="en">Pubg [ ☢ Arcane Full ]</span></span></a>
+    <a href='pubg-arcane-radar.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Pubg [ ☢ Arcane Radar ]</span><span data-lang="en">Pubg [ ☢ Arcane Radar ]</span></span></a>
+    <a href='pubg-phoenix-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Pubg [ ☢ Phoenix Full ]</span><span data-lang="en">Pubg [ ☢ Phoenix Full ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>UNT</span>
+    <span class='nav-name'><span data-lang="ru">Unturned</span><span data-lang="en">Unturned</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='unturned-medusa.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Unturned [ ☢ Medusa ]</span><span data-lang="en">Unturned [ ☢ Medusa ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category  is-active-game'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>ETC</span>
+    <span class='nav-name'><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='1.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Ультимативный спуфер1</span><span data-lang="en">Ультимативный спуфер1</span></span></a>
+    <a href='README.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">База Знаний Xind1 Docs</span><span data-lang="en">База Знаний Xind1 Docs</span></span></a>
+    <a href='SUMMARY.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Table of contents</span><span data-lang="en">Table of contents</span></span></a>
+    <a href='arcane-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Arcane</span><span data-lang="en">🚀 Инструкция по запуску Arcane</span></span></a>
+    <a href='arcane-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Arcane — Решение проблем запуска</span><span data-lang="en">🛠 Arcane — Решение проблем запуска</span></span></a>
+    <a href='arena-breakout-infinite-ghost-esp.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ Ghost ESP ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Ghost ESP ]</span></span></a>
+    <a href='arena-breakout-infinite-ghost-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ Ghost Full ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Ghost Full ]</span></span></a>
+    <a href='arena-breakout-infinite-koenflow.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ KoenFlow ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ KoenFlow ]</span></span></a>
+    <a href='arena-breakout-infinite-xernel-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ Xernel Full ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Xernel Full ]</span></span></a>
+    <a href='ghost-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Ghost</span><span data-lang="en">🚀 Инструкция по запуску Ghost</span></span></a>
+    <a href='ghost-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Ghost — Решение проблем запуска</span><span data-lang="en">🛠 Ghost — Решение проблем запуска</span></span></a>
+    <a href='index.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">База Знаний Xind1 Docs</span><span data-lang="en">База Знаний Xind1 Docs</span></span></a>
+    <a href='koenflow-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску KoenFlow</span><span data-lang="en">🚀 Инструкция по запуску KoenFlow</span></span></a>
+    <a href='koenflow-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 KoenFlow — Решение проблем запуска</span><span data-lang="en">🛠 KoenFlow — Решение проблем запуска</span></span></a>
+    <a href='medusa-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Medusa</span><span data-lang="en">🚀 Инструкция по запуску Medusa</span></span></a>
+    <a href='medusa-reshenie-problem.html' class='sidebar-link active'><span class='sidebar-link-label'><span data-lang="ru">🛠 Medusa — Решение проблем запуска</span><span data-lang="en">🛠 Medusa — Решение проблем запуска</span></span></a>
+    <a href='phoenix-chams.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">☢ Phoenix (CHAMS) ]</span><span data-lang="en">☢ Phoenix (CHAMS) ]</span></span></a>
+    <a href='phoenix-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Phoenix</span><span data-lang="en">🚀 Инструкция по запуску Phoenix</span></span></a>
+    <a href='phoenix-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Phoenix — Решение проблем запуска</span><span data-lang="en">🛠 Phoenix — Решение проблем запуска</span></span></a>
+    <a href='rampart-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Rampart</span><span data-lang="en">🚀 Инструкция по запуску Rampart</span></span></a>
+    <a href='rampart-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Rampart — Решение проблем запуска</span><span data-lang="en">🛠 Rampart — Решение проблем запуска</span></span></a>
+    <a href='xernel-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Xernel</span><span data-lang="en">🚀 Инструкция по запуску Xernel</span></span></a>
+    <a href='xernel-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Xernel — Решение проблем запуска</span><span data-lang="en">🛠 Xernel — Решение проблем запуска</span></span></a>
+  </div>
+</div>
+<div class='lang-switcher'>
+  <button type='button' class='lang-btn' data-set-lang='ru' onclick="setSiteLang('ru')">RU</button>
+  <button type='button' class='lang-btn' data-set-lang='en' onclick="setSiteLang('en')">EN</button>
+</div>
+    </div>
+    <div class="main-container" id="main-content">
+        <div class="content-area">
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+  <a href="index.html"><span data-lang="ru">Каталог</span><span data-lang="en">Catalog</span></a>
+  <span class="bc-sep">/</span>
+  <span class="bc-game">Другие игры</span>
+  <span class="bc-sep">/</span>
+  <span class="bc-current">🛠 Решение проблем запуска</span>
+</nav>
+<div class="sticky-product-bar" id="sticky-product-bar" hidden>
+  <div class="spb-title">🛠 Решение проблем запуска</div>
+  <div class="spb-actions">
+    
+    <a class="spb-buy" href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer">
+      <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+    </a>
+  </div>
+</div>
+<header class="product-hero brand-medusa" id="product-hero">
+  <div class="hero-banner" aria-hidden="true">
+    
+    <span class="hero-watermark">MEDUSA</span>
+    <span class="hero-grid"></span>
+  </div>
+  <div class="product-hero-inner">
+  <div class="product-hero-main">
+    <div class="product-hero-chips">
+      <span class="hero-chip game"><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
+      <span class="hero-chip brand">MEDUSA</span>
+      <span class="status-badge undetected"><span class="status-dot"></span>Undetected</span>
+      
+    </div>
+    <h1><span data-lang="ru">🛠 Решение проблем запуска</span><span data-lang="en">🛠 Решение проблем запуска</span></h1>
+    <div class="product-hero-meta">
+      <span class="hero-meta-item">
+        <span data-lang="ru">Обновлено</span>
+        <span data-lang="en">Updated</span>
+        <strong>20.07.2026</strong>
+      </span>
+      <span class="hero-meta-item">
+        <span data-lang="ru">Документация Aimer123213</span>
+        <span data-lang="en">Aimer123213 documentation</span>
+      </span>
+    </div>
+  </div>
+  <div class="product-hero-actions">
+    <span class="official-seller-chip">Official seller</span>
+    <a class="hero-btn primary" href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer">
+      <span data-lang="ru">Купить на FunPay</span>
+      <span data-lang="en">Buy on FunPay</span>
+    </a>
+  </div>
+  </div>
+</header>
+<div class="share-bar" id="share-bar">
+  <span class="share-bar-label"><span data-lang="ru">Ссылка</span><span data-lang="en">Share</span></span>
+  <button type="button" class="share-btn" onclick="copySectionLink('#product-hero', this)"><span data-lang="ru">Страница</span><span data-lang="en">Page</span></button><button type="button" class="share-btn" onclick="copySectionLink('#launch-guide', this)"><span data-lang="ru">Инструкция</span><span data-lang="en">Setup</span></button><button type="button" class="share-btn" onclick="copySectionLink('#faq', this)"><span data-lang="ru">FAQ</span><span data-lang="en">FAQ</span></button>
+</div>
+
+<div class="feature-tools">
+  <button type="button" onclick="copyAllFeatures()"><span data-lang="ru">Копировать фичи</span><span data-lang="en">Copy features</span></button>
+  <button type="button" onclick="document.querySelectorAll('.content-area h2').forEach(h=>h.classList.add('section-collapsed'))"><span data-lang="ru">Свернуть всё</span><span data-lang="en">Collapse all</span></button>
+  <button type="button" onclick="document.querySelectorAll('.content-area h2').forEach(h=>h.classList.remove('section-collapsed'))"><span data-lang="ru">Развернуть всё</span><span data-lang="en">Expand all</span></button>
+</div>
+
+<aside class="launch-guide" id="launch-guide">
+  <div class="launch-guide-copy">
+    <div class="launch-guide-kicker">MEDUSA</div>
+    <div class="launch-guide-title">
+      <span data-lang="ru">Инструкция по запуску</span>
+      <span data-lang="en">Launch instructions</span>
+    </div>
+    <p class="launch-guide-text">
+      <span data-lang="ru">Официальная инструкция по запуску.</span>
+      <span data-lang="en">Official launch instructions.</span>
+    </p>
+  </div>
+  <div class="launch-guide-actions">
+    <a class="launch-guide-btn" href="https://ru.medusa.cc/instruction.php" target="_blank" rel="noopener noreferrer" data-lang="ru">Открыть инструкцию ↗</a>
+    <a class="launch-guide-btn" href="https://ru.medusa.cc/instruction.php" target="_blank" rel="noopener noreferrer" data-lang="en">Open guide ↗</a>
+  </div>
+</aside>
+
+<section class="buy-steps" id="buy-steps">
+  <div class="section-kicker"><span data-lang="ru">Покупка</span><span data-lang="en">Purchase</span></div>
+  <h2 class="section-title-plain"><span data-lang="ru">Как купить</span><span data-lang="en">How to buy</span></h2>
+  <ol class="buy-steps-list">
+    <li><strong>1</strong><span data-lang="ru">Выберите срок на FunPay</span><span data-lang="en">Pick a plan on FunPay</span></li>
+    <li><strong>2</strong><span data-lang="ru">Оплатите заказ</span><span data-lang="en">Pay for the order</span></li>
+    <li><strong>3</strong><span data-lang="ru">Получите ключ и инструкцию в чате</span><span data-lang="en">Get key + guide in chat</span></li>
+  </ol>
+</section>
+<section class="useful-links" id="useful-links">
+  <div class="section-kicker"><span data-lang="ru">Ссылки</span><span data-lang="en">Links</span></div>
+  <h2 class="section-title-plain"><span data-lang="ru">Полезные ссылки</span><span data-lang="en">Useful links</span></h2>
+  <div class="useful-links-row"><a href="https://ru.medusa.cc/instruction.php" target="_blank" rel="noopener noreferrer"><span data-lang="ru">Инструкция RU</span><span data-lang="en">Guide RU</span></a><a href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer">FunPay</a><a href="index.html"><span data-lang="ru">Каталог</span><span data-lang="en">Catalog</span></a><a href="widget.html" target="_blank"><span data-lang="ru">Telegram-виджет</span><span data-lang="en">TG widget</span></a></div>
+</section>
+<section class="highlights-block" id="highlights">
+  <div class="section-kicker">
+    <span data-lang="ru">Плюсы</span>
+    <span data-lang="en">Highlights</span>
+  </div>
+  <h2 class="section-title-plain">
+    <span data-lang="ru">Почему этот продукт</span>
+    <span data-lang="en">Why this product</span>
+  </h2>
+  <ul class="highlights-list">
+    <li><span data-lang='ru'>Полный Undetected</span><span data-lang='en'>Full undetected</span></li><li><span data-lang='ru'>Большой функционал и визуалы</span><span data-lang='en'>Rich features and visuals</span></li><li><span data-lang='ru'>Встроенный спуфер</span><span data-lang='en'>Built-in spoofer</span></li>
+  </ul>
+</section>
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <a href="index.html"><span data-lang="ru">Каталог</span><span data-lang="en">Catalog</span></a>
+  <span class="bc-sep">/</span>
+  <span class="bc-game">Другие игры</span>
+  <span class="bc-sep">/</span>
+  <span class="bc-current">🛠 Решение проблем запуска</span>
+</nav>
+<div class="sticky-product-bar" id="sticky-product-bar" hidden>
+  <div class="spb-title">🛠 Решение проблем запуска</div>
+  <div class="spb-actions">
+    
+    <a class="spb-buy" href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer">
+      <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+    </a>
+  </div>
+</div>
+<header class="product-hero brand-medusa" id="product-hero">
+  <div class="hero-banner" aria-hidden="true">
+    
+    <span class="hero-watermark">MEDUSA</span>
+    <span class="hero-grid"></span>
+  </div>
+  <div class="product-hero-inner">
+  <div class="product-hero-main">
+    <div class="product-hero-chips">
+      <span class="hero-chip game"><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
+      <span class="hero-chip brand">MEDUSA</span>
+      <span class="status-badge undetected"><span class="status-dot"></span>Undetected</span>
+      
+    </div>
+    <h1><span data-lang="ru">🛠 Решение проблем запуска</span><span data-lang="en">🛠 Решение проблем запуска</span></h1>
+    <div class="product-hero-meta">
+      <span class="hero-meta-item">
+        <span data-lang="ru">Обновлено</span>
+        <span data-lang="en">Updated</span>
+        <strong>20.07.2026</strong>
+      </span>
+      <span class="hero-meta-item">
+        <span data-lang="ru">Документация Aimer123213</span>
+        <span data-lang="en">Aimer123213 documentation</span>
+      </span>
+    </div>
+  </div>
+  <div class="product-hero-actions">
+    <span class="official-seller-chip">Official seller</span>
+    <a class="hero-btn primary" href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer">
+      <span data-lang="ru">Купить на FunPay</span>
+      <span data-lang="en">Buy on FunPay</span>
+    </a>
+  </div>
+  </div>
+</header>
+<div class="share-bar" id="share-bar">
+  <span class="share-bar-label"><span data-lang="ru">Ссылка</span><span data-lang="en">Share</span></span>
+  <button type="button" class="share-btn" onclick="copySectionLink('#product-hero', this)"><span data-lang="ru">Страница</span><span data-lang="en">Page</span></button><button type="button" class="share-btn" onclick="copySectionLink('#launch-guide', this)"><span data-lang="ru">Инструкция</span><span data-lang="en">Setup</span></button><button type="button" class="share-btn" onclick="copySectionLink('#faq', this)"><span data-lang="ru">FAQ</span><span data-lang="en">FAQ</span></button>
+</div>
+
+<div class="feature-tools">
+  <button type="button" onclick="copyAllFeatures()"><span data-lang="ru">Копировать фичи</span><span data-lang="en">Copy features</span></button>
+  <button type="button" onclick="document.querySelectorAll('.content-area h2').forEach(h=>h.classList.add('section-collapsed'))"><span data-lang="ru">Свернуть всё</span><span data-lang="en">Collapse all</span></button>
+  <button type="button" onclick="document.querySelectorAll('.content-area h2').forEach(h=>h.classList.remove('section-collapsed'))"><span data-lang="ru">Развернуть всё</span><span data-lang="en">Expand all</span></button>
+</div>
+
+<aside class="launch-guide" id="launch-guide">
+  <div class="launch-guide-copy">
+    <div class="launch-guide-kicker">MEDUSA</div>
+    <div class="launch-guide-title">
+      <span data-lang="ru">Инструкция по запуску</span>
+      <span data-lang="en">Launch instructions</span>
+    </div>
+    <p class="launch-guide-text">
+      <span data-lang="ru">Официальная инструкция по запуску.</span>
+      <span data-lang="en">Official launch instructions.</span>
+    </p>
+  </div>
+  <div class="launch-guide-actions">
+    <a class="launch-guide-btn" href="https://ru.medusa.cc/instruction.php" target="_blank" rel="noopener noreferrer" data-lang="ru">Открыть инструкцию ↗</a>
+    <a class="launch-guide-btn" href="https://ru.medusa.cc/instruction.php" target="_blank" rel="noopener noreferrer" data-lang="en">Open guide ↗</a>
+  </div>
+</aside>
+
+<section class="buy-steps" id="buy-steps">
+  <div class="section-kicker"><span data-lang="ru">Покупка</span><span data-lang="en">Purchase</span></div>
+  <h2 class="section-title-plain"><span data-lang="ru">Как купить</span><span data-lang="en">How to buy</span></h2>
+  <ol class="buy-steps-list">
+    <li><strong>1</strong><span data-lang="ru">Выберите срок на FunPay</span><span data-lang="en">Pick a plan on FunPay</span></li>
+    <li><strong>2</strong><span data-lang="ru">Оплатите заказ</span><span data-lang="en">Pay for the order</span></li>
+    <li><strong>3</strong><span data-lang="ru">Получите ключ и инструкцию в чате</span><span data-lang="en">Get key + guide in chat</span></li>
+  </ol>
+</section>
+<section class="useful-links" id="useful-links">
+  <div class="section-kicker"><span data-lang="ru">Ссылки</span><span data-lang="en">Links</span></div>
+  <h2 class="section-title-plain"><span data-lang="ru">Полезные ссылки</span><span data-lang="en">Useful links</span></h2>
+  <div class="useful-links-row"><a href="https://ru.medusa.cc/instruction.php" target="_blank" rel="noopener noreferrer"><span data-lang="ru">Инструкция RU</span><span data-lang="en">Guide RU</span></a><a href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer">FunPay</a><a href="index.html"><span data-lang="ru">Каталог</span><span data-lang="en">Catalog</span></a><a href="widget.html" target="_blank"><span data-lang="ru">Telegram-виджет</span><span data-lang="en">TG widget</span></a></div>
+</section>
+<section class="highlights-block" id="highlights">
+  <div class="section-kicker">
+    <span data-lang="ru">Плюсы</span>
+    <span data-lang="en">Highlights</span>
+  </div>
+  <h2 class="section-title-plain">
+    <span data-lang="ru">Почему этот продукт</span>
+    <span data-lang="en">Why this product</span>
+  </h2>
+  <ul class="highlights-list">
+    <li><span data-lang='ru'>Полный Undetected</span><span data-lang='en'>Full undetected</span></li><li><span data-lang='ru'>Большой функционал и визуалы</span><span data-lang='en'>Rich features and visuals</span></li><li><span data-lang='ru'>Встроенный спуфер</span><span data-lang='en'>Built-in spoofer</span></li>
+  </ul>
+</section>
+<h2 id='частые-ошибки-и-их-исправление'><span data-lang="ru"># Частые ошибки и их исправление:</span><span data-lang="en"># Частые ошибки и их исправление:</span></h2>
+<p class='feature-item'><span class='feature-desc'><span data-lang="ru">1. **Ошибка при запуске лаунчера / Защитник Windows:</span><span data-lang="en">1. **Ошибка при запуске лаунчера / Защитник Windows:</span></span></p>
+<p class='feature-item'><span class='feature-desc'><span data-lang="ru">- Отключите Защитник Windows и сторонние антивирусы (Kaspersky, Avast, Malwarebytes).</span><span data-lang="en">- Отключите Защитник Windows и сторонние антивирусы (Kaspersky, Avast, Malwarebytes).</span></span></p>
+<p class='feature-item'><span class='feature-desc'><span data-lang="ru">- Убедитесь, что вытянули файлы из архива перед запуском.</span><span data-lang="en">- Убедитесь, что вытянули файлы из архива перед запуском.</span></span></p>
+<p class='feature-item'><span class='feature-desc'><span data-lang="ru">2. **Ошибка загрузки драйвера (Driver Error / HVCI):</span><span data-lang="en">2. **Ошибка загрузки драйвера (Driver Error / HVCI):</span></span></p>
+<p class='feature-item'><span class='feature-desc'><span data-lang="ru">- Отключите «Изоляцию ядра» (Core Isolation / HVCI) в настройках безопасности Windows.</span><span data-lang="en">- Отключите «Изоляцию ядра» (Core Isolation / HVCI) в настройках безопасности Windows.</span></span></p>
+<p class='feature-item'><span class='feature-desc'><span data-lang="ru">- Отключите виртуализацию в BIOS (VT-x / AMD-V) при необходимости.</span><span data-lang="en">- Отключите виртуализацию в BIOS (VT-x / AMD-V) при необходимости.</span></span></p>
+<p class='feature-item'><span class='feature-desc'><span data-lang="ru">3. **Secure Boot (Безопасная загрузка):</span><span data-lang="en">3. **Secure Boot (Безопасная загрузка):</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">- Проверьте требования конкретного чита</span><span data-lang="en">- Проверьте требования конкретного чита</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">для некоторых продуктов требуется выключить Secure Boot в BIOS.</span><span data-lang="en">для некоторых продуктов требуется выключить Secure Boot в BIOS.</span></span></p>
+<section class="faq-block" id="faq">
+  <div class="section-kicker">
+    <span data-lang="ru">Помощь</span>
+    <span data-lang="en">Help</span>
+  </div>
+  <h2 class="section-title-plain">
+    <span data-lang="ru">FAQ / Troubleshooting</span>
+    <span data-lang="en">FAQ / Troubleshooting</span>
+  </h2>
+  <p class="section-lead">
+    <span data-lang="ru">Короткие ответы на частые проблемы при запуске.</span>
+    <span data-lang="en">Short answers to common launch issues.</span>
+  </p>
+  <div class="faq-list">
+    <details class="faq-item" open>
+  <summary>
+    <span data-lang="ru">Что сделать перед первым запуском?</span>
+    <span data-lang="en">What should I do before the first launch?</span>
+  </summary>
+  <div class="faq-body">
+    <span data-lang="ru">Отключите антивирус на время установки, запустите инструкцию бренда и следуйте шагам под вашу видеокарту (NVIDIA/AMD).</span>
+    <span data-lang="en">Temporarily disable antivirus, open the brand setup guide, and follow the steps for your GPU (NVIDIA/AMD).</span>
+  </div>
+</details><details class="faq-item" >
+  <summary>
+    <span data-lang="ru">Антивирус удаляет файлы</span>
+    <span data-lang="en">Antivirus deletes files</span>
+  </summary>
+  <div class="faq-body">
+    <span data-lang="ru">Добавьте папку продукта в исключения Windows Defender / вашего AV, затем скачайте файлы заново.</span>
+    <span data-lang="en">Add the product folder to Windows Defender / AV exclusions, then re-download the files.</span>
+  </div>
+</details><details class="faq-item" >
+  <summary>
+    <span data-lang="ru">Не открывается меню / не инжектится</span>
+    <span data-lang="en">Menu won&#x27;t open / inject fails</span>
+  </summary>
+  <div class="faq-body">
+    <span data-lang="ru">Запускайте от имени администратора, закройте оверлеи (Discord, GeForce Experience) и проверьте, что игра запущена в нужном режиме.</span>
+    <span data-lang="en">Run as administrator, close overlays (Discord, GeForce Experience), and make sure the game is running in the required mode.</span>
+  </div>
+</details><details class="faq-item" >
+  <summary>
+    <span data-lang="ru">Нужен ли спуфер?</span>
+    <span data-lang="en">Do I need a spoofer?</span>
+  </summary>
+  <div class="faq-body">
+    <span data-lang="ru">Зависит от продукта и игры. Смотрите блок системных требований и карточку статуса — там указано наличие спуфера.</span>
+    <span data-lang="en">It depends on the product and game. Check system requirements and the status card for spoofer availability.</span>
+  </div>
+</details><details class="faq-item" >
+  <summary>
+    <span data-lang="ru">После обновления игры перестало работать</span>
+    <span data-lang="en">Stopped working after a game update</span>
+  </summary>
+  <div class="faq-body">
+    <span data-lang="ru">Дождитесь обновления продукта. Статус на главной странице показывает Undetected / Update — при Update запуск не рекомендуется.</span>
+    <span data-lang="en">Wait for a product update. The status page shows Undetected / Update — avoid launching while on Update.</span>
+  </div>
+</details>
+  </div>
+</section>
+<section class="compare-block" id="compare">
+  <div class="section-kicker">
+    <span data-lang="ru">В этой игре</span>
+    <span data-lang="en">In this game</span>
+  </div>
+  <h2 class="section-title-plain">
+    <span data-lang="ru">Сравнение продуктов</span>
+    <span data-lang="en">Product comparison</span>
+  </h2>
+  <p class="section-lead">
+    <span data-lang="ru">Сравните функции: что есть только в одном продукте, что общее — и какую версию выбрать.</span>
+    <span data-lang="en">Compare features: unique vs shared — and which version to pick.</span>
+  </p>
+  <script type="application/json" id="compare-data">[{"html": "1.html", "name": "Ультимативный спуфер1", "variant": "Standard", "price": "—", "status": "Undetected", "features": ["Easy"], "sections": ["Поддерживаемые античиты", "100% поддерживаемые игры"]}, {"html": "README.html", "name": "База Знаний Xind1 Docs", "variant": "Standard", "price": "—", "status": "Undetected", "features": [], "sections": []}, {"html": "SUMMARY.html", "name": "Table of contents", "variant": "Standard", "price": "—", "status": "Undetected", "features": ["Списки функций Ghost", "Списки функций Arcane", "Списки функций Medusa", "Списки функций Phoenix", "Списки функций Rampart", "Списки функций Xernel", "Списки функций KoenFlow"], "sections": ["Ghost", "Arcane", "Medusa", "Phoenix", "Rampart", "Xernel", "KoenFlow"]}, {"html": "arcane-instruktsiya.html", "name": "🚀 Инструкция по запуску Arcane", "variant": "Standard", "price": "—", "status": "Undetected", "features": [], "sections": ["Руководство на русском:", "English Manual:", "Для PUBG Full / ESP:"]}, {"html": "arcane-reshenie-problem.html", "name": "🛠 Arcane — Решение проблем запуска", "variant": "Standard", "price": "—", "status": "Undetected", "features": ["Ошибка при запуске лаунчера / Защитник Windows", "Ошибка загрузки драйвера (Driver Error / HVCI)", "Secure Boot (Безопасная загрузка)"], "sections": ["Частые ошибки и их исправление:"]}, {"html": "arena-breakout-infinite-ghost-esp.html", "name": "Arena Breakout Infinite [ ☢ Ghost ESP ]", "variant": "ESP", "price": "—", "status": "Undetected", "features": ["Esp on players", "Esp on bots", "Esp on corpses", "Distance to player", "Player price", "Party", "Player level", "Player health", "Filter by rarity: common → legendary → mythic → red", "Item names", "Show armor", "Menu key (Insert), DPI Scale", "Create/delete/save/load configs", "Watermark", "Bind list"], "sections": ["Visuals", "Loot", "Other"]}, {"html": "arena-breakout-infinite-ghost-full.html", "name": "Arena Breakout Infinite [ ☢ Ghost Full ]", "variant": "Full", "price": "—", "status": "Undetected", "features": ["Memory Aim / PSilent", "Enable / Bind", "FOV", "Line Target", "Visible Check", "Legit Mode", "Prediction", "Smooth", "Max Distance", "Insta Kill", "Insta Kill Legit Mode", "Recoil Control", "Player ESP", "AI / Bot ESP", "Corpse ESP", "Grenade ESP", "ESP Settings", "Radar", "Ammo Indicator", "Crosshair", "Bullet Tracer", "Sky Color", "No Fog / No Shadows / No Clouds", "Fullbright", "Watermark", "Keybind List", "Menu Key / DPI Scale", "Rarity System", "Dropped Items / Containers", "Show Container Items", "Container Types", "Short Name", "Armor Level", "Item Count", "Min Price", "Font Size", "Battle Mode", "Config Name / Config List", "Create / Delete / Save / Load", "Speedhack", "Fast Search", "Remote Loot", "Anti Flash / No Visor", "Auto Mode", "Fast Reload / Fast Magazine", "FOV Changer", "Language Switcher", "Hitbox Selector", "Visuals Preview", "Player / Bot Preview"], "sections": ["Aimbot", "Visuals", "Loot", "Other", "Misc"]}, {"html": "arena-breakout-infinite-koenflow.html", "name": "Arena Breakout Infinite [ ☢ KoenFlow ]", "variant": "Standard", "price": "—", "status": "Undetected", "features": [], "sections": []}, {"html": "arena-breakout-infinite-xernel-full.html", "name": "Arena Breakout Infinite [ ☢ Xernel Full ]", "variant": "Full", "price": "—", "status": "Undetected", "features": ["Player ESP", "Bot ESP", "Box ESP", "Box Style (2D/Corner)", "Snaplines", "Player Name", "Player Distance", "Player Weapon", "Player Status", "Inventory Viewer", "Corpse ESP", "Target Bone Selection", "Aimbot FOV", "Draw FOV", "Aimbot Smooth", "Container ESP", "Weapon Cases ESP", "Med Bags ESP", "Safes & Cash Registers ESP", "Military Loot ESP", "Household Loot ESP", "Custom Loot Colors", "Smart Loot Filter", "2D Radar", "Radar Zoom", "Radar Position & Size", "Radar Transparency"], "sections": ["Visuals", "Aimbot", "Loot", "Radar"]}, {"html": "ghost-instruktsiya.html", "name": "🚀 Инструкция по запуску Ghost", "variant": "Standard", "price": "—", "status": "Undetected", "features": [], "sections": ["Универсальное руководство:"]}, {"html": "ghost-reshenie-problem.html", "name": "🛠 Ghost — Решение проблем запуска", "variant": "Standard", "price": "—", "status": "Undetected", "features": ["Ошибка при запуске лаунчера / Защитник Windows", "Ошибка загрузки драйвера (Driver Error / HVCI)", "Secure Boot (Безопасная загрузка)"], "sections": ["Частые ошибки и их исправление:"]}, {"html": "index.html", "name": "База Знаний Xind1 Docs", "variant": "Standard", "price": "—", "status": "Undetected", "features": [], "sections": []}, {"html": "koenflow-instruktsiya.html", "name": "🚀 Инструкция по запуску KoenFlow", "variant": "Standard", "price": "—", "status": "Undetected", "features": [], "sections": ["Официальная инструкция:"]}, {"html": "koenflow-reshenie-problem.html", "name": "🛠 KoenFlow — Решение проблем запуска", "variant": "Standard", "price": "—", "status": "Undetected", "features": ["Ошибка при запуске лаунчера / Защитник Windows", "Ошибка загрузки драйвера (Driver Error / HVCI)", "Secure Boot (Безопасная загрузка)"], "sections": ["Частые ошибки и их исправление:"]}, {"html": "medusa-instruktsiya.html", "name": "🚀 Инструкция по запуску Medusa", "variant": "Standard", "price": "—", "status": "Undetected", "features": [], "sections": ["Официальная инструкция:"]}, {"html": "medusa-reshenie-problem.html", "name": "🛠 Medusa — Решение проблем запуска", "variant": "Standard", "price": "—", "status": "Undetected", "features": ["Ошибка при запуске лаунчера / Защитник Windows", "Ошибка загрузки драйвера (Driver Error / HVCI)", "Secure Boot (Безопасная загрузка)"], "sections": ["Частые ошибки и их исправление:"]}, {"html": "phoenix-chams.html", "name": "☢ Phoenix (CHAMS) ]", "variant": "CHAMS", "price": "—", "status": "Undetected", "features": ["Chams Wallhack", "Player Coloring", "Visible Check", "Players", "Bots", "Animals"], "sections": ["Chams / ESP", "Targets Display"]}, {"html": "phoenix-instruktsiya.html", "name": "🚀 Инструкция по запуску Phoenix", "variant": "Standard", "price": "—", "status": "Undetected", "features": [], "sections": ["Универсальное руководство:"]}, {"html": "phoenix-reshenie-problem.html", "name": "🛠 Phoenix — Решение проблем запуска", "variant": "Standard", "price": "—", "status": "Undetected", "features": ["Ошибка при запуске лаунчера / Защитник Windows", "Ошибка загрузки драйвера (Driver Error / HVCI)", "Secure Boot (Безопасная загрузка)"], "sections": ["Частые ошибки и их исправление:"]}, {"html": "rampart-instruktsiya.html", "name": "🚀 Инструкция по запуску Rampart", "variant": "Standard", "price": "—", "status": "Undetected", "features": [], "sections": ["Универсальное руководство:"]}, {"html": "rampart-reshenie-problem.html", "name": "🛠 Rampart — Решение проблем запуска", "variant": "Standard", "price": "—", "status": "Undetected", "features": ["Ошибка при запуске лаунчера / Защитник Windows", "Ошибка загрузки драйвера (Driver Error / HVCI)", "Secure Boot (Безопасная загрузка)"], "sections": ["Частые ошибки и их исправление:"]}, {"html": "xernel-instruktsiya.html", "name": "🚀 Инструкция по запуску Xernel", "variant": "Standard", "price": "—", "status": "Undetected", "features": [], "sections": ["Официальная инструкция Xernel:"]}, {"html": "xernel-reshenie-problem.html", "name": "🛠 Xernel — Решение проблем запуска", "variant": "Standard", "price": "—", "status": "Undetected", "features": ["Ошибка при запуске лаунчера / Защитник Windows", "Ошибка загрузки драйвера (Driver Error / HVCI)", "Secure Boot (Безопасная загрузка)"], "sections": ["Частые ошибки и их исправление:"]}]</script>
+  
+  <div class="compare-matrix cols-3" id="compare-matrix" data-cols="3">
+    <div class="cm-cell cm-label"></div>
+    <div class="cm-cell cm-head"><select id="compare-pick-a" onchange="syncComparePickers()"><option value="1.html" data-name="Ультимативный спуфер1" data-variant="Standard" data-price="—" data-status="Undetected" >Ультимативный спуфер1</option><option value="README.html" data-name="База Знаний Xind1 Docs" data-variant="Standard" data-price="—" data-status="Undetected" >База Знаний Xind1 Docs</option><option value="SUMMARY.html" data-name="Table of contents" data-variant="Standard" data-price="—" data-status="Undetected" >Table of contents</option><option value="arcane-instruktsiya.html" data-name="🚀 Инструкция по запуску Arcane" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Arcane</option><option value="arcane-reshenie-problem.html" data-name="🛠 Arcane — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Arcane — Решение проблем запуска</option><option value="arena-breakout-infinite-ghost-esp.html" data-name="Arena Breakout Infinite [ ☢ Ghost ESP ]" data-variant="ESP" data-price="—" data-status="Undetected" >Arena Breakout Infinite [ ☢ Ghost ESP ]</option><option value="arena-breakout-infinite-ghost-full.html" data-name="Arena Breakout Infinite [ ☢ Ghost Full ]" data-variant="Full" data-price="—" data-status="Undetected" >Arena Breakout Infinite [ ☢ Ghost Full ]</option><option value="arena-breakout-infinite-koenflow.html" data-name="Arena Breakout Infinite [ ☢ KoenFlow ]" data-variant="Standard" data-price="—" data-status="Undetected" >Arena Breakout Infinite [ ☢ KoenFlow ]</option><option value="arena-breakout-infinite-xernel-full.html" data-name="Arena Breakout Infinite [ ☢ Xernel Full ]" data-variant="Full" data-price="—" data-status="Undetected" >Arena Breakout Infinite [ ☢ Xernel Full ]</option><option value="ghost-instruktsiya.html" data-name="🚀 Инструкция по запуску Ghost" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Ghost</option><option value="ghost-reshenie-problem.html" data-name="🛠 Ghost — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Ghost — Решение проблем запуска</option><option value="index.html" data-name="База Знаний Xind1 Docs" data-variant="Standard" data-price="—" data-status="Undetected" >База Знаний Xind1 Docs</option><option value="koenflow-instruktsiya.html" data-name="🚀 Инструкция по запуску KoenFlow" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску KoenFlow</option><option value="koenflow-reshenie-problem.html" data-name="🛠 KoenFlow — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 KoenFlow — Решение проблем запуска</option><option value="medusa-instruktsiya.html" data-name="🚀 Инструкция по запуску Medusa" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Medusa</option><option value="medusa-reshenie-problem.html" data-name="🛠 Medusa — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" selected>🛠 Medusa — Решение проблем запуска</option><option value="phoenix-chams.html" data-name="☢ Phoenix (CHAMS) ]" data-variant="CHAMS" data-price="—" data-status="Undetected" >☢ Phoenix (CHAMS) ]</option><option value="phoenix-instruktsiya.html" data-name="🚀 Инструкция по запуску Phoenix" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Phoenix</option><option value="phoenix-reshenie-problem.html" data-name="🛠 Phoenix — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Phoenix — Решение проблем запуска</option><option value="rampart-instruktsiya.html" data-name="🚀 Инструкция по запуску Rampart" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Rampart</option><option value="rampart-reshenie-problem.html" data-name="🛠 Rampart — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Rampart — Решение проблем запуска</option><option value="xernel-instruktsiya.html" data-name="🚀 Инструкция по запуску Xernel" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Xernel</option><option value="xernel-reshenie-problem.html" data-name="🛠 Xernel — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Xernel — Решение проблем запуска</option></select></div>
+    <div class="cm-cell cm-head"><select id="compare-pick-b" onchange="syncComparePickers()"><option value="1.html" data-name="Ультимативный спуфер1" data-variant="Standard" data-price="—" data-status="Undetected" selected>Ультимативный спуфер1</option><option value="README.html" data-name="База Знаний Xind1 Docs" data-variant="Standard" data-price="—" data-status="Undetected" >База Знаний Xind1 Docs</option><option value="SUMMARY.html" data-name="Table of contents" data-variant="Standard" data-price="—" data-status="Undetected" >Table of contents</option><option value="arcane-instruktsiya.html" data-name="🚀 Инструкция по запуску Arcane" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Arcane</option><option value="arcane-reshenie-problem.html" data-name="🛠 Arcane — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Arcane — Решение проблем запуска</option><option value="arena-breakout-infinite-ghost-esp.html" data-name="Arena Breakout Infinite [ ☢ Ghost ESP ]" data-variant="ESP" data-price="—" data-status="Undetected" >Arena Breakout Infinite [ ☢ Ghost ESP ]</option><option value="arena-breakout-infinite-ghost-full.html" data-name="Arena Breakout Infinite [ ☢ Ghost Full ]" data-variant="Full" data-price="—" data-status="Undetected" >Arena Breakout Infinite [ ☢ Ghost Full ]</option><option value="arena-breakout-infinite-koenflow.html" data-name="Arena Breakout Infinite [ ☢ KoenFlow ]" data-variant="Standard" data-price="—" data-status="Undetected" >Arena Breakout Infinite [ ☢ KoenFlow ]</option><option value="arena-breakout-infinite-xernel-full.html" data-name="Arena Breakout Infinite [ ☢ Xernel Full ]" data-variant="Full" data-price="—" data-status="Undetected" >Arena Breakout Infinite [ ☢ Xernel Full ]</option><option value="ghost-instruktsiya.html" data-name="🚀 Инструкция по запуску Ghost" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Ghost</option><option value="ghost-reshenie-problem.html" data-name="🛠 Ghost — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Ghost — Решение проблем запуска</option><option value="index.html" data-name="База Знаний Xind1 Docs" data-variant="Standard" data-price="—" data-status="Undetected" >База Знаний Xind1 Docs</option><option value="koenflow-instruktsiya.html" data-name="🚀 Инструкция по запуску KoenFlow" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску KoenFlow</option><option value="koenflow-reshenie-problem.html" data-name="🛠 KoenFlow — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 KoenFlow — Решение проблем запуска</option><option value="medusa-instruktsiya.html" data-name="🚀 Инструкция по запуску Medusa" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Medusa</option><option value="medusa-reshenie-problem.html" data-name="🛠 Medusa — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Medusa — Решение проблем запуска</option><option value="phoenix-chams.html" data-name="☢ Phoenix (CHAMS) ]" data-variant="CHAMS" data-price="—" data-status="Undetected" >☢ Phoenix (CHAMS) ]</option><option value="phoenix-instruktsiya.html" data-name="🚀 Инструкция по запуску Phoenix" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Phoenix</option><option value="phoenix-reshenie-problem.html" data-name="🛠 Phoenix — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Phoenix — Решение проблем запуска</option><option value="rampart-instruktsiya.html" data-name="🚀 Инструкция по запуску Rampart" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Rampart</option><option value="rampart-reshenie-problem.html" data-name="🛠 Rampart — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Rampart — Решение проблем запуска</option><option value="xernel-instruktsiya.html" data-name="🚀 Инструкция по запуску Xernel" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Xernel</option><option value="xernel-reshenie-problem.html" data-name="🛠 Xernel — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Xernel — Решение проблем запуска</option></select></div>
+    <div class="cm-cell cm-head"><select id="compare-pick-c" onchange="syncComparePickers()"><option value="1.html" data-name="Ультимативный спуфер1" data-variant="Standard" data-price="—" data-status="Undetected" >Ультимативный спуфер1</option><option value="README.html" data-name="База Знаний Xind1 Docs" data-variant="Standard" data-price="—" data-status="Undetected" selected>База Знаний Xind1 Docs</option><option value="SUMMARY.html" data-name="Table of contents" data-variant="Standard" data-price="—" data-status="Undetected" >Table of contents</option><option value="arcane-instruktsiya.html" data-name="🚀 Инструкция по запуску Arcane" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Arcane</option><option value="arcane-reshenie-problem.html" data-name="🛠 Arcane — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Arcane — Решение проблем запуска</option><option value="arena-breakout-infinite-ghost-esp.html" data-name="Arena Breakout Infinite [ ☢ Ghost ESP ]" data-variant="ESP" data-price="—" data-status="Undetected" >Arena Breakout Infinite [ ☢ Ghost ESP ]</option><option value="arena-breakout-infinite-ghost-full.html" data-name="Arena Breakout Infinite [ ☢ Ghost Full ]" data-variant="Full" data-price="—" data-status="Undetected" >Arena Breakout Infinite [ ☢ Ghost Full ]</option><option value="arena-breakout-infinite-koenflow.html" data-name="Arena Breakout Infinite [ ☢ KoenFlow ]" data-variant="Standard" data-price="—" data-status="Undetected" >Arena Breakout Infinite [ ☢ KoenFlow ]</option><option value="arena-breakout-infinite-xernel-full.html" data-name="Arena Breakout Infinite [ ☢ Xernel Full ]" data-variant="Full" data-price="—" data-status="Undetected" >Arena Breakout Infinite [ ☢ Xernel Full ]</option><option value="ghost-instruktsiya.html" data-name="🚀 Инструкция по запуску Ghost" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Ghost</option><option value="ghost-reshenie-problem.html" data-name="🛠 Ghost — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Ghost — Решение проблем запуска</option><option value="index.html" data-name="База Знаний Xind1 Docs" data-variant="Standard" data-price="—" data-status="Undetected" >База Знаний Xind1 Docs</option><option value="koenflow-instruktsiya.html" data-name="🚀 Инструкция по запуску KoenFlow" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску KoenFlow</option><option value="koenflow-reshenie-problem.html" data-name="🛠 KoenFlow — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 KoenFlow — Решение проблем запуска</option><option value="medusa-instruktsiya.html" data-name="🚀 Инструкция по запуску Medusa" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Medusa</option><option value="medusa-reshenie-problem.html" data-name="🛠 Medusa — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Medusa — Решение проблем запуска</option><option value="phoenix-chams.html" data-name="☢ Phoenix (CHAMS) ]" data-variant="CHAMS" data-price="—" data-status="Undetected" >☢ Phoenix (CHAMS) ]</option><option value="phoenix-instruktsiya.html" data-name="🚀 Инструкция по запуску Phoenix" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Phoenix</option><option value="phoenix-reshenie-problem.html" data-name="🛠 Phoenix — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Phoenix — Решение проблем запуска</option><option value="rampart-instruktsiya.html" data-name="🚀 Инструкция по запуску Rampart" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Rampart</option><option value="rampart-reshenie-problem.html" data-name="🛠 Rampart — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Rampart — Решение проблем запуска</option><option value="xernel-instruktsiya.html" data-name="🚀 Инструкция по запуску Xernel" data-variant="Standard" data-price="—" data-status="Undetected" >🚀 Инструкция по запуску Xernel</option><option value="xernel-reshenie-problem.html" data-name="🛠 Xernel — Решение проблем запуска" data-variant="Standard" data-price="—" data-status="Undetected" >🛠 Xernel — Решение проблем запуска</option></select></div>
+    <div class="cm-cell cm-label"><span data-lang="ru">Продукт</span><span data-lang="en">Product</span></div>
+    <div class="cm-cell" data-compare-side="a"><a class="cm-link" href="medusa-reshenie-problem.html" data-field="name">🛠 Medusa — Решение проблем запуска</a></div>
+    <div class="cm-cell" data-compare-side="b"><a class="cm-link" href="1.html" data-field="name">Ультимативный спуфер1</a></div>
+    <div class="cm-cell" data-compare-side="c"><a class="cm-link" href="README.html" data-field="name">База Знаний Xind1 Docs</a></div>
+    <div class="cm-cell cm-label"><span data-lang="ru">Тип</span><span data-lang="en">Variant</span></div>
+    <div class="cm-cell" data-compare-side="a"><span data-field="variant">Standard</span></div>
+    <div class="cm-cell" data-compare-side="b"><span data-field="variant">Standard</span></div>
+    <div class="cm-cell" data-compare-side="c"><span data-field="variant">Standard</span></div>
+    <div class="cm-cell cm-label"><span data-lang="ru">Цена</span><span data-lang="en">Price</span></div>
+    <div class="cm-cell" data-compare-side="a"><span data-field="price">—</span></div>
+    <div class="cm-cell" data-compare-side="b"><span data-field="price">—</span></div>
+    <div class="cm-cell" data-compare-side="c"><span data-field="price">—</span></div>
+    <div class="cm-cell cm-label"><span data-lang="ru">Функций</span><span data-lang="en">Features</span></div>
+    <div class="cm-cell" data-compare-side="a"><span data-field="featcount">3</span></div>
+    <div class="cm-cell" data-compare-side="b"><span data-field="featcount">1</span></div>
+    <div class="cm-cell" data-compare-side="c"><span data-field="featcount">0</span></div>
+    <div class="cm-cell cm-label"><span data-lang="ru">Разделы</span><span data-lang="en">Modules</span></div>
+    <div class="cm-cell" data-compare-side="a"><span data-field="sections" class="cm-sections"><span class="cm-sec-chip is-unique">Частые ошибки и их исправление:</span></span></div>
+    <div class="cm-cell" data-compare-side="b"><span data-field="sections" class="cm-sections"><span class="cm-sec-chip is-unique">Поддерживаемые античиты</span><span class="cm-sec-chip is-unique">100% поддерживаемые игры</span></span></div>
+    <div class="cm-cell" data-compare-side="c"><span data-field="sections" class="cm-sections">—</span></div>
+    <div class="cm-cell cm-label">Status</div>
+    <div class="cm-cell" data-compare-side="a"><span data-field="status">Undetected</span></div>
+    <div class="cm-cell" data-compare-side="b"><span data-field="status">Undetected</span></div>
+    <div class="cm-cell" data-compare-side="c"><span data-field="status">Undetected</span></div>
+  </div>
+  <div class="compare-diff cols-3" id="compare-diff">
+    <div class="compare-diff-col" data-diff="only-a">
+      <div class="compare-diff-title" id="compare-diff-title-a">Только в 🛠 Medusa — Решение проблем запуска</div>
+      <ul class="compare-diff-list" id="compare-diff-only-a"><li>Ошибка при запуске лаунчера / Защитник Windows</li><li>Ошибка загрузки драйвера (Driver Error / HVCI)</li><li>Secure Boot (Безопасная загрузка)</li></ul>
+    </div>
+    <div class="compare-diff-col" data-diff="only-b">
+      <div class="compare-diff-title" id="compare-diff-title-b">Только в Ультимативный спуфер1</div>
+      <ul class="compare-diff-list" id="compare-diff-only-b"><li>Easy</li></ul>
+    </div>
+    <div class="compare-diff-col" data-diff="only-c">
+      <div class="compare-diff-title" id="compare-diff-title-c">Только в База Знаний Xind1 Docs</div>
+      <ul class="compare-diff-list" id="compare-diff-only-c"><li class="compare-diff-empty"><span data-lang="ru">Нет уникальных функций</span><span data-lang="en">No unique features</span></li></ul>
+    </div>
+    <div class="compare-diff-col shared" data-diff="shared">
+      <div class="compare-diff-title"><span data-lang="ru">Общее у всех</span><span data-lang="en">Shared by all</span></div>
+      <ul class="compare-diff-list" id="compare-diff-shared"><li class="compare-diff-empty"><span data-lang="ru">Нет уникальных функций</span><span data-lang="en">No unique features</span></li></ul>
+    </div>
+  </div>
+
+  <div class="compare-tools">
+    <button type="button" onclick="toggleCompareShared()">
+      <span data-lang="ru">Только различия</span><span data-lang="en">Differences only</span>
+    </button>
+    <button type="button" onclick="exportCompareText()">
+      <span data-lang="ru">Копировать сравнение</span><span data-lang="en">Copy compare</span>
+    </button>
+  </div>
+  <div class="compare-verdict" id="compare-verdict"><span data-lang="ru"><strong>🛠 Medusa — Решение проблем запуска</strong> — берите, если нужны: Частые ошибки и их исправление:, Ошибка при запуске лаунчера / Защитник Windows, Ошибка загрузки драйвера (Driver Error / HVCI) <strong>Ультимативный спуфер1</strong> — берите, если нужны: Поддерживаемые античиты, 100% поддерживаемые игры, Easy</span><span data-lang="en"><strong>🛠 Medusa — Решение проблем запуска</strong> — pick for Частые ошибки и их исправление:, Ошибка при запуске лаунчера / Защитник Windows, Ошибка загрузки драйвера (Driver Error / HVCI) <strong>Ультимативный спуфер1</strong> — pick for Поддерживаемые античиты, 100% поддерживаемые игры, Easy</span></div>
+  <script>try { syncComparePickers(); } catch (e) {}</script>
+</section>
+<nav class="sibling-nav" aria-label="Sibling products">
+<a class="sibling-link prev" href="medusa-instruktsiya.html"><span>←</span><span>🚀 Инструкция по запуску Medusa</span></a>
+<a class="sibling-link next" href="phoenix-chams.html"><span>☢ Phoenix (CHAMS) ]</span><span>→</span></a>
+</nav>
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div>
+      <strong>Aimer123213</strong>
+      <span class="site-footer-tag">FUNPAY · DOCS</span>
+    </div>
+    <div class="site-footer-meta">
+      <span data-lang="ru">Сборка</span><span data-lang="en">Build</span>
+      <code>202607192332</code>
+    </div>
+  </div>
+</footer>
+            <script>
+                const searchDiv = document.createElement('div');
+                searchDiv.className = 'search-container';
+                searchDiv.innerHTML = `
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="feature-search" placeholder="Поиск по функциям... (или нажмите '/')" data-i18n-placeholder data-i18n-placeholder-ru="Поиск по функциям... (или нажмите '/')" data-i18n-placeholder-en="Search features... (or press '/')" oninput="filterFeatures()">
+                `;
+                const insertAfter = document.querySelector('.highlights-block')
+                    || document.querySelector('.pricing-block')
+                    || document.querySelector('.launch-guide')
+                    || document.querySelector('.product-hero');
+                if (insertAfter) {
+                    insertAfter.parentNode.insertBefore(searchDiv, insertAfter.nextSibling);
+                }
+            </script>
+        </div>
+        <div class="toc-panel">
+            <div class="toc-title"><span data-lang="ru">На этой странице</span><span data-lang="en">On this page</span></div>
+            <nav class="toc-nav" aria-label="On this page">
+<a href="#launch-guide" class="toc-link toc-link-root" data-toc-id="launch-guide"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Инструкция</span><span data-lang="en">Setup</span></span></a>
+<a href="#частые-ошибки-и-их-исправление" class="toc-link toc-link-root" data-toc-id="частые-ошибки-и-их-исправление"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru"># Частые ошибки и их исправление:</span><span data-lang="en"># Частые ошибки и их исправление:</span></span></a>
+<a href="#highlights" class="toc-link toc-link-root" data-toc-id="highlights"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Плюсы</span><span data-lang="en">Highlights</span></span></a>
+<a href="#compare" class="toc-link toc-link-root" data-toc-id="compare"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Сравнение</span><span data-lang="en">Compare</span></span></a>
+<a href="#faq" class="toc-link toc-link-root" data-toc-id="faq"><span class="toc-dot"></span><span class="toc-label">FAQ</span></a>
+</nav>
+        </div>
+    </div>
+    <div id="lightbox-modal" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-image" class="lightbox-content" src="" alt="Увеличенный скриншот" onclick="event.stopPropagation()">
+        <div id="lightbox-caption" style="position:absolute;bottom:28px;left:50%;transform:translateX(-50%);color:#c6ff3d;font:700 .75rem JetBrains Mono,monospace;letter-spacing:.12em;"></div>
+    </div>
+    <a href="https://funpay.com/users/7290355/" target="_blank" class="fp-widget" title="Купить на FunPay">
+        <svg class="fp-widget-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+    </a>
+    <nav class="mobile-bottom-bar" aria-label="Mobile actions">
+  <button type="button" onclick="toggleMobileMenu()">
+    <span data-lang="ru">Меню</span><span data-lang="en">Menu</span>
+  </button>
+  <button type="button" onclick="openMobileToc()">
+    <span data-lang="ru">Разделы</span><span data-lang="en">Sections</span>
+  </button>
+  
+  <a class="mb-buy" href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer">
+    <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+  </a>
+</nav>
+<div id="mobile-toc-drawer" class="mobile-toc-drawer" onclick="if(event.target===this)closeMobileToc()">
+  <div class="mobile-toc-panel">
+    <div class="toc-title"><span data-lang="ru">На этой странице</span><span data-lang="en">On this page</span></div>
+    <div class="mobile-toc-nav toc-nav"></div>
+  </div>
+</div>
+    <div id="global-search-overlay" class="global-search-overlay" onclick="closeGlobalSearch()">
+        <div class="global-search-card" onclick="event.stopPropagation()">
+            <div class="global-search-header">
+                <input type="text" id="global-search-input" class="global-search-input" placeholder="Искать по всей документации..." data-i18n-placeholder data-i18n-placeholder-ru="Искать по всей документации..." data-i18n-placeholder-en="Search the documentation..." oninput="doGlobalSearch()">
+                <span class="global-search-esc">ESC</span>
+            </div>
+            <div id="global-search-results" class="global-search-results">
+                <div style="color: var(--text-muted); text-align: center; padding: 20px;">Введите что-нибудь для поиска...</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

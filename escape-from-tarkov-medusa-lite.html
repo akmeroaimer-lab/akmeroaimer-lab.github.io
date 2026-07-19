@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Escape from Tarkov [ ☢ Medusa Lite ] | Aimer123213</title>
+    <meta name="description" content="Escape from Tarkov — Escape from Tarkov [ ☢ Medusa Lite ]. Aimer123213 docs, pricing and setup guide.">
+    <meta property="og:title" content="Escape from Tarkov [ ☢ Medusa Lite ] | Aimer123213">
+    <meta property="og:description" content="Escape from Tarkov · docs, prices, launch guide">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="og/escape-from-tarkov-medusa-lite.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="favicon.svg?v=202607192332" type="image/svg+xml">
+    <meta name="theme-color" content="#0e0f12">
+    <meta name="color-scheme" content="dark">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <meta name="build-id" content="202607192332">
+    <link rel="sitemap" type="application/xml" href="sitemap.xml">
+    <link rel="prefetch" href="escape-from-tarkov-medusa-rage.html" as="document">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css?v=b26ed39009">
+    <script src="app.js?v=b26ed39009"></script>
+</head>
+<body>
+
+    <a class="skip-link" href="#main-content"><span data-lang="ru">К содержимому</span><span data-lang="en">Skip to content</span></a>
+    <div id="site-toast" class="site-toast" hidden></div>
+    <div id="command-palette" class="command-palette" hidden>
+  <div class="command-palette-card" role="dialog" aria-modal="true" aria-label="Command palette">
+    <input id="command-palette-input" type="search" autocomplete="off"
+      placeholder="Search pages, games, features..."
+      data-i18n-placeholder
+      data-i18n-placeholder-ru="Поиск страниц, игр, фич..."
+      data-i18n-placeholder-en="Search pages, games, features...">
+    <div id="command-palette-results" class="command-palette-results"></div>
+    <div class="command-palette-hint"><kbd>↑↓</kbd> <kbd>Enter</kbd> <kbd>Esc</kbd></div>
+  </div>
+</div>
+    <div id="lang-gate" class="lang-gate" role="dialog" aria-modal="true" aria-label="Language">
+        <div class="lang-gate-card">
+            <div class="lang-gate-kicker">Aimer123213 / FUNPAY</div>
+            <div class="lang-gate-title">Choose language</div>
+            <p class="lang-gate-text">Читать на русском или Read in English. Выбор сохранится для следующих визитов.</p>
+            <div class="lang-gate-actions">
+                <button type="button" class="lang-gate-btn primary" onclick="setSiteLang('ru')">Читать на русском</button>
+                <button type="button" class="lang-gate-btn" onclick="setSiteLang('en')">Read in English</button>
+            </div>
+        </div>
+    </div>
+    <div id="page-loader" class="loader-overlay">
+        <div class="loader-logo" aria-hidden="true">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="16" cy="16" r="6.5" stroke="currentColor" stroke-width="1.8"/>
+    <circle cx="16" cy="16" r="1.8" fill="currentColor"/>
+    <path d="M16 3v5.2M16 23.8V29M3 16h5.2M23.8 16H29" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/>
+  </svg>
+</div>
+        <div class="loader-text">Aimer123213 / FUNPAY</div>
+        <div class="loader-track"><span></span></div>
+    </div>
+    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Открыть меню" data-i18n-aria data-i18n-aria-ru="Открыть меню" data-i18n-aria-en="Open menu">☰</button>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-mark" aria-hidden="true">
+  <svg viewBox="0 0 32 32" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="16" cy="16" r="6.5" stroke="currentColor" stroke-width="1.8"/>
+    <circle cx="16" cy="16" r="1.8" fill="currentColor"/>
+    <path d="M16 3v5.2M16 23.8V29M3 16h5.2M23.8 16H29" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/>
+  </svg>
+</div>
+            <div class="brand-copy">
+                <strong>Aimer123213</strong>
+                <em>FUNPAY</em>
+            </div>
+        </div>
+        <div class='sidebar-search'>
+<input type='search' placeholder='Filter games...' data-i18n-placeholder data-i18n-placeholder-ru='Фильтр игр...' data-i18n-placeholder-en='Filter games...' oninput='filterSidebar(this.value)' aria-label='Filter sidebar'>
+</div>
+<div class='sidebar-category'>
+  <div class='sidebar-category-header static'>
+    <span class='nav-code'>00</span>
+    <span class='nav-name'><span data-lang="ru">Инфо</span><span data-lang="en">Info</span></span>
+  </div>
+  <div class='sidebar-category-items' style='max-height:120px; opacity:1;'>
+    <a href='index.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Статус продуктов</span><span data-lang="en">Product status</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>RST</span>
+    <span class='nav-name'><span data-lang="ru">Rust</span><span data-lang="en">Rust</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='rust-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Rust [ ☢ Arcane ]</span><span data-lang="en">Rust [ ☢ Arcane ]</span></span></a>
+    <a href='rust-rampart-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Rust [ ☢ Rampart Full ]</span><span data-lang="en">Rust [ ☢ Rampart Full ]</span></span></a>
+    <a href='rust-rampart-lite.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Rust [ ☢ Rampart Lite ]</span><span data-lang="en">Rust [ ☢ Rampart Lite ]</span></span></a>
+    <a href='rust-xernel.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Rust [ ☢ Xernel ]</span><span data-lang="en">Rust [ ☢ Xernel ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>APX</span>
+    <span class='nav-name'><span data-lang="ru">Apex Legends</span><span data-lang="en">Apex Legends</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='apex-legends-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Apex Legends [ ☢ Arcane ]</span><span data-lang="en">Apex Legends [ ☢ Arcane ]</span></span></a>
+    <a href='apex-legends-phoenix-x-ray.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Apex Legends [ ☢ Phoenix X-RAY ]</span><span data-lang="en">Apex Legends [ ☢ Phoenix X-RAY ]</span></span></a>
+    <a href='apex-legends-rampart.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Apex Legends [ ☢ Rampart ]</span><span data-lang="en">Apex Legends [ ☢ Rampart ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>ARC</span>
+    <span class='nav-name'><span data-lang="ru">ARC Raiders</span><span data-lang="en">ARC Raiders</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='arc-raiders-arcane-radar.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">ARC Raiders [ ☢ Arcane Radar ]</span><span data-lang="en">ARC Raiders [ ☢ Arcane Radar ]</span></span></a>
+    <a href='arc-raiders-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">ARC Raiders [ ☢ Arcane ]</span><span data-lang="en">ARC Raiders [ ☢ Arcane ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>ARK</span>
+    <span class='nav-name'><span data-lang="ru">ARK Ascended</span><span data-lang="en">ARK Ascended</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='ark-ascended-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">ARK Ascended [ ☢ Arcane ]</span><span data-lang="en">ARK Ascended [ ☢ Arcane ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>ARF</span>
+    <span class='nav-name'><span data-lang="ru">Arma Reforger</span><span data-lang="en">Arma Reforger</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='arma-reforger-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arma Reforger [ ☢ Arcane ]</span><span data-lang="en">Arma Reforger [ ☢ Arcane ]</span></span></a>
+    <a href='arma-reforger-xernel.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arma Reforger [ ☢ Xernel ]</span><span data-lang="en">Arma Reforger [ ☢ Xernel ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>CS2</span>
+    <span class='nav-name'><span data-lang="ru">Counter-Strike 2</span><span data-lang="en">Counter-Strike 2</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='counter-strike-2-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Counter Strike 2 [ ☢ Arcane ]</span><span data-lang="en">Counter Strike 2 [ ☢ Arcane ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>DAY</span>
+    <span class='nav-name'><span data-lang="ru">DayZ</span><span data-lang="en">DayZ</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='dayz-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">DayZ [ ☢ Arcane ]</span><span data-lang="en">DayZ [ ☢ Arcane ]</span></span></a>
+    <a href='dayz-medusa-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">DayZ [ ☢ Medusa Full ]</span><span data-lang="en">DayZ [ ☢ Medusa Full ]</span></span></a>
+    <a href='dayz-medusa-lite.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">DayZ [ ☢ Medusa Lite ]</span><span data-lang="en">DayZ [ ☢ Medusa Lite ]</span></span></a>
+    <a href='dayz-xernel.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">DayZ [ ☢ Xernel ]</span><span data-lang="en">DayZ [ ☢ Xernel ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category  is-active-game'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>EFT</span>
+    <span class='nav-name'><span data-lang="ru">Escape from Tarkov</span><span data-lang="en">Escape from Tarkov</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='escape-from-tarkov-medusa-lite.html' class='sidebar-link active'><span class='sidebar-link-label'><span data-lang="ru">Escape from Tarkov [ ☢ Medusa Lite ]</span><span data-lang="en">Escape from Tarkov [ ☢ Medusa Lite ]</span></span></a>
+    <a href='escape-from-tarkov-medusa-rage.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Escape from Tarkov [ ☢ Medusa Rage ]</span><span data-lang="en">Escape from Tarkov [ ☢ Medusa Rage ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>FN</span>
+    <span class='nav-name'><span data-lang="ru">Fortnite</span><span data-lang="en">Fortnite</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='fortnite-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Fortnite [ ☢ Arcane ]</span><span data-lang="en">Fortnite [ ☢ Arcane ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>MR</span>
+    <span class='nav-name'><span data-lang="ru">Marvel Rivals</span><span data-lang="en">Marvel Rivals</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='marvel-rivals-ghost.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Marvel Rivals [ ☢ Ghost ]</span><span data-lang="en">Marvel Rivals [ ☢ Ghost ]</span></span></a>
+    <a href='marvel-rivals-phoenix.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Marvel Rivals [ ☢ Phoenix ]</span><span data-lang="en">Marvel Rivals [ ☢ Phoenix ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>MC</span>
+    <span class='nav-name'><span data-lang="ru">Meccha Chameleon</span><span data-lang="en">Meccha Chameleon</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='meccha-chameleon-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Meccha Chameleon [ ☢ Arcane ]</span><span data-lang="en">Meccha Chameleon [ ☢ Arcane ]</span></span></a>
+    <a href='meccha-chameleon-ghost.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Meccha Chameleon [ ☢ Ghost ]</span><span data-lang="en">Meccha Chameleon [ ☢ Ghost ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>PBG</span>
+    <span class='nav-name'><span data-lang="ru">PUBG</span><span data-lang="en">PUBG</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='pubg-arcane-esp.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Pubg [ ☢ Arcane ESP ]</span><span data-lang="en">Pubg [ ☢ Arcane ESP ]</span></span></a>
+    <a href='pubg-arcane-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Pubg [ ☢ Arcane Full ]</span><span data-lang="en">Pubg [ ☢ Arcane Full ]</span></span></a>
+    <a href='pubg-arcane-radar.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Pubg [ ☢ Arcane Radar ]</span><span data-lang="en">Pubg [ ☢ Arcane Radar ]</span></span></a>
+    <a href='pubg-phoenix-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Pubg [ ☢ Phoenix Full ]</span><span data-lang="en">Pubg [ ☢ Phoenix Full ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>UNT</span>
+    <span class='nav-name'><span data-lang="ru">Unturned</span><span data-lang="en">Unturned</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='unturned-medusa.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Unturned [ ☢ Medusa ]</span><span data-lang="en">Unturned [ ☢ Medusa ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>ETC</span>
+    <span class='nav-name'><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='1.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Ультимативный спуфер1</span><span data-lang="en">Ультимативный спуфер1</span></span></a>
+    <a href='README.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">База Знаний Xind1 Docs</span><span data-lang="en">База Знаний Xind1 Docs</span></span></a>
+    <a href='SUMMARY.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Table of contents</span><span data-lang="en">Table of contents</span></span></a>
+    <a href='arcane-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Arcane</span><span data-lang="en">🚀 Инструкция по запуску Arcane</span></span></a>
+    <a href='arcane-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Arcane — Решение проблем запуска</span><span data-lang="en">🛠 Arcane — Решение проблем запуска</span></span></a>
+    <a href='arena-breakout-infinite-ghost-esp.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ Ghost ESP ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Ghost ESP ]</span></span></a>
+    <a href='arena-breakout-infinite-ghost-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ Ghost Full ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Ghost Full ]</span></span></a>
+    <a href='arena-breakout-infinite-koenflow.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ KoenFlow ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ KoenFlow ]</span></span></a>
+    <a href='arena-breakout-infinite-xernel-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ Xernel Full ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Xernel Full ]</span></span></a>
+    <a href='ghost-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Ghost</span><span data-lang="en">🚀 Инструкция по запуску Ghost</span></span></a>
+    <a href='ghost-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Ghost — Решение проблем запуска</span><span data-lang="en">🛠 Ghost — Решение проблем запуска</span></span></a>
+    <a href='index.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">База Знаний Xind1 Docs</span><span data-lang="en">База Знаний Xind1 Docs</span></span></a>
+    <a href='koenflow-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску KoenFlow</span><span data-lang="en">🚀 Инструкция по запуску KoenFlow</span></span></a>
+    <a href='koenflow-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 KoenFlow — Решение проблем запуска</span><span data-lang="en">🛠 KoenFlow — Решение проблем запуска</span></span></a>
+    <a href='medusa-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Medusa</span><span data-lang="en">🚀 Инструкция по запуску Medusa</span></span></a>
+    <a href='medusa-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Medusa — Решение проблем запуска</span><span data-lang="en">🛠 Medusa — Решение проблем запуска</span></span></a>
+    <a href='phoenix-chams.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">☢ Phoenix (CHAMS) ]</span><span data-lang="en">☢ Phoenix (CHAMS) ]</span></span></a>
+    <a href='phoenix-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Phoenix</span><span data-lang="en">🚀 Инструкция по запуску Phoenix</span></span></a>
+    <a href='phoenix-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Phoenix — Решение проблем запуска</span><span data-lang="en">🛠 Phoenix — Решение проблем запуска</span></span></a>
+    <a href='rampart-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Rampart</span><span data-lang="en">🚀 Инструкция по запуску Rampart</span></span></a>
+    <a href='rampart-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Rampart — Решение проблем запуска</span><span data-lang="en">🛠 Rampart — Решение проблем запуска</span></span></a>
+    <a href='xernel-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Xernel</span><span data-lang="en">🚀 Инструкция по запуску Xernel</span></span></a>
+    <a href='xernel-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Xernel — Решение проблем запуска</span><span data-lang="en">🛠 Xernel — Решение проблем запуска</span></span></a>
+  </div>
+</div>
+<div class='lang-switcher'>
+  <button type='button' class='lang-btn' data-set-lang='ru' onclick="setSiteLang('ru')">RU</button>
+  <button type='button' class='lang-btn' data-set-lang='en' onclick="setSiteLang('en')">EN</button>
+</div>
+    </div>
+    <div class="main-container" id="main-content">
+        <div class="content-area">
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+  <a href="index.html"><span data-lang="ru">Каталог</span><span data-lang="en">Catalog</span></a>
+  <span class="bc-sep">/</span>
+  <span class="bc-game">Escape from Tarkov</span>
+  <span class="bc-sep">/</span>
+  <span class="bc-current">Escape from Tarkov [ ☢ Medusa Lite ]</span>
+</nav>
+<div class="sticky-product-bar" id="sticky-product-bar" hidden>
+  <div class="spb-title">Escape from Tarkov [ ☢ Medusa Lite ]</div>
+  <div class="spb-actions">
+    
+    <a class="spb-buy" href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer">
+      <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+    </a>
+  </div>
+</div>
+<header class="product-hero brand-medusa" id="product-hero">
+  <div class="hero-banner" aria-hidden="true">
+    <div class="hero-cover" style="--hero-cover:url('images/escape-from-tarkov-medusa-lite/photo_2026-07-08_19-30-24_2.jpg')"></div>
+    <span class="hero-watermark">MEDUSA</span>
+    <span class="hero-grid"></span>
+  </div>
+  <div class="product-hero-inner">
+  <div class="product-hero-main">
+    <div class="product-hero-chips">
+      <span class="hero-chip game"><span data-lang="ru">Escape from Tarkov</span><span data-lang="en">Escape from Tarkov</span></span>
+      <span class="hero-chip brand">MEDUSA</span>
+      <span class="status-badge undetected"><span class="status-dot"></span>Undetected</span>
+      
+    </div>
+    <h1><span data-lang="ru">Escape from Tarkov [ ☢ Medusa Lite ]</span><span data-lang="en">Escape from Tarkov [ ☢ Medusa Lite ]</span></h1>
+    <div class="product-hero-meta">
+      <span class="hero-meta-item">
+        <span data-lang="ru">Обновлено</span>
+        <span data-lang="en">Updated</span>
+        <strong>20.07.2026</strong>
+      </span>
+      <span class="hero-meta-item">
+        <span data-lang="ru">Документация Aimer123213</span>
+        <span data-lang="en">Aimer123213 documentation</span>
+      </span>
+    </div>
+  </div>
+  <div class="product-hero-actions">
+    <span class="official-seller-chip">Official seller</span>
+    <a class="hero-btn primary" href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer">
+      <span data-lang="ru">Купить на FunPay</span>
+      <span data-lang="en">Buy on FunPay</span>
+    </a>
+  </div>
+  </div>
+</header>
+<div class="share-bar" id="share-bar">
+  <span class="share-bar-label"><span data-lang="ru">Ссылка</span><span data-lang="en">Share</span></span>
+  <button type="button" class="share-btn" onclick="copySectionLink('#product-hero', this)"><span data-lang="ru">Страница</span><span data-lang="en">Page</span></button><button type="button" class="share-btn" onclick="copySectionLink('#launch-guide', this)"><span data-lang="ru">Инструкция</span><span data-lang="en">Setup</span></button><button type="button" class="share-btn" onclick="copySectionLink('#faq', this)"><span data-lang="ru">FAQ</span><span data-lang="en">FAQ</span></button>
+</div>
+
+<div class="feature-tools">
+  <button type="button" onclick="copyAllFeatures()"><span data-lang="ru">Копировать фичи</span><span data-lang="en">Copy features</span></button>
+  <button type="button" onclick="document.querySelectorAll('.content-area h2').forEach(h=>h.classList.add('section-collapsed'))"><span data-lang="ru">Свернуть всё</span><span data-lang="en">Collapse all</span></button>
+  <button type="button" onclick="document.querySelectorAll('.content-area h2').forEach(h=>h.classList.remove('section-collapsed'))"><span data-lang="ru">Развернуть всё</span><span data-lang="en">Expand all</span></button>
+</div>
+
+<aside class="launch-guide" id="launch-guide">
+  <div class="launch-guide-copy">
+    <div class="launch-guide-kicker">MEDUSA</div>
+    <div class="launch-guide-title">
+      <span data-lang="ru">Инструкция по запуску</span>
+      <span data-lang="en">Launch instructions</span>
+    </div>
+    <p class="launch-guide-text">
+      <span data-lang="ru">Официальная инструкция по запуску.</span>
+      <span data-lang="en">Official launch instructions.</span>
+    </p>
+  </div>
+  <div class="launch-guide-actions">
+    <a class="launch-guide-btn" href="https://ru.medusa.cc/instruction.php" target="_blank" rel="noopener noreferrer" data-lang="ru">Открыть инструкцию ↗</a>
+    <a class="launch-guide-btn" href="https://ru.medusa.cc/instruction.php" target="_blank" rel="noopener noreferrer" data-lang="en">Open guide ↗</a>
+  </div>
+</aside>
+
+<section class="buy-steps" id="buy-steps">
+  <div class="section-kicker"><span data-lang="ru">Покупка</span><span data-lang="en">Purchase</span></div>
+  <h2 class="section-title-plain"><span data-lang="ru">Как купить</span><span data-lang="en">How to buy</span></h2>
+  <ol class="buy-steps-list">
+    <li><strong>1</strong><span data-lang="ru">Выберите срок на FunPay</span><span data-lang="en">Pick a plan on FunPay</span></li>
+    <li><strong>2</strong><span data-lang="ru">Оплатите заказ</span><span data-lang="en">Pay for the order</span></li>
+    <li><strong>3</strong><span data-lang="ru">Получите ключ и инструкцию в чате</span><span data-lang="en">Get key + guide in chat</span></li>
+  </ol>
+</section>
+<section class="useful-links" id="useful-links">
+  <div class="section-kicker"><span data-lang="ru">Ссылки</span><span data-lang="en">Links</span></div>
+  <h2 class="section-title-plain"><span data-lang="ru">Полезные ссылки</span><span data-lang="en">Useful links</span></h2>
+  <div class="useful-links-row"><a href="https://ru.medusa.cc/instruction.php" target="_blank" rel="noopener noreferrer"><span data-lang="ru">Инструкция RU</span><span data-lang="en">Guide RU</span></a><a href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer">FunPay</a><a href="index.html"><span data-lang="ru">Каталог</span><span data-lang="en">Catalog</span></a><a href="widget.html" target="_blank"><span data-lang="ru">Telegram-виджет</span><span data-lang="en">TG widget</span></a></div>
+</section>
+<section class="highlights-block" id="highlights">
+  <div class="section-kicker">
+    <span data-lang="ru">Плюсы</span>
+    <span data-lang="en">Highlights</span>
+  </div>
+  <h2 class="section-title-plain">
+    <span data-lang="ru">Почему этот продукт</span>
+    <span data-lang="en">Why this product</span>
+  </h2>
+  <ul class="highlights-list">
+    <li><span data-lang='ru'>Полный Undetected</span><span data-lang='en'>Full undetected</span></li><li><span data-lang='ru'>Большой функционал и визуалы</span><span data-lang='en'>Rich features and visuals</span></li><li><span data-lang='ru'>Встроенный спуфер</span><span data-lang='en'>Built-in spoofer</span></li>
+  </ul>
+</section>
+<h2 id='скриншоты'><span data-lang="ru">📸 Скриншоты</span><span data-lang="en">📸 Screenshots</span></h2>
+<div class="screenshots-block">
+  <div class="screenshots-toolbar">
+    <span class="screenshots-count">
+      <span data-lang="ru">1 скриншот</span>
+      <span data-lang="en">1 screenshot</span>
+    </span>
+  </div>
+  <div class="screenshots-carousel">
+    <figure class="screenshot-card" onclick="openLightbox('images/escape-from-tarkov-medusa-lite/photo_2026-07-08_19-30-24_2.jpg', 1)">
+  <span class="screenshot-index">01</span>
+  <picture>
+  <source type="image/webp" srcset="images/escape-from-tarkov-medusa-lite/photo_2026-07-08_19-30-24_2.md.webp 960w, images/escape-from-tarkov-medusa-lite/photo_2026-07-08_19-30-24_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
+  <img src="images/escape-from-tarkov-medusa-lite/photo_2026-07-08_19-30-24_2.jpg" alt="Скриншот 1" class="lqip-img screenshot-thumb" loading="lazy" decoding="async" style="background-image:url('images/escape-from-tarkov-medusa-lite/photo_2026-07-08_19-30-24_2.thumb.webp')" onload="this.classList.add('is-loaded')">
+</picture>
+  <figcaption class="screenshot-caption">
+    <span data-lang="ru">Скриншот 1</span>
+    <span data-lang="en">Скриншот 1</span>
+  </figcaption>
+  <div class="screenshot-overlay"><span>↗</span></div>
+</figure>
+  </div>
+</div>
+<h2 id='aimbot'><span data-lang="ru">🎯 Aimbot</span><span data-lang="en">🎯 Aimbot</span></h2>
+<p class='feature-item'><strong><span data-lang="ru">Enabled</span><span data-lang="en">Enabled</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">включить / выключить Aimbot</span><span data-lang="en">enable/disable Aimbot</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Silent Aim</span><span data-lang="en">Silent Aim</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">мощный режим аима, при котором выстрелы поражают цель без движения прицела и камеры</span><span data-lang="en">powerful aiming mode, in which shots hit the target without moving the sight or camera</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Aim Key</span><span data-lang="en">Aim Key</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">выбор клавиши для работы Aimbot</span><span data-lang="en">selecting a key for Aimbot operation</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Force Body Aim</span><span data-lang="en">Force Body Aim</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отдельный бинд для наведения только в тело</span><span data-lang="en">separate bind for targeting only to the body</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Force Legs Aim</span><span data-lang="en">Force Legs Aim</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отдельный бинд для наведения только в ноги</span><span data-lang="en">a separate bind for targeting only the legs</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Instant Hit</span><span data-lang="en">Instant Hit</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">мгновенное попадание пуль в цель</span><span data-lang="en">instant hit of bullets on target</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">FOV</span><span data-lang="en">FOV</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">настройка размера рабочей области Aimbot</span><span data-lang="en">setting the size of the Aimbot work area</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Only Visible</span><span data-lang="en">Only Visible</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">наведение только по видимым целям</span><span data-lang="en">targeting only visible targets</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Max Distance</span><span data-lang="en">Max Distance</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">ограничение дальности работы Aimbot</span><span data-lang="en">Aimbot operating range limitation</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Bone</span><span data-lang="en">Bone</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">выбор хитбоксов для игроков и ботов</span><span data-lang="en">selection of hitboxes for players and bots</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Nearest Bone</span><span data-lang="en">Nearest Bone</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">наведение на ближайшую к прицелу часть тела</span><span data-lang="en">aiming at the part of the body closest to the sight</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Ignored Roles</span><span data-lang="en">Ignored Roles</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">выбор типов персонажей, которые будут игнорироваться</span><span data-lang="en">selecting character types to be ignored</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Line To Target</span><span data-lang="en">Line To Target</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">линия до текущей цели Aimbot</span><span data-lang="en">line to current Aimbot target</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Draw FOV</span><span data-lang="en">Draw FOV</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение круга FOV с настройкой заливки, цвета и стиля</span><span data-lang="en">FOV circle display with customizable fill, color and style</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Target Info</span><span data-lang="en">Target Info</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение информации о цели</span><span data-lang="en">display target information</span></span></p>
+<h2 id='players-esp'><span data-lang="ru">👤 Players ESP</span><span data-lang="en">👤 Players ESP</span></h2>
+<p class='feature-item'><strong><span data-lang="ru">Wallhack</span><span data-lang="en">Wallhack</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение игроков, SCAV, ботов, боссов и других противников</span><span data-lang="en">display of players, SCAV, bots, bosses and other opponents</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Boxes ESP</span><span data-lang="en">Boxes ESP</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение целей в виде боксов</span><span data-lang="en">displaying targets in the form of boxes</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Box Style</span><span data-lang="en">Box Style</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">настройка стиля боксов: углы, обводка, 2D-коробка, заливка</span><span data-lang="en">setting box style: corners, stroke, 2D box, fill</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Skeleton</span><span data-lang="en">Skeleton</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение скелета игрока</span><span data-lang="en">player skeleton display</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Look Direction</span><span data-lang="en">Look Direction</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение направления взгляда игрока</span><span data-lang="en">displaying the direction the player is looking</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Chams</span><span data-lang="en">Chams</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">подсветка моделей игроков</span><span data-lang="en">highlighting player models</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Chams Style</span><span data-lang="en">Chams Style</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">выбор стиля подсветки: Latex, Glow, Glass Glow, Xray и другие</span><span data-lang="en">choice of lighting style: Latex, Glow, Glass Glow, Xray and others</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Chams Settings</span><span data-lang="en">Chams Settings</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">настройка яркости, мощности, интенсивности и цветов подсветки</span><span data-lang="en">adjusting brightness, power, intensity and backlight colors</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Health</span><span data-lang="en">Health</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение количества HP у цели</span><span data-lang="en">displaying the target&#x27;s HP</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Player Info</span><span data-lang="en">Player Info</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">имя, дистанция, уровень, K/D, время, серия и фракция</span><span data-lang="en">name, distance, level, K/D, time, series and faction</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Weapon</span><span data-lang="en">Weapon</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение оружия в руках игрока</span><span data-lang="en">display of weapons in the player&#x27;s hands</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Inventory</span><span data-lang="en">Inventory</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение инвентаря игрока</span><span data-lang="en">player inventory display</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Inventory Min Price</span><span data-lang="en">Inventory Min Price</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">минимальная стоимость инвентаря для отображения</span><span data-lang="en">minimum inventory value to display</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Max Distance</span><span data-lang="en">Max Distance</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">настройка дальности работы Wallhack</span><span data-lang="en">setting the range of Wallhack</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Tracers</span><span data-lang="en">Tracers</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">линии от центра экрана до моделей игроков</span><span data-lang="en">lines from the center of the screen to the player models</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Streamers</span><span data-lang="en">Streamers</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение стримеров в рейде и ссылки на их каналы</span><span data-lang="en">display of streamers in the raid and links to their channels</span></span></p>
+<h2 id='world-esp'><span data-lang="ru">🌐 World ESP</span><span data-lang="en">🌐 World ESP</span></h2>
+<p class='feature-item'><strong><span data-lang="ru">Grenades</span><span data-lang="en">Grenades</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение гранат: Frag, Flash, Smoke</span><span data-lang="en">grenade display: Frag, Flash, Smoke</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Grenades Settings</span><span data-lang="en">Grenades Settings</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">настройка дистанции, таймера, траектории, сферы взрыва и радиуса</span><span data-lang="en">setting distance, timer, trajectory, blast sphere and radius</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Trajectory / Radius Style</span><span data-lang="en">Trajectory / Radius Style</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">настройка визуального стиля траектории и радиуса гранат</span><span data-lang="en">customizing the visual style of grenade trajectory and radius</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Danger Zones</span><span data-lang="en">Danger Zones</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение опасных зон: мины, снайперы и растяжки</span><span data-lang="en">display of dangerous zones: mines, snipers and tripwires</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Mounted Weapons</span><span data-lang="en">Mounted Weapons</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение стационарного оружия</span><span data-lang="en">display of stationary weapons</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Exits</span><span data-lang="en">Exits</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение точек выхода</span><span data-lang="en">display of exit points</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Show Exit Requirements</span><span data-lang="en">Show Exit Requirements</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение требований для эвакуации</span><span data-lang="en">display of evacuation requirements</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">BTR</span><span data-lang="en">BTR</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение бронетранспортёра</span><span data-lang="en">armored personnel carrier display</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Bullet Lines</span><span data-lang="en">Bullet Lines</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение траектории выпущенных пуль</span><span data-lang="en">displaying the trajectory of fired bullets</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Hit Marker</span><span data-lang="en">Hit Marker</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отметка мест попадания пуль</span><span data-lang="en">marking bullet impact points</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Hit Sound</span><span data-lang="en">Hit Sound</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">звуки попаданий</span><span data-lang="en">hits sounds</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Time Changer</span><span data-lang="en">Time Changer</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">возможность установить любое время суток</span><span data-lang="en">ability to set any time of day</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Map Info</span><span data-lang="en">Map Info</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">окно с информацией о карте, луте, игроках, боссах и прочем</span><span data-lang="en">window with information about the map, loot, players, bosses, etc.</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Local Player Chams</span><span data-lang="en">Local Player Chams</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение Chams на вашем персонаже</span><span data-lang="en">displaying Chams on your character</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Ammo Count</span><span data-lang="en">Ammo Count</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение остатка патронов в обойме</span><span data-lang="en">display of the remaining cartridges in the clip</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Crosshair</span><span data-lang="en">Crosshair</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">статичный прицел по центру экрана</span><span data-lang="en">static sight in the center of the screen</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Radar</span><span data-lang="en">Radar</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">окно радара для отображения игроков и других объектов</span><span data-lang="en">radar window to display players and other objects</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Transitions</span><span data-lang="en">Transitions</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение переходов между локациями</span><span data-lang="en">displaying transitions between locations</span></span></p>
+<h2 id='loot-esp'><span data-lang="ru">🔎 Loot ESP</span><span data-lang="en">🔎 Loot ESP</span></h2>
+<p class='feature-item'><strong><span data-lang="ru">Enable</span><span data-lang="en">Enable</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">включение ESP для предметов</span><span data-lang="en">enabling ESP for items</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Distance</span><span data-lang="en">Distance</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение расстояния до предметов</span><span data-lang="en">displaying the distance to objects</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Price</span><span data-lang="en">Price</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение цены предметов</span><span data-lang="en">displaying item prices</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Names</span><span data-lang="en">Names</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение названий предметов</span><span data-lang="en">displaying item names</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Shorten Names</span><span data-lang="en">Shorten Names</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">сокращение названий предметов</span><span data-lang="en">abbreviation of item names</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Max Distance</span><span data-lang="en">Max Distance</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">ограничение дистанции работы Loot ESP</span><span data-lang="en">Loot ESP operating distance limitation</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Font Size</span><span data-lang="en">Font Size</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">настройка размера шрифта Loot ESP</span><span data-lang="en">setting Loot ESP font size</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Hide In Scope</span><span data-lang="en">Hide In Scope</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">скрытие лута при использовании прицела</span><span data-lang="en">hiding loot when using a scope</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Hide In Battle Mode</span><span data-lang="en">Hide In Battle Mode</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">скрытие лута в боевом режиме</span><span data-lang="en">hiding loot in combat mode</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Quest Items</span><span data-lang="en">Quest Items</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение предметов для заданий</span><span data-lang="en">displaying items for tasks</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Min Price Filter</span><span data-lang="en">Min Price Filter</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">фильтр предметов по минимальной цене</span><span data-lang="en">filter items at minimum price</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Custom Loot Filter</span><span data-lang="en">Custom Loot Filter</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">гибкая настройка фильтра лута</span><span data-lang="en">flexible loot filter settings</span></span></p>
+<h2 id='loot-esp-categories'><span data-lang="ru">📦 Loot ESP Categories</span><span data-lang="en">📦 Loot ESP Categories</span></h2>
+<p class='feature-item'><strong><span data-lang="ru">Weapon</span><span data-lang="en">Weapon</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">оружие</span><span data-lang="en">weapon</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Ammo</span><span data-lang="en">Ammo</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">патроны</span><span data-lang="en">cartridges</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Ammo Boxes</span><span data-lang="en">Ammo Boxes</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">ящики с патронами</span><span data-lang="en">boxes of ammunition</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Magazines</span><span data-lang="en">Magazines</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">магазины для оружия</span><span data-lang="en">weapon stores</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Sights</span><span data-lang="en">Sights</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">прицелы</span><span data-lang="en">sights</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Suppressors</span><span data-lang="en">Suppressors</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">глушители</span><span data-lang="en">mufflers</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Tactical Devices</span><span data-lang="en">Tactical Devices</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">тактические устройства</span><span data-lang="en">tactical devices</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Weapon Parts</span><span data-lang="en">Weapon Parts</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">детали для оружия</span><span data-lang="en">parts for weapons</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Special Equipment</span><span data-lang="en">Special Equipment</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">специальное снаряжение</span><span data-lang="en">special equipment</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Repair</span><span data-lang="en">Repair</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">предметы для ремонта</span><span data-lang="en">items for repair</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Keys</span><span data-lang="en">Keys</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">ключи</span><span data-lang="en">keys</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Barter</span><span data-lang="en">Barter</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">предметы для обмена</span><span data-lang="en">items for exchange</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Containers</span><span data-lang="en">Containers</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">контейнеры</span><span data-lang="en">containers</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Maps</span><span data-lang="en">Maps</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">карты</span><span data-lang="en">cards</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Provisions</span><span data-lang="en">Provisions</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">еда</span><span data-lang="en">food</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Gear</span><span data-lang="en">Gear</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">броня</span><span data-lang="en">armor</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Meds</span><span data-lang="en">Meds</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">предметы для лечения</span><span data-lang="en">items for treatment</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Currency</span><span data-lang="en">Currency</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">деньги, рубли, доллары и евро</span><span data-lang="en">money, rubles, dollars and euros</span></span></p>
+<p class='feature-item'><span class='feature-desc'><span data-lang="ru">⚙️ Misc</span><span data-lang="en">⚙️ Misc</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Remove Delay To Pickup Item</span><span data-lang="en">Remove Delay To Pickup Item</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">моментальный подбор предметов без анимации</span><span data-lang="en">instant selection of items without animation</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Fast Loading / Unloading Of Magazines</span><span data-lang="en">Fast Loading / Unloading Of Magazines</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">быстрая загрузка и разгрузка магазинов</span><span data-lang="en">fast loading and unloading of stores</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Thermal Vision</span><span data-lang="en">Thermal Vision</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">режим теплового зрения</span><span data-lang="en">thermal vision mode</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Night Vision</span><span data-lang="en">Night Vision</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">режим ночного зрения</span><span data-lang="en">night vision mode</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">No Visor</span><span data-lang="en">No Visor</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отключение визуального эффекта забрала шлема</span><span data-lang="en">disabling the helmet visor visual effect</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Zoom Hack</span><span data-lang="en">Zoom Hack</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">приближение камеры без оптики</span><span data-lang="en">camera zoom without optics</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Weather Controller</span><span data-lang="en">Weather Controller</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">полный контроль погодных условий</span><span data-lang="en">full control of weather conditions</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">FOV Changer</span><span data-lang="en">FOV Changer</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">изменение поля зрения</span><span data-lang="en">change in field of view</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Aspect Ratio Changer</span><span data-lang="en">Aspect Ratio Changer</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">изменение соотношения сторон и растяжка изображения</span><span data-lang="en">changing the aspect ratio and stretching the image</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Post FX</span><span data-lang="en">Post FX</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">изменение цвета изображения игры</span><span data-lang="en">change game image color</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">No Screen Effects</span><span data-lang="en">No Screen Effects</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отключение размытия, тряски камеры, кровавых пятен и других эффектов</span><span data-lang="en">disable blur, camera shake, bloodstains and other effects</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Remove Inventory Blur Effect</span><span data-lang="en">Remove Inventory Blur Effect</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отключение размытия фона при открытом инвентаре</span><span data-lang="en">disable background blur when inventory is open</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Light Changer</span><span data-lang="en">Light Changer</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">расширенная настройка визуального стиля игры</span><span data-lang="en">advanced customization of the visual style of the game</span></span></p>
+<h2 id='shooting-exploits'><span data-lang="ru">🎯 Shooting Exploits</span><span data-lang="en">🎯 Shooting Exploits</span></h2>
+<p class='feature-item'><strong><span data-lang="ru">No Recoil</span><span data-lang="en">No Recoil</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отключение отдачи оружия при стрельбе</span><span data-lang="en">disabling weapon recoil when firing</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">No Sway</span><span data-lang="en">No Sway</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отключение покачивания камеры при стрельбе</span><span data-lang="en">disabling camera shake when shooting</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Instant ADS</span><span data-lang="en">Instant ADS</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">мгновенное открытие прицела без анимации</span><span data-lang="en">instant opening of the sight without animation</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Instant Weapon Change</span><span data-lang="en">Instant Weapon Change</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">быстрое переключение оружия без задержек</span><span data-lang="en">fast switching of weapons without delays</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">No Malfunction</span><span data-lang="en">No Malfunction</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">полное отключение поломок оружия</span><span data-lang="en">complete disabling of weapon malfunctions</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Instant Reload</span><span data-lang="en">Instant Reload</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">мгновенная перезарядка оружия</span><span data-lang="en">instant weapon reload</span></span></p>
+<h2 id='movement-exploits'><span data-lang="ru">🏃 Movement Exploits</span><span data-lang="en">🏃 Movement Exploits</span></h2>
+<p class='feature-item'><strong><span data-lang="ru">Speedhack</span><span data-lang="en">Speedhack</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">увеличение скорости передвижения</span><span data-lang="en">increased movement speed</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Run and Shoot</span><span data-lang="en">Run and Shoot</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">возможность стрелять во время спринта</span><span data-lang="en">ability to shoot while sprinting</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Perfect Physical Condition</span><span data-lang="en">Perfect Physical Condition</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">бег, прыжки и действия без штрафов</span><span data-lang="en">running, jumping and actions without penalties</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Infinite Stamina &amp; No Fatigue</span><span data-lang="en">Infinite Stamina &amp; No Fatigue</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отсутствие усталости при беге и прыжках</span><span data-lang="en">lack of fatigue when running and jumping</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Free Camera</span><span data-lang="en">Free Camera</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">свободная камера для просмотра карты</span><span data-lang="en">free camera for viewing the map</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">High Jump</span><span data-lang="en">High Jump</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">увеличенная высота прыжка</span><span data-lang="en">increased jump height</span></span></p>
+<h2 id='другие-возможности'><span data-lang="ru">➕ Другие возможности</span><span data-lang="en">➕ Other options</span></h2>
+<p class='feature-item'><strong><span data-lang="ru">Menu Key</span><span data-lang="en">Menu Key</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">настройка клавиши открытия меню</span><span data-lang="en">setting the menu open key</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Panic Key</span><span data-lang="en">Panic Key</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">кнопка полного отключения чита</span><span data-lang="en">button to completely disable the cheat</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Battle Mode Key</span><span data-lang="en">Battle Mode Key</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">боевой режим с отключением лишнего лута и визуалов</span><span data-lang="en">combat mode with disabling extra loot and visuals</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Menu Customization</span><span data-lang="en">Menu Customization</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">настройка внешнего вида меню</span><span data-lang="en">customizing menu appearance</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">CFG System</span><span data-lang="en">CFG System</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">система сохранения и загрузки конфигов</span><span data-lang="en">system for saving and loading configs</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Update Item Names / Prices</span><span data-lang="en">Update Item Names / Prices</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">обновление названий предметов и цен</span><span data-lang="en">updating item names and prices</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Icons</span><span data-lang="en">Icons</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение ESP-элементов с иконками</span><span data-lang="en">display of ESP elements with icons</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">K/D Dropper</span><span data-lang="en">K/D Dropper</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">бот для снижения K/D</span><span data-lang="en">bot to reduce K/D</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Auto Captcha</span><span data-lang="en">Auto Captcha</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">автоматическое прохождение капчи внутри игры</span><span data-lang="en">automatic completion of captcha within the game</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Streamer Mode</span><span data-lang="en">Streamer Mode</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">скрытие никнеймов игроков и автоматическая подмена ID сессии</span><span data-lang="en">hiding player nicknames and automatically replacing session IDs</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">HWID Spoofer</span><span data-lang="en">HWID Spoofer</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">встроенный Spoofer для обхода HWID-блокировок</span><span data-lang="en">built-in Spoofer to bypass HWID locks</span></span></p>
+<h2 id='системные-требования'><span data-lang="ru">🖥 Системные требования</span><span data-lang="en">🖥 System requirements</span></h2>
+<div class='sys-req-grid'>
+
+                <div class="sys-req-card">
+                    <div class="sys-req-icon">⚙️</div>
+                    <div class="sys-req-name"><span data-lang="ru">Escape from Tarkov [ ☢ Medusa Lite ]</span><span data-lang="en">Escape from Tarkov [ ☢ Medusa Lite ]</span></div>
+                    <div class="sys-req-val"></div>
+                </div>
+                
+
+                <div class="sys-req-card">
+                    <div class="sys-req-icon">⚙️</div>
+                    <div class="sys-req-name"><span data-lang="ru">️ Операционная система</span><span data-lang="en">️ Операционная система</span></div>
+                    <div class="sys-req-val"><span data-lang="ru">Windows 10 - 11 [21H2 / 22H2 / 23H2]</span><span data-lang="en">Windows 10 - 11 [21H2 / 22H2 / 23H2]</span></div>
+                </div>
+                
+
+                <div class="sys-req-card">
+                    <div class="sys-req-icon">🔲</div>
+                    <div class="sys-req-name"><span data-lang="ru">Процессор</span><span data-lang="en">CPU</span></div>
+                    <div class="sys-req-val"><span data-lang="ru">Intel / AMD</span><span data-lang="en">Intel / AMD</span></div>
+                </div>
+                
+
+                <div class="sys-req-card">
+                    <div class="sys-req-icon">🔲</div>
+                    <div class="sys-req-name"><span data-lang="ru">Видеокарта</span><span data-lang="en">Video card</span></div>
+                    <div class="sys-req-val"><span data-lang="ru">Nvidia / AMD</span><span data-lang="en">Nvidia / AMD</span></div>
+                </div>
+                
+
+                <div class="sys-req-card">
+                    <div class="sys-req-icon">🖥</div>
+                    <div class="sys-req-name"><span data-lang="ru">Режим игры</span><span data-lang="en">Game mode</span></div>
+                    <div class="sys-req-val"><span data-lang="ru">В окне без рамок / Оконный / Полноэкранный</span><span data-lang="en">Borderless / Windowed / Full Screen</span></div>
+                </div>
+                
+
+                <div class="sys-req-card">
+                    <div class="sys-req-icon">🌐</div>
+                    <div class="sys-req-name"><span data-lang="ru">Поддерживаемые версии игры</span><span data-lang="en">Supported game versions</span></div>
+                    <div class="sys-req-val"><span data-lang="ru">Battlestate Games Launcher (BSG) / Steam</span><span data-lang="en">Battlestate Games Launcher (BSG) / Steam</span></div>
+                </div>
+                
+
+                <div class="sys-req-card">
+                    <div class="sys-req-icon">🤖</div>
+                    <div class="sys-req-name"><span data-lang="ru">Встроенный спуфер</span><span data-lang="en">Built-in spoofer</span></div>
+                    <div class="sys-req-val"><span data-lang="ru">Да</span><span data-lang="en">Yes</span></div>
+                </div>
+                
+</div><!-- sys-req-grid -->
+<section class="faq-block" id="faq">
+  <div class="section-kicker">
+    <span data-lang="ru">Помощь</span>
+    <span data-lang="en">Help</span>
+  </div>
+  <h2 class="section-title-plain">
+    <span data-lang="ru">FAQ / Troubleshooting</span>
+    <span data-lang="en">FAQ / Troubleshooting</span>
+  </h2>
+  <p class="section-lead">
+    <span data-lang="ru">Короткие ответы на частые проблемы при запуске.</span>
+    <span data-lang="en">Short answers to common launch issues.</span>
+  </p>
+  <div class="faq-list">
+    <details class="faq-item" open>
+  <summary>
+    <span data-lang="ru">Что сделать перед первым запуском?</span>
+    <span data-lang="en">What should I do before the first launch?</span>
+  </summary>
+  <div class="faq-body">
+    <span data-lang="ru">Отключите антивирус на время установки, запустите инструкцию бренда и следуйте шагам под вашу видеокарту (NVIDIA/AMD).</span>
+    <span data-lang="en">Temporarily disable antivirus, open the brand setup guide, and follow the steps for your GPU (NVIDIA/AMD).</span>
+  </div>
+</details><details class="faq-item" >
+  <summary>
+    <span data-lang="ru">Антивирус удаляет файлы</span>
+    <span data-lang="en">Antivirus deletes files</span>
+  </summary>
+  <div class="faq-body">
+    <span data-lang="ru">Добавьте папку продукта в исключения Windows Defender / вашего AV, затем скачайте файлы заново.</span>
+    <span data-lang="en">Add the product folder to Windows Defender / AV exclusions, then re-download the files.</span>
+  </div>
+</details><details class="faq-item" >
+  <summary>
+    <span data-lang="ru">Не открывается меню / не инжектится</span>
+    <span data-lang="en">Menu won&#x27;t open / inject fails</span>
+  </summary>
+  <div class="faq-body">
+    <span data-lang="ru">Запускайте от имени администратора, закройте оверлеи (Discord, GeForce Experience) и проверьте, что игра запущена в нужном режиме.</span>
+    <span data-lang="en">Run as administrator, close overlays (Discord, GeForce Experience), and make sure the game is running in the required mode.</span>
+  </div>
+</details><details class="faq-item" >
+  <summary>
+    <span data-lang="ru">Нужен ли спуфер?</span>
+    <span data-lang="en">Do I need a spoofer?</span>
+  </summary>
+  <div class="faq-body">
+    <span data-lang="ru">Зависит от продукта и игры. Смотрите блок системных требований и карточку статуса — там указано наличие спуфера.</span>
+    <span data-lang="en">It depends on the product and game. Check system requirements and the status card for spoofer availability.</span>
+  </div>
+</details><details class="faq-item" >
+  <summary>
+    <span data-lang="ru">После обновления игры перестало работать</span>
+    <span data-lang="en">Stopped working after a game update</span>
+  </summary>
+  <div class="faq-body">
+    <span data-lang="ru">Дождитесь обновления продукта. Статус на главной странице показывает Undetected / Update — при Update запуск не рекомендуется.</span>
+    <span data-lang="en">Wait for a product update. The status page shows Undetected / Update — avoid launching while on Update.</span>
+  </div>
+</details>
+  </div>
+</section>
+<section class="compare-block" id="compare">
+  <div class="section-kicker">
+    <span data-lang="ru">В этой игре</span>
+    <span data-lang="en">In this game</span>
+  </div>
+  <h2 class="section-title-plain">
+    <span data-lang="ru">Сравнение продуктов</span>
+    <span data-lang="en">Product comparison</span>
+  </h2>
+  <p class="section-lead">
+    <span data-lang="ru">Сравните функции: что есть только в одном продукте, что общее — и какую версию выбрать.</span>
+    <span data-lang="en">Compare features: unique vs shared — and which version to pick.</span>
+  </p>
+  <script type="application/json" id="compare-data">[{"html": "escape-from-tarkov-medusa-lite.html", "name": "Escape from Tarkov [ ☢ Medusa Lite ]", "variant": "Lite", "price": "—", "status": "Undetected", "features": ["Enabled", "Silent Aim", "Aim Key", "Force Body Aim", "Force Legs Aim", "Instant Hit", "FOV", "Only Visible", "Max Distance", "Bone", "Nearest Bone", "Ignored Roles", "Line To Target", "Draw FOV", "Target Info", "Wallhack", "Boxes ESP", "Box Style", "Skeleton", "Look Direction", "Chams", "Chams Style", "Chams Settings", "Health", "Player Info", "Weapon", "Inventory", "Inventory Min Price", "Tracers", "Streamers", "Grenades", "Grenades Settings", "Trajectory / Radius Style", "Danger Zones", "Mounted Weapons", "Exits", "Show Exit Requirements", "BTR", "Bullet Lines", "Hit Marker", "Hit Sound", "Time Changer", "Map Info", "Local Player Chams", "Ammo Count", "Crosshair", "Radar", "Transitions", "Enable", "Distance", "Price", "Names", "Shorten Names", "Font Size", "Hide In Scope", "Hide In Battle Mode", "Quest Items", "Min Price Filter", "Custom Loot Filter", "Ammo", "Ammo Boxes", "Magazines", "Sights", "Suppressors", "Tactical Devices", "Weapon Parts", "Special Equipment", "Repair", "Keys", "Barter", "Containers", "Maps", "Provisions", "Gear", "Meds", "Currency", "Remove Delay To Pickup Item", "Fast Loading / Unloading Of Magazines", "Thermal Vision", "Night Vision", "No Visor", "Zoom Hack", "Weather Controller", "FOV Changer", "Aspect Ratio Changer", "Post FX", "No Screen Effects", "Remove Inventory Blur Effect", "Light Changer", "No Recoil", "No Sway", "Instant ADS", "Instant Weapon Change", "No Malfunction", "Instant Reload", "Speedhack", "Run and Shoot", "Perfect Physical Condition", "Infinite Stamina & No Fatigue", "Free Camera", "High Jump", "Menu Key", "Panic Key", "Battle Mode Key", "Menu Customization", "CFG System", "Update Item Names / Prices", "Icons", "K/D Dropper", "Auto Captcha", "Streamer Mode", "HWID Spoofer"], "sections": ["Aimbot", "Players ESP", "World ESP", "Loot ESP", "Loot ESP Categories", "Shooting Exploits", "Movement Exploits", "Другие возможности"]}, {"html": "escape-from-tarkov-medusa-rage.html", "name": "Escape from Tarkov [ ☢ Medusa Rage ]", "variant": "Rage", "price": "—", "status": "Undetected", "features": ["Enable", "Silent Aim", "Aim Key", "Force Body Aim", "Force Legs Aim", "Silent Melee", "Instant Hit", "FOV", "Draw FOV", "FOV Style / Color", "Max Distance", "Bone", "Nearest Bone", "Ignored Roles", "Target Info", "Only Visible", "Line To Target", "Wallhack", "Boxes ESP", "Box Style", "Skeleton", "Look Direction", "Chams", "Chams Style", "Chams Settings", "Health", "Player Info", "Weapon", "Inventory", "Inventory Min Price", "Tracers", "Streamers", "Grenades", "Grenades Settings", "Trajectory / Radius Style", "Danger Zones", "Mounted Weapons", "Exits", "Show Exit Requirements", "BTR", "Bullet Lines", "Hit Marker", "Hit Sound", "Time Changer", "Map Info", "Local Player Chams", "Ammo Count", "Crosshair", "Transitions", "Radar", "Distance", "Price", "Names", "Shorten Names", "Font Size", "Hide In Scope", "Hide In Battle Mode", "Quest Items", "Min Price Filter", "Custom Loot Filter", "Ammo", "Ammo Boxes", "Magazines", "Sights", "Suppressors", "Tactical Devices", "Weapon Parts", "Special Equipment", "Repair", "Keys", "Barter", "Containers", "Maps", "Provisions", "Gear", "Meds", "Currency", "Auto Loot", "Remove Delay To Pickup Item", "Fast Loading / Unloading Of Magazines", "Auto Examine & Fast Examine", "Thermal Vision", "Night Vision", "No Visor", "Third Person", "FOV Changer", "Zoom Hack", "Aspect Ratio Changer", "Post FX", "No Screen Effects", "Remove Inventory Blur Effect", "Light Changer", "Weather Controller", "No Recoil", "No Sway", "Instant ADS", "Rapid Fire", "Instant Melee Attack", "Instant Weapon Change", "No Malfunction", "Extra Lean", "Instant Reload", "Speedhack", "Run and Shoot", "Perfect Physical Condition", "Infinite Stamina & No Fatigue", "Free Camera", "High Jump", "Long Levitation Jump", "Air Stuck", "No Restrictions In Obstacles", "Always Success Workout", "Far Door Open", "Menu Key", "Panic Key", "Battle Mode Key", "Menu Customization", "CFG System", "Update Item Names / Prices", "Icons", "Streamer Mode", "Auto Captcha", "K/D Dropper", "HWID Spoofer"], "sections": ["Aimbot", "Players ESP", "World ESP", "Loot ESP", "Loot ESP Категории", "Shooting Exploits", "Movement Exploits"]}]</script>
+  
+  <div class="compare-matrix" id="compare-matrix" data-cols="2">
+    <div class="cm-cell cm-label"></div>
+    <div class="cm-cell cm-head"><select id="compare-pick-a" onchange="syncComparePickers()"><option value="escape-from-tarkov-medusa-lite.html" data-name="Escape from Tarkov [ ☢ Medusa Lite ]" data-variant="Lite" data-price="—" data-status="Undetected" selected>Escape from Tarkov [ ☢ Medusa Lite ]</option><option value="escape-from-tarkov-medusa-rage.html" data-name="Escape from Tarkov [ ☢ Medusa Rage ]" data-variant="Rage" data-price="—" data-status="Undetected" >Escape from Tarkov [ ☢ Medusa Rage ]</option></select></div>
+    <div class="cm-cell cm-head"><select id="compare-pick-b" onchange="syncComparePickers()"><option value="escape-from-tarkov-medusa-lite.html" data-name="Escape from Tarkov [ ☢ Medusa Lite ]" data-variant="Lite" data-price="—" data-status="Undetected" >Escape from Tarkov [ ☢ Medusa Lite ]</option><option value="escape-from-tarkov-medusa-rage.html" data-name="Escape from Tarkov [ ☢ Medusa Rage ]" data-variant="Rage" data-price="—" data-status="Undetected" selected>Escape from Tarkov [ ☢ Medusa Rage ]</option></select></div>
+    <div class="cm-cell cm-label"><span data-lang="ru">Продукт</span><span data-lang="en">Product</span></div>
+    <div class="cm-cell" data-compare-side="a"><a class="cm-link" href="escape-from-tarkov-medusa-lite.html" data-field="name">Escape from Tarkov [ ☢ Medusa Lite ]</a></div>
+    <div class="cm-cell" data-compare-side="b"><a class="cm-link" href="escape-from-tarkov-medusa-rage.html" data-field="name">Escape from Tarkov [ ☢ Medusa Rage ]</a></div>
+    <div class="cm-cell cm-label"><span data-lang="ru">Тип</span><span data-lang="en">Variant</span></div>
+    <div class="cm-cell" data-compare-side="a"><span data-field="variant">Lite</span></div>
+    <div class="cm-cell" data-compare-side="b"><span data-field="variant">Rage</span></div>
+    <div class="cm-cell cm-label"><span data-lang="ru">Цена</span><span data-lang="en">Price</span></div>
+    <div class="cm-cell" data-compare-side="a"><span data-field="price">—</span></div>
+    <div class="cm-cell" data-compare-side="b"><span data-field="price">—</span></div>
+    <div class="cm-cell cm-label"><span data-lang="ru">Функций</span><span data-lang="en">Features</span></div>
+    <div class="cm-cell" data-compare-side="a"><span data-field="featcount">112</span></div>
+    <div class="cm-cell" data-compare-side="b"><span data-field="featcount">124</span></div>
+    <div class="cm-cell cm-label"><span data-lang="ru">Разделы</span><span data-lang="en">Modules</span></div>
+    <div class="cm-cell" data-compare-side="a"><span data-field="sections" class="cm-sections"><span class="cm-sec-chip">Aimbot</span><span class="cm-sec-chip">Players ESP</span><span class="cm-sec-chip">World ESP</span><span class="cm-sec-chip">Loot ESP</span><span class="cm-sec-chip is-unique">Loot ESP Categories</span><span class="cm-sec-chip">Shooting Exploits</span><span class="cm-sec-chip">Movement Exploits</span><span class="cm-sec-chip is-unique">Другие возможности</span></span></div>
+    <div class="cm-cell" data-compare-side="b"><span data-field="sections" class="cm-sections"><span class="cm-sec-chip">Aimbot</span><span class="cm-sec-chip">Players ESP</span><span class="cm-sec-chip">World ESP</span><span class="cm-sec-chip">Loot ESP</span><span class="cm-sec-chip is-unique">Loot ESP Категории</span><span class="cm-sec-chip">Shooting Exploits</span><span class="cm-sec-chip">Movement Exploits</span></span></div>
+    <div class="cm-cell cm-label">Status</div>
+    <div class="cm-cell" data-compare-side="a"><span data-field="status">Undetected</span></div>
+    <div class="cm-cell" data-compare-side="b"><span data-field="status">Undetected</span></div>
+  </div>
+  <div class="compare-diff" id="compare-diff">
+    <div class="compare-diff-col" data-diff="only-a">
+      <div class="compare-diff-title" id="compare-diff-title-a">Только в Escape from Tarkov [ ☢ Medusa Lite ]</div>
+      <ul class="compare-diff-list" id="compare-diff-only-a"><li>Enabled</li></ul>
+    </div>
+    <div class="compare-diff-col shared" data-diff="shared">
+      <div class="compare-diff-title"><span data-lang="ru">Общее</span><span data-lang="en">Shared</span></div>
+      <ul class="compare-diff-list" id="compare-diff-shared"><li>Quest Items</li><li>Instant ADS</li><li>Custom Loot Filter</li><li>Gear</li><li>Sights</li><li>Repair</li><li>Ignored Roles</li><li>Grenades Settings</li><li>Grenades</li><li>Barter</li><li>Target Info</li><li>No Malfunction</li><li>Light Changer</li><li>Tracers</li><li>Look Direction</li><li>Streamers</li><li>Ammo Count</li><li>Special Equipment</li><li>No Visor</li><li>Silent Aim</li><li>Zoom Hack</li><li>Currency</li><li>Boxes ESP</li><li>Post FX</li><li class="is-more">+87 <span data-lang="ru">ещё</span><span data-lang="en">more</span></li></ul>
+    </div>
+    <div class="compare-diff-col" data-diff="only-b">
+      <div class="compare-diff-title" id="compare-diff-title-b">Только в Escape from Tarkov [ ☢ Medusa Rage ]</div>
+      <ul class="compare-diff-list" id="compare-diff-only-b"><li>Silent Melee</li><li>FOV Style / Color</li><li>Auto Loot</li><li>Auto Examine &amp; Fast Examine</li><li>Third Person</li><li>Rapid Fire</li><li>Instant Melee Attack</li><li>Extra Lean</li><li>Long Levitation Jump</li><li>Air Stuck</li><li>No Restrictions In Obstacles</li><li>Always Success Workout</li><li>Far Door Open</li></ul>
+    </div>
+  </div>
+
+  <div class="compare-tools">
+    <button type="button" onclick="toggleCompareShared()">
+      <span data-lang="ru">Только различия</span><span data-lang="en">Differences only</span>
+    </button>
+    <button type="button" onclick="exportCompareText()">
+      <span data-lang="ru">Копировать сравнение</span><span data-lang="en">Copy compare</span>
+    </button>
+  </div>
+  <div class="compare-verdict" id="compare-verdict"><span data-lang="ru"><strong>Escape from Tarkov [ ☢ Medusa Lite ]</strong> — берите, если нужны: Loot ESP Categories, Другие возможности, Enabled <strong>Escape from Tarkov [ ☢ Medusa Rage ]</strong> — берите, если нужны: Loot ESP Категории, Silent Melee, FOV Style / Color</span><span data-lang="en"><strong>Escape from Tarkov [ ☢ Medusa Lite ]</strong> — pick for Loot ESP Categories, Другие возможности, Enabled <strong>Escape from Tarkov [ ☢ Medusa Rage ]</strong> — pick for Loot ESP Категории, Silent Melee, FOV Style / Color</span></div>
+  <script>try { syncComparePickers(); } catch (e) {}</script>
+</section>
+<nav class="sibling-nav" aria-label="Sibling products">
+<span class="sibling-link prev is-empty"></span>
+<a class="sibling-link next" href="escape-from-tarkov-medusa-rage.html"><span>Escape from Tarkov [ ☢ Medusa Rage ]</span><span>→</span></a>
+</nav>
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div>
+      <strong>Aimer123213</strong>
+      <span class="site-footer-tag">FUNPAY · DOCS</span>
+    </div>
+    <div class="site-footer-meta">
+      <span data-lang="ru">Сборка</span><span data-lang="en">Build</span>
+      <code>202607192332</code>
+    </div>
+  </div>
+</footer>
+            <script>
+                const searchDiv = document.createElement('div');
+                searchDiv.className = 'search-container';
+                searchDiv.innerHTML = `
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="feature-search" placeholder="Поиск по функциям... (или нажмите '/')" data-i18n-placeholder data-i18n-placeholder-ru="Поиск по функциям... (или нажмите '/')" data-i18n-placeholder-en="Search features... (or press '/')" oninput="filterFeatures()">
+                `;
+                const insertAfter = document.querySelector('.highlights-block')
+                    || document.querySelector('.pricing-block')
+                    || document.querySelector('.launch-guide')
+                    || document.querySelector('.product-hero');
+                if (insertAfter) {
+                    insertAfter.parentNode.insertBefore(searchDiv, insertAfter.nextSibling);
+                }
+            </script>
+        </div>
+        <div class="toc-panel">
+            <div class="toc-title"><span data-lang="ru">На этой странице</span><span data-lang="en">On this page</span></div>
+            <nav class="toc-nav" aria-label="On this page">
+<a href="#launch-guide" class="toc-link toc-link-root" data-toc-id="launch-guide"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Инструкция</span><span data-lang="en">Setup</span></span></a>
+<a href="#скриншоты" class="toc-link toc-link-root" data-toc-id="скриншоты"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Скриншоты</span><span data-lang="en">Screenshots</span></span></a>
+<a href="#aimbot" class="toc-link toc-link-root" data-toc-id="aimbot"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Aimbot</span><span data-lang="en">Aimbot</span></span></a>
+<a href="#players-esp" class="toc-link toc-link-root" data-toc-id="players-esp"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Players ESP</span><span data-lang="en">Players ESP</span></span></a>
+<a href="#world-esp" class="toc-link toc-link-root" data-toc-id="world-esp"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">World ESP</span><span data-lang="en">World ESP</span></span></a>
+<a href="#loot-esp" class="toc-link toc-link-root" data-toc-id="loot-esp"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Loot ESP</span><span data-lang="en">Loot ESP</span></span></a>
+<a href="#loot-esp-categories" class="toc-link toc-link-root" data-toc-id="loot-esp-categories"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Loot ESP Categories</span><span data-lang="en">Loot ESP Categories</span></span></a>
+<a href="#shooting-exploits" class="toc-link toc-link-root" data-toc-id="shooting-exploits"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Shooting Exploits</span><span data-lang="en">Shooting Exploits</span></span></a>
+<a href="#movement-exploits" class="toc-link toc-link-root" data-toc-id="movement-exploits"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Movement Exploits</span><span data-lang="en">Movement Exploits</span></span></a>
+<a href="#другие-возможности" class="toc-link toc-link-root" data-toc-id="другие-возможности"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Другие возможности</span><span data-lang="en">Другие возможности</span></span></a>
+<a href="#системные-требования" class="toc-link toc-link-root" data-toc-id="системные-требования"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Системные требования</span><span data-lang="en">System Requirements</span></span></a>
+<a href="#highlights" class="toc-link toc-link-root" data-toc-id="highlights"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Плюсы</span><span data-lang="en">Highlights</span></span></a>
+<a href="#compare" class="toc-link toc-link-root" data-toc-id="compare"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Сравнение</span><span data-lang="en">Compare</span></span></a>
+<a href="#faq" class="toc-link toc-link-root" data-toc-id="faq"><span class="toc-dot"></span><span class="toc-label">FAQ</span></a>
+</nav>
+        </div>
+    </div>
+    <div id="lightbox-modal" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-image" class="lightbox-content" src="" alt="Увеличенный скриншот" onclick="event.stopPropagation()">
+        <div id="lightbox-caption" style="position:absolute;bottom:28px;left:50%;transform:translateX(-50%);color:#c6ff3d;font:700 .75rem JetBrains Mono,monospace;letter-spacing:.12em;"></div>
+    </div>
+    <a href="https://funpay.com/users/7290355/" target="_blank" class="fp-widget" title="Купить на FunPay">
+        <svg class="fp-widget-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+    </a>
+    <nav class="mobile-bottom-bar" aria-label="Mobile actions">
+  <button type="button" onclick="toggleMobileMenu()">
+    <span data-lang="ru">Меню</span><span data-lang="en">Menu</span>
+  </button>
+  <button type="button" onclick="openMobileToc()">
+    <span data-lang="ru">Разделы</span><span data-lang="en">Sections</span>
+  </button>
+  
+  <a class="mb-buy" href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer">
+    <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+  </a>
+</nav>
+<div id="mobile-toc-drawer" class="mobile-toc-drawer" onclick="if(event.target===this)closeMobileToc()">
+  <div class="mobile-toc-panel">
+    <div class="toc-title"><span data-lang="ru">На этой странице</span><span data-lang="en">On this page</span></div>
+    <div class="mobile-toc-nav toc-nav"></div>
+  </div>
+</div>
+    <div id="global-search-overlay" class="global-search-overlay" onclick="closeGlobalSearch()">
+        <div class="global-search-card" onclick="event.stopPropagation()">
+            <div class="global-search-header">
+                <input type="text" id="global-search-input" class="global-search-input" placeholder="Искать по всей документации..." data-i18n-placeholder data-i18n-placeholder-ru="Искать по всей документации..." data-i18n-placeholder-en="Search the documentation..." oninput="doGlobalSearch()">
+                <span class="global-search-esc">ESC</span>
+            </div>
+            <div id="global-search-results" class="global-search-results">
+                <div style="color: var(--text-muted); text-align: center; padding: 20px;">Введите что-нибудь для поиска...</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

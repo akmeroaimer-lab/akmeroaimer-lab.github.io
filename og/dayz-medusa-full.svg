@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141518"/>
+      <stop offset="100%" stop-color="#0a0b0d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect x="0" y="0" width="12" height="630" fill="#c6ff3d"/>
+  <circle cx="1080" cy="120" r="90" fill="none" stroke="#c6ff3d" stroke-width="3" opacity=".35"/>
+  <circle cx="1080" cy="120" r="8" fill="#c6ff3d"/>
+  <text x="72" y="120" fill="#7a7c83" font-family="Arial, sans-serif" font-size="28" letter-spacing="6">MEDUSA · FUNPAY</text>
+  <text x="72" y="280" fill="#f3f2ed" font-family="Arial, sans-serif" font-size="72" font-weight="700">DayZ [ ☢ Medusa Full ]</text>
+  <text x="72" y="360" fill="#9a9ba1" font-family="Arial, sans-serif" font-size="36">DayZ</text>
+  <text x="72" y="520" fill="#c6ff3d" font-family="Arial, sans-serif" font-size="40" font-weight="700"></text>
+  <text x="72" y="580" fill="#5c5e65" font-family="Arial, sans-serif" font-size="22">Aimer123213 Docs</text>
+</svg>

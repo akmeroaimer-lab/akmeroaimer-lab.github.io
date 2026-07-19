@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aimer123213 · Status Widget</title>
+  <meta name="theme-color" content="#0e0f12">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #0e0f12; color: #e8e7e2; padding: 12px;
+    }
+    .w-head {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
+      padding-bottom: 10px; border-bottom: 1px solid #2a2c31;
+    }
+    .w-head strong { display: block; font-size: .95rem; }
+    .w-head em { color: #94989f; font-style: normal; font-size: .65rem; letter-spacing: .14em; }
+    .w-grid {
+      display: grid; grid-template-columns: 1fr; gap: 8px;
+    }
+    @media (min-width: 520px) {
+      .w-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .w-card {
+      display: block; text-decoration: none; color: inherit;
+      padding: 10px 12px; border: 1px solid #2a2c31; border-radius: 3px; background: #111216;
+    }
+    .w-card:hover { border-color: #c6ff3d; }
+    .w-top { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+    .w-game { color: #94989f; font-size: .65rem; text-transform: uppercase; letter-spacing: .06em; }
+    .w-title { font-weight: 700; font-size: .92rem; color: #f3f2ed; }
+    .w-price { margin-top: 4px; color: #c6ff3d; font-size: .78rem; font-weight: 700; }
+    .w-badge {
+      display: inline-flex; align-items: center; gap: 5px; height: 18px; padding: 0 7px;
+      border-radius: 99px; font-size: .6rem; font-weight: 750; letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .w-badge i { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+    .w-badge.undetected { color: #c6ff3d; background: rgba(198,255,61,.08); border: 1px solid rgba(198,255,61,.3); }
+    .w-badge.update { color: #ffb020; background: rgba(255,176,32,.08); border: 1px solid rgba(255,176,32,.3); }
+    .w-foot { margin-top: 12px; text-align: center; }
+    .w-foot a { color: #c6ff3d; font-size: .78rem; text-decoration: none; }
+  
+/* a11y: touch targets */
+@media (max-width:820px){.sidebar-link{min-height:40px;display:flex;align-items:center}.toc-link{min-height:34px;display:flex;align-items:center}}
+
+/*==g1da-enhance==*/
+/* Loader / enter safety — never leave the page blank after page-ready */
+body.page-ready #page-loader,
+body.page-ready .loader-overlay{
+  opacity:0!important;visibility:hidden!important;pointer-events:none!important;
+  display:none!important
+}
+body.page-ready .main-container,
+body.page-ready .content-area{opacity:1!important;transform:none}
+body.page-leaving .main-container{opacity:1!important;transform:none}
+body.page-leaving{pointer-events:auto}
+
+/* Background glow — lime theme had .bg-glow{display:none}; restore cheap radials */
+.bg-glow{
+  display:block!important;filter:none!important;opacity:1!important;
+  pointer-events:none;z-index:0
+}
+.bg-glow-1{
+  width:680px;height:680px;
+  background:radial-gradient(circle,rgba(198,255,61,.065) 0%,rgba(198,255,61,.022) 34%,transparent 64%)!important
+}
+.bg-glow-2{
+  width:840px;height:840px;
+  background:radial-gradient(circle,rgba(110,205,130,.05) 0%,rgba(110,205,130,.018) 34%,transparent 64%)!important
+}
+body::after{
+  content:'';position:fixed;left:50%;bottom:-34%;width:1100px;height:640px;
+  transform:translateX(-50%);
+  background:radial-gradient(ellipse at center,rgba(198,255,61,.035),transparent 62%);
+  pointer-events:none;z-index:-1
+}
+
+/* Reveal: never stay stuck invisible */
+.reveal-item.is-visible{opacity:1!important;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal-item{opacity:1!important;transform:none!important;transition:none!important}
+}
+
+/* Scroll progress: transform-only (width forced layout every scroll) */
+.scroll-progress-bar{width:100%;transform:scaleX(0);transform-origin:0 0;transition:transform .08s linear}
+
+/* Cursor spotlight on cards */
+@media (hover:hover) and (pointer:fine){
+  .price-tier,.faq-item,.status-grid-card,.screenshot-card,.sys-req-card{position:relative}
+  .price-tier::after,.faq-item::after,.status-grid-card::after,.screenshot-card::after,.sys-req-card::after{
+    content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;
+    background:radial-gradient(230px circle at var(--mx,50%) var(--my,50%),rgba(198,255,61,.09),transparent 62%);
+    transition:opacity .25s ease;z-index:1
+  }
+  .price-tier:hover::after,.faq-item:hover::after,.status-grid-card:hover::after,
+  .screenshot-card:hover::after,.sys-req-card:hover::after{opacity:1}
+}
+
+/* Primary CTA pulse */
+@media (prefers-reduced-motion:no-preference){
+  @keyframes g1daCtaPulse{0%,100%{box-shadow:0 0 0 0 rgba(198,255,61,.25)}50%{box-shadow:0 0 16px 3px rgba(198,255,61,.13)}}
+  .hero-btn.primary,.spb-buy,.mb-buy{animation:g1daCtaPulse 3s ease-in-out infinite}
+  .hero-btn.primary:hover,.spb-buy:hover,.mb-buy:hover{animation:none}
+  .hero-btn.primary .btn-arrow,.spb-buy .btn-arrow{display:inline-block;transition:transform .22s ease}
+  .hero-btn.primary:hover .btn-arrow,.spb-buy:hover .btn-arrow{transform:translateX(3px)}
+}
+
+/* TOC sliding marker */
+.toc-panel{position:relative}
+.toc-marker{
+  position:absolute;left:0;width:2px;background:#c6ff3d;border-radius:2px;
+  box-shadow:0 0 8px rgba(198,255,61,.45);opacity:0;pointer-events:none;
+  transition:top .3s cubic-bezier(.16,1,.3,1),height .3s cubic-bezier(.16,1,.3,1),opacity .2s ease
+}
+.toc-marker.on{opacity:1}
+
+/* View Transitions only — no custom page-leaving fade (that caused blank stuck states) */
+@view-transition{navigation:auto}
+@media (prefers-reduced-motion:reduce){
+  @view-transition{navigation:none}
+  .toc-marker{transition:none}
+  .bg-glow{animation:none!important}
+  body::after{display:none}
+  .hero-btn.primary,.spb-buy,.mb-buy{animation:none!important}
+}
+/*==g1da-enhance-end==*/
+</style>
+</head>
+<body>
+  <div class="w-head">
+    <div class="brand-mark" aria-hidden="true">
+  <svg viewBox="0 0 32 32" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="16" cy="16" r="6.5" stroke="currentColor" stroke-width="1.8"/>
+    <circle cx="16" cy="16" r="1.8" fill="currentColor"/>
+    <path d="M16 3v5.2M16 23.8V29M3 16h5.2M23.8 16H29" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/>
+  </svg>
+</div>
+    <div><strong>Aimer123213</strong><em>STATUS · FUNPAY</em></div>
+  </div>
+  <div class="w-grid">
+    <a class="w-card" href="1.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Ультимативный спуфер1</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="README.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">База Знаний Xind1 Docs</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="SUMMARY.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Table of contents</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="apex-legends-arcane.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Apex Legends</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Apex Legends [ ☢ Arcane ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="apex-legends-phoenix-x-ray.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Apex Legends</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Apex Legends [ ☢ Phoenix X-RAY ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="apex-legends-rampart.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Apex Legends</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Apex Legends [ ☢ Rampart ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="arc-raiders-arcane-radar.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">ARC Raiders</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">ARC Raiders [ ☢ Arcane Radar ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="arc-raiders-arcane.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">ARC Raiders</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">ARC Raiders [ ☢ Arcane ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="arcane-instruktsiya.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">🚀 Инструкция по запуску Arcane</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="arcane-reshenie-problem.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">🛠 Arcane — Решение проблем запуска</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="arena-breakout-infinite-ghost-esp.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Arena Breakout Infinite [ ☢ Ghost ESP ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="arena-breakout-infinite-ghost-full.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Arena Breakout Infinite [ ☢ Ghost Full ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="arena-breakout-infinite-koenflow.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Arena Breakout Infinite [ ☢ KoenFlow ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="arena-breakout-infinite-xernel-full.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Arena Breakout Infinite [ ☢ Xernel Full ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="ark-ascended-arcane.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">ARK Ascended</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">ARK Ascended [ ☢ Arcane ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="arma-reforger-arcane.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Arma Reforger</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Arma Reforger [ ☢ Arcane ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="arma-reforger-xernel.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Arma Reforger</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Arma Reforger [ ☢ Xernel ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="counter-strike-2-arcane.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Counter-Strike 2</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Counter Strike 2 [ ☢ Arcane ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="dayz-arcane.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">DayZ</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">DayZ [ ☢ Arcane ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="dayz-medusa-full.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">DayZ</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">DayZ [ ☢ Medusa Full ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="dayz-medusa-lite.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">DayZ</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">DayZ [ ☢ Medusa Lite ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="dayz-xernel.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">DayZ</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">DayZ [ ☢ Xernel ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="escape-from-tarkov-medusa-lite.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Escape from Tarkov</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Escape from Tarkov [ ☢ Medusa Lite ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="escape-from-tarkov-medusa-rage.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Escape from Tarkov</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Escape from Tarkov [ ☢ Medusa Rage ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="fortnite-arcane.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Fortnite</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Fortnite [ ☢ Arcane ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="ghost-instruktsiya.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">🚀 Инструкция по запуску Ghost</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="ghost-reshenie-problem.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">🛠 Ghost — Решение проблем запуска</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="index.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">База Знаний Xind1 Docs</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="koenflow-instruktsiya.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">🚀 Инструкция по запуску KoenFlow</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="koenflow-reshenie-problem.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">🛠 KoenFlow — Решение проблем запуска</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="marvel-rivals-ghost.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Marvel Rivals</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Marvel Rivals [ ☢ Ghost ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="marvel-rivals-phoenix.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Marvel Rivals</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Marvel Rivals [ ☢ Phoenix ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="meccha-chameleon-arcane.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Meccha Chameleon</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Meccha Chameleon [ ☢ Arcane ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="meccha-chameleon-ghost.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Meccha Chameleon</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Meccha Chameleon [ ☢ Ghost ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="medusa-instruktsiya.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">🚀 Инструкция по запуску Medusa</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="medusa-reshenie-problem.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">🛠 Medusa — Решение проблем запуска</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="phoenix-chams.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">☢ Phoenix (CHAMS) ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="phoenix-instruktsiya.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">🚀 Инструкция по запуску Phoenix</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="phoenix-reshenie-problem.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">🛠 Phoenix — Решение проблем запуска</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="pubg-arcane-esp.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">PUBG</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Pubg [ ☢ Arcane ESP ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="pubg-arcane-full.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">PUBG</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Pubg [ ☢ Arcane Full ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="pubg-arcane-radar.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">PUBG</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Pubg [ ☢ Arcane Radar ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="pubg-phoenix-full.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">PUBG</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Pubg [ ☢ Phoenix Full ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="rampart-instruktsiya.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">🚀 Инструкция по запуску Rampart</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="rampart-reshenie-problem.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">🛠 Rampart — Решение проблем запуска</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="rust-arcane.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Rust</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Rust [ ☢ Arcane ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="rust-rampart-full.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Rust</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Rust [ ☢ Rampart Full ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="rust-rampart-lite.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Rust</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Rust [ ☢ Rampart Lite ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="rust-xernel.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Rust</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Rust [ ☢ Xernel ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="unturned-medusa.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Unturned</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">Unturned [ ☢ Medusa ]</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="xernel-instruktsiya.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">🚀 Инструкция по запуску Xernel</div>
+  <div class="w-price"></div>
+</a><a class="w-card" href="xernel-reshenie-problem.html" target="_blank" rel="noopener">
+  <div class="w-top">
+    <span class="w-game">Другие игры</span>
+    <span class="w-badge undetected"><i></i>Undetected</span>
+  </div>
+  <div class="w-title">🛠 Xernel — Решение проблем запуска</div>
+  <div class="w-price"></div>
+</a>
+  </div>
+  <div class="w-foot"><a href="index.html" target="_blank">Open full catalog ↗</a></div>
+</body>
+</html>

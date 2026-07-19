@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Meccha Chameleon [ ☢ Arcane ] | Aimer123213</title>
+    <meta name="description" content="Meccha Chameleon — Meccha Chameleon [ ☢ Arcane ]. Aimer123213 docs, pricing and setup guide.">
+    <meta property="og:title" content="Meccha Chameleon [ ☢ Arcane ] | Aimer123213">
+    <meta property="og:description" content="Meccha Chameleon · docs, prices, launch guide">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="og/meccha-chameleon-arcane.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="favicon.svg?v=202607192332" type="image/svg+xml">
+    <meta name="theme-color" content="#0e0f12">
+    <meta name="color-scheme" content="dark">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <meta name="build-id" content="202607192332">
+    <link rel="sitemap" type="application/xml" href="sitemap.xml">
+    <link rel="prefetch" href="meccha-chameleon-ghost.html" as="document">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css?v=b26ed39009">
+    <script src="app.js?v=b26ed39009"></script>
+</head>
+<body>
+
+    <a class="skip-link" href="#main-content"><span data-lang="ru">К содержимому</span><span data-lang="en">Skip to content</span></a>
+    <div id="site-toast" class="site-toast" hidden></div>
+    <div id="command-palette" class="command-palette" hidden>
+  <div class="command-palette-card" role="dialog" aria-modal="true" aria-label="Command palette">
+    <input id="command-palette-input" type="search" autocomplete="off"
+      placeholder="Search pages, games, features..."
+      data-i18n-placeholder
+      data-i18n-placeholder-ru="Поиск страниц, игр, фич..."
+      data-i18n-placeholder-en="Search pages, games, features...">
+    <div id="command-palette-results" class="command-palette-results"></div>
+    <div class="command-palette-hint"><kbd>↑↓</kbd> <kbd>Enter</kbd> <kbd>Esc</kbd></div>
+  </div>
+</div>
+    <div id="lang-gate" class="lang-gate" role="dialog" aria-modal="true" aria-label="Language">
+        <div class="lang-gate-card">
+            <div class="lang-gate-kicker">Aimer123213 / FUNPAY</div>
+            <div class="lang-gate-title">Choose language</div>
+            <p class="lang-gate-text">Читать на русском или Read in English. Выбор сохранится для следующих визитов.</p>
+            <div class="lang-gate-actions">
+                <button type="button" class="lang-gate-btn primary" onclick="setSiteLang('ru')">Читать на русском</button>
+                <button type="button" class="lang-gate-btn" onclick="setSiteLang('en')">Read in English</button>
+            </div>
+        </div>
+    </div>
+    <div id="page-loader" class="loader-overlay">
+        <div class="loader-logo" aria-hidden="true">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="16" cy="16" r="6.5" stroke="currentColor" stroke-width="1.8"/>
+    <circle cx="16" cy="16" r="1.8" fill="currentColor"/>
+    <path d="M16 3v5.2M16 23.8V29M3 16h5.2M23.8 16H29" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/>
+  </svg>
+</div>
+        <div class="loader-text">Aimer123213 / FUNPAY</div>
+        <div class="loader-track"><span></span></div>
+    </div>
+    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Открыть меню" data-i18n-aria data-i18n-aria-ru="Открыть меню" data-i18n-aria-en="Open menu">☰</button>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-mark" aria-hidden="true">
+  <svg viewBox="0 0 32 32" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="16" cy="16" r="6.5" stroke="currentColor" stroke-width="1.8"/>
+    <circle cx="16" cy="16" r="1.8" fill="currentColor"/>
+    <path d="M16 3v5.2M16 23.8V29M3 16h5.2M23.8 16H29" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/>
+  </svg>
+</div>
+            <div class="brand-copy">
+                <strong>Aimer123213</strong>
+                <em>FUNPAY</em>
+            </div>
+        </div>
+        <div class='sidebar-search'>
+<input type='search' placeholder='Filter games...' data-i18n-placeholder data-i18n-placeholder-ru='Фильтр игр...' data-i18n-placeholder-en='Filter games...' oninput='filterSidebar(this.value)' aria-label='Filter sidebar'>
+</div>
+<div class='sidebar-category'>
+  <div class='sidebar-category-header static'>
+    <span class='nav-code'>00</span>
+    <span class='nav-name'><span data-lang="ru">Инфо</span><span data-lang="en">Info</span></span>
+  </div>
+  <div class='sidebar-category-items' style='max-height:120px; opacity:1;'>
+    <a href='index.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Статус продуктов</span><span data-lang="en">Product status</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>RST</span>
+    <span class='nav-name'><span data-lang="ru">Rust</span><span data-lang="en">Rust</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='rust-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Rust [ ☢ Arcane ]</span><span data-lang="en">Rust [ ☢ Arcane ]</span></span></a>
+    <a href='rust-rampart-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Rust [ ☢ Rampart Full ]</span><span data-lang="en">Rust [ ☢ Rampart Full ]</span></span></a>
+    <a href='rust-rampart-lite.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Rust [ ☢ Rampart Lite ]</span><span data-lang="en">Rust [ ☢ Rampart Lite ]</span></span></a>
+    <a href='rust-xernel.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Rust [ ☢ Xernel ]</span><span data-lang="en">Rust [ ☢ Xernel ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>APX</span>
+    <span class='nav-name'><span data-lang="ru">Apex Legends</span><span data-lang="en">Apex Legends</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='apex-legends-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Apex Legends [ ☢ Arcane ]</span><span data-lang="en">Apex Legends [ ☢ Arcane ]</span></span></a>
+    <a href='apex-legends-phoenix-x-ray.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Apex Legends [ ☢ Phoenix X-RAY ]</span><span data-lang="en">Apex Legends [ ☢ Phoenix X-RAY ]</span></span></a>
+    <a href='apex-legends-rampart.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Apex Legends [ ☢ Rampart ]</span><span data-lang="en">Apex Legends [ ☢ Rampart ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>ARC</span>
+    <span class='nav-name'><span data-lang="ru">ARC Raiders</span><span data-lang="en">ARC Raiders</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='arc-raiders-arcane-radar.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">ARC Raiders [ ☢ Arcane Radar ]</span><span data-lang="en">ARC Raiders [ ☢ Arcane Radar ]</span></span></a>
+    <a href='arc-raiders-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">ARC Raiders [ ☢ Arcane ]</span><span data-lang="en">ARC Raiders [ ☢ Arcane ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>ARK</span>
+    <span class='nav-name'><span data-lang="ru">ARK Ascended</span><span data-lang="en">ARK Ascended</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='ark-ascended-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">ARK Ascended [ ☢ Arcane ]</span><span data-lang="en">ARK Ascended [ ☢ Arcane ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>ARF</span>
+    <span class='nav-name'><span data-lang="ru">Arma Reforger</span><span data-lang="en">Arma Reforger</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='arma-reforger-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arma Reforger [ ☢ Arcane ]</span><span data-lang="en">Arma Reforger [ ☢ Arcane ]</span></span></a>
+    <a href='arma-reforger-xernel.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arma Reforger [ ☢ Xernel ]</span><span data-lang="en">Arma Reforger [ ☢ Xernel ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>CS2</span>
+    <span class='nav-name'><span data-lang="ru">Counter-Strike 2</span><span data-lang="en">Counter-Strike 2</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='counter-strike-2-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Counter Strike 2 [ ☢ Arcane ]</span><span data-lang="en">Counter Strike 2 [ ☢ Arcane ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>DAY</span>
+    <span class='nav-name'><span data-lang="ru">DayZ</span><span data-lang="en">DayZ</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='dayz-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">DayZ [ ☢ Arcane ]</span><span data-lang="en">DayZ [ ☢ Arcane ]</span></span></a>
+    <a href='dayz-medusa-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">DayZ [ ☢ Medusa Full ]</span><span data-lang="en">DayZ [ ☢ Medusa Full ]</span></span></a>
+    <a href='dayz-medusa-lite.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">DayZ [ ☢ Medusa Lite ]</span><span data-lang="en">DayZ [ ☢ Medusa Lite ]</span></span></a>
+    <a href='dayz-xernel.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">DayZ [ ☢ Xernel ]</span><span data-lang="en">DayZ [ ☢ Xernel ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>EFT</span>
+    <span class='nav-name'><span data-lang="ru">Escape from Tarkov</span><span data-lang="en">Escape from Tarkov</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='escape-from-tarkov-medusa-lite.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Escape from Tarkov [ ☢ Medusa Lite ]</span><span data-lang="en">Escape from Tarkov [ ☢ Medusa Lite ]</span></span></a>
+    <a href='escape-from-tarkov-medusa-rage.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Escape from Tarkov [ ☢ Medusa Rage ]</span><span data-lang="en">Escape from Tarkov [ ☢ Medusa Rage ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>FN</span>
+    <span class='nav-name'><span data-lang="ru">Fortnite</span><span data-lang="en">Fortnite</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='fortnite-arcane.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Fortnite [ ☢ Arcane ]</span><span data-lang="en">Fortnite [ ☢ Arcane ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>MR</span>
+    <span class='nav-name'><span data-lang="ru">Marvel Rivals</span><span data-lang="en">Marvel Rivals</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='marvel-rivals-ghost.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Marvel Rivals [ ☢ Ghost ]</span><span data-lang="en">Marvel Rivals [ ☢ Ghost ]</span></span></a>
+    <a href='marvel-rivals-phoenix.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Marvel Rivals [ ☢ Phoenix ]</span><span data-lang="en">Marvel Rivals [ ☢ Phoenix ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category  is-active-game'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>MC</span>
+    <span class='nav-name'><span data-lang="ru">Meccha Chameleon</span><span data-lang="en">Meccha Chameleon</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='meccha-chameleon-arcane.html' class='sidebar-link active'><span class='sidebar-link-label'><span data-lang="ru">Meccha Chameleon [ ☢ Arcane ]</span><span data-lang="en">Meccha Chameleon [ ☢ Arcane ]</span></span></a>
+    <a href='meccha-chameleon-ghost.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Meccha Chameleon [ ☢ Ghost ]</span><span data-lang="en">Meccha Chameleon [ ☢ Ghost ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>PBG</span>
+    <span class='nav-name'><span data-lang="ru">PUBG</span><span data-lang="en">PUBG</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='pubg-arcane-esp.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Pubg [ ☢ Arcane ESP ]</span><span data-lang="en">Pubg [ ☢ Arcane ESP ]</span></span></a>
+    <a href='pubg-arcane-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Pubg [ ☢ Arcane Full ]</span><span data-lang="en">Pubg [ ☢ Arcane Full ]</span></span></a>
+    <a href='pubg-arcane-radar.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Pubg [ ☢ Arcane Radar ]</span><span data-lang="en">Pubg [ ☢ Arcane Radar ]</span></span></a>
+    <a href='pubg-phoenix-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Pubg [ ☢ Phoenix Full ]</span><span data-lang="en">Pubg [ ☢ Phoenix Full ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>UNT</span>
+    <span class='nav-name'><span data-lang="ru">Unturned</span><span data-lang="en">Unturned</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='unturned-medusa.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Unturned [ ☢ Medusa ]</span><span data-lang="en">Unturned [ ☢ Medusa ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>ETC</span>
+    <span class='nav-name'><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='1.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Ультимативный спуфер1</span><span data-lang="en">Ультимативный спуфер1</span></span></a>
+    <a href='README.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">База Знаний Xind1 Docs</span><span data-lang="en">База Знаний Xind1 Docs</span></span></a>
+    <a href='SUMMARY.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Table of contents</span><span data-lang="en">Table of contents</span></span></a>
+    <a href='arcane-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Arcane</span><span data-lang="en">🚀 Инструкция по запуску Arcane</span></span></a>
+    <a href='arcane-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Arcane — Решение проблем запуска</span><span data-lang="en">🛠 Arcane — Решение проблем запуска</span></span></a>
+    <a href='arena-breakout-infinite-ghost-esp.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ Ghost ESP ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Ghost ESP ]</span></span></a>
+    <a href='arena-breakout-infinite-ghost-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ Ghost Full ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Ghost Full ]</span></span></a>
+    <a href='arena-breakout-infinite-koenflow.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ KoenFlow ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ KoenFlow ]</span></span></a>
+    <a href='arena-breakout-infinite-xernel-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ Xernel Full ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Xernel Full ]</span></span></a>
+    <a href='ghost-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Ghost</span><span data-lang="en">🚀 Инструкция по запуску Ghost</span></span></a>
+    <a href='ghost-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Ghost — Решение проблем запуска</span><span data-lang="en">🛠 Ghost — Решение проблем запуска</span></span></a>
+    <a href='index.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">База Знаний Xind1 Docs</span><span data-lang="en">База Знаний Xind1 Docs</span></span></a>
+    <a href='koenflow-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску KoenFlow</span><span data-lang="en">🚀 Инструкция по запуску KoenFlow</span></span></a>
+    <a href='koenflow-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 KoenFlow — Решение проблем запуска</span><span data-lang="en">🛠 KoenFlow — Решение проблем запуска</span></span></a>
+    <a href='medusa-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Medusa</span><span data-lang="en">🚀 Инструкция по запуску Medusa</span></span></a>
+    <a href='medusa-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Medusa — Решение проблем запуска</span><span data-lang="en">🛠 Medusa — Решение проблем запуска</span></span></a>
+    <a href='phoenix-chams.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">☢ Phoenix (CHAMS) ]</span><span data-lang="en">☢ Phoenix (CHAMS) ]</span></span></a>
+    <a href='phoenix-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Phoenix</span><span data-lang="en">🚀 Инструкция по запуску Phoenix</span></span></a>
+    <a href='phoenix-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Phoenix — Решение проблем запуска</span><span data-lang="en">🛠 Phoenix — Решение проблем запуска</span></span></a>
+    <a href='rampart-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Rampart</span><span data-lang="en">🚀 Инструкция по запуску Rampart</span></span></a>
+    <a href='rampart-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Rampart — Решение проблем запуска</span><span data-lang="en">🛠 Rampart — Решение проблем запуска</span></span></a>
+    <a href='xernel-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Xernel</span><span data-lang="en">🚀 Инструкция по запуску Xernel</span></span></a>
+    <a href='xernel-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Xernel — Решение проблем запуска</span><span data-lang="en">🛠 Xernel — Решение проблем запуска</span></span></a>
+  </div>
+</div>
+<div class='lang-switcher'>
+  <button type='button' class='lang-btn' data-set-lang='ru' onclick="setSiteLang('ru')">RU</button>
+  <button type='button' class='lang-btn' data-set-lang='en' onclick="setSiteLang('en')">EN</button>
+</div>
+    </div>
+    <div class="main-container" id="main-content">
+        <div class="content-area">
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+  <a href="index.html"><span data-lang="ru">Каталог</span><span data-lang="en">Catalog</span></a>
+  <span class="bc-sep">/</span>
+  <span class="bc-game">Meccha Chameleon</span>
+  <span class="bc-sep">/</span>
+  <span class="bc-current">Meccha Chameleon [ ☢ Arcane ]</span>
+</nav>
+<div class="sticky-product-bar" id="sticky-product-bar" hidden>
+  <div class="spb-title">Meccha Chameleon [ ☢ Arcane ]</div>
+  <div class="spb-actions">
+    
+    <a class="spb-buy" href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer">
+      <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+    </a>
+  </div>
+</div>
+<header class="product-hero brand-arcane" id="product-hero">
+  <div class="hero-banner" aria-hidden="true">
+    <div class="hero-cover" style="--hero-cover:url('images/meccha-chameleon-arcane/photo_2026-07-18_22-20-36_2.jpg')"></div>
+    <span class="hero-watermark">ARCANE</span>
+    <span class="hero-grid"></span>
+  </div>
+  <div class="product-hero-inner">
+  <div class="product-hero-main">
+    <div class="product-hero-chips">
+      <span class="hero-chip game"><span data-lang="ru">Meccha Chameleon</span><span data-lang="en">Meccha Chameleon</span></span>
+      <span class="hero-chip brand">ARCANE</span>
+      <span class="status-badge undetected"><span class="status-dot"></span>Undetected</span>
+      
+    </div>
+    <h1><span data-lang="ru">Meccha Chameleon [ ☢ Arcane ]</span><span data-lang="en">Meccha Chameleon [ ☢ Arcane ]</span></h1>
+    <div class="product-hero-meta">
+      <span class="hero-meta-item">
+        <span data-lang="ru">Обновлено</span>
+        <span data-lang="en">Updated</span>
+        <strong>20.07.2026</strong>
+      </span>
+      <span class="hero-meta-item">
+        <span data-lang="ru">Документация Aimer123213</span>
+        <span data-lang="en">Aimer123213 documentation</span>
+      </span>
+    </div>
+  </div>
+  <div class="product-hero-actions">
+    <span class="official-seller-chip">Official seller</span>
+    <a class="hero-btn primary" href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer">
+      <span data-lang="ru">Купить на FunPay</span>
+      <span data-lang="en">Buy on FunPay</span>
+    </a>
+  </div>
+  </div>
+</header>
+<div class="share-bar" id="share-bar">
+  <span class="share-bar-label"><span data-lang="ru">Ссылка</span><span data-lang="en">Share</span></span>
+  <button type="button" class="share-btn" onclick="copySectionLink('#product-hero', this)"><span data-lang="ru">Страница</span><span data-lang="en">Page</span></button><button type="button" class="share-btn" onclick="copySectionLink('#launch-guide', this)"><span data-lang="ru">Инструкция</span><span data-lang="en">Setup</span></button><button type="button" class="share-btn" onclick="copySectionLink('#faq', this)"><span data-lang="ru">FAQ</span><span data-lang="en">FAQ</span></button>
+</div>
+
+<div class="feature-tools">
+  <button type="button" onclick="copyAllFeatures()"><span data-lang="ru">Копировать фичи</span><span data-lang="en">Copy features</span></button>
+  <button type="button" onclick="document.querySelectorAll('.content-area h2').forEach(h=>h.classList.add('section-collapsed'))"><span data-lang="ru">Свернуть всё</span><span data-lang="en">Collapse all</span></button>
+  <button type="button" onclick="document.querySelectorAll('.content-area h2').forEach(h=>h.classList.remove('section-collapsed'))"><span data-lang="ru">Развернуть всё</span><span data-lang="en">Expand all</span></button>
+</div>
+
+<aside class="launch-guide" id="launch-guide">
+  <div class="launch-guide-copy">
+    <div class="launch-guide-kicker">ARCANE</div>
+    <div class="launch-guide-title">
+      <span data-lang="ru">Инструкция по запуску</span>
+      <span data-lang="en">Launch instructions</span>
+    </div>
+    <p class="launch-guide-text">
+      <span data-lang="ru">Старая инструкция Arcane (NVIDIA + AMD).</span>
+      <span data-lang="en">Legacy Arcane guide (NVIDIA + AMD).</span>
+    </p>
+  </div>
+  <div class="launch-guide-actions">
+    <a class="launch-guide-btn" href="https://docs.google.com/document/d/1f2adF3rPRuSQ7hWq_bgNu4bMqJsnhoxi-90Ljp6a3Vk/edit?usp=drive_link" target="_blank" rel="noopener noreferrer" data-lang="ru">Открыть инструкцию ↗</a>
+    <a class="launch-guide-btn" href="https://docs.google.com/document/d/1mdHKIddTJ1DcCcoxO4e1ai_J0bUho-Q0VFg9hQ09HAs/edit?usp=drive_link" target="_blank" rel="noopener noreferrer" data-lang="en">Open guide ↗</a>
+  </div>
+</aside>
+
+<section class="buy-steps" id="buy-steps">
+  <div class="section-kicker"><span data-lang="ru">Покупка</span><span data-lang="en">Purchase</span></div>
+  <h2 class="section-title-plain"><span data-lang="ru">Как купить</span><span data-lang="en">How to buy</span></h2>
+  <ol class="buy-steps-list">
+    <li><strong>1</strong><span data-lang="ru">Выберите срок на FunPay</span><span data-lang="en">Pick a plan on FunPay</span></li>
+    <li><strong>2</strong><span data-lang="ru">Оплатите заказ</span><span data-lang="en">Pay for the order</span></li>
+    <li><strong>3</strong><span data-lang="ru">Получите ключ и инструкцию в чате</span><span data-lang="en">Get key + guide in chat</span></li>
+  </ol>
+</section>
+<section class="useful-links" id="useful-links">
+  <div class="section-kicker"><span data-lang="ru">Ссылки</span><span data-lang="en">Links</span></div>
+  <h2 class="section-title-plain"><span data-lang="ru">Полезные ссылки</span><span data-lang="en">Useful links</span></h2>
+  <div class="useful-links-row"><a href="https://docs.google.com/document/d/1f2adF3rPRuSQ7hWq_bgNu4bMqJsnhoxi-90Ljp6a3Vk/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span data-lang="ru">Инструкция RU</span><span data-lang="en">Guide RU</span></a><a href="https://docs.google.com/document/d/1mdHKIddTJ1DcCcoxO4e1ai_J0bUho-Q0VFg9hQ09HAs/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span data-lang="ru">Инструкция EN</span><span data-lang="en">Guide EN</span></a><a href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer">FunPay</a><a href="index.html"><span data-lang="ru">Каталог</span><span data-lang="en">Catalog</span></a><a href="widget.html" target="_blank"><span data-lang="ru">Telegram-виджет</span><span data-lang="en">TG widget</span></a></div>
+</section>
+<section class="highlights-block" id="highlights">
+  <div class="section-kicker">
+    <span data-lang="ru">Плюсы</span>
+    <span data-lang="en">Highlights</span>
+  </div>
+  <h2 class="section-title-plain">
+    <span data-lang="ru">Почему этот продукт</span>
+    <span data-lang="en">Why this product</span>
+  </h2>
+  <ul class="highlights-list">
+    <li><span data-lang='ru'>Долгий Undetected</span><span data-lang='en'>Long-term undetected</span></li><li><span data-lang='ru'>Большой функционал и конфиги</span><span data-lang='en'>Rich features and configs</span></li><li><span data-lang='ru'>Красивые визуалы / StreamProof</span><span data-lang='en'>Polished visuals / StreamProof</span></li>
+  </ul>
+</section>
+<h2 id='скриншоты'><span data-lang="ru">📸 Скриншоты</span><span data-lang="en">📸 Screenshots</span></h2>
+<div class="screenshots-block">
+  <div class="screenshots-toolbar">
+    <span class="screenshots-count">
+      <span data-lang="ru">1 скриншот</span>
+      <span data-lang="en">1 screenshot</span>
+    </span>
+  </div>
+  <div class="screenshots-carousel">
+    <figure class="screenshot-card" onclick="openLightbox('images/meccha-chameleon-arcane/photo_2026-07-18_22-20-36_2.jpg', 1)">
+  <span class="screenshot-index">01</span>
+  <picture>
+  <source type="image/webp" srcset="images/meccha-chameleon-arcane/photo_2026-07-18_22-20-36_2.md.webp 960w, images/meccha-chameleon-arcane/photo_2026-07-18_22-20-36_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
+  <img src="images/meccha-chameleon-arcane/photo_2026-07-18_22-20-36_2.jpg" alt="Скриншот 1" class="lqip-img screenshot-thumb" loading="lazy" decoding="async" style="background-image:url('images/meccha-chameleon-arcane/photo_2026-07-18_22-20-36_2.thumb.webp')" onload="this.classList.add('is-loaded')">
+</picture>
+  <figcaption class="screenshot-caption">
+    <span data-lang="ru">Скриншот 1</span>
+    <span data-lang="en">Скриншот 1</span>
+  </figcaption>
+  <div class="screenshot-overlay"><span>↗</span></div>
+</figure>
+  </div>
+</div>
+<h2 id='entities-esp'><span data-lang="ru">👁 Entities ESP</span><span data-lang="en">👁 Entities ESP</span></h2>
+<p class='feature-item'><strong><span data-lang="ru">Bounding Box</span><span data-lang="en">Bounding Box</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение целей в виде 2D-бокса: Box / Corners</span><span data-lang="en">displaying targets in the form of a 2D box: Box / Corners</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Fill Box</span><span data-lang="en">Fill Box</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">заливка бокса: Static / Gradient</span><span data-lang="en">box fill: Static / Gradient</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">View Line</span><span data-lang="en">View Line</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение направления взгляда с настройкой начального и конечного цвета</span><span data-lang="en">displaying viewing direction with customizable start and end colors</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Line to Enemy</span><span data-lang="en">Line to Enemy</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение линий до игроков с настройкой цвета и позиции</span><span data-lang="en">displaying lines to players with color and position settings</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Skeleton</span><span data-lang="en">Skeleton</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение скелета с настройкой толщины линий и круга головы</span><span data-lang="en">display of the skeleton with adjustable line thickness and head circle</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Name</span><span data-lang="en">Name</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение имён игроков</span><span data-lang="en">displaying player names</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Distance</span><span data-lang="en">Distance</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение расстояния до целей</span><span data-lang="en">displaying distance to targets</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Show Team</span><span data-lang="en">Show Team</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение членов команды</span><span data-lang="en">display team members</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Visibility Check</span><span data-lang="en">Visibility Check</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">проверка видимости целей</span><span data-lang="en">checking target visibility</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Max Distance</span><span data-lang="en">Max Distance</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">настройка максимальной дистанции работы ESP</span><span data-lang="en">setting the maximum ESP operating distance</span></span></p>
+<h2 id='misc'><span data-lang="ru">🛠 Misc</span><span data-lang="en">🛠 Misc</span></h2>
+<p class='feature-item'><strong><span data-lang="ru">No Gun Cooldown</span><span data-lang="en">No Gun Cooldown</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отключение задержки между выстрелами</span><span data-lang="en">disabling the delay between shots</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Infinity Ammo</span><span data-lang="en">Infinity Ammo</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">бесконечный запас боеприпасов</span><span data-lang="en">endless supply of ammunition</span></span></p>
+<p class='feature-item'><span class='feature-desc'><span data-lang="ru">⚙️ Settings</span><span data-lang="en">⚙️ Settings</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Menu Keybind</span><span data-lang="en">Menu Keybind</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">назначение клавиши открытия меню</span><span data-lang="en">assignment of the menu open key</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Unload Keybind</span><span data-lang="en">Unload Keybind</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">назначение клавиши выгрузки продукта</span><span data-lang="en">assignment of the product unload key</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">DPI Scale</span><span data-lang="en">DPI Scale</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">настройка размера интерфейса</span><span data-lang="en">adjusting interface size</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">FPS Limit</span><span data-lang="en">FPS Limit</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">установка ограничения кадров в секунду</span><span data-lang="en">setting frames per second limit</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Theme</span><span data-lang="en">Theme</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">выбор темы интерфейса: Dark / Light</span><span data-lang="en">interface theme selection: Dark / Light</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Watermark</span><span data-lang="en">Watermark</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">отображение водяного знака</span><span data-lang="en">display watermark</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Language</span><span data-lang="en">Language</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">выбор языка меню: EN / RU / CN</span><span data-lang="en">menu language selection: EN / RU / CN</span></span></p>
+<h2 id='config'><span data-lang="ru">💾 Config</span><span data-lang="en">💾 Config</span></h2>
+<p class='feature-item'><strong><span data-lang="ru">Create Config</span><span data-lang="en">Create Config</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">создание новой конфигурации</span><span data-lang="en">creating a new configuration</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Load Config</span><span data-lang="en">Load Config</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">загрузка сохранённой конфигурации</span><span data-lang="en">loading a saved configuration</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Rename Config</span><span data-lang="en">Rename Config</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">переименование выбранной конфигурации</span><span data-lang="en">renaming the selected configuration</span></span></p>
+<p class='feature-item'><strong><span data-lang="ru">Delete Config</span><span data-lang="en">Delete Config</span></strong><span class='feature-sep'>·</span><span class='feature-desc'><span data-lang="ru">удаление выбранной конфигурации</span><span data-lang="en">deleting the selected configuration</span></span></p>
+<h2 id='системные-требования'><span data-lang="ru">🖥 Системные требования</span><span data-lang="en">🖥 System requirements</span></h2>
+<div class='sys-req-grid'>
+
+                <div class="sys-req-card">
+                    <div class="sys-req-icon">⚙️</div>
+                    <div class="sys-req-name"><span data-lang="ru">Meccha Chameleon [ ☢ Arcane ]</span><span data-lang="en">Meccha Chameleon [ ☢ Arcane ]</span></div>
+                    <div class="sys-req-val"></div>
+                </div>
+                
+
+                <div class="sys-req-card">
+                    <div class="sys-req-icon">⚙️</div>
+                    <div class="sys-req-name"><span data-lang="ru">️ Операционная система</span><span data-lang="en">️ Операционная система</span></div>
+                    <div class="sys-req-val"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></div>
+                </div>
+                
+
+                <div class="sys-req-card">
+                    <div class="sys-req-icon">🔲</div>
+                    <div class="sys-req-name"><span data-lang="ru">Процессор</span><span data-lang="en">CPU</span></div>
+                    <div class="sys-req-val"><span data-lang="ru">Intel / AMD</span><span data-lang="en">Intel / AMD</span></div>
+                </div>
+                
+
+                <div class="sys-req-card">
+                    <div class="sys-req-icon">🔲</div>
+                    <div class="sys-req-name"><span data-lang="ru">Видеокарта</span><span data-lang="en">Video card</span></div>
+                    <div class="sys-req-val"><span data-lang="ru">Nvidia / AMD</span><span data-lang="en">Nvidia / AMD</span></div>
+                </div>
+                
+
+                <div class="sys-req-card">
+                    <div class="sys-req-icon">🖥</div>
+                    <div class="sys-req-name"><span data-lang="ru">Режим игры</span><span data-lang="en">Game mode</span></div>
+                    <div class="sys-req-val"><span data-lang="ru">В окне без рамок / Оконный</span><span data-lang="en">In a frameless window / Windowed</span></div>
+                </div>
+                
+
+                <div class="sys-req-card">
+                    <div class="sys-req-icon">🌐</div>
+                    <div class="sys-req-name"><span data-lang="ru">Поддерживаемые версии игры</span><span data-lang="en">Supported game versions</span></div>
+                    <div class="sys-req-val"><span data-lang="ru">Steam, Epic Games, Xbox</span><span data-lang="en">Steam, Epic Games, Xbox</span></div>
+                </div>
+                
+
+                <div class="sys-req-card">
+                    <div class="sys-req-icon">🤖</div>
+                    <div class="sys-req-name"><span data-lang="ru">Встроенный спуфер</span><span data-lang="en">Built-in spoofer</span></div>
+                    <div class="sys-req-val"><span data-lang="ru">Нет</span><span data-lang="en">No</span></div>
+                </div>
+                
+</div><!-- sys-req-grid -->
+<section class="faq-block" id="faq">
+  <div class="section-kicker">
+    <span data-lang="ru">Помощь</span>
+    <span data-lang="en">Help</span>
+  </div>
+  <h2 class="section-title-plain">
+    <span data-lang="ru">FAQ / Troubleshooting</span>
+    <span data-lang="en">FAQ / Troubleshooting</span>
+  </h2>
+  <p class="section-lead">
+    <span data-lang="ru">Короткие ответы на частые проблемы при запуске.</span>
+    <span data-lang="en">Short answers to common launch issues.</span>
+  </p>
+  <div class="faq-list">
+    <details class="faq-item" open>
+  <summary>
+    <span data-lang="ru">Что сделать перед первым запуском?</span>
+    <span data-lang="en">What should I do before the first launch?</span>
+  </summary>
+  <div class="faq-body">
+    <span data-lang="ru">Отключите антивирус на время установки, запустите инструкцию бренда и следуйте шагам под вашу видеокарту (NVIDIA/AMD).</span>
+    <span data-lang="en">Temporarily disable antivirus, open the brand setup guide, and follow the steps for your GPU (NVIDIA/AMD).</span>
+  </div>
+</details><details class="faq-item" >
+  <summary>
+    <span data-lang="ru">Антивирус удаляет файлы</span>
+    <span data-lang="en">Antivirus deletes files</span>
+  </summary>
+  <div class="faq-body">
+    <span data-lang="ru">Добавьте папку продукта в исключения Windows Defender / вашего AV, затем скачайте файлы заново.</span>
+    <span data-lang="en">Add the product folder to Windows Defender / AV exclusions, then re-download the files.</span>
+  </div>
+</details><details class="faq-item" >
+  <summary>
+    <span data-lang="ru">Не открывается меню / не инжектится</span>
+    <span data-lang="en">Menu won&#x27;t open / inject fails</span>
+  </summary>
+  <div class="faq-body">
+    <span data-lang="ru">Запускайте от имени администратора, закройте оверлеи (Discord, GeForce Experience) и проверьте, что игра запущена в нужном режиме.</span>
+    <span data-lang="en">Run as administrator, close overlays (Discord, GeForce Experience), and make sure the game is running in the required mode.</span>
+  </div>
+</details><details class="faq-item" >
+  <summary>
+    <span data-lang="ru">Нужен ли спуфер?</span>
+    <span data-lang="en">Do I need a spoofer?</span>
+  </summary>
+  <div class="faq-body">
+    <span data-lang="ru">Зависит от продукта и игры. Смотрите блок системных требований и карточку статуса — там указано наличие спуфера.</span>
+    <span data-lang="en">It depends on the product and game. Check system requirements and the status card for spoofer availability.</span>
+  </div>
+</details><details class="faq-item" >
+  <summary>
+    <span data-lang="ru">После обновления игры перестало работать</span>
+    <span data-lang="en">Stopped working after a game update</span>
+  </summary>
+  <div class="faq-body">
+    <span data-lang="ru">Дождитесь обновления продукта. Статус на главной странице показывает Undetected / Update — при Update запуск не рекомендуется.</span>
+    <span data-lang="en">Wait for a product update. The status page shows Undetected / Update — avoid launching while on Update.</span>
+  </div>
+</details>
+  </div>
+</section>
+<section class="compare-block" id="compare">
+  <div class="section-kicker">
+    <span data-lang="ru">В этой игре</span>
+    <span data-lang="en">In this game</span>
+  </div>
+  <h2 class="section-title-plain">
+    <span data-lang="ru">Сравнение продуктов</span>
+    <span data-lang="en">Product comparison</span>
+  </h2>
+  <p class="section-lead">
+    <span data-lang="ru">Сравните функции: что есть только в одном продукте, что общее — и какую версию выбрать.</span>
+    <span data-lang="en">Compare features: unique vs shared — and which version to pick.</span>
+  </p>
+  <script type="application/json" id="compare-data">[{"html": "meccha-chameleon-arcane.html", "name": "Meccha Chameleon [ ☢ Arcane ]", "variant": "Standard", "price": "—", "status": "Undetected", "features": ["Bounding Box", "Fill Box", "View Line", "Line to Enemy", "Skeleton", "Name", "Distance", "Show Team", "Visibility Check", "Max Distance", "No Gun Cooldown", "Infinity Ammo", "Menu Keybind", "Unload Keybind", "DPI Scale", "FPS Limit", "Theme", "Watermark", "Language", "Create Config", "Load Config", "Rename Config", "Delete Config"], "sections": ["Entities ESP", "Misc", "Config"]}, {"html": "meccha-chameleon-ghost.html", "name": "Meccha Chameleon [ ☢ Ghost ]", "variant": "Standard", "price": "—", "status": "Undetected", "features": ["Show Hunters / Show Survivors", "Box", "Name", "Distance", "Health", "Offscreen Arrows", "Colors", "Built", "Size / Zoom / Distance", "Draw Outline / Draw Background", "Dot Style / Dot Size", "Config System", "Hide From Capture", "Crosshair", "Watermark / Shadow Text", "Menu Key (Insert)", "DPI Scale"], "sections": ["Visuals / Player", "Radar", "Settings"]}]</script>
+  
+  <div class="compare-matrix" id="compare-matrix" data-cols="2">
+    <div class="cm-cell cm-label"></div>
+    <div class="cm-cell cm-head"><select id="compare-pick-a" onchange="syncComparePickers()"><option value="meccha-chameleon-arcane.html" data-name="Meccha Chameleon [ ☢ Arcane ]" data-variant="Standard" data-price="—" data-status="Undetected" selected>Meccha Chameleon [ ☢ Arcane ]</option><option value="meccha-chameleon-ghost.html" data-name="Meccha Chameleon [ ☢ Ghost ]" data-variant="Standard" data-price="—" data-status="Undetected" >Meccha Chameleon [ ☢ Ghost ]</option></select></div>
+    <div class="cm-cell cm-head"><select id="compare-pick-b" onchange="syncComparePickers()"><option value="meccha-chameleon-arcane.html" data-name="Meccha Chameleon [ ☢ Arcane ]" data-variant="Standard" data-price="—" data-status="Undetected" >Meccha Chameleon [ ☢ Arcane ]</option><option value="meccha-chameleon-ghost.html" data-name="Meccha Chameleon [ ☢ Ghost ]" data-variant="Standard" data-price="—" data-status="Undetected" selected>Meccha Chameleon [ ☢ Ghost ]</option></select></div>
+    <div class="cm-cell cm-label"><span data-lang="ru">Продукт</span><span data-lang="en">Product</span></div>
+    <div class="cm-cell" data-compare-side="a"><a class="cm-link" href="meccha-chameleon-arcane.html" data-field="name">Meccha Chameleon [ ☢ Arcane ]</a></div>
+    <div class="cm-cell" data-compare-side="b"><a class="cm-link" href="meccha-chameleon-ghost.html" data-field="name">Meccha Chameleon [ ☢ Ghost ]</a></div>
+    <div class="cm-cell cm-label"><span data-lang="ru">Тип</span><span data-lang="en">Variant</span></div>
+    <div class="cm-cell" data-compare-side="a"><span data-field="variant">Standard</span></div>
+    <div class="cm-cell" data-compare-side="b"><span data-field="variant">Standard</span></div>
+    <div class="cm-cell cm-label"><span data-lang="ru">Цена</span><span data-lang="en">Price</span></div>
+    <div class="cm-cell" data-compare-side="a"><span data-field="price">—</span></div>
+    <div class="cm-cell" data-compare-side="b"><span data-field="price">—</span></div>
+    <div class="cm-cell cm-label"><span data-lang="ru">Функций</span><span data-lang="en">Features</span></div>
+    <div class="cm-cell" data-compare-side="a"><span data-field="featcount">23</span></div>
+    <div class="cm-cell" data-compare-side="b"><span data-field="featcount">17</span></div>
+    <div class="cm-cell cm-label"><span data-lang="ru">Разделы</span><span data-lang="en">Modules</span></div>
+    <div class="cm-cell" data-compare-side="a"><span data-field="sections" class="cm-sections"><span class="cm-sec-chip is-unique">Entities ESP</span><span class="cm-sec-chip is-unique">Misc</span><span class="cm-sec-chip is-unique">Config</span></span></div>
+    <div class="cm-cell" data-compare-side="b"><span data-field="sections" class="cm-sections"><span class="cm-sec-chip is-unique">Visuals / Player</span><span class="cm-sec-chip is-unique">Radar</span><span class="cm-sec-chip is-unique">Settings</span></span></div>
+    <div class="cm-cell cm-label">Status</div>
+    <div class="cm-cell" data-compare-side="a"><span data-field="status">Undetected</span></div>
+    <div class="cm-cell" data-compare-side="b"><span data-field="status">Undetected</span></div>
+  </div>
+  <div class="compare-diff" id="compare-diff">
+    <div class="compare-diff-col" data-diff="only-a">
+      <div class="compare-diff-title" id="compare-diff-title-a">Только в Meccha Chameleon [ ☢ Arcane ]</div>
+      <ul class="compare-diff-list" id="compare-diff-only-a"><li>Bounding Box</li><li>Fill Box</li><li>View Line</li><li>Line to Enemy</li><li>Skeleton</li><li>Show Team</li><li>Visibility Check</li><li>Max Distance</li><li>No Gun Cooldown</li><li>Infinity Ammo</li><li>Menu Keybind</li><li>Unload Keybind</li><li>FPS Limit</li><li>Theme</li><li>Watermark</li><li>Language</li><li>Create Config</li><li>Load Config</li><li>Rename Config</li><li>Delete Config</li></ul>
+    </div>
+    <div class="compare-diff-col shared" data-diff="shared">
+      <div class="compare-diff-title"><span data-lang="ru">Общее</span><span data-lang="en">Shared</span></div>
+      <ul class="compare-diff-list" id="compare-diff-shared"><li>DPI Scale</li><li>Name</li><li>Distance</li></ul>
+    </div>
+    <div class="compare-diff-col" data-diff="only-b">
+      <div class="compare-diff-title" id="compare-diff-title-b">Только в Meccha Chameleon [ ☢ Ghost ]</div>
+      <ul class="compare-diff-list" id="compare-diff-only-b"><li>Show Hunters / Show Survivors</li><li>Box</li><li>Health</li><li>Offscreen Arrows</li><li>Colors</li><li>Built</li><li>Size / Zoom / Distance</li><li>Draw Outline / Draw Background</li><li>Dot Style / Dot Size</li><li>Config System</li><li>Hide From Capture</li><li>Crosshair</li><li>Watermark / Shadow Text</li><li>Menu Key (Insert)</li></ul>
+    </div>
+  </div>
+
+  <div class="compare-tools">
+    <button type="button" onclick="toggleCompareShared()">
+      <span data-lang="ru">Только различия</span><span data-lang="en">Differences only</span>
+    </button>
+    <button type="button" onclick="exportCompareText()">
+      <span data-lang="ru">Копировать сравнение</span><span data-lang="en">Copy compare</span>
+    </button>
+  </div>
+  <div class="compare-verdict" id="compare-verdict"><span data-lang="ru"><strong>Meccha Chameleon [ ☢ Arcane ]</strong> — берите, если нужны: Entities ESP, Misc, Config, Bounding Box, Fill Box <strong>Meccha Chameleon [ ☢ Ghost ]</strong> — берите, если нужны: Visuals / Player, Radar, Settings, Show Hunters / Show Survivors, Box</span><span data-lang="en"><strong>Meccha Chameleon [ ☢ Arcane ]</strong> — pick for Entities ESP, Misc, Config, Bounding Box, Fill Box <strong>Meccha Chameleon [ ☢ Ghost ]</strong> — pick for Visuals / Player, Radar, Settings, Show Hunters / Show Survivors, Box</span></div>
+  <script>try { syncComparePickers(); } catch (e) {}</script>
+</section>
+<nav class="sibling-nav" aria-label="Sibling products">
+<span class="sibling-link prev is-empty"></span>
+<a class="sibling-link next" href="meccha-chameleon-ghost.html"><span>Meccha Chameleon [ ☢ Ghost ]</span><span>→</span></a>
+</nav>
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div>
+      <strong>Aimer123213</strong>
+      <span class="site-footer-tag">FUNPAY · DOCS</span>
+    </div>
+    <div class="site-footer-meta">
+      <span data-lang="ru">Сборка</span><span data-lang="en">Build</span>
+      <code>202607192332</code>
+    </div>
+  </div>
+</footer>
+            <script>
+                const searchDiv = document.createElement('div');
+                searchDiv.className = 'search-container';
+                searchDiv.innerHTML = `
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="feature-search" placeholder="Поиск по функциям... (или нажмите '/')" data-i18n-placeholder data-i18n-placeholder-ru="Поиск по функциям... (или нажмите '/')" data-i18n-placeholder-en="Search features... (or press '/')" oninput="filterFeatures()">
+                `;
+                const insertAfter = document.querySelector('.highlights-block')
+                    || document.querySelector('.pricing-block')
+                    || document.querySelector('.launch-guide')
+                    || document.querySelector('.product-hero');
+                if (insertAfter) {
+                    insertAfter.parentNode.insertBefore(searchDiv, insertAfter.nextSibling);
+                }
+            </script>
+        </div>
+        <div class="toc-panel">
+            <div class="toc-title"><span data-lang="ru">На этой странице</span><span data-lang="en">On this page</span></div>
+            <nav class="toc-nav" aria-label="On this page">
+<a href="#launch-guide" class="toc-link toc-link-root" data-toc-id="launch-guide"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Инструкция</span><span data-lang="en">Setup</span></span></a>
+<a href="#скриншоты" class="toc-link toc-link-root" data-toc-id="скриншоты"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Скриншоты</span><span data-lang="en">Screenshots</span></span></a>
+<a href="#entities-esp" class="toc-link toc-link-root" data-toc-id="entities-esp"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Entities ESP</span><span data-lang="en">Entities ESP</span></span></a>
+<a href="#misc" class="toc-link toc-link-root" data-toc-id="misc"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Misc</span><span data-lang="en">Misc</span></span></a>
+<a href="#config" class="toc-link toc-link-root" data-toc-id="config"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Config</span><span data-lang="en">Config</span></span></a>
+<a href="#системные-требования" class="toc-link toc-link-root" data-toc-id="системные-требования"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Системные требования</span><span data-lang="en">System Requirements</span></span></a>
+<a href="#highlights" class="toc-link toc-link-root" data-toc-id="highlights"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Плюсы</span><span data-lang="en">Highlights</span></span></a>
+<a href="#compare" class="toc-link toc-link-root" data-toc-id="compare"><span class="toc-dot"></span><span class="toc-label"><span data-lang="ru">Сравнение</span><span data-lang="en">Compare</span></span></a>
+<a href="#faq" class="toc-link toc-link-root" data-toc-id="faq"><span class="toc-dot"></span><span class="toc-label">FAQ</span></a>
+</nav>
+        </div>
+    </div>
+    <div id="lightbox-modal" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-image" class="lightbox-content" src="" alt="Увеличенный скриншот" onclick="event.stopPropagation()">
+        <div id="lightbox-caption" style="position:absolute;bottom:28px;left:50%;transform:translateX(-50%);color:#c6ff3d;font:700 .75rem JetBrains Mono,monospace;letter-spacing:.12em;"></div>
+    </div>
+    <a href="https://funpay.com/users/7290355/" target="_blank" class="fp-widget" title="Купить на FunPay">
+        <svg class="fp-widget-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+    </a>
+    <nav class="mobile-bottom-bar" aria-label="Mobile actions">
+  <button type="button" onclick="toggleMobileMenu()">
+    <span data-lang="ru">Меню</span><span data-lang="en">Menu</span>
+  </button>
+  <button type="button" onclick="openMobileToc()">
+    <span data-lang="ru">Разделы</span><span data-lang="en">Sections</span>
+  </button>
+  
+  <a class="mb-buy" href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer">
+    <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+  </a>
+</nav>
+<div id="mobile-toc-drawer" class="mobile-toc-drawer" onclick="if(event.target===this)closeMobileToc()">
+  <div class="mobile-toc-panel">
+    <div class="toc-title"><span data-lang="ru">На этой странице</span><span data-lang="en">On this page</span></div>
+    <div class="mobile-toc-nav toc-nav"></div>
+  </div>
+</div>
+    <div id="global-search-overlay" class="global-search-overlay" onclick="closeGlobalSearch()">
+        <div class="global-search-card" onclick="event.stopPropagation()">
+            <div class="global-search-header">
+                <input type="text" id="global-search-input" class="global-search-input" placeholder="Искать по всей документации..." data-i18n-placeholder data-i18n-placeholder-ru="Искать по всей документации..." data-i18n-placeholder-en="Search the documentation..." oninput="doGlobalSearch()">
+                <span class="global-search-esc">ESC</span>
+            </div>
+            <div id="global-search-results" class="global-search-results">
+                <div style="color: var(--text-muted); text-align: center; padding: 20px;">Введите что-нибудь для поиска...</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

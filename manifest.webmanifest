@@ -1,0 +1,19 @@
+{
+  "name": "Aimer123213 Docs",
+  "short_name": "Aimer123213",
+  "description": "Aimer123213 product catalog and documentation",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0e0f12",
+  "theme_color": "#0e0f12",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
