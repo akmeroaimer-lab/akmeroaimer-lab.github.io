@@ -96,15 +96,6 @@
           "product_key": "spoofer"
         },
         {
-          "game": "Counter-Strike 2 Other",
-          "title": "🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅30 days🟥🟥, Guides 53.49 $",
-          "price": "53.49 $",
-          "href": "https://funpay.com/lots/offer?id=73262475",
-          "days": 30,
-          "game_key": "counter-strike-2",
-          "product_key": "spoofer"
-        },
-        {
           "game": "DayZ Other",
           "title": "PC PC 🟥🟥HWID-CHANGER Xernel🟢|OFFICIAL SELLER|✅7 days🟥🟥, Other 14.64 $",
           "price": "14.64 $",
@@ -118,24 +109,6 @@
           "title": "PC PC 🟥🟥HWID-CHANGER Xernel🟢|OFFICIAL SELLER|✅30 days🟥🟥, Other 53.49 $",
           "price": "53.49 $",
           "href": "https://funpay.com/lots/offer?id=73261018",
-          "days": 30,
-          "game_key": "dayz",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "DayZ Other",
-          "title": "PC PC 🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅7 days🟥🟥, Other 14.64 $",
-          "price": "14.64 $",
-          "href": "https://funpay.com/lots/offer?id=73260160",
-          "days": 7,
-          "game_key": "dayz",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "DayZ Other",
-          "title": "PC PC 🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅30 days🟥🟥, Other 53.49 $",
-          "price": "53.49 $",
-          "href": "https://funpay.com/lots/offer?id=73260147",
           "days": 30,
           "game_key": "dayz",
           "product_key": "spoofer"
@@ -172,24 +145,6 @@
           "title": "🟥🟥HWID-CHANGER Xernel🟢|OFFICIAL SELLER|✅30 days🟥🟥, Other 51.68 $",
           "price": "51.68 $",
           "href": "https://funpay.com/lots/offer?id=73262565",
-          "days": 30,
-          "game_key": "escape-from-tarkov",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "Escape from Tarkov Other",
-          "title": "🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅7 days🟥🟥, Other 14.14 $",
-          "price": "14.14 $",
-          "href": "https://funpay.com/lots/offer?id=73261105",
-          "days": 7,
-          "game_key": "escape-from-tarkov",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "Escape from Tarkov Other",
-          "title": "🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅30 days🟥🟥, Other 51.68 $",
-          "price": "51.68 $",
-          "href": "https://funpay.com/lots/offer?id=73261099",
           "days": 30,
           "game_key": "escape-from-tarkov",
           "product_key": "spoofer"
@@ -298,24 +253,6 @@
           "title": "PC PC 🟥🟥HWID-CHANGER Xernel🟢|OFFICIAL SELLER|✅30 days🟥🟥, Other 54.40 $",
           "price": "54.40 $",
           "href": "https://funpay.com/lots/offer?id=73263252",
-          "days": 30,
-          "game_key": "rust",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "Rust Other",
-          "title": "PC PC 🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅7 days🟥🟥, Other 14.89 $",
-          "price": "14.89 $",
-          "href": "https://funpay.com/lots/offer?id=73260774",
-          "days": 7,
-          "game_key": "rust",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "Rust Other",
-          "title": "PC PC 🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅30 days🟥🟥, Other 54.40 $",
-          "price": "54.40 $",
-          "href": "https://funpay.com/lots/offer?id=73260562",
           "days": 30,
           "game_key": "rust",
           "product_key": "spoofer"
@@ -1971,7 +1908,7 @@
       ]
     },
     "rust-xernel": {
-      "buy": "https://funpay.com/lots/offer?id=73276742",
+      "buy": "https://funpay.com/lots/offer?id=73281940",
       "offers": [
         {
           "game": "Rust Other",
@@ -1990,6 +1927,15 @@
           "days": 7,
           "game_key": "rust",
           "product_key": "xernel"
+        },
+        {
+          "game": "Rust Other",
+          "title": "PC PC 🟥🟥DLC Xernel🟢|OFFICIAL SELLER|✅30 days🟥🟥, Other 61.91 $",
+          "price": "61.91 $",
+          "href": "https://funpay.com/lots/offer?id=73281940",
+          "days": 30,
+          "game_key": "rust",
+          "product_key": "xernel"
         }
       ],
       "tiers": [
@@ -2002,6 +1948,11 @@
           "days": 7,
           "price": 2209,
           "buy": "https://funpay.com/lots/offer?id=73276742"
+        },
+        {
+          "days": 30,
+          "price": 4779,
+          "buy": "https://funpay.com/lots/offer?id=73281940"
         }
       ]
     },
@@ -2162,15 +2113,6 @@
           "product_key": "spoofer"
         },
         {
-          "game": "Counter-Strike 2 Other",
-          "title": "🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅30 days🟥🟥, Guides 53.49 $",
-          "price": "53.49 $",
-          "href": "https://funpay.com/lots/offer?id=73262475",
-          "days": 30,
-          "game_key": "counter-strike-2",
-          "product_key": "spoofer"
-        },
-        {
           "game": "DayZ Other",
           "title": "PC PC 🟥🟥HWID-CHANGER Xernel🟢|OFFICIAL SELLER|✅7 days🟥🟥, Other 14.64 $",
           "price": "14.64 $",
@@ -2184,24 +2126,6 @@
           "title": "PC PC 🟥🟥HWID-CHANGER Xernel🟢|OFFICIAL SELLER|✅30 days🟥🟥, Other 53.49 $",
           "price": "53.49 $",
           "href": "https://funpay.com/lots/offer?id=73261018",
-          "days": 30,
-          "game_key": "dayz",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "DayZ Other",
-          "title": "PC PC 🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅7 days🟥🟥, Other 14.64 $",
-          "price": "14.64 $",
-          "href": "https://funpay.com/lots/offer?id=73260160",
-          "days": 7,
-          "game_key": "dayz",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "DayZ Other",
-          "title": "PC PC 🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅30 days🟥🟥, Other 53.49 $",
-          "price": "53.49 $",
-          "href": "https://funpay.com/lots/offer?id=73260147",
           "days": 30,
           "game_key": "dayz",
           "product_key": "spoofer"
@@ -2238,24 +2162,6 @@
           "title": "🟥🟥HWID-CHANGER Xernel🟢|OFFICIAL SELLER|✅30 days🟥🟥, Other 51.68 $",
           "price": "51.68 $",
           "href": "https://funpay.com/lots/offer?id=73262565",
-          "days": 30,
-          "game_key": "escape-from-tarkov",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "Escape from Tarkov Other",
-          "title": "🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅7 days🟥🟥, Other 14.14 $",
-          "price": "14.14 $",
-          "href": "https://funpay.com/lots/offer?id=73261105",
-          "days": 7,
-          "game_key": "escape-from-tarkov",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "Escape from Tarkov Other",
-          "title": "🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅30 days🟥🟥, Other 51.68 $",
-          "price": "51.68 $",
-          "href": "https://funpay.com/lots/offer?id=73261099",
           "days": 30,
           "game_key": "escape-from-tarkov",
           "product_key": "spoofer"
@@ -2364,24 +2270,6 @@
           "title": "PC PC 🟥🟥HWID-CHANGER Xernel🟢|OFFICIAL SELLER|✅30 days🟥🟥, Other 54.40 $",
           "price": "54.40 $",
           "href": "https://funpay.com/lots/offer?id=73263252",
-          "days": 30,
-          "game_key": "rust",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "Rust Other",
-          "title": "PC PC 🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅7 days🟥🟥, Other 14.89 $",
-          "price": "14.89 $",
-          "href": "https://funpay.com/lots/offer?id=73260774",
-          "days": 7,
-          "game_key": "rust",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "Rust Other",
-          "title": "PC PC 🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅30 days🟥🟥, Other 54.40 $",
-          "price": "54.40 $",
-          "href": "https://funpay.com/lots/offer?id=73260562",
           "days": 30,
           "game_key": "rust",
           "product_key": "spoofer"
@@ -3313,26 +3201,8 @@
       ]
     },
     "spoofer": {
-      "buy": "https://funpay.com/lots/offer?id=73260562",
+      "buy": "https://funpay.com/lots/offer?id=73263252",
       "offers": [
-        {
-          "game": "DayZ Other",
-          "title": "PC PC 🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅30 days🟥🟥, Other 53.49 $",
-          "price": "53.49 $",
-          "href": "https://funpay.com/lots/offer?id=73260147",
-          "days": 30,
-          "game_key": "dayz",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "Rust Other",
-          "title": "PC PC 🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅30 days🟥🟥, Other 54.40 $",
-          "price": "54.40 $",
-          "href": "https://funpay.com/lots/offer?id=73260562",
-          "days": 30,
-          "game_key": "rust",
-          "product_key": "spoofer"
-        },
         {
           "game": "Apex Legends Other",
           "title": "PC PC 🟥🟥HWID-CHANGER Xernel🟢|OFFICIAL SELLER|✅30 days🟥🟥, Other 1 53.49 $",
@@ -3349,24 +3219,6 @@
           "href": "https://funpay.com/lots/offer?id=73261018",
           "days": 30,
           "game_key": "dayz",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "Escape from Tarkov Other",
-          "title": "🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅30 days🟥🟥, Other 51.68 $",
-          "price": "51.68 $",
-          "href": "https://funpay.com/lots/offer?id=73261099",
-          "days": 30,
-          "game_key": "escape-from-tarkov",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "Counter-Strike 2 Other",
-          "title": "🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅30 days🟥🟥, Guides 53.49 $",
-          "price": "53.49 $",
-          "href": "https://funpay.com/lots/offer?id=73262475",
-          "days": 30,
-          "game_key": "counter-strike-2",
           "product_key": "spoofer"
         },
         {
@@ -3479,38 +3331,11 @@
         },
         {
           "game": "DayZ Other",
-          "title": "PC PC 🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅7 days🟥🟥, Other 14.64 $",
-          "price": "14.64 $",
-          "href": "https://funpay.com/lots/offer?id=73260160",
-          "days": 7,
-          "game_key": "dayz",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "Rust Other",
-          "title": "PC PC 🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅7 days🟥🟥, Other 14.89 $",
-          "price": "14.89 $",
-          "href": "https://funpay.com/lots/offer?id=73260774",
-          "days": 7,
-          "game_key": "rust",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "DayZ Other",
           "title": "PC PC 🟥🟥HWID-CHANGER Xernel🟢|OFFICIAL SELLER|✅7 days🟥🟥, Other 14.64 $",
           "price": "14.64 $",
           "href": "https://funpay.com/lots/offer?id=73261023",
           "days": 7,
           "game_key": "dayz",
-          "product_key": "spoofer"
-        },
-        {
-          "game": "Escape from Tarkov Other",
-          "title": "🟥🟥HWID WOOFFER Xernel🟢|BYPASS HWID BAN ALL GAMES|✅7 days🟥🟥, Other 14.14 $",
-          "price": "14.14 $",
-          "href": "https://funpay.com/lots/offer?id=73261105",
-          "days": 7,
-          "game_key": "escape-from-tarkov",
           "product_key": "spoofer"
         },
         {
@@ -3651,6 +3476,15 @@
           "href": "https://funpay.com/lots/offer?id=73277123",
           "days": 30,
           "game_key": "dayz",
+          "product_key": "xernel"
+        },
+        {
+          "game": "Rust Other",
+          "title": "PC PC 🟥🟥DLC Xernel🟢|OFFICIAL SELLER|✅30 days🟥🟥, Other 61.91 $",
+          "price": "61.91 $",
+          "href": "https://funpay.com/lots/offer?id=73281940",
+          "days": 30,
+          "game_key": "rust",
           "product_key": "xernel"
         },
         {

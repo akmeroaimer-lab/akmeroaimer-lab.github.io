@@ -106,6 +106,7 @@ Rust|Rampart Lite|rust-rampart-lite|7|999
 Rust|Rampart Lite|rust-rampart-lite|30|1999
 Rust|Xernel|rust-xernel|1|449
 Rust|Xernel|rust-xernel|7|2209
+Rust|Xernel|rust-xernel|30|4779
 Unturned|Medusa|unturned-medusa|1|149
 Unturned|Medusa|unturned-medusa|3|299
 Unturned|Medusa|unturned-medusa|7|499
