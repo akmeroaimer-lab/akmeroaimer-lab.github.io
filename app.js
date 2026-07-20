@@ -201,7 +201,7 @@
         // Reveal content in small groups as it enters the viewport.
         document.addEventListener('DOMContentLoaded', () => {
             const items = document.querySelectorAll(
-                '.status-grid-card, .screenshot-card, .sys-req-card, .feature-item, .feature-text'
+                '.status-grid-card, .screenshot-card, .sys-req-card'
             );
             const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -1236,7 +1236,7 @@
                             const ids = (group.dataset.childIds || '').split(/\s+/).filter(Boolean);
                             const active = ids.includes(id);
                             group.classList.toggle('has-active', active);
-                            if (active) group.classList.remove('collapsed');
+                            // Do not auto-expand TOC on scroll (layout jump).
                         });
                     }
                 });
@@ -1271,7 +1271,7 @@
        offscreen observe; hard failsafe so nothing stays opacity:0 forever. */
     var SEL = '.launch-guide,.pricing-block,.buy-steps,.useful-links,.highlights-block,' +
               '.screenshots-block,.faq-item,.compare-block,' +
-              '.status-grid-card,.screenshot-card,.sys-req-card,.feature-item,.feature-text';
+              '.status-grid-card,.screenshot-card,.sys-req-card';
     var nodes = document.querySelectorAll(SEL);
     function showAll(){
       nodes.forEach(function(s){ s.classList.add('reveal-item','is-visible'); });

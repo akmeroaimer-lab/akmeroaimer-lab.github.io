@@ -25,7 +25,7 @@
             display: flex;
             min-height: 100vh;
             overflow-x: hidden;
-            scroll-behavior: smooth;
+            scroll-behavior: auto;
         }
         
         /* Custom scrollbar */
@@ -3223,13 +3223,23 @@
         .sibling-link:hover { border-color: #c6ff3d; color: #c6ff3d; }
         .sibling-link.is-empty { visibility: hidden; }
         .sticky-product-bar {
-            position: sticky; top: 0; z-index: 40;
+            position: fixed; top: 10px; left: 50%; z-index: 60;
+            transform: translateX(-50%) translateY(0);
+            width: min(720px, calc(100vw - 32px));
             display: flex; justify-content: space-between; align-items: center; gap: 12px;
-            margin: 0 0 14px; padding: 10px 12px;
+            margin: 0; padding: 10px 12px;
             border: 1px solid #2a2c31; border-radius: 3px;
-            background: rgba(14,15,18,.92); backdrop-filter: blur(10px);
+            background: rgba(14,15,18,.94); backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,.35);
+            transition: transform .2s ease, opacity .2s ease;
+            pointer-events: auto;
         }
-        .sticky-product-bar[hidden] { display: none !important; }
+        .sticky-product-bar[hidden] {
+            display: flex !important;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateX(-50%) translateY(-120%);
+        }
         .spb-title { font-family: var(--font-display); font-weight: 750; color: #f3f2ed; font-size: .95rem; }
         .spb-actions { display: flex; align-items: center; gap: 10px; }
         .spb-price { color: #c6ff3d; font-weight: 700; font-size: .82rem; }

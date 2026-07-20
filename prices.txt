@@ -1,88 +1,111 @@
-# Auto-generated from Desktop/Coding/funpay_lots/lots.json buyer_price (RUB)
+# tiers = live FunPay offers; RUB from lots (game+product) or USD*77.5
 # Format: Game|Product|slug|days|price
 
-Spoofers|Xernel Ultimate Spoofer (WOOFFER)|1|1|299
-Spoofers|Xernel Ultimate Spoofer (WOOFFER)|1|7|1149
-Spoofers|Xernel Ultimate Spoofer (WOOFFER)|1|30|4199
-Abi|Abi Ghost Esp|abi-ghost-esp|1|399
-Abi|Abi Ghost Esp|abi-ghost-esp|3|999
-Abi|Abi Ghost Esp|abi-ghost-esp|7|1999
-Abi|Abi Ghost Esp|abi-ghost-esp|30|3499
-Abi|Abi Ghost Full|abi-ghost-full|1|499
-Abi|Abi Ghost Full|abi-ghost-full|7|2499
-Abi|Abi Ghost Full|abi-ghost-full|30|3999
-Abi|Abi Koenflow|abi-koenflow|7|2249
-Abi|Abi Koenflow|abi-koenflow|30|4499
-Abi|Abi Xernel Full|abi-xernel-full|1|449
-Abi|Abi Xernel Full|abi-xernel-full|3|889
-Abi|Abi Xernel Full|abi-xernel-full|7|1469
-Abi|Abi Xernel Full|abi-xernel-full|14|2209
-Abi|Abi Xernel Full|abi-xernel-full|30|3309
-Apex|Apex Legends Arcane|apex-legends-arcane|1|389
-Apex|Apex Legends Arcane|apex-legends-arcane|7|1549
-Apex|Apex Legends Arcane|apex-legends-arcane|30|3099
-Apex|Apex Legends Phoenix X Ray|apex-legends-phoenix-x-ray|1|149
-Apex|Apex Legends Phoenix X Ray|apex-legends-phoenix-x-ray|7|599
-Apex|Apex Legends Phoenix X Ray|apex-legends-phoenix-x-ray|30|1199
-Apex|Apex Legends Rampart|apex-legends-rampart|1|199
-Apex|Apex Legends Rampart|apex-legends-rampart|3|399
-Apex|Apex Legends Rampart|apex-legends-rampart|7|599
-Apex|Apex Legends Rampart|apex-legends-rampart|30|1399
-Arc|Arc Raiders Arcane|arc-raiders-arcane|1|389
-Arc|Arc Raiders Arcane|arc-raiders-arcane|3|1259
-Arc|Arc Raiders Arcane|arc-raiders-arcane|7|1699
-Arc|Arc Raiders Arcane|arc-raiders-arcane|15|239
-Arc|Arc Raiders Arcane|arc-raiders-arcane|30|3099
-Arc|Arc Raiders Arcane|arc-raiders-arcane|60|629
-Arc|Arc Raiders Arcane|arc-raiders-arcane|120|1179
-Arc|Arc Raiders Arcane Radar|arc-raiders-arcane-radar|1|239
-Arc|Arc Raiders Arcane Radar|arc-raiders-arcane-radar|3|309
-Arc|Arc Raiders Arcane Radar|arc-raiders-arcane-radar|7|1179
-Arc|Arc Raiders Arcane Radar|arc-raiders-arcane-radar|15|1399
-Arc|Arc Raiders Arcane Radar|arc-raiders-arcane-radar|30|2709
-Dayz|Dayz Medusa Full|dayz-medusa-full|1|299
-Dayz|Dayz Medusa Full|dayz-medusa-full|3|599
-Dayz|Dayz Medusa Full|dayz-medusa-full|7|1199
-Dayz|Dayz Medusa Full|dayz-medusa-full|30|2499
-Dayz|Dayz Xernel|dayz-xernel|1|299
-Dayz|Dayz Xernel|dayz-xernel|7|735
-Dayz|Dayz Xernel|dayz-xernel|30|2199
-Escape|Escape From Tarkov Medusa Lite|escape-from-tarkov-medusa-lite|1|199
-Escape|Escape From Tarkov Medusa Lite|escape-from-tarkov-medusa-lite|3|499
-Escape|Escape From Tarkov Medusa Lite|escape-from-tarkov-medusa-lite|7|999
-Escape|Escape From Tarkov Medusa Lite|escape-from-tarkov-medusa-lite|30|1999
-Escape|Escape From Tarkov Medusa Rage|escape-from-tarkov-medusa-rage|1|649
-Escape|Escape From Tarkov Medusa Rage|escape-from-tarkov-medusa-rage|3|1799
-Escape|Escape From Tarkov Medusa Rage|escape-from-tarkov-medusa-rage|7|2999
-Escape|Escape From Tarkov Medusa Rage|escape-from-tarkov-medusa-rage|30|5499
-Pubg|Pubg Arcane Esp|pubg-arcane-esp|1|399
-Pubg|Pubg Arcane Esp|pubg-arcane-esp|7|1399
-Pubg|Pubg Arcane Esp|pubg-arcane-esp|30|2729
-Pubg|Pubg Arcane Full|pubg-arcane-full|1|399
-Pubg|Pubg Arcane Full|pubg-arcane-full|7|1719
-Pubg|Pubg Arcane Full|pubg-arcane-full|30|3119
-Pubg|Pubg Phoenix Full|pubg-phoenix-full|1|249
-Pubg|Pubg Phoenix Full|pubg-phoenix-full|7|999
-Pubg|Pubg Phoenix Full|pubg-phoenix-full|30|1749
-Rust|Rust Arcane|rust-arcane|1|469
-Rust|Rust Arcane|rust-arcane|3|1169
-Rust|Rust Arcane|rust-arcane|7|2349
-Rust|Rust Arcane|rust-arcane|30|4699
-Rust|Rust Rampart Full|rust-rampart-full|1|349
-Rust|Rust Rampart Full|rust-rampart-full|3|699
-Rust|Rust Rampart Full|rust-rampart-full|7|1599
-Rust|Rust Rampart Full|rust-rampart-full|30|3299
-Rust|Rust Rampart Lite|rust-rampart-lite|1|249
-Rust|Rust Rampart Lite|rust-rampart-lite|3|499
-Rust|Rust Rampart Lite|rust-rampart-lite|7|999
-Rust|Rust Rampart Lite|rust-rampart-lite|30|1999
-Rust|Rust Xernel|rust-xernel|1|449
-Rust|Rust Xernel|rust-xernel|7|2209
-Rust|Rust Xernel|rust-xernel|30|4779
-Unturned|Unturned Medusa|unturned-medusa|1|149
-Unturned|Unturned Medusa|unturned-medusa|3|299
-Unturned|Unturned Medusa|unturned-medusa|7|499
-Unturned|Unturned Medusa|unturned-medusa|30|999
-Spoofers|Xernel Ultimate Spoofer (WOOFFER)|xernel-ultimate-spoofer|1|299
-Spoofers|Xernel Ultimate Spoofer (WOOFFER)|xernel-ultimate-spoofer|7|1149
-Spoofers|Xernel Ultimate Spoofer (WOOFFER)|xernel-ultimate-spoofer|30|4199
+Other|Spoofer|1|7|1154
+Other|Spoofer|1|30|4216
+Apex Legends|Arcane|apex-legends-arcane|1|389
+Apex Legends|Arcane|apex-legends-arcane|7|1549
+Apex Legends|Arcane|apex-legends-arcane|30|3099
+Apex Legends|Phoenix X Ray|apex-legends-phoenix-x-ray|1|149
+Apex Legends|Phoenix X Ray|apex-legends-phoenix-x-ray|7|599
+Apex Legends|Phoenix X Ray|apex-legends-phoenix-x-ray|30|1199
+Apex Legends|Rampart|apex-legends-rampart|1|199
+Apex Legends|Rampart|apex-legends-rampart|3|399
+Apex Legends|Rampart|apex-legends-rampart|7|599
+Apex Legends|Rampart|apex-legends-rampart|30|1399
+Arc Raiders|Arcane Radar|arc-raiders-arcane-radar|3|309
+Arc Raiders|Arcane Radar|arc-raiders-arcane-radar|15|1399
+Arc Raiders|Arcane Radar|arc-raiders-arcane-radar|30|2709
+Arc Raiders|Arcane|arc-raiders-arcane|1|389
+Arc Raiders|Arcane|arc-raiders-arcane|7|1699
+Arc Raiders|Arcane|arc-raiders-arcane|30|3099
+Arena Breakout Infinite|Ghost Esp|arena-breakout-infinite-ghost-esp|1|399
+Arena Breakout Infinite|Ghost Esp|arena-breakout-infinite-ghost-esp|7|1999
+Arena Breakout Infinite|Ghost Esp|arena-breakout-infinite-ghost-esp|30|3499
+Arena Breakout Infinite|Ghost Full|arena-breakout-infinite-ghost-full|1|499
+Arena Breakout Infinite|Ghost Full|arena-breakout-infinite-ghost-full|7|2499
+Arena Breakout Infinite|Ghost Full|arena-breakout-infinite-ghost-full|30|3999
+Arena Breakout Infinite|Koenflow|arena-breakout-infinite-koenflow|7|2249
+Arena Breakout Infinite|Koenflow|arena-breakout-infinite-koenflow|30|4499
+Arena Breakout Infinite|Xernel Full|arena-breakout-infinite-xernel-full|1|449
+Arena Breakout Infinite|Xernel Full|arena-breakout-infinite-xernel-full|3|889
+Arena Breakout Infinite|Xernel Full|arena-breakout-infinite-xernel-full|7|1469
+Arena Breakout Infinite|Xernel Full|arena-breakout-infinite-xernel-full|14|2209
+Arena Breakout Infinite|Xernel Full|arena-breakout-infinite-xernel-full|30|3309
+Arma Reforger|Arcane|arma-reforger-arcane|1|389
+Arma Reforger|Arcane|arma-reforger-arcane|7|1699
+Arma Reforger|Arcane|arma-reforger-arcane|30|3099
+Arma Reforger|Xernel|arma-reforger-xernel|1|229
+Arma Reforger|Xernel|arma-reforger-xernel|7|739
+Arma Reforger|Xernel|arma-reforger-xernel|30|1839
+Counter Strike 2|Arcane|counter-strike-2-arcane|1|119
+Counter Strike 2|Arcane|counter-strike-2-arcane|15|239
+Counter Strike 2|Arcane|counter-strike-2-arcane|30|349
+Dayz|Arcane|dayz-arcane|1|229
+Dayz|Arcane|dayz-arcane|7|1019
+Dayz|Arcane|dayz-arcane|30|1959
+Dayz|Medusa Full|dayz-medusa-full|1|299
+Dayz|Medusa Full|dayz-medusa-full|3|599
+Dayz|Medusa Full|dayz-medusa-full|7|1199
+Dayz|Medusa Full|dayz-medusa-full|30|2499
+Dayz|Medusa Lite|dayz-medusa-lite|1|199
+Dayz|Medusa Lite|dayz-medusa-lite|3|499
+Dayz|Medusa Lite|dayz-medusa-lite|7|999
+Dayz|Medusa Lite|dayz-medusa-lite|30|1999
+Dayz|Xernel|dayz-xernel|1|299
+Dayz|Xernel|dayz-xernel|7|735
+Dayz|Xernel|dayz-xernel|30|2199
+Escape From Tarkov|Medusa Lite|escape-from-tarkov-medusa-lite|1|499
+Escape From Tarkov|Medusa Lite|escape-from-tarkov-medusa-lite|3|1199
+Escape From Tarkov|Medusa Lite|escape-from-tarkov-medusa-lite|7|2499
+Escape From Tarkov|Medusa Lite|escape-from-tarkov-medusa-lite|30|3999
+Escape From Tarkov|Medusa Rage|escape-from-tarkov-medusa-rage|1|649
+Escape From Tarkov|Medusa Rage|escape-from-tarkov-medusa-rage|3|1799
+Escape From Tarkov|Medusa Rage|escape-from-tarkov-medusa-rage|7|2999
+Escape From Tarkov|Medusa Rage|escape-from-tarkov-medusa-rage|30|5499
+Fortnite|Arcane|fortnite-arcane|1|549
+Fortnite|Arcane|fortnite-arcane|7|2759
+Fortnite|Arcane|fortnite-arcane|30|4709
+Marvel Rivals|Ghost|marvel-rivals-ghost|1|299
+Marvel Rivals|Ghost|marvel-rivals-ghost|7|999
+Marvel Rivals|Ghost|marvel-rivals-ghost|30|2999
+Marvel Rivals|Phoenix|marvel-rivals-phoenix|1|349
+Marvel Rivals|Phoenix|marvel-rivals-phoenix|7|999
+Marvel Rivals|Phoenix|marvel-rivals-phoenix|30|1949
+Meccha Chameleon|Arcane|meccha-chameleon-arcane|1|229
+Meccha Chameleon|Arcane|meccha-chameleon-arcane|7|939
+Meccha Chameleon|Arcane|meccha-chameleon-arcane|30|1719
+Meccha Chameleon|Ghost|meccha-chameleon-ghost|1|199
+Meccha Chameleon|Ghost|meccha-chameleon-ghost|7|399
+Meccha Chameleon|Ghost|meccha-chameleon-ghost|30|999
+Other|Phoenix Chams|phoenix-chams|1|293
+Other|Phoenix Chams|phoenix-chams|7|978
+Other|Phoenix Chams|phoenix-chams|30|1957
+Pubg|Arcane Full|pubg-arcane-full|1|399
+Pubg|Arcane Full|pubg-arcane-full|7|1719
+Pubg|Arcane Full|pubg-arcane-full|30|3119
+Pubg|Arcane Radar|pubg-arcane-radar|1|239
+Pubg|Arcane Radar|pubg-arcane-radar|7|1179
+Pubg|Arcane Radar|pubg-arcane-radar|30|2359
+Pubg|Phoenix Full|pubg-phoenix-full|1|249
+Pubg|Phoenix Full|pubg-phoenix-full|7|999
+Pubg|Phoenix Full|pubg-phoenix-full|30|1749
+Rust|Arcane|rust-arcane|1|469
+Rust|Arcane|rust-arcane|7|2349
+Rust|Arcane|rust-arcane|30|4699
+Rust|Rampart Full|rust-rampart-full|1|349
+Rust|Rampart Full|rust-rampart-full|3|699
+Rust|Rampart Full|rust-rampart-full|7|1599
+Rust|Rampart Full|rust-rampart-full|30|3299
+Rust|Rampart Lite|rust-rampart-lite|1|249
+Rust|Rampart Lite|rust-rampart-lite|3|499
+Rust|Rampart Lite|rust-rampart-lite|7|999
+Rust|Rampart Lite|rust-rampart-lite|30|1999
+Rust|Xernel|rust-xernel|1|449
+Rust|Xernel|rust-xernel|7|2209
+Unturned|Medusa|unturned-medusa|1|149
+Unturned|Medusa|unturned-medusa|3|299
+Unturned|Medusa|unturned-medusa|7|499
+Unturned|Medusa|unturned-medusa|30|999
+Other|Spoofer|xernel-ultimate-spoofer|7|1149
+Other|Spoofer|xernel-ultimate-spoofer|30|4199

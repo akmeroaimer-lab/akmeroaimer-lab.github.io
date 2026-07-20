@@ -8,12 +8,12 @@
     <meta property="og:title" content="Aimer123213 | Aimer123213">
     <meta property="og:description" content="Product catalog, prices and setup docs.">
     <meta property="og:type" content="website">
-    <link rel="icon" href="favicon.svg?v=202607200824" type="image/svg+xml">
+    <link rel="icon" href="favicon.svg?v=202607200939" type="image/svg+xml">
     <meta name="theme-color" content="#0e0f12">
     <meta name="color-scheme" content="dark">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="apple-touch-icon" href="favicon.svg">
-    <meta name="build-id" content="202607200824">
+    <meta name="build-id" content="202607200939">
     <link rel="sitemap" type="application/xml" href="sitemap.xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +45,7 @@
             display: flex;
             min-height: 100vh;
             overflow-x: hidden;
-            scroll-behavior: smooth;
+            scroll-behavior: auto;
         }
         
         /* Custom scrollbar */
@@ -3470,13 +3470,23 @@
         .sibling-link:hover { border-color: #c6ff3d; color: #c6ff3d; }
         .sibling-link.is-empty { visibility: hidden; }
         .sticky-product-bar {
-            position: sticky; top: 0; z-index: 40;
+            position: fixed; top: 10px; left: 50%; z-index: 60;
+            transform: translateX(-50%) translateY(0);
+            width: min(720px, calc(100vw - 32px));
             display: flex; justify-content: space-between; align-items: center; gap: 12px;
-            margin: 0 0 14px; padding: 10px 12px;
+            margin: 0; padding: 10px 12px;
             border: 1px solid #2a2c31; border-radius: 3px;
-            background: rgba(14,15,18,.92); backdrop-filter: blur(10px);
+            background: rgba(14,15,18,.94); backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,.35);
+            transition: transform .2s ease, opacity .2s ease;
+            pointer-events: auto;
         }
-        .sticky-product-bar[hidden] { display: none !important; }
+        .sticky-product-bar[hidden] {
+            display: flex !important;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateX(-50%) translateY(-120%);
+        }
         .spb-title { font-family: var(--font-display); font-weight: 750; color: #f3f2ed; font-size: .95rem; }
         .spb-actions { display: flex; align-items: center; gap: 10px; }
         .spb-price { color: #c6ff3d; font-weight: 700; font-size: .82rem; }
@@ -4275,7 +4285,7 @@ body::after{
         // Reveal content in small groups as it enters the viewport.
         document.addEventListener('DOMContentLoaded', () => {
             const items = document.querySelectorAll(
-                '.status-grid-card, .screenshot-card, .sys-req-card, .feature-item, .feature-text'
+                '.status-grid-card, .screenshot-card, .sys-req-card'
             );
             const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -5308,7 +5318,7 @@ body::after{
        offscreen observe; hard failsafe so nothing stays opacity:0 forever. */
     var SEL = '.launch-guide,.pricing-block,.buy-steps,.useful-links,.highlights-block,' +
               '.screenshots-block,.faq-item,.compare-block,' +
-              '.status-grid-card,.screenshot-card,.sys-req-card,.feature-item,.feature-text';
+              '.status-grid-card,.screenshot-card,.sys-req-card';
     var nodes = document.querySelectorAll(SEL);
     function showAll(){
       nodes.forEach(function(s){ s.classList.add('reveal-item','is-visible'); });
@@ -5849,7 +5859,7 @@ body::after{
         </a>
         <div class="status-card-footer">
             <span class="status-card-index">03</span>
-            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260852" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73276834" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
               <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
             </a>
             <a class="status-card-action" href="apex-legends-rampart.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
@@ -5857,7 +5867,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-arcane" data-game="ARC Raiders" data-brand="arcane" data-status="undetected" data-name="arc raiders [ ☢ arcane radar ]" data-search="arc raiders [ ☢ arcane radar ] arc raiders arcane wooffer spoofer" data-price="239" data-index="4" data-slug="arc-raiders-arcane-radar" data-spoofer="0" data-new="1" style="--card-i:3">
+    <article class="status-grid-card showcase brand-arcane" data-game="ARC Raiders" data-brand="arcane" data-status="undetected" data-name="arc raiders [ ☢ arcane radar ]" data-search="arc raiders [ ☢ arcane radar ] arc raiders arcane wooffer spoofer" data-price="309" data-index="4" data-slug="arc-raiders-arcane-radar" data-spoofer="0" data-new="1" style="--card-i:3">
         <a class="card-main-link" href="arc-raiders-arcane-radar.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/arc-raiders-arcane-radar/photo_2026-07-15_01-56-48_2.md.webp 960w, images/arc-raiders-arcane-radar/photo_2026-07-15_01-56-48_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -5872,7 +5882,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">ARC Raiders [ ☢ Arcane Radar ]</span><span data-lang="en">ARC Raiders [ ☢ Arcane Radar ]</span></div>
-        <div class="status-card-price">от 239 ₽</div>
+        <div class="status-card-price">от 309 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -5896,7 +5906,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-arcane" data-game="ARC Raiders" data-brand="arcane" data-status="undetected" data-name="arc raiders [ ☢ arcane ]" data-search="arc raiders [ ☢ arcane ] arc raiders arcane wooffer spoofer" data-price="239" data-index="5" data-slug="arc-raiders-arcane" data-spoofer="0" data-new="1" style="--card-i:4">
+    <article class="status-grid-card showcase brand-arcane" data-game="ARC Raiders" data-brand="arcane" data-status="undetected" data-name="arc raiders [ ☢ arcane ]" data-search="arc raiders [ ☢ arcane ] arc raiders arcane wooffer spoofer" data-price="389" data-index="5" data-slug="arc-raiders-arcane" data-spoofer="0" data-new="1" style="--card-i:4">
         <a class="card-main-link" href="arc-raiders-arcane.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/arc-raiders-arcane/photo_2026-07-15_01-41-12_2.md.webp 960w, images/arc-raiders-arcane/photo_2026-07-15_01-41-12_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -5911,7 +5921,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">ARC Raiders [ ☢ Arcane ]</span><span data-lang="en">ARC Raiders [ ☢ Arcane ]</span></div>
-        <div class="status-card-price">от 239 ₽</div>
+        <div class="status-card-price">от 389 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -5935,7 +5945,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-ghost" data-game="Arena Breakout Infinite" data-brand="ghost" data-status="undetected" data-name="arena breakout infinite [ ☢ ghost esp ]" data-search="arena breakout infinite [ ☢ ghost esp ] arena breakout infinite ghost wooffer spoofer" data-price="0" data-index="6" data-slug="arena-breakout-infinite-ghost-esp" data-spoofer="0" data-new="1" style="--card-i:5">
+    <article class="status-grid-card showcase brand-ghost" data-game="Arena Breakout Infinite" data-brand="ghost" data-status="undetected" data-name="arena breakout infinite [ ☢ ghost esp ]" data-search="arena breakout infinite [ ☢ ghost esp ] arena breakout infinite ghost wooffer spoofer" data-price="399" data-index="6" data-slug="arena-breakout-infinite-ghost-esp" data-spoofer="0" data-new="1" style="--card-i:5">
         <a class="card-main-link" href="arena-breakout-infinite-ghost-esp.html">
         <div class="card-media"><span class="card-brand-tag">GHOST</span><picture>
   <source type="image/webp" srcset="images/arena-breakout-infinite-ghost-esp/photo_2026-06-18_23-47-50_2.md.webp 960w, images/arena-breakout-infinite-ghost-esp/photo_2026-06-18_23-47-50_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -5950,7 +5960,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Arena Breakout Infinite [ ☢ Ghost ESP ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Ghost ESP ]</span></div>
-        
+        <div class="status-card-price">от 399 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -5974,7 +5984,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-ghost" data-game="Arena Breakout Infinite" data-brand="ghost" data-status="undetected" data-name="arena breakout infinite [ ☢ ghost full ]" data-search="arena breakout infinite [ ☢ ghost full ] arena breakout infinite ghost wooffer spoofer" data-price="0" data-index="7" data-slug="arena-breakout-infinite-ghost-full" data-spoofer="0" data-new="1" style="--card-i:6">
+    <article class="status-grid-card showcase brand-ghost" data-game="Arena Breakout Infinite" data-brand="ghost" data-status="undetected" data-name="arena breakout infinite [ ☢ ghost full ]" data-search="arena breakout infinite [ ☢ ghost full ] arena breakout infinite ghost wooffer spoofer" data-price="499" data-index="7" data-slug="arena-breakout-infinite-ghost-full" data-spoofer="0" data-new="1" style="--card-i:6">
         <a class="card-main-link" href="arena-breakout-infinite-ghost-full.html">
         <div class="card-media"><span class="card-brand-tag">GHOST</span><picture>
   <source type="image/webp" srcset="images/arena-breakout-infinite-ghost-full/photo_2026-06-18_01-23-37_2.md.webp 960w, images/arena-breakout-infinite-ghost-full/photo_2026-06-18_01-23-37_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -5989,7 +5999,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Arena Breakout Infinite [ ☢ Ghost Full ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Ghost Full ]</span></div>
-        
+        <div class="status-card-price">от 499 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6013,7 +6023,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-koenflow" data-game="Arena Breakout Infinite" data-brand="koenflow" data-status="undetected" data-name="arena breakout infinite [ ☢ koenflow ]" data-search="arena breakout infinite [ ☢ koenflow ] arena breakout infinite koenflow wooffer spoofer" data-price="0" data-index="8" data-slug="arena-breakout-infinite-koenflow" data-spoofer="0" data-new="1" style="--card-i:7">
+    <article class="status-grid-card showcase brand-koenflow" data-game="Arena Breakout Infinite" data-brand="koenflow" data-status="undetected" data-name="arena breakout infinite [ ☢ koenflow ]" data-search="arena breakout infinite [ ☢ koenflow ] arena breakout infinite koenflow wooffer spoofer" data-price="2249" data-index="8" data-slug="arena-breakout-infinite-koenflow" data-spoofer="0" data-new="1" style="--card-i:7">
         <a class="card-main-link" href="arena-breakout-infinite-koenflow.html">
         <div class="card-media"><span class="card-brand-tag">KOENFLOW</span><picture>
   <source type="image/webp" srcset="images/arena-breakout-infinite-koenflow/photo_2026-07-19_01-59-29.md.webp 960w, images/arena-breakout-infinite-koenflow/photo_2026-07-19_01-59-29.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6028,7 +6038,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Arena Breakout Infinite [ ☢ KoenFlow ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ KoenFlow ]</span></div>
-        
+        <div class="status-card-price">от 2 249 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6052,7 +6062,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-xernel" data-game="Arena Breakout Infinite" data-brand="xernel" data-status="undetected" data-name="arena breakout infinite [ ☢ xernel full ]" data-search="arena breakout infinite [ ☢ xernel full ] arena breakout infinite xernel wooffer spoofer" data-price="0" data-index="9" data-slug="arena-breakout-infinite-xernel-full" data-spoofer="0" data-new="1" style="--card-i:8">
+    <article class="status-grid-card showcase brand-xernel" data-game="Arena Breakout Infinite" data-brand="xernel" data-status="undetected" data-name="arena breakout infinite [ ☢ xernel full ]" data-search="arena breakout infinite [ ☢ xernel full ] arena breakout infinite xernel wooffer spoofer" data-price="449" data-index="9" data-slug="arena-breakout-infinite-xernel-full" data-spoofer="0" data-new="1" style="--card-i:8">
         <a class="card-main-link" href="arena-breakout-infinite-xernel-full.html">
         <div class="card-media"><span class="card-brand-tag">XERNEL</span><picture>
   <source type="image/webp" srcset="images/arena-breakout-infinite-xernel-full/photo_2026-06-20_20-05-11_2.md.webp 960w, images/arena-breakout-infinite-xernel-full/photo_2026-06-20_20-05-11_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6067,7 +6077,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Arena Breakout Infinite [ ☢ Xernel Full ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Xernel Full ]</span></div>
-        
+        <div class="status-card-price">от 449 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6130,7 +6140,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-arcane" data-game="Arma Reforger" data-brand="arcane" data-status="undetected" data-name="arma reforger [ ☢ arcane ]" data-search="arma reforger [ ☢ arcane ] arma reforger arcane wooffer spoofer" data-price="0" data-index="11" data-slug="arma-reforger-arcane" data-spoofer="0" data-new="1" style="--card-i:10">
+    <article class="status-grid-card showcase brand-arcane" data-game="Arma Reforger" data-brand="arcane" data-status="undetected" data-name="arma reforger [ ☢ arcane ]" data-search="arma reforger [ ☢ arcane ] arma reforger arcane wooffer spoofer" data-price="389" data-index="11" data-slug="arma-reforger-arcane" data-spoofer="0" data-new="1" style="--card-i:10">
         <a class="card-main-link" href="arma-reforger-arcane.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/arma-reforger-arcane/photo_2026-07-15_18-21-23.md.webp 960w, images/arma-reforger-arcane/photo_2026-07-15_18-21-23.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6145,7 +6155,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Arma Reforger [ ☢ Arcane ]</span><span data-lang="en">Arma Reforger [ ☢ Arcane ]</span></div>
-        
+        <div class="status-card-price">от 389 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6169,7 +6179,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-xernel" data-game="Arma Reforger" data-brand="xernel" data-status="undetected" data-name="arma reforger [ ☢ xernel ]" data-search="arma reforger [ ☢ xernel ] arma reforger xernel wooffer spoofer" data-price="0" data-index="12" data-slug="arma-reforger-xernel" data-spoofer="0" data-new="1" style="--card-i:11">
+    <article class="status-grid-card showcase brand-xernel" data-game="Arma Reforger" data-brand="xernel" data-status="undetected" data-name="arma reforger [ ☢ xernel ]" data-search="arma reforger [ ☢ xernel ] arma reforger xernel wooffer spoofer" data-price="229" data-index="12" data-slug="arma-reforger-xernel" data-spoofer="0" data-new="1" style="--card-i:11">
         <a class="card-main-link" href="arma-reforger-xernel.html">
         <div class="card-media"><span class="card-brand-tag">XERNEL</span><picture>
   <source type="image/webp" srcset="images/arma-reforger-xernel/photo_2026-06-22_01-02-40_2.md.webp 960w, images/arma-reforger-xernel/photo_2026-06-22_01-02-40_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6184,7 +6194,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Arma Reforger [ ☢ Xernel ]</span><span data-lang="en">Arma Reforger [ ☢ Xernel ]</span></div>
-        
+        <div class="status-card-price">от 229 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6208,7 +6218,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-arcane" data-game="Counter-Strike 2" data-brand="arcane" data-status="undetected" data-name="counter strike 2 [ ☢ arcane ]" data-search="counter strike 2 [ ☢ arcane ] counter-strike 2 arcane wooffer spoofer" data-price="0" data-index="13" data-slug="counter-strike-2-arcane" data-spoofer="0" data-new="1" style="--card-i:12">
+    <article class="status-grid-card showcase brand-arcane" data-game="Counter-Strike 2" data-brand="arcane" data-status="undetected" data-name="counter strike 2 [ ☢ arcane ]" data-search="counter strike 2 [ ☢ arcane ] counter-strike 2 arcane wooffer spoofer" data-price="119" data-index="13" data-slug="counter-strike-2-arcane" data-spoofer="0" data-new="1" style="--card-i:12">
         <a class="card-main-link" href="counter-strike-2-arcane.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/counter-strike-2-arcane/photo_2026-07-18_21-17-31.md.webp 960w, images/counter-strike-2-arcane/photo_2026-07-18_21-17-31.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6223,7 +6233,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Counter Strike 2 [ ☢ Arcane ]</span><span data-lang="en">Counter Strike 2 [ ☢ Arcane ]</span></div>
-        
+        <div class="status-card-price">от 119 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6239,7 +6249,7 @@ body::after{
         </a>
         <div class="status-card-footer">
             <span class="status-card-index">13</span>
-            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73263327" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73277083" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
               <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
             </a>
             <a class="status-card-action" href="counter-strike-2-arcane.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
@@ -6247,7 +6257,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-arcane" data-game="DayZ" data-brand="arcane" data-status="undetected" data-name="dayz [ ☢ arcane ]" data-search="dayz [ ☢ arcane ] dayz arcane wooffer spoofer" data-price="0" data-index="14" data-slug="dayz-arcane" data-spoofer="1" data-new="1" style="--card-i:13">
+    <article class="status-grid-card showcase brand-arcane" data-game="DayZ" data-brand="arcane" data-status="undetected" data-name="dayz [ ☢ arcane ]" data-search="dayz [ ☢ arcane ] dayz arcane wooffer spoofer" data-price="229" data-index="14" data-slug="dayz-arcane" data-spoofer="1" data-new="1" style="--card-i:13">
         <a class="card-main-link" href="dayz-arcane.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/dayz-arcane/photo_2026-07-18_21-29-21_2.md.webp 960w, images/dayz-arcane/photo_2026-07-18_21-29-21_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6262,7 +6272,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">DayZ [ ☢ Arcane ]</span><span data-lang="en">DayZ [ ☢ Arcane ]</span></div>
-        
+        <div class="status-card-price">от 229 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6325,7 +6335,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-medusa" data-game="DayZ" data-brand="medusa" data-status="undetected" data-name="dayz [ ☢ medusa lite ]" data-search="dayz [ ☢ medusa lite ] dayz medusa wooffer spoofer" data-price="0" data-index="16" data-slug="dayz-medusa-lite" data-spoofer="0" data-new="1" style="--card-i:15">
+    <article class="status-grid-card showcase brand-medusa" data-game="DayZ" data-brand="medusa" data-status="undetected" data-name="dayz [ ☢ medusa lite ]" data-search="dayz [ ☢ medusa lite ] dayz medusa wooffer spoofer" data-price="199" data-index="16" data-slug="dayz-medusa-lite" data-spoofer="0" data-new="1" style="--card-i:15">
         <a class="card-main-link" href="dayz-medusa-lite.html">
         <div class="card-media"><span class="card-brand-tag">MEDUSA</span><picture>
   <source type="image/webp" srcset="images/dayz-medusa-lite/photo_2026-07-08_20-01-58_4.md.webp 960w, images/dayz-medusa-lite/photo_2026-07-08_20-01-58_4.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6340,7 +6350,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">DayZ [ ☢ Medusa Lite ]</span><span data-lang="en">DayZ [ ☢ Medusa Lite ]</span></div>
-        
+        <div class="status-card-price">от 199 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6395,7 +6405,7 @@ body::after{
         </a>
         <div class="status-card-footer">
             <span class="status-card-index">17</span>
-            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73261018" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73277123" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
               <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
             </a>
             <a class="status-card-action" href="dayz-xernel.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
@@ -6403,7 +6413,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-medusa" data-game="Escape from Tarkov" data-brand="medusa" data-status="undetected" data-name="escape from tarkov [ ☢ medusa lite ]" data-search="escape from tarkov [ ☢ medusa lite ] escape from tarkov medusa wooffer spoofer" data-price="199" data-index="18" data-slug="escape-from-tarkov-medusa-lite" data-spoofer="1" data-new="1" style="--card-i:17">
+    <article class="status-grid-card showcase brand-medusa" data-game="Escape from Tarkov" data-brand="medusa" data-status="undetected" data-name="escape from tarkov [ ☢ medusa lite ]" data-search="escape from tarkov [ ☢ medusa lite ] escape from tarkov medusa wooffer spoofer" data-price="499" data-index="18" data-slug="escape-from-tarkov-medusa-lite" data-spoofer="1" data-new="1" style="--card-i:17">
         <a class="card-main-link" href="escape-from-tarkov-medusa-lite.html">
         <div class="card-media"><span class="card-brand-tag">MEDUSA</span><picture>
   <source type="image/webp" srcset="images/escape-from-tarkov-medusa-lite/photo_2026-07-08_19-30-24_2.md.webp 960w, images/escape-from-tarkov-medusa-lite/photo_2026-07-08_19-30-24_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6418,7 +6428,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Escape from Tarkov [ ☢ Medusa Lite ]</span><span data-lang="en">Escape from Tarkov [ ☢ Medusa Lite ]</span></div>
-        <div class="status-card-price">от 199 ₽</div>
+        <div class="status-card-price">от 499 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6473,7 +6483,7 @@ body::after{
         </a>
         <div class="status-card-footer">
             <span class="status-card-index">19</span>
-            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73262565" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73277261" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
               <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
             </a>
             <a class="status-card-action" href="escape-from-tarkov-medusa-rage.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
@@ -6481,7 +6491,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-arcane" data-game="Fortnite" data-brand="arcane" data-status="undetected" data-name="fortnite [ ☢ arcane ]" data-search="fortnite [ ☢ arcane ] fortnite arcane wooffer spoofer" data-price="0" data-index="20" data-slug="fortnite-arcane" data-spoofer="1" data-new="1" style="--card-i:19">
+    <article class="status-grid-card showcase brand-arcane" data-game="Fortnite" data-brand="arcane" data-status="undetected" data-name="fortnite [ ☢ arcane ]" data-search="fortnite [ ☢ arcane ] fortnite arcane wooffer spoofer" data-price="549" data-index="20" data-slug="fortnite-arcane" data-spoofer="1" data-new="1" style="--card-i:19">
         <a class="card-main-link" href="fortnite-arcane.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/fortnite-arcane/photo_2026-07-18_22-04-52_2.md.webp 960w, images/fortnite-arcane/photo_2026-07-18_22-04-52_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6496,7 +6506,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Fortnite [ ☢ Arcane ]</span><span data-lang="en">Fortnite [ ☢ Arcane ]</span></div>
-        
+        <div class="status-card-price">от 549 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6520,7 +6530,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-ghost" data-game="Marvel Rivals" data-brand="ghost" data-status="undetected" data-name="marvel rivals [ ☢ ghost ]" data-search="marvel rivals [ ☢ ghost ] marvel rivals ghost wooffer spoofer" data-price="0" data-index="21" data-slug="marvel-rivals-ghost" data-spoofer="0" data-new="1" style="--card-i:20">
+    <article class="status-grid-card showcase brand-ghost" data-game="Marvel Rivals" data-brand="ghost" data-status="undetected" data-name="marvel rivals [ ☢ ghost ]" data-search="marvel rivals [ ☢ ghost ] marvel rivals ghost wooffer spoofer" data-price="299" data-index="21" data-slug="marvel-rivals-ghost" data-spoofer="0" data-new="1" style="--card-i:20">
         <a class="card-main-link" href="marvel-rivals-ghost.html">
         <div class="card-media"><span class="card-brand-tag">GHOST</span><picture>
   <source type="image/webp" srcset="images/marvel-rivals-ghost/photo_2026-07-13_22-21-54_2.md.webp 960w, images/marvel-rivals-ghost/photo_2026-07-13_22-21-54_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6535,7 +6545,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Marvel Rivals [ ☢ Ghost ]</span><span data-lang="en">Marvel Rivals [ ☢ Ghost ]</span></div>
-        
+        <div class="status-card-price">от 299 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6559,7 +6569,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-phoenix" data-game="Marvel Rivals" data-brand="phoenix" data-status="undetected" data-name="marvel rivals [ ☢ phoenix ]" data-search="marvel rivals [ ☢ phoenix ] marvel rivals phoenix wooffer spoofer" data-price="0" data-index="22" data-slug="marvel-rivals-phoenix" data-spoofer="1" data-new="1" style="--card-i:21">
+    <article class="status-grid-card showcase brand-phoenix" data-game="Marvel Rivals" data-brand="phoenix" data-status="undetected" data-name="marvel rivals [ ☢ phoenix ]" data-search="marvel rivals [ ☢ phoenix ] marvel rivals phoenix wooffer spoofer" data-price="349" data-index="22" data-slug="marvel-rivals-phoenix" data-spoofer="1" data-new="1" style="--card-i:21">
         <a class="card-main-link" href="marvel-rivals-phoenix.html">
         <div class="card-media"><span class="card-brand-tag">PHOENIX</span><picture>
   <source type="image/webp" srcset="images/marvel-rivals-phoenix/photo_2026-07-08_17-08-47.md.webp 960w, images/marvel-rivals-phoenix/photo_2026-07-08_17-08-47.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6574,7 +6584,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Marvel Rivals [ ☢ Phoenix ]</span><span data-lang="en">Marvel Rivals [ ☢ Phoenix ]</span></div>
-        
+        <div class="status-card-price">от 349 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6598,7 +6608,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-arcane" data-game="Meccha Chameleon" data-brand="arcane" data-status="undetected" data-name="meccha chameleon [ ☢ arcane ]" data-search="meccha chameleon [ ☢ arcane ] meccha chameleon arcane wooffer spoofer" data-price="0" data-index="23" data-slug="meccha-chameleon-arcane" data-spoofer="0" data-new="1" style="--card-i:22">
+    <article class="status-grid-card showcase brand-arcane" data-game="Meccha Chameleon" data-brand="arcane" data-status="undetected" data-name="meccha chameleon [ ☢ arcane ]" data-search="meccha chameleon [ ☢ arcane ] meccha chameleon arcane wooffer spoofer" data-price="229" data-index="23" data-slug="meccha-chameleon-arcane" data-spoofer="0" data-new="1" style="--card-i:22">
         <a class="card-main-link" href="meccha-chameleon-arcane.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/meccha-chameleon-arcane/photo_2026-07-18_22-20-36_2.md.webp 960w, images/meccha-chameleon-arcane/photo_2026-07-18_22-20-36_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6613,7 +6623,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Meccha Chameleon [ ☢ Arcane ]</span><span data-lang="en">Meccha Chameleon [ ☢ Arcane ]</span></div>
-        
+        <div class="status-card-price">от 229 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6637,7 +6647,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-ghost" data-game="Meccha Chameleon" data-brand="ghost" data-status="undetected" data-name="meccha chameleon [ ☢ ghost ]" data-search="meccha chameleon [ ☢ ghost ] meccha chameleon ghost wooffer spoofer" data-price="0" data-index="24" data-slug="meccha-chameleon-ghost" data-spoofer="0" data-new="1" style="--card-i:23">
+    <article class="status-grid-card showcase brand-ghost" data-game="Meccha Chameleon" data-brand="ghost" data-status="undetected" data-name="meccha chameleon [ ☢ ghost ]" data-search="meccha chameleon [ ☢ ghost ] meccha chameleon ghost wooffer spoofer" data-price="199" data-index="24" data-slug="meccha-chameleon-ghost" data-spoofer="0" data-new="1" style="--card-i:23">
         <a class="card-main-link" href="meccha-chameleon-ghost.html">
         <div class="card-media"><span class="card-brand-tag">GHOST</span><picture>
   <source type="image/webp" srcset="images/meccha-chameleon-ghost/photo_2026-07-03_12-59-19_2.md.webp 960w, images/meccha-chameleon-ghost/photo_2026-07-03_12-59-19_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6652,7 +6662,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Meccha Chameleon [ ☢ Ghost ]</span><span data-lang="en">Meccha Chameleon [ ☢ Ghost ]</span></div>
-        
+        <div class="status-card-price">от 199 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6676,7 +6686,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-phoenix" data-game="Delta Force" data-brand="phoenix" data-status="undetected" data-name="☢ phoenix (chams) ]" data-search="☢ phoenix (chams) ] delta force phoenix wooffer spoofer" data-price="0" data-index="25" data-slug="phoenix-chams" data-spoofer="0" data-new="1" style="--card-i:24">
+    <article class="status-grid-card showcase brand-phoenix" data-game="Delta Force" data-brand="phoenix" data-status="undetected" data-name="☢ phoenix (chams) ]" data-search="☢ phoenix (chams) ] delta force phoenix wooffer spoofer" data-price="293" data-index="25" data-slug="phoenix-chams" data-spoofer="0" data-new="1" style="--card-i:24">
         <a class="card-main-link" href="phoenix-chams.html">
         <div class="card-media"><span class="card-brand-tag">PHOENIX</span><picture>
   <source type="image/webp" srcset="images/apex-legends-phoenix-x-ray/photo_2026-07-04_02-02-52_2.md.webp 960w, images/apex-legends-phoenix-x-ray/photo_2026-07-04_02-02-52_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6691,7 +6701,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">☢ Phoenix (CHAMS) ]</span><span data-lang="en">☢ Phoenix (CHAMS) ]</span></div>
-        
+        <div class="status-card-price">от 293 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6715,7 +6725,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-arcane" data-game="PUBG" data-brand="arcane" data-status="undetected" data-name="pubg [ ☢ arcane esp ]" data-search="pubg [ ☢ arcane esp ] pubg arcane wooffer spoofer" data-price="399" data-index="26" data-slug="pubg-arcane-esp" data-spoofer="1" data-new="1" style="--card-i:25">
+    <article class="status-grid-card showcase brand-arcane" data-game="PUBG" data-brand="arcane" data-status="undetected" data-name="pubg [ ☢ arcane esp ]" data-search="pubg [ ☢ arcane esp ] pubg arcane wooffer spoofer" data-price="0" data-index="26" data-slug="pubg-arcane-esp" data-spoofer="1" data-new="1" style="--card-i:25">
         <a class="card-main-link" href="pubg-arcane-esp.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/pubg-arcane-esp/photo_2026-07-19_00-55-27_2.md.webp 960w, images/pubg-arcane-esp/photo_2026-07-19_00-55-27_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6730,7 +6740,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Pubg [ ☢ Arcane ESP ]</span><span data-lang="en">Pubg [ ☢ Arcane ESP ]</span></div>
-        <div class="status-card-price">от 399 ₽</div>
+        
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6793,7 +6803,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-arcane" data-game="PUBG" data-brand="arcane" data-status="undetected" data-name="pubg [ ☢ arcane radar ]" data-search="pubg [ ☢ arcane radar ] pubg arcane wooffer spoofer" data-price="0" data-index="28" data-slug="pubg-arcane-radar" data-spoofer="0" data-new="1" style="--card-i:27">
+    <article class="status-grid-card showcase brand-arcane" data-game="PUBG" data-brand="arcane" data-status="undetected" data-name="pubg [ ☢ arcane radar ]" data-search="pubg [ ☢ arcane radar ] pubg arcane wooffer spoofer" data-price="239" data-index="28" data-slug="pubg-arcane-radar" data-spoofer="0" data-new="1" style="--card-i:27">
         <a class="card-main-link" href="pubg-arcane-radar.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/pubg-arcane-radar/photo_2026-07-19_18-10-33_2.md.webp 960w, images/pubg-arcane-radar/photo_2026-07-19_18-10-33_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -6808,7 +6818,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Pubg [ ☢ Arcane Radar ]</span><span data-lang="en">Pubg [ ☢ Arcane Radar ]</span></div>
-        
+        <div class="status-card-price">от 239 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -7019,7 +7029,7 @@ body::after{
         </a>
         <div class="status-card-footer">
             <span class="status-card-index">33</span>
-            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73263252" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73276742" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
               <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
             </a>
             <a class="status-card-action" href="rust-xernel.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
@@ -7066,7 +7076,7 @@ body::after{
     </article>
     
 
-    <article class="status-grid-card showcase brand-xernel" data-game="Спуферы" data-brand="xernel" data-status="undetected" data-name="xernel ultimate spoofer (wooffer)" data-search="xernel ultimate spoofer (wooffer) спуферы xernel wooffer spoofer" data-price="299" data-index="35" data-slug="xernel-ultimate-spoofer" data-spoofer="1" data-new="1" style="--card-i:34">
+    <article class="status-grid-card showcase brand-xernel" data-game="Спуферы" data-brand="xernel" data-status="undetected" data-name="xernel ultimate spoofer (wooffer)" data-search="xernel ultimate spoofer (wooffer) спуферы xernel wooffer spoofer" data-price="1149" data-index="35" data-slug="xernel-ultimate-spoofer" data-spoofer="1" data-new="1" style="--card-i:34">
         <a class="card-main-link" href="xernel-ultimate-spoofer.html">
         <div class="card-media"><span class="card-brand-tag">XERNEL</span><picture>
   <source type="image/webp" srcset="images/arena-breakout-infinite-xernel-full/photo_2026-06-20_20-05-11_2.md.webp 960w, images/arena-breakout-infinite-xernel-full/photo_2026-06-20_20-05-11_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
@@ -7081,7 +7091,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Xernel Ultimate Spoofer (WOOFFER)</span><span data-lang="en">Xernel Ultimate Spoofer (WOOFFER)</span></div>
-        <div class="status-card-price">от 299 ₽</div>
+        <div class="status-card-price">от 1 149 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -7113,7 +7123,7 @@ body::after{
     </div>
     <div class="site-footer-meta">
       <span data-lang="ru">Сборка</span><span data-lang="en">Build</span>
-      <code>202607200824</code>
+      <code>202607200939</code>
     </div>
   </div>
 </footer>
