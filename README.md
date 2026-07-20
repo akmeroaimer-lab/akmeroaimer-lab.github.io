@@ -1,3 +1,7 @@
-# База Знаний Xind1 Docs
+﻿# Aimer123213 Docs
 
-Официальные инструкции по запуску, списки функций и решение проблем для всех продуктов.
+Static site for GitHub Pages.
+
+- Entry: `index.html`
+- Jekyll disabled: `.nojekyll`
+- Live (after Pages build): https://akmeroaimer-lab.github.io/
