@@ -1,6 +1,6 @@
-# Ультимативный спуфер1
+# Xernel Ultimate Spoofer (WOOFFER)
 
-* Функционал Arena Breakout Infinite [ ☢ Spoofer [Xernel] ]:
+* Функционал Xernel HWID Spoofer (WOOFFER):
 * **Kernel спуфер от Xernel меняет аппаратные идентификаторы системы до перезагрузки ПК и помогает обходить HWID** – блокировки в популярных античитах. Работает на уровне ядра.
 
 ## 🛡 Поддерживаемые античиты
@@ -50,7 +50,7 @@
 
 ## 🖥 Системные требования
 
-* **Arena Breakout Infinite [ ☢ Spoofer [Xernel] ]:** 
+* **Xernel Ultimate Spoofer (WOOFFER):**
 * ⚙️ **️ Операционная система:** Windows 10 - 11
 * 🔲 **Процессор:** Intel / AMD
 * 🔲 **Видеокарта:** Nvidia / AMD

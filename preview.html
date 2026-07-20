@@ -8,12 +8,12 @@
     <meta property="og:title" content="Aimer123213 | Aimer123213">
     <meta property="og:description" content="Product catalog, prices and setup docs.">
     <meta property="og:type" content="website">
-    <link rel="icon" href="favicon.svg?v=202607192332" type="image/svg+xml">
+    <link rel="icon" href="favicon.svg?v=202607200824" type="image/svg+xml">
     <meta name="theme-color" content="#0e0f12">
     <meta name="color-scheme" content="dark">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="apple-touch-icon" href="favicon.svg">
-    <meta name="build-id" content="202607192332">
+    <meta name="build-id" content="202607200824">
     <link rel="sitemap" type="application/xml" href="sitemap.xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2418,6 +2418,23 @@
             font-size: 1.05rem;
             font-weight: 700;
         }
+        .price-buy-label {
+            margin-top: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 28px;
+            padding: 0 10px;
+            border-radius: 2px;
+            background: #c6ff3d;
+            color: #0a0b0d;
+            font-size: .68rem;
+            font-weight: 780;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            width: fit-content;
+        }
+        .price-tier:hover .price-buy-label { filter: brightness(1.05); }
         .status-card-price {
             margin-top: 2px;
             color: #c6ff3d;
@@ -2995,6 +3012,41 @@
             border-color: #c6ff3d !important;
             transform: translateY(-3px) !important;
             box-shadow: 0 16px 40px rgba(0,0,0,.35) !important;
+        }
+        .status-grid-card.showcase > .card-main-link {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+        .status-grid-card.showcase .status-card-footer {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px 14px;
+            border-top: 1px solid #25272c;
+            margin-top: auto;
+        }
+        .status-grid-card.showcase .card-buy-btn {
+            margin-left: auto;
+            padding: 7px 12px;
+            border: 1px solid rgba(198,255,61,.45);
+            border-radius: 2px;
+            background: #c6ff3d;
+            color: #0a0b0d;
+            font-size: .72rem;
+            font-weight: 780;
+            letter-spacing: .04em;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: filter .15s ease, transform .15s ease;
+        }
+        .status-grid-card.showcase .card-buy-btn:hover {
+            filter: brightness(1.05);
+            transform: translateY(-1px);
+        }
+        .status-grid-card.showcase .status-card-action {
+            text-decoration: none;
+            white-space: nowrap;
         }
         .card-media {
             position: relative;
@@ -4107,7 +4159,7 @@ body::after{
         });
         setTimeout(finishPageLoad, 1200);
         
-        const SEARCH_INDEX = [{"title": "Ультимативный спуфер1", "game": "Другие игры", "url": "1.html", "features": ""}, {"title": "База Знаний Xind1 Docs", "game": "Другие игры", "url": "README.html", "features": ""}, {"title": "Table of contents", "game": "Другие игры", "url": "SUMMARY.html", "features": ""}, {"title": "Apex Legends [ ☢ Arcane ]", "game": "Apex Legends", "url": "apex-legends-arcane.html", "features": ""}, {"title": "Apex Legends [ ☢ Phoenix X-RAY ]", "game": "Apex Legends", "url": "apex-legends-phoenix-x-ray.html", "features": ""}, {"title": "Apex Legends [ ☢ Rampart ]", "game": "Apex Legends", "url": "apex-legends-rampart.html", "features": ""}, {"title": "ARC Raiders [ ☢ Arcane Radar ]", "game": "ARC Raiders", "url": "arc-raiders-arcane-radar.html", "features": ""}, {"title": "ARC Raiders [ ☢ Arcane ]", "game": "ARC Raiders", "url": "arc-raiders-arcane.html", "features": ""}, {"title": "🚀 Инструкция по запуску Arcane", "game": "Другие игры", "url": "arcane-instruktsiya.html", "features": ""}, {"title": "🛠 Arcane — Решение проблем запуска", "game": "Другие игры", "url": "arcane-reshenie-problem.html", "features": ""}, {"title": "Arena Breakout Infinite [ ☢ Ghost ESP ]", "game": "Другие игры", "url": "arena-breakout-infinite-ghost-esp.html", "features": ""}, {"title": "Arena Breakout Infinite [ ☢ Ghost Full ]", "game": "Другие игры", "url": "arena-breakout-infinite-ghost-full.html", "features": ""}, {"title": "Arena Breakout Infinite [ ☢ KoenFlow ]", "game": "Другие игры", "url": "arena-breakout-infinite-koenflow.html", "features": ""}, {"title": "Arena Breakout Infinite [ ☢ Xernel Full ]", "game": "Другие игры", "url": "arena-breakout-infinite-xernel-full.html", "features": ""}, {"title": "ARK Ascended [ ☢ Arcane ]", "game": "ARK Ascended", "url": "ark-ascended-arcane.html", "features": ""}, {"title": "Arma Reforger [ ☢ Arcane ]", "game": "Arma Reforger", "url": "arma-reforger-arcane.html", "features": ""}, {"title": "Arma Reforger [ ☢ Xernel ]", "game": "Arma Reforger", "url": "arma-reforger-xernel.html", "features": ""}, {"title": "Counter Strike 2 [ ☢ Arcane ]", "game": "Counter-Strike 2", "url": "counter-strike-2-arcane.html", "features": ""}, {"title": "DayZ [ ☢ Arcane ]", "game": "DayZ", "url": "dayz-arcane.html", "features": ""}, {"title": "DayZ [ ☢ Medusa Full ]", "game": "DayZ", "url": "dayz-medusa-full.html", "features": ""}, {"title": "DayZ [ ☢ Medusa Lite ]", "game": "DayZ", "url": "dayz-medusa-lite.html", "features": ""}, {"title": "DayZ [ ☢ Xernel ]", "game": "DayZ", "url": "dayz-xernel.html", "features": ""}, {"title": "Escape from Tarkov [ ☢ Medusa Lite ]", "game": "Escape from Tarkov", "url": "escape-from-tarkov-medusa-lite.html", "features": ""}, {"title": "Escape from Tarkov [ ☢ Medusa Rage ]", "game": "Escape from Tarkov", "url": "escape-from-tarkov-medusa-rage.html", "features": ""}, {"title": "Fortnite [ ☢ Arcane ]", "game": "Fortnite", "url": "fortnite-arcane.html", "features": ""}, {"title": "🚀 Инструкция по запуску Ghost", "game": "Другие игры", "url": "ghost-instruktsiya.html", "features": ""}, {"title": "🛠 Ghost — Решение проблем запуска", "game": "Другие игры", "url": "ghost-reshenie-problem.html", "features": ""}, {"title": "База Знаний Xind1 Docs", "game": "Другие игры", "url": "index.html", "features": ""}, {"title": "🚀 Инструкция по запуску KoenFlow", "game": "Другие игры", "url": "koenflow-instruktsiya.html", "features": ""}, {"title": "🛠 KoenFlow — Решение проблем запуска", "game": "Другие игры", "url": "koenflow-reshenie-problem.html", "features": ""}, {"title": "Marvel Rivals [ ☢ Ghost ]", "game": "Marvel Rivals", "url": "marvel-rivals-ghost.html", "features": ""}, {"title": "Marvel Rivals [ ☢ Phoenix ]", "game": "Marvel Rivals", "url": "marvel-rivals-phoenix.html", "features": ""}, {"title": "Meccha Chameleon [ ☢ Arcane ]", "game": "Meccha Chameleon", "url": "meccha-chameleon-arcane.html", "features": ""}, {"title": "Meccha Chameleon [ ☢ Ghost ]", "game": "Meccha Chameleon", "url": "meccha-chameleon-ghost.html", "features": ""}, {"title": "🚀 Инструкция по запуску Medusa", "game": "Другие игры", "url": "medusa-instruktsiya.html", "features": ""}, {"title": "🛠 Medusa — Решение проблем запуска", "game": "Другие игры", "url": "medusa-reshenie-problem.html", "features": ""}, {"title": "☢ Phoenix (CHAMS) ]", "game": "Другие игры", "url": "phoenix-chams.html", "features": ""}, {"title": "🚀 Инструкция по запуску Phoenix", "game": "Другие игры", "url": "phoenix-instruktsiya.html", "features": ""}, {"title": "🛠 Phoenix — Решение проблем запуска", "game": "Другие игры", "url": "phoenix-reshenie-problem.html", "features": ""}, {"title": "Pubg [ ☢ Arcane ESP ]", "game": "PUBG", "url": "pubg-arcane-esp.html", "features": ""}, {"title": "Pubg [ ☢ Arcane Full ]", "game": "PUBG", "url": "pubg-arcane-full.html", "features": ""}, {"title": "Pubg [ ☢ Arcane Radar ]", "game": "PUBG", "url": "pubg-arcane-radar.html", "features": ""}, {"title": "Pubg [ ☢ Phoenix Full ]", "game": "PUBG", "url": "pubg-phoenix-full.html", "features": ""}, {"title": "🚀 Инструкция по запуску Rampart", "game": "Другие игры", "url": "rampart-instruktsiya.html", "features": ""}, {"title": "🛠 Rampart — Решение проблем запуска", "game": "Другие игры", "url": "rampart-reshenie-problem.html", "features": ""}, {"title": "Rust [ ☢ Arcane ]", "game": "Rust", "url": "rust-arcane.html", "features": ""}, {"title": "Rust [ ☢ Rampart Full ]", "game": "Rust", "url": "rust-rampart-full.html", "features": ""}, {"title": "Rust [ ☢ Rampart Lite ]", "game": "Rust", "url": "rust-rampart-lite.html", "features": ""}, {"title": "Rust [ ☢ Xernel ]", "game": "Rust", "url": "rust-xernel.html", "features": ""}, {"title": "Unturned [ ☢ Medusa ]", "game": "Unturned", "url": "unturned-medusa.html", "features": ""}, {"title": "🚀 Инструкция по запуску Xernel", "game": "Другие игры", "url": "xernel-instruktsiya.html", "features": ""}, {"title": "🛠 Xernel — Решение проблем запуска", "game": "Другие игры", "url": "xernel-reshenie-problem.html", "features": ""}, {"title": "Статус читов", "game": "Мониторинг", "url": "index.html", "features": "Статусы, Undetected, Обновление, Безопасность, Спуфер"}];
+        const SEARCH_INDEX = [{"title": "Apex Legends [ ☢ Arcane ]", "game": "Apex Legends", "url": "apex-legends-arcane.html", "features": ""}, {"title": "Apex Legends [ ☢ Phoenix X-RAY ]", "game": "Apex Legends", "url": "apex-legends-phoenix-x-ray.html", "features": ""}, {"title": "Apex Legends [ ☢ Rampart ]", "game": "Apex Legends", "url": "apex-legends-rampart.html", "features": ""}, {"title": "ARC Raiders [ ☢ Arcane Radar ]", "game": "ARC Raiders", "url": "arc-raiders-arcane-radar.html", "features": ""}, {"title": "ARC Raiders [ ☢ Arcane ]", "game": "ARC Raiders", "url": "arc-raiders-arcane.html", "features": ""}, {"title": "Arena Breakout Infinite [ ☢ Ghost ESP ]", "game": "Arena Breakout Infinite", "url": "arena-breakout-infinite-ghost-esp.html", "features": ""}, {"title": "Arena Breakout Infinite [ ☢ Ghost Full ]", "game": "Arena Breakout Infinite", "url": "arena-breakout-infinite-ghost-full.html", "features": ""}, {"title": "Arena Breakout Infinite [ ☢ KoenFlow ]", "game": "Arena Breakout Infinite", "url": "arena-breakout-infinite-koenflow.html", "features": ""}, {"title": "Arena Breakout Infinite [ ☢ Xernel Full ]", "game": "Arena Breakout Infinite", "url": "arena-breakout-infinite-xernel-full.html", "features": ""}, {"title": "ARK Ascended [ ☢ Arcane ]", "game": "ARK Ascended", "url": "ark-ascended-arcane.html", "features": ""}, {"title": "Arma Reforger [ ☢ Arcane ]", "game": "Arma Reforger", "url": "arma-reforger-arcane.html", "features": ""}, {"title": "Arma Reforger [ ☢ Xernel ]", "game": "Arma Reforger", "url": "arma-reforger-xernel.html", "features": ""}, {"title": "Counter Strike 2 [ ☢ Arcane ]", "game": "Counter-Strike 2", "url": "counter-strike-2-arcane.html", "features": ""}, {"title": "DayZ [ ☢ Arcane ]", "game": "DayZ", "url": "dayz-arcane.html", "features": ""}, {"title": "DayZ [ ☢ Medusa Full ]", "game": "DayZ", "url": "dayz-medusa-full.html", "features": ""}, {"title": "DayZ [ ☢ Medusa Lite ]", "game": "DayZ", "url": "dayz-medusa-lite.html", "features": ""}, {"title": "DayZ [ ☢ Xernel ]", "game": "DayZ", "url": "dayz-xernel.html", "features": ""}, {"title": "Escape from Tarkov [ ☢ Medusa Lite ]", "game": "Escape from Tarkov", "url": "escape-from-tarkov-medusa-lite.html", "features": ""}, {"title": "Escape from Tarkov [ ☢ Medusa Rage ]", "game": "Escape from Tarkov", "url": "escape-from-tarkov-medusa-rage.html", "features": ""}, {"title": "Fortnite [ ☢ Arcane ]", "game": "Fortnite", "url": "fortnite-arcane.html", "features": ""}, {"title": "Marvel Rivals [ ☢ Ghost ]", "game": "Marvel Rivals", "url": "marvel-rivals-ghost.html", "features": ""}, {"title": "Marvel Rivals [ ☢ Phoenix ]", "game": "Marvel Rivals", "url": "marvel-rivals-phoenix.html", "features": ""}, {"title": "Meccha Chameleon [ ☢ Arcane ]", "game": "Meccha Chameleon", "url": "meccha-chameleon-arcane.html", "features": ""}, {"title": "Meccha Chameleon [ ☢ Ghost ]", "game": "Meccha Chameleon", "url": "meccha-chameleon-ghost.html", "features": ""}, {"title": "☢ Phoenix (CHAMS) ]", "game": "Delta Force", "url": "phoenix-chams.html", "features": ""}, {"title": "Pubg [ ☢ Arcane ESP ]", "game": "PUBG", "url": "pubg-arcane-esp.html", "features": ""}, {"title": "Pubg [ ☢ Arcane Full ]", "game": "PUBG", "url": "pubg-arcane-full.html", "features": ""}, {"title": "Pubg [ ☢ Arcane Radar ]", "game": "PUBG", "url": "pubg-arcane-radar.html", "features": ""}, {"title": "Pubg [ ☢ Phoenix Full ]", "game": "PUBG", "url": "pubg-phoenix-full.html", "features": ""}, {"title": "Rust [ ☢ Arcane ]", "game": "Rust", "url": "rust-arcane.html", "features": ""}, {"title": "Rust [ ☢ Rampart Full ]", "game": "Rust", "url": "rust-rampart-full.html", "features": ""}, {"title": "Rust [ ☢ Rampart Lite ]", "game": "Rust", "url": "rust-rampart-lite.html", "features": ""}, {"title": "Rust [ ☢ Xernel ]", "game": "Rust", "url": "rust-xernel.html", "features": ""}, {"title": "Unturned [ ☢ Medusa ]", "game": "Unturned", "url": "unturned-medusa.html", "features": ""}, {"title": "Xernel Ultimate Spoofer (WOOFFER)", "game": "Спуферы", "url": "xernel-ultimate-spoofer.html", "features": ""}, {"title": "Статус читов", "game": "Мониторинг", "url": "index.html", "features": "Статусы, Undetected, Обновление, Безопасность, Спуфер"}];
         
         // Global Keyboard / Search functionality
         window.addEventListener('keydown', (e) => {
@@ -5395,6 +5447,19 @@ body::after{
 </div>
 <div class='sidebar-category collapsed'>
   <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>ABI</span>
+    <span class='nav-name'><span data-lang="ru">Arena Breakout Infinite</span><span data-lang="en">Arena Breakout Infinite</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='arena-breakout-infinite-ghost-esp.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ Ghost ESP ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Ghost ESP ]</span></span></a>
+    <a href='arena-breakout-infinite-ghost-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ Ghost Full ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Ghost Full ]</span></span></a>
+    <a href='arena-breakout-infinite-koenflow.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ KoenFlow ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ KoenFlow ]</span></span></a>
+    <a href='arena-breakout-infinite-xernel-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ Xernel Full ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Xernel Full ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
     <span class='nav-code'>RST</span>
     <span class='nav-name'><span data-lang="ru">Rust</span><span data-lang="en">Rust</span></span>
     <span class='category-chevron'>▼</span>
@@ -5475,6 +5540,16 @@ body::after{
 </div>
 <div class='sidebar-category collapsed'>
   <div class='sidebar-category-header' onclick='toggleCategory(this)'>
+    <span class='nav-code'>DF</span>
+    <span class='nav-name'><span data-lang="ru">Delta Force</span><span data-lang="en">Delta Force</span></span>
+    <span class='category-chevron'>▼</span>
+  </div>
+  <div class='sidebar-category-items'>
+    <a href='phoenix-chams.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">☢ Phoenix (CHAMS) ]</span><span data-lang="en">☢ Phoenix (CHAMS) ]</span></span></a>
+  </div>
+</div>
+<div class='sidebar-category collapsed'>
+  <div class='sidebar-category-header' onclick='toggleCategory(this)'>
     <span class='nav-code'>EFT</span>
     <span class='nav-name'><span data-lang="ru">Escape from Tarkov</span><span data-lang="en">Escape from Tarkov</span></span>
     <span class='category-chevron'>▼</span>
@@ -5541,34 +5616,12 @@ body::after{
 </div>
 <div class='sidebar-category collapsed'>
   <div class='sidebar-category-header' onclick='toggleCategory(this)'>
-    <span class='nav-code'>ETC</span>
-    <span class='nav-name'><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
+    <span class='nav-code'>SPF</span>
+    <span class='nav-name'><span data-lang="ru">Спуферы</span><span data-lang="en">Spoofers</span></span>
     <span class='category-chevron'>▼</span>
   </div>
   <div class='sidebar-category-items'>
-    <a href='1.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Ультимативный спуфер1</span><span data-lang="en">Ультимативный спуфер1</span></span></a>
-    <a href='README.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">База Знаний Xind1 Docs</span><span data-lang="en">База Знаний Xind1 Docs</span></span></a>
-    <a href='SUMMARY.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Table of contents</span><span data-lang="en">Table of contents</span></span></a>
-    <a href='arcane-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Arcane</span><span data-lang="en">🚀 Инструкция по запуску Arcane</span></span></a>
-    <a href='arcane-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Arcane — Решение проблем запуска</span><span data-lang="en">🛠 Arcane — Решение проблем запуска</span></span></a>
-    <a href='arena-breakout-infinite-ghost-esp.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ Ghost ESP ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Ghost ESP ]</span></span></a>
-    <a href='arena-breakout-infinite-ghost-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ Ghost Full ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Ghost Full ]</span></span></a>
-    <a href='arena-breakout-infinite-koenflow.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ KoenFlow ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ KoenFlow ]</span></span></a>
-    <a href='arena-breakout-infinite-xernel-full.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Arena Breakout Infinite [ ☢ Xernel Full ]</span><span data-lang="en">Arena Breakout Infinite [ ☢ Xernel Full ]</span></span></a>
-    <a href='ghost-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Ghost</span><span data-lang="en">🚀 Инструкция по запуску Ghost</span></span></a>
-    <a href='ghost-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Ghost — Решение проблем запуска</span><span data-lang="en">🛠 Ghost — Решение проблем запуска</span></span></a>
-    <a href='index.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">База Знаний Xind1 Docs</span><span data-lang="en">База Знаний Xind1 Docs</span></span></a>
-    <a href='koenflow-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску KoenFlow</span><span data-lang="en">🚀 Инструкция по запуску KoenFlow</span></span></a>
-    <a href='koenflow-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 KoenFlow — Решение проблем запуска</span><span data-lang="en">🛠 KoenFlow — Решение проблем запуска</span></span></a>
-    <a href='medusa-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Medusa</span><span data-lang="en">🚀 Инструкция по запуску Medusa</span></span></a>
-    <a href='medusa-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Medusa — Решение проблем запуска</span><span data-lang="en">🛠 Medusa — Решение проблем запуска</span></span></a>
-    <a href='phoenix-chams.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">☢ Phoenix (CHAMS) ]</span><span data-lang="en">☢ Phoenix (CHAMS) ]</span></span></a>
-    <a href='phoenix-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Phoenix</span><span data-lang="en">🚀 Инструкция по запуску Phoenix</span></span></a>
-    <a href='phoenix-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Phoenix — Решение проблем запуска</span><span data-lang="en">🛠 Phoenix — Решение проблем запуска</span></span></a>
-    <a href='rampart-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Rampart</span><span data-lang="en">🚀 Инструкция по запуску Rampart</span></span></a>
-    <a href='rampart-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Rampart — Решение проблем запуска</span><span data-lang="en">🛠 Rampart — Решение проблем запуска</span></span></a>
-    <a href='xernel-instruktsiya.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🚀 Инструкция по запуску Xernel</span><span data-lang="en">🚀 Инструкция по запуску Xernel</span></span></a>
-    <a href='xernel-reshenie-problem.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">🛠 Xernel — Решение проблем запуска</span><span data-lang="en">🛠 Xernel — Решение проблем запуска</span></span></a>
+    <a href='xernel-ultimate-spoofer.html' class='sidebar-link '><span class='sidebar-link-label'><span data-lang="ru">Xernel Ultimate Spoofer (WOOFFER)</span><span data-lang="en">Xernel Ultimate Spoofer (WOOFFER)</span></span></a>
   </div>
 </div>
 <div class='lang-switcher'>
@@ -5585,11 +5638,11 @@ body::after{
     <p class="hero-lead"><span data-lang="ru">Каталог продуктов продавца Aimer123213. Выберите игру и откройте документацию с ценами.</span><span data-lang="en">Product catalog by Aimer123213. Pick a game and open docs with pricing.</span></p>
     <div class="hero-metrics">
         <div class="hero-metric">
-            <span class="metric-value">52</span>
+            <span class="metric-value">35</span>
             <span class="metric-label"><span data-lang="ru">активных продуктов</span><span data-lang="en">active products</span></span>
         </div>
         <div class="hero-metric">
-            <span class="metric-value">14</span>
+            <span class="metric-value">16</span>
             <span class="metric-label"><span data-lang="ru">поддерживаемых игр</span><span data-lang="en">supported games</span></span>
         </div>
         <div class="hero-metric hero-metric-live">
@@ -5603,7 +5656,7 @@ body::after{
         <span class="catalog-kicker"><span data-lang="ru">Каталог</span><span data-lang="en">Catalog</span></span>
         <h2 class="catalog-title"><span data-lang="ru">Все продукты</span><span data-lang="en">All products</span></h2>
     </div>
-    <span class="catalog-count">52 <span data-lang="ru">позиций</span><span data-lang="en">items</span></span>
+    <span class="catalog-count">35 <span data-lang="ru">позиций</span><span data-lang="en">items</span></span>
 </div>
 <div class="catalog-controls">
   <div class="catalog-controls-row">
@@ -5666,11 +5719,11 @@ body::after{
 </div>
   <div class="filter-section">
     <div class="filter-section-label"><span data-lang="ru">Игра</span><span data-lang="en">Game</span></div>
-    <div class="filter-bar" id="filter-games"><button class="filter-chip active" data-game="all" aria-pressed="true" onclick="setCatalogGame('all', this)"><span data-lang="ru">Все продукты</span><span data-lang="en">All products</span></button><button class="filter-chip" data-game="ARC Raiders" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">ARC Raiders</button><button class="filter-chip" data-game="ARK Ascended" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">ARK Ascended</button><button class="filter-chip" data-game="Apex Legends" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Apex Legends</button><button class="filter-chip" data-game="Arma Reforger" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Arma Reforger</button><button class="filter-chip" data-game="Counter-Strike 2" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Counter-Strike 2</button><button class="filter-chip" data-game="DayZ" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">DayZ</button><button class="filter-chip" data-game="Escape from Tarkov" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Escape from Tarkov</button><button class="filter-chip" data-game="Fortnite" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Fortnite</button><button class="filter-chip" data-game="Marvel Rivals" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Marvel Rivals</button><button class="filter-chip" data-game="Meccha Chameleon" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Meccha Chameleon</button><button class="filter-chip" data-game="PUBG" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">PUBG</button><button class="filter-chip" data-game="Rust" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Rust</button><button class="filter-chip" data-game="Unturned" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Unturned</button><button class="filter-chip" data-game="Другие игры" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Другие игры</button></div>
+    <div class="filter-bar" id="filter-games"><button class="filter-chip active" data-game="all" aria-pressed="true" onclick="setCatalogGame('all', this)"><span data-lang="ru">Все продукты</span><span data-lang="en">All products</span></button><button class="filter-chip" data-game="ARC Raiders" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">ARC Raiders</button><button class="filter-chip" data-game="ARK Ascended" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">ARK Ascended</button><button class="filter-chip" data-game="Apex Legends" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Apex Legends</button><button class="filter-chip" data-game="Arena Breakout Infinite" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Arena Breakout Infinite</button><button class="filter-chip" data-game="Arma Reforger" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Arma Reforger</button><button class="filter-chip" data-game="Counter-Strike 2" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Counter-Strike 2</button><button class="filter-chip" data-game="DayZ" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">DayZ</button><button class="filter-chip" data-game="Delta Force" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Delta Force</button><button class="filter-chip" data-game="Escape from Tarkov" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Escape from Tarkov</button><button class="filter-chip" data-game="Fortnite" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Fortnite</button><button class="filter-chip" data-game="Marvel Rivals" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Marvel Rivals</button><button class="filter-chip" data-game="Meccha Chameleon" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Meccha Chameleon</button><button class="filter-chip" data-game="PUBG" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">PUBG</button><button class="filter-chip" data-game="Rust" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Rust</button><button class="filter-chip" data-game="Unturned" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Unturned</button><button class="filter-chip" data-game="Спуферы" aria-pressed="false" onclick="setCatalogGame(this.dataset.game, this)">Спуферы</button></div>
   </div>
   <div class="filter-section">
     <div class="filter-section-label"><span data-lang="ru">Бренд</span><span data-lang="en">Brand</span></div>
-    <div class="filter-bar" id="filter-brands"><button type="button" class="filter-chip active" data-brand="all" aria-pressed="true" onclick="setCatalogBrand('all', this)"><span data-lang="ru">Все бренды</span><span data-lang="en">All brands</span></button><button type="button" class="filter-chip" data-brand="arcane" aria-pressed="false" onclick="setCatalogBrand('arcane', this)">ARCANE</button><button type="button" class="filter-chip" data-brand="ghost" aria-pressed="false" onclick="setCatalogBrand('ghost', this)">GHOST</button><button type="button" class="filter-chip" data-brand="koenflow" aria-pressed="false" onclick="setCatalogBrand('koenflow', this)">KOENFLOW</button><button type="button" class="filter-chip" data-brand="medusa" aria-pressed="false" onclick="setCatalogBrand('medusa', this)">MEDUSA</button><button type="button" class="filter-chip" data-brand="other" aria-pressed="false" onclick="setCatalogBrand('other', this)">OTHER</button><button type="button" class="filter-chip" data-brand="phoenix" aria-pressed="false" onclick="setCatalogBrand('phoenix', this)">PHOENIX</button><button type="button" class="filter-chip" data-brand="rampart" aria-pressed="false" onclick="setCatalogBrand('rampart', this)">RAMPART</button><button type="button" class="filter-chip" data-brand="xernel" aria-pressed="false" onclick="setCatalogBrand('xernel', this)">XERNEL</button></div>
+    <div class="filter-bar" id="filter-brands"><button type="button" class="filter-chip active" data-brand="all" aria-pressed="true" onclick="setCatalogBrand('all', this)"><span data-lang="ru">Все бренды</span><span data-lang="en">All brands</span></button><button type="button" class="filter-chip" data-brand="arcane" aria-pressed="false" onclick="setCatalogBrand('arcane', this)">ARCANE</button><button type="button" class="filter-chip" data-brand="ghost" aria-pressed="false" onclick="setCatalogBrand('ghost', this)">GHOST</button><button type="button" class="filter-chip" data-brand="koenflow" aria-pressed="false" onclick="setCatalogBrand('koenflow', this)">KOENFLOW</button><button type="button" class="filter-chip" data-brand="medusa" aria-pressed="false" onclick="setCatalogBrand('medusa', this)">MEDUSA</button><button type="button" class="filter-chip" data-brand="phoenix" aria-pressed="false" onclick="setCatalogBrand('phoenix', this)">PHOENIX</button><button type="button" class="filter-chip" data-brand="rampart" aria-pressed="false" onclick="setCatalogBrand('rampart', this)">RAMPART</button><button type="button" class="filter-chip" data-brand="xernel" aria-pressed="false" onclick="setCatalogBrand('xernel', this)">XERNEL</button></div>
   </div>
 </div>
 <div class="catalog-empty" id="catalog-empty" hidden>
@@ -5680,107 +5733,15 @@ body::after{
     <span data-lang="ru">Сбросить</span><span data-lang="en">Reset</span>
   </button>
 </div>
-<div class="catalog-live-count" id="catalog-live-count" data-total="52"></div>
+<div class="catalog-live-count" id="catalog-live-count" data-total="35"></div>
 <div class="recent-rail" id="recent-rail" hidden>
   <div class="recent-rail-title"><span data-lang="ru">Недавно открытые</span><span data-lang="en">Recently opened</span></div>
   <div class="recent-rail-list"></div>
 </div>
 <div class="status-page-grid">
     
-    <a href="1.html" class="status-grid-card showcase brand-g1da" data-game="Другие игры" data-brand="g1da" data-status="undetected" data-name="ультимативный спуфер1" data-search="ультимативный спуфер1 другие игры g1da" data-price="0" data-index="1" data-slug="1" data-spoofer="0" data-new="1" style="--card-i:0">
-        <div class="card-media"><span class="card-brand-tag">G1DA</span><div class="card-media-fallback">G1DA</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">Ультимативный спуфер1</span><span data-lang="en">Ультимативный спуфер1</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">01</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="README.html" class="status-grid-card showcase brand-g1da" data-game="Другие игры" data-brand="g1da" data-status="undetected" data-name="база знаний xind1 docs" data-search="база знаний xind1 docs другие игры g1da" data-price="0" data-index="2" data-slug="README" data-spoofer="0" data-new="1" style="--card-i:1">
-        <div class="card-media"><span class="card-brand-tag">G1DA</span><div class="card-media-fallback">G1DA</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">База Знаний Xind1 Docs</span><span data-lang="en">База Знаний Xind1 Docs</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">02</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="SUMMARY.html" class="status-grid-card showcase brand-g1da" data-game="Другие игры" data-brand="g1da" data-status="undetected" data-name="table of contents" data-search="table of contents другие игры g1da" data-price="0" data-index="3" data-slug="SUMMARY" data-spoofer="0" data-new="1" style="--card-i:2">
-        <div class="card-media"><span class="card-brand-tag">G1DA</span><div class="card-media-fallback">G1DA</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">Table of contents</span><span data-lang="en">Table of contents</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">03</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="apex-legends-arcane.html" class="status-grid-card showcase brand-arcane" data-game="Apex Legends" data-brand="arcane" data-status="undetected" data-name="apex legends [ ☢ arcane ]" data-search="apex legends [ ☢ arcane ] apex legends arcane" data-price="0" data-index="4" data-slug="apex-legends-arcane" data-spoofer="1" data-new="1" style="--card-i:3">
+    <article class="status-grid-card showcase brand-arcane" data-game="Apex Legends" data-brand="arcane" data-status="undetected" data-name="apex legends [ ☢ arcane ]" data-search="apex legends [ ☢ arcane ] apex legends arcane wooffer spoofer" data-price="389" data-index="1" data-slug="apex-legends-arcane" data-spoofer="1" data-new="1" style="--card-i:0">
+        <a class="card-main-link" href="apex-legends-arcane.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/apex-legends-arcane/photo_2026-07-15_17-28-03_2.md.webp 960w, images/apex-legends-arcane/photo_2026-07-15_17-28-03_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/apex-legends-arcane/photo_2026-07-15_17-28-03_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/apex-legends-arcane/photo_2026-07-15_17-28-03_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -5794,7 +5755,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Apex Legends [ ☢ Arcane ]</span><span data-lang="en">Apex Legends [ ☢ Arcane ]</span></div>
-        
+        <div class="status-card-price">от 389 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -5806,15 +5767,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Да</span><span data-lang="en">Yes</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">04</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">01</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=26406494" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="apex-legends-arcane.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="apex-legends-phoenix-x-ray.html" class="status-grid-card showcase brand-phoenix" data-game="Apex Legends" data-brand="phoenix" data-status="undetected" data-name="apex legends [ ☢ phoenix x-ray ]" data-search="apex legends [ ☢ phoenix x-ray ] apex legends phoenix" data-price="0" data-index="5" data-slug="apex-legends-phoenix-x-ray" data-spoofer="1" data-new="1" style="--card-i:4">
+    <article class="status-grid-card showcase brand-phoenix" data-game="Apex Legends" data-brand="phoenix" data-status="undetected" data-name="apex legends [ ☢ phoenix x-ray ]" data-search="apex legends [ ☢ phoenix x-ray ] apex legends phoenix wooffer spoofer" data-price="149" data-index="2" data-slug="apex-legends-phoenix-x-ray" data-spoofer="1" data-new="1" style="--card-i:1">
+        <a class="card-main-link" href="apex-legends-phoenix-x-ray.html">
         <div class="card-media"><span class="card-brand-tag">PHOENIX</span><picture>
   <source type="image/webp" srcset="images/apex-legends-phoenix-x-ray/photo_2026-07-04_02-02-52_2.md.webp 960w, images/apex-legends-phoenix-x-ray/photo_2026-07-04_02-02-52_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/apex-legends-phoenix-x-ray/photo_2026-07-04_02-02-52_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/apex-legends-phoenix-x-ray/photo_2026-07-04_02-02-52_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -5828,7 +5794,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Apex Legends [ ☢ Phoenix X-RAY ]</span><span data-lang="en">Apex Legends [ ☢ Phoenix X-RAY ]</span></div>
-        
+        <div class="status-card-price">от 149 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -5840,15 +5806,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Да</span><span data-lang="en">Yes</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">05</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">02</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260844" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="apex-legends-phoenix-x-ray.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="apex-legends-rampart.html" class="status-grid-card showcase brand-rampart" data-game="Apex Legends" data-brand="rampart" data-status="undetected" data-name="apex legends [ ☢ rampart ]" data-search="apex legends [ ☢ rampart ] apex legends rampart" data-price="0" data-index="6" data-slug="apex-legends-rampart" data-spoofer="0" data-new="1" style="--card-i:5">
+    <article class="status-grid-card showcase brand-rampart" data-game="Apex Legends" data-brand="rampart" data-status="undetected" data-name="apex legends [ ☢ rampart ]" data-search="apex legends [ ☢ rampart ] apex legends rampart wooffer spoofer" data-price="199" data-index="3" data-slug="apex-legends-rampart" data-spoofer="0" data-new="1" style="--card-i:2">
+        <a class="card-main-link" href="apex-legends-rampart.html">
         <div class="card-media"><span class="card-brand-tag">RAMPART</span><picture>
   <source type="image/webp" srcset="images/apex-legends-rampart/photo_2026-06-25_01-17-49_2.md.webp 960w, images/apex-legends-rampart/photo_2026-06-25_01-17-49_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/apex-legends-rampart/photo_2026-06-25_01-17-49_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/apex-legends-rampart/photo_2026-06-25_01-17-49_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -5862,7 +5833,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Apex Legends [ ☢ Rampart ]</span><span data-lang="en">Apex Legends [ ☢ Rampart ]</span></div>
-        
+        <div class="status-card-price">от 199 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -5874,15 +5845,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">06</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">03</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260852" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="apex-legends-rampart.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="arc-raiders-arcane-radar.html" class="status-grid-card showcase brand-arcane" data-game="ARC Raiders" data-brand="arcane" data-status="undetected" data-name="arc raiders [ ☢ arcane radar ]" data-search="arc raiders [ ☢ arcane radar ] arc raiders arcane" data-price="0" data-index="7" data-slug="arc-raiders-arcane-radar" data-spoofer="0" data-new="1" style="--card-i:6">
+    <article class="status-grid-card showcase brand-arcane" data-game="ARC Raiders" data-brand="arcane" data-status="undetected" data-name="arc raiders [ ☢ arcane radar ]" data-search="arc raiders [ ☢ arcane radar ] arc raiders arcane wooffer spoofer" data-price="239" data-index="4" data-slug="arc-raiders-arcane-radar" data-spoofer="0" data-new="1" style="--card-i:3">
+        <a class="card-main-link" href="arc-raiders-arcane-radar.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/arc-raiders-arcane-radar/photo_2026-07-15_01-56-48_2.md.webp 960w, images/arc-raiders-arcane-radar/photo_2026-07-15_01-56-48_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/arc-raiders-arcane-radar/photo_2026-07-15_01-56-48_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/arc-raiders-arcane-radar/photo_2026-07-15_01-56-48_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -5896,7 +5872,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">ARC Raiders [ ☢ Arcane Radar ]</span><span data-lang="en">ARC Raiders [ ☢ Arcane Radar ]</span></div>
-        
+        <div class="status-card-price">от 239 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -5908,15 +5884,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">07</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">04</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73263283" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="arc-raiders-arcane-radar.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="arc-raiders-arcane.html" class="status-grid-card showcase brand-arcane" data-game="ARC Raiders" data-brand="arcane" data-status="undetected" data-name="arc raiders [ ☢ arcane ]" data-search="arc raiders [ ☢ arcane ] arc raiders arcane" data-price="0" data-index="8" data-slug="arc-raiders-arcane" data-spoofer="0" data-new="1" style="--card-i:7">
+    <article class="status-grid-card showcase brand-arcane" data-game="ARC Raiders" data-brand="arcane" data-status="undetected" data-name="arc raiders [ ☢ arcane ]" data-search="arc raiders [ ☢ arcane ] arc raiders arcane wooffer spoofer" data-price="239" data-index="5" data-slug="arc-raiders-arcane" data-spoofer="0" data-new="1" style="--card-i:4">
+        <a class="card-main-link" href="arc-raiders-arcane.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/arc-raiders-arcane/photo_2026-07-15_01-41-12_2.md.webp 960w, images/arc-raiders-arcane/photo_2026-07-15_01-41-12_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/arc-raiders-arcane/photo_2026-07-15_01-41-12_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/arc-raiders-arcane/photo_2026-07-15_01-41-12_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -5930,38 +5911,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">ARC Raiders [ ☢ Arcane ]</span><span data-lang="en">ARC Raiders [ ☢ Arcane ]</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">08</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="arcane-instruktsiya.html" class="status-grid-card showcase brand-arcane" data-game="Другие игры" data-brand="arcane" data-status="undetected" data-name="🚀 инструкция по запуску arcane" data-search="🚀 инструкция по запуску arcane другие игры arcane" data-price="0" data-index="9" data-slug="arcane-instruktsiya" data-spoofer="0" data-new="1" style="--card-i:8">
-        <div class="card-media"><span class="card-brand-tag">ARCANE</span><div class="card-media-fallback">ARCANE</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">🚀 Инструкция по запуску Arcane</span><span data-lang="en">🚀 Инструкция по запуску Arcane</span></div>
-        
+        <div class="status-card-price">от 239 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -5973,53 +5923,27 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">09</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">05</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260897" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="arc-raiders-arcane.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="arcane-reshenie-problem.html" class="status-grid-card showcase brand-arcane" data-game="Другие игры" data-brand="arcane" data-status="undetected" data-name="🛠 arcane — решение проблем запуска" data-search="🛠 arcane — решение проблем запуска другие игры arcane" data-price="0" data-index="10" data-slug="arcane-reshenie-problem" data-spoofer="0" data-new="1" style="--card-i:9">
-        <div class="card-media"><span class="card-brand-tag">ARCANE</span><div class="card-media-fallback">ARCANE</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">🛠 Arcane — Решение проблем запуска</span><span data-lang="en">🛠 Arcane — Решение проблем запуска</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">10</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="arena-breakout-infinite-ghost-esp.html" class="status-grid-card showcase brand-ghost" data-game="Другие игры" data-brand="ghost" data-status="undetected" data-name="arena breakout infinite [ ☢ ghost esp ]" data-search="arena breakout infinite [ ☢ ghost esp ] другие игры ghost" data-price="0" data-index="11" data-slug="arena-breakout-infinite-ghost-esp" data-spoofer="0" data-new="1" style="--card-i:10">
+    <article class="status-grid-card showcase brand-ghost" data-game="Arena Breakout Infinite" data-brand="ghost" data-status="undetected" data-name="arena breakout infinite [ ☢ ghost esp ]" data-search="arena breakout infinite [ ☢ ghost esp ] arena breakout infinite ghost wooffer spoofer" data-price="0" data-index="6" data-slug="arena-breakout-infinite-ghost-esp" data-spoofer="0" data-new="1" style="--card-i:5">
+        <a class="card-main-link" href="arena-breakout-infinite-ghost-esp.html">
         <div class="card-media"><span class="card-brand-tag">GHOST</span><picture>
   <source type="image/webp" srcset="images/arena-breakout-infinite-ghost-esp/photo_2026-06-18_23-47-50_2.md.webp 960w, images/arena-breakout-infinite-ghost-esp/photo_2026-06-18_23-47-50_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/arena-breakout-infinite-ghost-esp/photo_2026-06-18_23-47-50_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/arena-breakout-infinite-ghost-esp/photo_2026-06-18_23-47-50_2.thumb.webp')" onload="this.classList.add('is-loaded')">
 </picture></div>
         <div class="card-body">
         <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
+            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ABI</span><span data-lang="ru">Arena Breakout Infinite</span><span data-lang="en">Arena Breakout Infinite</span></span>
             <span class="status-badge undetected">
                 <span class="status-dot"></span>
                 Undetected
@@ -6038,22 +5962,27 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">11</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">06</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260468" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="arena-breakout-infinite-ghost-esp.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="arena-breakout-infinite-ghost-full.html" class="status-grid-card showcase brand-ghost" data-game="Другие игры" data-brand="ghost" data-status="undetected" data-name="arena breakout infinite [ ☢ ghost full ]" data-search="arena breakout infinite [ ☢ ghost full ] другие игры ghost" data-price="0" data-index="12" data-slug="arena-breakout-infinite-ghost-full" data-spoofer="0" data-new="1" style="--card-i:11">
+    <article class="status-grid-card showcase brand-ghost" data-game="Arena Breakout Infinite" data-brand="ghost" data-status="undetected" data-name="arena breakout infinite [ ☢ ghost full ]" data-search="arena breakout infinite [ ☢ ghost full ] arena breakout infinite ghost wooffer spoofer" data-price="0" data-index="7" data-slug="arena-breakout-infinite-ghost-full" data-spoofer="0" data-new="1" style="--card-i:6">
+        <a class="card-main-link" href="arena-breakout-infinite-ghost-full.html">
         <div class="card-media"><span class="card-brand-tag">GHOST</span><picture>
   <source type="image/webp" srcset="images/arena-breakout-infinite-ghost-full/photo_2026-06-18_01-23-37_2.md.webp 960w, images/arena-breakout-infinite-ghost-full/photo_2026-06-18_01-23-37_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/arena-breakout-infinite-ghost-full/photo_2026-06-18_01-23-37_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/arena-breakout-infinite-ghost-full/photo_2026-06-18_01-23-37_2.thumb.webp')" onload="this.classList.add('is-loaded')">
 </picture></div>
         <div class="card-body">
         <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
+            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ABI</span><span data-lang="ru">Arena Breakout Infinite</span><span data-lang="en">Arena Breakout Infinite</span></span>
             <span class="status-badge undetected">
                 <span class="status-dot"></span>
                 Undetected
@@ -6072,22 +6001,27 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">12</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">07</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260447" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="arena-breakout-infinite-ghost-full.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="arena-breakout-infinite-koenflow.html" class="status-grid-card showcase brand-koenflow" data-game="Другие игры" data-brand="koenflow" data-status="undetected" data-name="arena breakout infinite [ ☢ koenflow ]" data-search="arena breakout infinite [ ☢ koenflow ] другие игры koenflow" data-price="0" data-index="13" data-slug="arena-breakout-infinite-koenflow" data-spoofer="0" data-new="1" style="--card-i:12">
+    <article class="status-grid-card showcase brand-koenflow" data-game="Arena Breakout Infinite" data-brand="koenflow" data-status="undetected" data-name="arena breakout infinite [ ☢ koenflow ]" data-search="arena breakout infinite [ ☢ koenflow ] arena breakout infinite koenflow wooffer spoofer" data-price="0" data-index="8" data-slug="arena-breakout-infinite-koenflow" data-spoofer="0" data-new="1" style="--card-i:7">
+        <a class="card-main-link" href="arena-breakout-infinite-koenflow.html">
         <div class="card-media"><span class="card-brand-tag">KOENFLOW</span><picture>
   <source type="image/webp" srcset="images/arena-breakout-infinite-koenflow/photo_2026-07-19_01-59-29.md.webp 960w, images/arena-breakout-infinite-koenflow/photo_2026-07-19_01-59-29.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/arena-breakout-infinite-koenflow/photo_2026-07-19_01-59-29.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/arena-breakout-infinite-koenflow/photo_2026-07-19_01-59-29.thumb.webp')" onload="this.classList.add('is-loaded')">
 </picture></div>
         <div class="card-body">
         <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
+            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ABI</span><span data-lang="ru">Arena Breakout Infinite</span><span data-lang="en">Arena Breakout Infinite</span></span>
             <span class="status-badge undetected">
                 <span class="status-dot"></span>
                 Undetected
@@ -6106,22 +6040,27 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">13</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">08</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260361" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="arena-breakout-infinite-koenflow.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="arena-breakout-infinite-xernel-full.html" class="status-grid-card showcase brand-xernel" data-game="Другие игры" data-brand="xernel" data-status="undetected" data-name="arena breakout infinite [ ☢ xernel full ]" data-search="arena breakout infinite [ ☢ xernel full ] другие игры xernel" data-price="0" data-index="14" data-slug="arena-breakout-infinite-xernel-full" data-spoofer="0" data-new="1" style="--card-i:13">
+    <article class="status-grid-card showcase brand-xernel" data-game="Arena Breakout Infinite" data-brand="xernel" data-status="undetected" data-name="arena breakout infinite [ ☢ xernel full ]" data-search="arena breakout infinite [ ☢ xernel full ] arena breakout infinite xernel wooffer spoofer" data-price="0" data-index="9" data-slug="arena-breakout-infinite-xernel-full" data-spoofer="0" data-new="1" style="--card-i:8">
+        <a class="card-main-link" href="arena-breakout-infinite-xernel-full.html">
         <div class="card-media"><span class="card-brand-tag">XERNEL</span><picture>
   <source type="image/webp" srcset="images/arena-breakout-infinite-xernel-full/photo_2026-06-20_20-05-11_2.md.webp 960w, images/arena-breakout-infinite-xernel-full/photo_2026-06-20_20-05-11_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/arena-breakout-infinite-xernel-full/photo_2026-06-20_20-05-11_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/arena-breakout-infinite-xernel-full/photo_2026-06-20_20-05-11_2.thumb.webp')" onload="this.classList.add('is-loaded')">
 </picture></div>
         <div class="card-body">
         <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
+            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ABI</span><span data-lang="ru">Arena Breakout Infinite</span><span data-lang="en">Arena Breakout Infinite</span></span>
             <span class="status-badge undetected">
                 <span class="status-dot"></span>
                 Undetected
@@ -6140,15 +6079,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">14</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">09</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260350" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="arena-breakout-infinite-xernel-full.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="ark-ascended-arcane.html" class="status-grid-card showcase brand-arcane" data-game="ARK Ascended" data-brand="arcane" data-status="undetected" data-name="ark ascended [ ☢ arcane ]" data-search="ark ascended [ ☢ arcane ] ark ascended arcane" data-price="0" data-index="15" data-slug="ark-ascended-arcane" data-spoofer="1" data-new="1" style="--card-i:14">
+    <article class="status-grid-card showcase brand-arcane" data-game="ARK Ascended" data-brand="arcane" data-status="undetected" data-name="ark ascended [ ☢ arcane ]" data-search="ark ascended [ ☢ arcane ] ark ascended arcane wooffer spoofer" data-price="0" data-index="10" data-slug="ark-ascended-arcane" data-spoofer="1" data-new="1" style="--card-i:9">
+        <a class="card-main-link" href="ark-ascended-arcane.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/ark-ascended-arcane/photo_2026-07-15_18-07-44_2.md.webp 960w, images/ark-ascended-arcane/photo_2026-07-15_18-07-44_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/ark-ascended-arcane/photo_2026-07-15_18-07-44_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/ark-ascended-arcane/photo_2026-07-15_18-07-44_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6174,15 +6118,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Да</span><span data-lang="en">Yes</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">15</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">10</span>
+            <a class="card-buy-btn" href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="ark-ascended-arcane.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="arma-reforger-arcane.html" class="status-grid-card showcase brand-arcane" data-game="Arma Reforger" data-brand="arcane" data-status="undetected" data-name="arma reforger [ ☢ arcane ]" data-search="arma reforger [ ☢ arcane ] arma reforger arcane" data-price="0" data-index="16" data-slug="arma-reforger-arcane" data-spoofer="0" data-new="1" style="--card-i:15">
+    <article class="status-grid-card showcase brand-arcane" data-game="Arma Reforger" data-brand="arcane" data-status="undetected" data-name="arma reforger [ ☢ arcane ]" data-search="arma reforger [ ☢ arcane ] arma reforger arcane wooffer spoofer" data-price="0" data-index="11" data-slug="arma-reforger-arcane" data-spoofer="0" data-new="1" style="--card-i:10">
+        <a class="card-main-link" href="arma-reforger-arcane.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/arma-reforger-arcane/photo_2026-07-15_18-21-23.md.webp 960w, images/arma-reforger-arcane/photo_2026-07-15_18-21-23.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/arma-reforger-arcane/photo_2026-07-15_18-21-23.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/arma-reforger-arcane/photo_2026-07-15_18-21-23.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6208,15 +6157,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">16</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">11</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260948" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="arma-reforger-arcane.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="arma-reforger-xernel.html" class="status-grid-card showcase brand-xernel" data-game="Arma Reforger" data-brand="xernel" data-status="undetected" data-name="arma reforger [ ☢ xernel ]" data-search="arma reforger [ ☢ xernel ] arma reforger xernel" data-price="0" data-index="17" data-slug="arma-reforger-xernel" data-spoofer="0" data-new="1" style="--card-i:16">
+    <article class="status-grid-card showcase brand-xernel" data-game="Arma Reforger" data-brand="xernel" data-status="undetected" data-name="arma reforger [ ☢ xernel ]" data-search="arma reforger [ ☢ xernel ] arma reforger xernel wooffer spoofer" data-price="0" data-index="12" data-slug="arma-reforger-xernel" data-spoofer="0" data-new="1" style="--card-i:11">
+        <a class="card-main-link" href="arma-reforger-xernel.html">
         <div class="card-media"><span class="card-brand-tag">XERNEL</span><picture>
   <source type="image/webp" srcset="images/arma-reforger-xernel/photo_2026-06-22_01-02-40_2.md.webp 960w, images/arma-reforger-xernel/photo_2026-06-22_01-02-40_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/arma-reforger-xernel/photo_2026-06-22_01-02-40_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/arma-reforger-xernel/photo_2026-06-22_01-02-40_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6242,15 +6196,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">17</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">12</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260935" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="arma-reforger-xernel.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="counter-strike-2-arcane.html" class="status-grid-card showcase brand-arcane" data-game="Counter-Strike 2" data-brand="arcane" data-status="undetected" data-name="counter strike 2 [ ☢ arcane ]" data-search="counter strike 2 [ ☢ arcane ] counter-strike 2 arcane" data-price="0" data-index="18" data-slug="counter-strike-2-arcane" data-spoofer="0" data-new="1" style="--card-i:17">
+    <article class="status-grid-card showcase brand-arcane" data-game="Counter-Strike 2" data-brand="arcane" data-status="undetected" data-name="counter strike 2 [ ☢ arcane ]" data-search="counter strike 2 [ ☢ arcane ] counter-strike 2 arcane wooffer spoofer" data-price="0" data-index="13" data-slug="counter-strike-2-arcane" data-spoofer="0" data-new="1" style="--card-i:12">
+        <a class="card-main-link" href="counter-strike-2-arcane.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/counter-strike-2-arcane/photo_2026-07-18_21-17-31.md.webp 960w, images/counter-strike-2-arcane/photo_2026-07-18_21-17-31.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/counter-strike-2-arcane/photo_2026-07-18_21-17-31.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/counter-strike-2-arcane/photo_2026-07-18_21-17-31.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6276,15 +6235,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">18</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">13</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73263327" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="counter-strike-2-arcane.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="dayz-arcane.html" class="status-grid-card showcase brand-arcane" data-game="DayZ" data-brand="arcane" data-status="undetected" data-name="dayz [ ☢ arcane ]" data-search="dayz [ ☢ arcane ] dayz arcane" data-price="0" data-index="19" data-slug="dayz-arcane" data-spoofer="1" data-new="1" style="--card-i:18">
+    <article class="status-grid-card showcase brand-arcane" data-game="DayZ" data-brand="arcane" data-status="undetected" data-name="dayz [ ☢ arcane ]" data-search="dayz [ ☢ arcane ] dayz arcane wooffer spoofer" data-price="0" data-index="14" data-slug="dayz-arcane" data-spoofer="1" data-new="1" style="--card-i:13">
+        <a class="card-main-link" href="dayz-arcane.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/dayz-arcane/photo_2026-07-18_21-29-21_2.md.webp 960w, images/dayz-arcane/photo_2026-07-18_21-29-21_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/dayz-arcane/photo_2026-07-18_21-29-21_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/dayz-arcane/photo_2026-07-18_21-29-21_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6310,15 +6274,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Да</span><span data-lang="en">Yes</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">19</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">14</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260167" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="dayz-arcane.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="dayz-medusa-full.html" class="status-grid-card showcase brand-medusa" data-game="DayZ" data-brand="medusa" data-status="undetected" data-name="dayz [ ☢ medusa full ]" data-search="dayz [ ☢ medusa full ] dayz medusa" data-price="0" data-index="20" data-slug="dayz-medusa-full" data-spoofer="0" data-new="1" style="--card-i:19">
+    <article class="status-grid-card showcase brand-medusa" data-game="DayZ" data-brand="medusa" data-status="undetected" data-name="dayz [ ☢ medusa full ]" data-search="dayz [ ☢ medusa full ] dayz medusa wooffer spoofer" data-price="299" data-index="15" data-slug="dayz-medusa-full" data-spoofer="0" data-new="1" style="--card-i:14">
+        <a class="card-main-link" href="dayz-medusa-full.html">
         <div class="card-media"><span class="card-brand-tag">MEDUSA</span><picture>
   <source type="image/webp" srcset="images/dayz-medusa-full/photo_2026-07-08_20-01-58_2.md.webp 960w, images/dayz-medusa-full/photo_2026-07-08_20-01-58_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/dayz-medusa-full/photo_2026-07-08_20-01-58_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/dayz-medusa-full/photo_2026-07-08_20-01-58_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6332,7 +6301,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">DayZ [ ☢ Medusa Full ]</span><span data-lang="en">DayZ [ ☢ Medusa Full ]</span></div>
-        
+        <div class="status-card-price">от 299 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6344,15 +6313,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">20</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">15</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260994" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="dayz-medusa-full.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="dayz-medusa-lite.html" class="status-grid-card showcase brand-medusa" data-game="DayZ" data-brand="medusa" data-status="undetected" data-name="dayz [ ☢ medusa lite ]" data-search="dayz [ ☢ medusa lite ] dayz medusa" data-price="0" data-index="21" data-slug="dayz-medusa-lite" data-spoofer="0" data-new="1" style="--card-i:20">
+    <article class="status-grid-card showcase brand-medusa" data-game="DayZ" data-brand="medusa" data-status="undetected" data-name="dayz [ ☢ medusa lite ]" data-search="dayz [ ☢ medusa lite ] dayz medusa wooffer spoofer" data-price="0" data-index="16" data-slug="dayz-medusa-lite" data-spoofer="0" data-new="1" style="--card-i:15">
+        <a class="card-main-link" href="dayz-medusa-lite.html">
         <div class="card-media"><span class="card-brand-tag">MEDUSA</span><picture>
   <source type="image/webp" srcset="images/dayz-medusa-lite/photo_2026-07-08_20-01-58_4.md.webp 960w, images/dayz-medusa-lite/photo_2026-07-08_20-01-58_4.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/dayz-medusa-lite/photo_2026-07-08_20-01-58_4.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/dayz-medusa-lite/photo_2026-07-08_20-01-58_4.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6378,15 +6352,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">21</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">16</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260338" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="dayz-medusa-lite.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="dayz-xernel.html" class="status-grid-card showcase brand-xernel" data-game="DayZ" data-brand="xernel" data-status="undetected" data-name="dayz [ ☢ xernel ]" data-search="dayz [ ☢ xernel ] dayz xernel" data-price="0" data-index="22" data-slug="dayz-xernel" data-spoofer="0" data-new="1" style="--card-i:21">
+    <article class="status-grid-card showcase brand-xernel" data-game="DayZ" data-brand="xernel" data-status="undetected" data-name="dayz [ ☢ xernel ]" data-search="dayz [ ☢ xernel ] dayz xernel wooffer spoofer" data-price="299" data-index="17" data-slug="dayz-xernel" data-spoofer="0" data-new="1" style="--card-i:16">
+        <a class="card-main-link" href="dayz-xernel.html">
         <div class="card-media"><span class="card-brand-tag">XERNEL</span><picture>
   <source type="image/webp" srcset="images/dayz-xernel/photo_2026-06-22_10-46-03_2.md.webp 960w, images/dayz-xernel/photo_2026-06-22_10-46-03_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/dayz-xernel/photo_2026-06-22_10-46-03_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/dayz-xernel/photo_2026-06-22_10-46-03_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6400,7 +6379,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">DayZ [ ☢ Xernel ]</span><span data-lang="en">DayZ [ ☢ Xernel ]</span></div>
-        
+        <div class="status-card-price">от 299 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6412,15 +6391,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">22</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">17</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73261018" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="dayz-xernel.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="escape-from-tarkov-medusa-lite.html" class="status-grid-card showcase brand-medusa" data-game="Escape from Tarkov" data-brand="medusa" data-status="undetected" data-name="escape from tarkov [ ☢ medusa lite ]" data-search="escape from tarkov [ ☢ medusa lite ] escape from tarkov medusa" data-price="0" data-index="23" data-slug="escape-from-tarkov-medusa-lite" data-spoofer="1" data-new="1" style="--card-i:22">
+    <article class="status-grid-card showcase brand-medusa" data-game="Escape from Tarkov" data-brand="medusa" data-status="undetected" data-name="escape from tarkov [ ☢ medusa lite ]" data-search="escape from tarkov [ ☢ medusa lite ] escape from tarkov medusa wooffer spoofer" data-price="199" data-index="18" data-slug="escape-from-tarkov-medusa-lite" data-spoofer="1" data-new="1" style="--card-i:17">
+        <a class="card-main-link" href="escape-from-tarkov-medusa-lite.html">
         <div class="card-media"><span class="card-brand-tag">MEDUSA</span><picture>
   <source type="image/webp" srcset="images/escape-from-tarkov-medusa-lite/photo_2026-07-08_19-30-24_2.md.webp 960w, images/escape-from-tarkov-medusa-lite/photo_2026-07-08_19-30-24_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/escape-from-tarkov-medusa-lite/photo_2026-07-08_19-30-24_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/escape-from-tarkov-medusa-lite/photo_2026-07-08_19-30-24_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6434,7 +6418,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Escape from Tarkov [ ☢ Medusa Lite ]</span><span data-lang="en">Escape from Tarkov [ ☢ Medusa Lite ]</span></div>
-        
+        <div class="status-card-price">от 199 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6446,15 +6430,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Да</span><span data-lang="en">Yes</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">23</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">18</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73261113" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="escape-from-tarkov-medusa-lite.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="escape-from-tarkov-medusa-rage.html" class="status-grid-card showcase brand-medusa" data-game="Escape from Tarkov" data-brand="medusa" data-status="undetected" data-name="escape from tarkov [ ☢ medusa rage ]" data-search="escape from tarkov [ ☢ medusa rage ] escape from tarkov medusa" data-price="0" data-index="24" data-slug="escape-from-tarkov-medusa-rage" data-spoofer="1" data-new="1" style="--card-i:23">
+    <article class="status-grid-card showcase brand-medusa" data-game="Escape from Tarkov" data-brand="medusa" data-status="undetected" data-name="escape from tarkov [ ☢ medusa rage ]" data-search="escape from tarkov [ ☢ medusa rage ] escape from tarkov medusa wooffer spoofer" data-price="649" data-index="19" data-slug="escape-from-tarkov-medusa-rage" data-spoofer="1" data-new="1" style="--card-i:18">
+        <a class="card-main-link" href="escape-from-tarkov-medusa-rage.html">
         <div class="card-media"><span class="card-brand-tag">MEDUSA</span><picture>
   <source type="image/webp" srcset="images/escape-from-tarkov-medusa-rage/photo_2026-07-08_19-11-30_2.md.webp 960w, images/escape-from-tarkov-medusa-rage/photo_2026-07-08_19-11-30_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/escape-from-tarkov-medusa-rage/photo_2026-07-08_19-11-30_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/escape-from-tarkov-medusa-rage/photo_2026-07-08_19-11-30_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6468,7 +6457,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Escape from Tarkov [ ☢ Medusa Rage ]</span><span data-lang="en">Escape from Tarkov [ ☢ Medusa Rage ]</span></div>
-        
+        <div class="status-card-price">от 649 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6480,15 +6469,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Да</span><span data-lang="en">Yes</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">24</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">19</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73262565" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="escape-from-tarkov-medusa-rage.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="fortnite-arcane.html" class="status-grid-card showcase brand-arcane" data-game="Fortnite" data-brand="arcane" data-status="undetected" data-name="fortnite [ ☢ arcane ]" data-search="fortnite [ ☢ arcane ] fortnite arcane" data-price="0" data-index="25" data-slug="fortnite-arcane" data-spoofer="1" data-new="1" style="--card-i:24">
+    <article class="status-grid-card showcase brand-arcane" data-game="Fortnite" data-brand="arcane" data-status="undetected" data-name="fortnite [ ☢ arcane ]" data-search="fortnite [ ☢ arcane ] fortnite arcane wooffer spoofer" data-price="0" data-index="20" data-slug="fortnite-arcane" data-spoofer="1" data-new="1" style="--card-i:19">
+        <a class="card-main-link" href="fortnite-arcane.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/fortnite-arcane/photo_2026-07-18_22-04-52_2.md.webp 960w, images/fortnite-arcane/photo_2026-07-18_22-04-52_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/fortnite-arcane/photo_2026-07-18_22-04-52_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/fortnite-arcane/photo_2026-07-18_22-04-52_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6514,170 +6508,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Да</span><span data-lang="en">Yes</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">25</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">20</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73263433" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="fortnite-arcane.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="ghost-instruktsiya.html" class="status-grid-card showcase brand-ghost" data-game="Другие игры" data-brand="ghost" data-status="undetected" data-name="🚀 инструкция по запуску ghost" data-search="🚀 инструкция по запуску ghost другие игры ghost" data-price="0" data-index="26" data-slug="ghost-instruktsiya" data-spoofer="0" data-new="1" style="--card-i:25">
-        <div class="card-media"><span class="card-brand-tag">GHOST</span><div class="card-media-fallback">GHOST</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">🚀 Инструкция по запуску Ghost</span><span data-lang="en">🚀 Инструкция по запуску Ghost</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">26</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="ghost-reshenie-problem.html" class="status-grid-card showcase brand-ghost" data-game="Другие игры" data-brand="ghost" data-status="undetected" data-name="🛠 ghost — решение проблем запуска" data-search="🛠 ghost — решение проблем запуска другие игры ghost" data-price="0" data-index="27" data-slug="ghost-reshenie-problem" data-spoofer="0" data-new="1" style="--card-i:26">
-        <div class="card-media"><span class="card-brand-tag">GHOST</span><div class="card-media-fallback">GHOST</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">🛠 Ghost — Решение проблем запуска</span><span data-lang="en">🛠 Ghost — Решение проблем запуска</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">27</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="index.html" class="status-grid-card showcase brand-g1da" data-game="Другие игры" data-brand="g1da" data-status="undetected" data-name="база знаний xind1 docs" data-search="база знаний xind1 docs другие игры g1da" data-price="0" data-index="28" data-slug="index" data-spoofer="0" data-new="1" style="--card-i:27">
-        <div class="card-media"><span class="card-brand-tag">G1DA</span><div class="card-media-fallback">G1DA</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">База Знаний Xind1 Docs</span><span data-lang="en">База Знаний Xind1 Docs</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">28</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="koenflow-instruktsiya.html" class="status-grid-card showcase brand-koenflow" data-game="Другие игры" data-brand="koenflow" data-status="undetected" data-name="🚀 инструкция по запуску koenflow" data-search="🚀 инструкция по запуску koenflow другие игры koenflow" data-price="0" data-index="29" data-slug="koenflow-instruktsiya" data-spoofer="0" data-new="1" style="--card-i:28">
-        <div class="card-media"><span class="card-brand-tag">KOENFLOW</span><div class="card-media-fallback">KOENFLOW</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">🚀 Инструкция по запуску KoenFlow</span><span data-lang="en">🚀 Инструкция по запуску KoenFlow</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">29</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="koenflow-reshenie-problem.html" class="status-grid-card showcase brand-koenflow" data-game="Другие игры" data-brand="koenflow" data-status="undetected" data-name="🛠 koenflow — решение проблем запуска" data-search="🛠 koenflow — решение проблем запуска другие игры koenflow" data-price="0" data-index="30" data-slug="koenflow-reshenie-problem" data-spoofer="0" data-new="1" style="--card-i:29">
-        <div class="card-media"><span class="card-brand-tag">KOENFLOW</span><div class="card-media-fallback">KOENFLOW</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">🛠 KoenFlow — Решение проблем запуска</span><span data-lang="en">🛠 KoenFlow — Решение проблем запуска</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">30</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="marvel-rivals-ghost.html" class="status-grid-card showcase brand-ghost" data-game="Marvel Rivals" data-brand="ghost" data-status="undetected" data-name="marvel rivals [ ☢ ghost ]" data-search="marvel rivals [ ☢ ghost ] marvel rivals ghost" data-price="0" data-index="31" data-slug="marvel-rivals-ghost" data-spoofer="0" data-new="1" style="--card-i:30">
+    <article class="status-grid-card showcase brand-ghost" data-game="Marvel Rivals" data-brand="ghost" data-status="undetected" data-name="marvel rivals [ ☢ ghost ]" data-search="marvel rivals [ ☢ ghost ] marvel rivals ghost wooffer spoofer" data-price="0" data-index="21" data-slug="marvel-rivals-ghost" data-spoofer="0" data-new="1" style="--card-i:20">
+        <a class="card-main-link" href="marvel-rivals-ghost.html">
         <div class="card-media"><span class="card-brand-tag">GHOST</span><picture>
   <source type="image/webp" srcset="images/marvel-rivals-ghost/photo_2026-07-13_22-21-54_2.md.webp 960w, images/marvel-rivals-ghost/photo_2026-07-13_22-21-54_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/marvel-rivals-ghost/photo_2026-07-13_22-21-54_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/marvel-rivals-ghost/photo_2026-07-13_22-21-54_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6703,15 +6547,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">31</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">21</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73261174" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="marvel-rivals-ghost.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="marvel-rivals-phoenix.html" class="status-grid-card showcase brand-phoenix" data-game="Marvel Rivals" data-brand="phoenix" data-status="undetected" data-name="marvel rivals [ ☢ phoenix ]" data-search="marvel rivals [ ☢ phoenix ] marvel rivals phoenix" data-price="0" data-index="32" data-slug="marvel-rivals-phoenix" data-spoofer="1" data-new="1" style="--card-i:31">
+    <article class="status-grid-card showcase brand-phoenix" data-game="Marvel Rivals" data-brand="phoenix" data-status="undetected" data-name="marvel rivals [ ☢ phoenix ]" data-search="marvel rivals [ ☢ phoenix ] marvel rivals phoenix wooffer spoofer" data-price="0" data-index="22" data-slug="marvel-rivals-phoenix" data-spoofer="1" data-new="1" style="--card-i:21">
+        <a class="card-main-link" href="marvel-rivals-phoenix.html">
         <div class="card-media"><span class="card-brand-tag">PHOENIX</span><picture>
   <source type="image/webp" srcset="images/marvel-rivals-phoenix/photo_2026-07-08_17-08-47.md.webp 960w, images/marvel-rivals-phoenix/photo_2026-07-08_17-08-47.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/marvel-rivals-phoenix/photo_2026-07-08_17-08-47.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/marvel-rivals-phoenix/photo_2026-07-08_17-08-47.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6737,15 +6586,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">да</span><span data-lang="en">Yes</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">32</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">22</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73261160" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="marvel-rivals-phoenix.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="meccha-chameleon-arcane.html" class="status-grid-card showcase brand-arcane" data-game="Meccha Chameleon" data-brand="arcane" data-status="undetected" data-name="meccha chameleon [ ☢ arcane ]" data-search="meccha chameleon [ ☢ arcane ] meccha chameleon arcane" data-price="0" data-index="33" data-slug="meccha-chameleon-arcane" data-spoofer="0" data-new="1" style="--card-i:32">
+    <article class="status-grid-card showcase brand-arcane" data-game="Meccha Chameleon" data-brand="arcane" data-status="undetected" data-name="meccha chameleon [ ☢ arcane ]" data-search="meccha chameleon [ ☢ arcane ] meccha chameleon arcane wooffer spoofer" data-price="0" data-index="23" data-slug="meccha-chameleon-arcane" data-spoofer="0" data-new="1" style="--card-i:22">
+        <a class="card-main-link" href="meccha-chameleon-arcane.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/meccha-chameleon-arcane/photo_2026-07-18_22-20-36_2.md.webp 960w, images/meccha-chameleon-arcane/photo_2026-07-18_22-20-36_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/meccha-chameleon-arcane/photo_2026-07-18_22-20-36_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/meccha-chameleon-arcane/photo_2026-07-18_22-20-36_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6771,15 +6625,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">33</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">23</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260591" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="meccha-chameleon-arcane.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="meccha-chameleon-ghost.html" class="status-grid-card showcase brand-ghost" data-game="Meccha Chameleon" data-brand="ghost" data-status="undetected" data-name="meccha chameleon [ ☢ ghost ]" data-search="meccha chameleon [ ☢ ghost ] meccha chameleon ghost" data-price="0" data-index="34" data-slug="meccha-chameleon-ghost" data-spoofer="0" data-new="1" style="--card-i:33">
+    <article class="status-grid-card showcase brand-ghost" data-game="Meccha Chameleon" data-brand="ghost" data-status="undetected" data-name="meccha chameleon [ ☢ ghost ]" data-search="meccha chameleon [ ☢ ghost ] meccha chameleon ghost wooffer spoofer" data-price="0" data-index="24" data-slug="meccha-chameleon-ghost" data-spoofer="0" data-new="1" style="--card-i:23">
+        <a class="card-main-link" href="meccha-chameleon-ghost.html">
         <div class="card-media"><span class="card-brand-tag">GHOST</span><picture>
   <source type="image/webp" srcset="images/meccha-chameleon-ghost/photo_2026-07-03_12-59-19_2.md.webp 960w, images/meccha-chameleon-ghost/photo_2026-07-03_12-59-19_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/meccha-chameleon-ghost/photo_2026-07-03_12-59-19_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/meccha-chameleon-ghost/photo_2026-07-03_12-59-19_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6805,81 +6664,27 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">34</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">24</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260571" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="meccha-chameleon-ghost.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="medusa-instruktsiya.html" class="status-grid-card showcase brand-medusa" data-game="Другие игры" data-brand="medusa" data-status="undetected" data-name="🚀 инструкция по запуску medusa" data-search="🚀 инструкция по запуску medusa другие игры medusa" data-price="0" data-index="35" data-slug="medusa-instruktsiya" data-spoofer="0" data-new="1" style="--card-i:34">
-        <div class="card-media"><span class="card-brand-tag">MEDUSA</span><div class="card-media-fallback">MEDUSA</div></div>
+    <article class="status-grid-card showcase brand-phoenix" data-game="Delta Force" data-brand="phoenix" data-status="undetected" data-name="☢ phoenix (chams) ]" data-search="☢ phoenix (chams) ] delta force phoenix wooffer spoofer" data-price="0" data-index="25" data-slug="phoenix-chams" data-spoofer="0" data-new="1" style="--card-i:24">
+        <a class="card-main-link" href="phoenix-chams.html">
+        <div class="card-media"><span class="card-brand-tag">PHOENIX</span><picture>
+  <source type="image/webp" srcset="images/apex-legends-phoenix-x-ray/photo_2026-07-04_02-02-52_2.md.webp 960w, images/apex-legends-phoenix-x-ray/photo_2026-07-04_02-02-52_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
+  <img src="images/apex-legends-phoenix-x-ray/photo_2026-07-04_02-02-52_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/apex-legends-phoenix-x-ray/photo_2026-07-04_02-02-52_2.thumb.webp')" onload="this.classList.add('is-loaded')">
+</picture></div>
         <div class="card-body">
         <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">🚀 Инструкция по запуску Medusa</span><span data-lang="en">🚀 Инструкция по запуску Medusa</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">35</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="medusa-reshenie-problem.html" class="status-grid-card showcase brand-medusa" data-game="Другие игры" data-brand="medusa" data-status="undetected" data-name="🛠 medusa — решение проблем запуска" data-search="🛠 medusa — решение проблем запуска другие игры medusa" data-price="0" data-index="36" data-slug="medusa-reshenie-problem" data-spoofer="0" data-new="1" style="--card-i:35">
-        <div class="card-media"><span class="card-brand-tag">MEDUSA</span><div class="card-media-fallback">MEDUSA</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">🛠 Medusa — Решение проблем запуска</span><span data-lang="en">🛠 Medusa — Решение проблем запуска</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">36</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="phoenix-chams.html" class="status-grid-card showcase brand-phoenix" data-game="Другие игры" data-brand="phoenix" data-status="undetected" data-name="☢ phoenix (chams) ]" data-search="☢ phoenix (chams) ] другие игры phoenix" data-price="0" data-index="37" data-slug="phoenix-chams" data-spoofer="0" data-new="1" style="--card-i:36">
-        <div class="card-media"><span class="card-brand-tag">PHOENIX</span><div class="card-media-fallback">PHOENIX</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
+            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">DF</span><span data-lang="ru">Delta Force</span><span data-lang="en">Delta Force</span></span>
             <span class="status-badge undetected">
                 <span class="status-dot"></span>
                 Undetected
@@ -6898,77 +6703,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">37</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">25</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73261067" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="phoenix-chams.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="phoenix-instruktsiya.html" class="status-grid-card showcase brand-phoenix" data-game="Другие игры" data-brand="phoenix" data-status="undetected" data-name="🚀 инструкция по запуску phoenix" data-search="🚀 инструкция по запуску phoenix другие игры phoenix" data-price="0" data-index="38" data-slug="phoenix-instruktsiya" data-spoofer="0" data-new="1" style="--card-i:37">
-        <div class="card-media"><span class="card-brand-tag">PHOENIX</span><div class="card-media-fallback">PHOENIX</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">🚀 Инструкция по запуску Phoenix</span><span data-lang="en">🚀 Инструкция по запуску Phoenix</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">38</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="phoenix-reshenie-problem.html" class="status-grid-card showcase brand-phoenix" data-game="Другие игры" data-brand="phoenix" data-status="undetected" data-name="🛠 phoenix — решение проблем запуска" data-search="🛠 phoenix — решение проблем запуска другие игры phoenix" data-price="0" data-index="39" data-slug="phoenix-reshenie-problem" data-spoofer="0" data-new="1" style="--card-i:38">
-        <div class="card-media"><span class="card-brand-tag">PHOENIX</span><div class="card-media-fallback">PHOENIX</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">🛠 Phoenix — Решение проблем запуска</span><span data-lang="en">🛠 Phoenix — Решение проблем запуска</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">39</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="pubg-arcane-esp.html" class="status-grid-card showcase brand-arcane" data-game="PUBG" data-brand="arcane" data-status="undetected" data-name="pubg [ ☢ arcane esp ]" data-search="pubg [ ☢ arcane esp ] pubg arcane" data-price="0" data-index="40" data-slug="pubg-arcane-esp" data-spoofer="1" data-new="1" style="--card-i:39">
+    <article class="status-grid-card showcase brand-arcane" data-game="PUBG" data-brand="arcane" data-status="undetected" data-name="pubg [ ☢ arcane esp ]" data-search="pubg [ ☢ arcane esp ] pubg arcane wooffer spoofer" data-price="399" data-index="26" data-slug="pubg-arcane-esp" data-spoofer="1" data-new="1" style="--card-i:25">
+        <a class="card-main-link" href="pubg-arcane-esp.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/pubg-arcane-esp/photo_2026-07-19_00-55-27_2.md.webp 960w, images/pubg-arcane-esp/photo_2026-07-19_00-55-27_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/pubg-arcane-esp/photo_2026-07-19_00-55-27_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/pubg-arcane-esp/photo_2026-07-19_00-55-27_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -6982,7 +6730,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Pubg [ ☢ Arcane ESP ]</span><span data-lang="en">Pubg [ ☢ Arcane ESP ]</span></div>
-        
+        <div class="status-card-price">от 399 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -6994,15 +6742,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Да</span><span data-lang="en">Yes</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">40</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">26</span>
+            <a class="card-buy-btn" href="https://funpay.com/users/7290355/" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="pubg-arcane-esp.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="pubg-arcane-full.html" class="status-grid-card showcase brand-arcane" data-game="PUBG" data-brand="arcane" data-status="undetected" data-name="pubg [ ☢ arcane full ]" data-search="pubg [ ☢ arcane full ] pubg arcane" data-price="0" data-index="41" data-slug="pubg-arcane-full" data-spoofer="1" data-new="1" style="--card-i:40">
+    <article class="status-grid-card showcase brand-arcane" data-game="PUBG" data-brand="arcane" data-status="undetected" data-name="pubg [ ☢ arcane full ]" data-search="pubg [ ☢ arcane full ] pubg arcane wooffer spoofer" data-price="399" data-index="27" data-slug="pubg-arcane-full" data-spoofer="1" data-new="1" style="--card-i:26">
+        <a class="card-main-link" href="pubg-arcane-full.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/pubg-arcane-full/photo_2026-07-19_00-44-45_2.md.webp 960w, images/pubg-arcane-full/photo_2026-07-19_00-44-45_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/pubg-arcane-full/photo_2026-07-19_00-44-45_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/pubg-arcane-full/photo_2026-07-19_00-44-45_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -7016,7 +6769,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Pubg [ ☢ Arcane Full ]</span><span data-lang="en">Pubg [ ☢ Arcane Full ]</span></div>
-        
+        <div class="status-card-price">от 399 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -7028,15 +6781,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Да</span><span data-lang="en">Yes</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">41</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">27</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73263531" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="pubg-arcane-full.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="pubg-arcane-radar.html" class="status-grid-card showcase brand-arcane" data-game="PUBG" data-brand="arcane" data-status="undetected" data-name="pubg [ ☢ arcane radar ]" data-search="pubg [ ☢ arcane radar ] pubg arcane" data-price="0" data-index="42" data-slug="pubg-arcane-radar" data-spoofer="0" data-new="1" style="--card-i:41">
+    <article class="status-grid-card showcase brand-arcane" data-game="PUBG" data-brand="arcane" data-status="undetected" data-name="pubg [ ☢ arcane radar ]" data-search="pubg [ ☢ arcane radar ] pubg arcane wooffer spoofer" data-price="0" data-index="28" data-slug="pubg-arcane-radar" data-spoofer="0" data-new="1" style="--card-i:27">
+        <a class="card-main-link" href="pubg-arcane-radar.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/pubg-arcane-radar/photo_2026-07-19_18-10-33_2.md.webp 960w, images/pubg-arcane-radar/photo_2026-07-19_18-10-33_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/pubg-arcane-radar/photo_2026-07-19_18-10-33_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/pubg-arcane-radar/photo_2026-07-19_18-10-33_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -7062,15 +6820,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">42</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">28</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73263548" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="pubg-arcane-radar.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="pubg-phoenix-full.html" class="status-grid-card showcase brand-phoenix" data-game="PUBG" data-brand="phoenix" data-status="undetected" data-name="pubg [ ☢ phoenix full ]" data-search="pubg [ ☢ phoenix full ] pubg phoenix" data-price="0" data-index="43" data-slug="pubg-phoenix-full" data-spoofer="0" data-new="1" style="--card-i:42">
+    <article class="status-grid-card showcase brand-phoenix" data-game="PUBG" data-brand="phoenix" data-status="undetected" data-name="pubg [ ☢ phoenix full ]" data-search="pubg [ ☢ phoenix full ] pubg phoenix wooffer spoofer" data-price="249" data-index="29" data-slug="pubg-phoenix-full" data-spoofer="0" data-new="1" style="--card-i:28">
+        <a class="card-main-link" href="pubg-phoenix-full.html">
         <div class="card-media"><span class="card-brand-tag">PHOENIX</span><picture>
   <source type="image/webp" srcset="images/pubg-phoenix-full/photo_2026-07-03_22-39-56.md.webp 960w, images/pubg-phoenix-full/photo_2026-07-03_22-39-56.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/pubg-phoenix-full/photo_2026-07-03_22-39-56.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/pubg-phoenix-full/photo_2026-07-03_22-39-56.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -7084,38 +6847,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Pubg [ ☢ Phoenix Full ]</span><span data-lang="en">Pubg [ ☢ Phoenix Full ]</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">43</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="rampart-instruktsiya.html" class="status-grid-card showcase brand-rampart" data-game="Другие игры" data-brand="rampart" data-status="undetected" data-name="🚀 инструкция по запуску rampart" data-search="🚀 инструкция по запуску rampart другие игры rampart" data-price="0" data-index="44" data-slug="rampart-instruktsiya" data-spoofer="0" data-new="1" style="--card-i:43">
-        <div class="card-media"><span class="card-brand-tag">RAMPART</span><div class="card-media-fallback">RAMPART</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">🚀 Инструкция по запуску Rampart</span><span data-lang="en">🚀 Инструкция по запуску Rampart</span></div>
-        
+        <div class="status-card-price">от 249 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -7127,46 +6859,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">44</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">29</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73263522" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="pubg-phoenix-full.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="rampart-reshenie-problem.html" class="status-grid-card showcase brand-rampart" data-game="Другие игры" data-brand="rampart" data-status="undetected" data-name="🛠 rampart — решение проблем запуска" data-search="🛠 rampart — решение проблем запуска другие игры rampart" data-price="0" data-index="45" data-slug="rampart-reshenie-problem" data-spoofer="0" data-new="1" style="--card-i:44">
-        <div class="card-media"><span class="card-brand-tag">RAMPART</span><div class="card-media-fallback">RAMPART</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">🛠 Rampart — Решение проблем запуска</span><span data-lang="en">🛠 Rampart — Решение проблем запуска</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">45</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
-    
-
-    <a href="rust-arcane.html" class="status-grid-card showcase brand-arcane" data-game="Rust" data-brand="arcane" data-status="undetected" data-name="rust [ ☢ arcane ]" data-search="rust [ ☢ arcane ] rust arcane" data-price="0" data-index="46" data-slug="rust-arcane" data-spoofer="0" data-new="1" style="--card-i:45">
+    <article class="status-grid-card showcase brand-arcane" data-game="Rust" data-brand="arcane" data-status="undetected" data-name="rust [ ☢ arcane ]" data-search="rust [ ☢ arcane ] rust arcane wooffer spoofer" data-price="469" data-index="30" data-slug="rust-arcane" data-spoofer="0" data-new="1" style="--card-i:29">
+        <a class="card-main-link" href="rust-arcane.html">
         <div class="card-media"><span class="card-brand-tag">ARCANE</span><picture>
   <source type="image/webp" srcset="images/rust-arcane/photo_2026-07-19_01-09-39_2.md.webp 960w, images/rust-arcane/photo_2026-07-19_01-09-39_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/rust-arcane/photo_2026-07-19_01-09-39_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/rust-arcane/photo_2026-07-19_01-09-39_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -7180,7 +6886,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Rust [ ☢ Arcane ]</span><span data-lang="en">Rust [ ☢ Arcane ]</span></div>
-        
+        <div class="status-card-price">от 469 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -7192,15 +6898,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">46</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">30</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260778" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="rust-arcane.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="rust-rampart-full.html" class="status-grid-card showcase brand-rampart" data-game="Rust" data-brand="rampart" data-status="undetected" data-name="rust [ ☢ rampart full ]" data-search="rust [ ☢ rampart full ] rust rampart" data-price="0" data-index="47" data-slug="rust-rampart-full" data-spoofer="0" data-new="1" style="--card-i:46">
+    <article class="status-grid-card showcase brand-rampart" data-game="Rust" data-brand="rampart" data-status="undetected" data-name="rust [ ☢ rampart full ]" data-search="rust [ ☢ rampart full ] rust rampart wooffer spoofer" data-price="349" data-index="31" data-slug="rust-rampart-full" data-spoofer="0" data-new="1" style="--card-i:30">
+        <a class="card-main-link" href="rust-rampart-full.html">
         <div class="card-media"><span class="card-brand-tag">RAMPART</span><picture>
   <source type="image/webp" srcset="images/rust-rampart-full/photo_2026-06-29_03-08-14_2.md.webp 960w, images/rust-rampart-full/photo_2026-06-29_03-08-14_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/rust-rampart-full/photo_2026-06-29_03-08-14_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/rust-rampart-full/photo_2026-06-29_03-08-14_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -7214,7 +6925,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Rust [ ☢ Rampart Full ]</span><span data-lang="en">Rust [ ☢ Rampart Full ]</span></div>
-        
+        <div class="status-card-price">от 349 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -7226,15 +6937,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">47</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">31</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260826" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="rust-rampart-full.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="rust-rampart-lite.html" class="status-grid-card showcase brand-rampart" data-game="Rust" data-brand="rampart" data-status="undetected" data-name="rust [ ☢ rampart lite ]" data-search="rust [ ☢ rampart lite ] rust rampart" data-price="0" data-index="48" data-slug="rust-rampart-lite" data-spoofer="0" data-new="1" style="--card-i:47">
+    <article class="status-grid-card showcase brand-rampart" data-game="Rust" data-brand="rampart" data-status="undetected" data-name="rust [ ☢ rampart lite ]" data-search="rust [ ☢ rampart lite ] rust rampart wooffer spoofer" data-price="249" data-index="32" data-slug="rust-rampart-lite" data-spoofer="0" data-new="1" style="--card-i:31">
+        <a class="card-main-link" href="rust-rampart-lite.html">
         <div class="card-media"><span class="card-brand-tag">RAMPART</span><picture>
   <source type="image/webp" srcset="images/rust-rampart-lite/photo_2026-06-25_00-56-18_2.md.webp 960w, images/rust-rampart-lite/photo_2026-06-25_00-56-18_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/rust-rampart-lite/photo_2026-06-25_00-56-18_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/rust-rampart-lite/photo_2026-06-25_00-56-18_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -7248,7 +6964,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Rust [ ☢ Rampart Lite ]</span><span data-lang="en">Rust [ ☢ Rampart Lite ]</span></div>
-        
+        <div class="status-card-price">от 249 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -7260,15 +6976,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">48</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">32</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73260800" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="rust-rampart-lite.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="rust-xernel.html" class="status-grid-card showcase brand-xernel" data-game="Rust" data-brand="xernel" data-status="undetected" data-name="rust [ ☢ xernel ]" data-search="rust [ ☢ xernel ] rust xernel" data-price="0" data-index="49" data-slug="rust-xernel" data-spoofer="0" data-new="1" style="--card-i:48">
+    <article class="status-grid-card showcase brand-xernel" data-game="Rust" data-brand="xernel" data-status="undetected" data-name="rust [ ☢ xernel ]" data-search="rust [ ☢ xernel ] rust xernel wooffer spoofer" data-price="449" data-index="33" data-slug="rust-xernel" data-spoofer="0" data-new="1" style="--card-i:32">
+        <a class="card-main-link" href="rust-xernel.html">
         <div class="card-media"><span class="card-brand-tag">XERNEL</span><picture>
   <source type="image/webp" srcset="images/rust-xernel/photo_2026-06-21_21-03-25_2.md.webp 960w, images/rust-xernel/photo_2026-06-21_21-03-25_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/rust-xernel/photo_2026-06-21_21-03-25_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/rust-xernel/photo_2026-06-21_21-03-25_2.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -7282,7 +7003,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Rust [ ☢ Xernel ]</span><span data-lang="en">Rust [ ☢ Xernel ]</span></div>
-        
+        <div class="status-card-price">от 449 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -7294,15 +7015,20 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">49</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">33</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73263252" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="rust-xernel.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="unturned-medusa.html" class="status-grid-card showcase brand-medusa" data-game="Unturned" data-brand="medusa" data-status="undetected" data-name="unturned [ ☢ medusa ]" data-search="unturned [ ☢ medusa ] unturned medusa" data-price="0" data-index="50" data-slug="unturned-medusa" data-spoofer="0" data-new="1" style="--card-i:49">
+    <article class="status-grid-card showcase brand-medusa" data-game="Unturned" data-brand="medusa" data-status="undetected" data-name="unturned [ ☢ medusa ]" data-search="unturned [ ☢ medusa ] unturned medusa wooffer spoofer" data-price="149" data-index="34" data-slug="unturned-medusa" data-spoofer="0" data-new="1" style="--card-i:33">
+        <a class="card-main-link" href="unturned-medusa.html">
         <div class="card-media"><span class="card-brand-tag">MEDUSA</span><picture>
   <source type="image/webp" srcset="images/unturned-medusa/photo_2026-07-09_11-44-46.md.webp 960w, images/unturned-medusa/photo_2026-07-09_11-44-46.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
   <img src="images/unturned-medusa/photo_2026-07-09_11-44-46.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/unturned-medusa/photo_2026-07-09_11-44-46.thumb.webp')" onload="this.classList.add('is-loaded')">
@@ -7316,7 +7042,7 @@ body::after{
             </span>
         </div>
         <div class="status-card-title"><span data-lang="ru">Unturned [ ☢ Medusa ]</span><span data-lang="en">Unturned [ ☢ Medusa ]</span></div>
-        
+        <div class="status-card-price">от 149 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -7328,26 +7054,34 @@ body::after{
                 <span class="spec-value"><span data-lang="ru">нет</span><span data-lang="en">No</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">50</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">34</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73262639" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="unturned-medusa.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
+    </article>
     
 
-    <a href="xernel-instruktsiya.html" class="status-grid-card showcase brand-xernel" data-game="Другие игры" data-brand="xernel" data-status="undetected" data-name="🚀 инструкция по запуску xernel" data-search="🚀 инструкция по запуску xernel другие игры xernel" data-price="0" data-index="51" data-slug="xernel-instruktsiya" data-spoofer="0" data-new="1" style="--card-i:50">
-        <div class="card-media"><span class="card-brand-tag">XERNEL</span><div class="card-media-fallback">XERNEL</div></div>
+    <article class="status-grid-card showcase brand-xernel" data-game="Спуферы" data-brand="xernel" data-status="undetected" data-name="xernel ultimate spoofer (wooffer)" data-search="xernel ultimate spoofer (wooffer) спуферы xernel wooffer spoofer" data-price="299" data-index="35" data-slug="xernel-ultimate-spoofer" data-spoofer="1" data-new="1" style="--card-i:34">
+        <a class="card-main-link" href="xernel-ultimate-spoofer.html">
+        <div class="card-media"><span class="card-brand-tag">XERNEL</span><picture>
+  <source type="image/webp" srcset="images/arena-breakout-infinite-xernel-full/photo_2026-06-20_20-05-11_2.md.webp 960w, images/arena-breakout-infinite-xernel-full/photo_2026-06-20_20-05-11_2.webp 1600w" sizes="(max-width:900px) 90vw, 420px">
+  <img src="images/arena-breakout-infinite-xernel-full/photo_2026-06-20_20-05-11_2.jpg" alt="" class="lqip-img" loading="lazy" decoding="async" style="background-image:url('images/arena-breakout-infinite-xernel-full/photo_2026-06-20_20-05-11_2.thumb.webp')" onload="this.classList.add('is-loaded')">
+</picture></div>
         <div class="card-body">
         <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
+            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">SPF</span><span data-lang="ru">Спуферы</span><span data-lang="en">Spoofers</span></span>
             <span class="status-badge undetected">
                 <span class="status-dot"></span>
                 Undetected
             </span>
         </div>
-        <div class="status-card-title"><span data-lang="ru">🚀 Инструкция по запуску Xernel</span><span data-lang="en">🚀 Инструкция по запуску Xernel</span></div>
-        
+        <div class="status-card-title"><span data-lang="ru">Xernel Ultimate Spoofer (WOOFFER)</span><span data-lang="en">Xernel Ultimate Spoofer (WOOFFER)</span></div>
+        <div class="status-card-price">от 299 ₽</div>
         
         <div class="status-card-specs">
             <div class="status-spec-item">
@@ -7356,46 +7090,19 @@ body::after{
             </div>
             <div class="status-spec-item">
                 <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
+                <span class="spec-value"><span data-lang="ru">Да</span><span data-lang="en">Yes</span></span>
             </div>
         </div>
+        </div>
+        </a>
         <div class="status-card-footer">
-            <span class="status-card-index">51</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
+            <span class="status-card-index">35</span>
+            <a class="card-buy-btn" href="https://funpay.com/lots/offer?id=73263289" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+              <span data-lang="ru">Купить</span><span data-lang="en">Buy</span>
+            </a>
+            <a class="status-card-action" href="xernel-ultimate-spoofer.html"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></a>
         </div>
-        </div>
-    </a>
-    
-
-    <a href="xernel-reshenie-problem.html" class="status-grid-card showcase brand-xernel" data-game="Другие игры" data-brand="xernel" data-status="undetected" data-name="🛠 xernel — решение проблем запуска" data-search="🛠 xernel — решение проблем запуска другие игры xernel" data-price="0" data-index="52" data-slug="xernel-reshenie-problem" data-spoofer="0" data-new="1" style="--card-i:51">
-        <div class="card-media"><span class="card-brand-tag">XERNEL</span><div class="card-media-fallback">XERNEL</div></div>
-        <div class="card-body">
-        <div class="status-card-header">
-            <span class="status-card-game"><span class="nav-code" style="margin-right:8px;display:inline-grid;">ETC</span><span data-lang="ru">Другие игры</span><span data-lang="en">Other games</span></span>
-            <span class="status-badge undetected">
-                <span class="status-dot"></span>
-                Undetected
-            </span>
-        </div>
-        <div class="status-card-title"><span data-lang="ru">🛠 Xernel — Решение проблем запуска</span><span data-lang="en">🛠 Xernel — Решение проблем запуска</span></div>
-        
-        
-        <div class="status-card-specs">
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">ОС</span><span data-lang="en">OS</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Windows 10 - 11</span><span data-lang="en">Windows 10 - 11</span></span>
-            </div>
-            <div class="status-spec-item">
-                <span class="spec-label"><span data-lang="ru">Спуфер</span><span data-lang="en">Spoofer</span>:</span>
-                <span class="spec-value"><span data-lang="ru">Нет</span><span data-lang="en">No</span></span>
-            </div>
-        </div>
-        <div class="status-card-footer">
-            <span class="status-card-index">52</span>
-            <span class="status-card-action"><span data-lang="ru">Подробнее</span><span data-lang="en">Details</span> <span>↗</span></span>
-        </div>
-        </div>
-    </a>
+    </article>
     
 </div>
 <footer class="site-footer">
@@ -7406,7 +7113,7 @@ body::after{
     </div>
     <div class="site-footer-meta">
       <span data-lang="ru">Сборка</span><span data-lang="en">Build</span>
-      <code>202607192332</code>
+      <code>202607200824</code>
     </div>
   </div>
 </footer>

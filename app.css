@@ -2171,6 +2171,23 @@
             font-size: 1.05rem;
             font-weight: 700;
         }
+        .price-buy-label {
+            margin-top: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 28px;
+            padding: 0 10px;
+            border-radius: 2px;
+            background: #c6ff3d;
+            color: #0a0b0d;
+            font-size: .68rem;
+            font-weight: 780;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            width: fit-content;
+        }
+        .price-tier:hover .price-buy-label { filter: brightness(1.05); }
         .status-card-price {
             margin-top: 2px;
             color: #c6ff3d;
@@ -2748,6 +2765,41 @@
             border-color: #c6ff3d !important;
             transform: translateY(-3px) !important;
             box-shadow: 0 16px 40px rgba(0,0,0,.35) !important;
+        }
+        .status-grid-card.showcase > .card-main-link {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+        .status-grid-card.showcase .status-card-footer {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px 14px;
+            border-top: 1px solid #25272c;
+            margin-top: auto;
+        }
+        .status-grid-card.showcase .card-buy-btn {
+            margin-left: auto;
+            padding: 7px 12px;
+            border: 1px solid rgba(198,255,61,.45);
+            border-radius: 2px;
+            background: #c6ff3d;
+            color: #0a0b0d;
+            font-size: .72rem;
+            font-weight: 780;
+            letter-spacing: .04em;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: filter .15s ease, transform .15s ease;
+        }
+        .status-grid-card.showcase .card-buy-btn:hover {
+            filter: brightness(1.05);
+            transform: translateY(-1px);
+        }
+        .status-grid-card.showcase .status-card-action {
+            text-decoration: none;
+            white-space: nowrap;
         }
         .card-media {
             position: relative;
