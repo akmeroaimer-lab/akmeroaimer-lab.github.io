@@ -32,6 +32,9 @@ Arena Breakout Infinite|Xernel Full|arena-breakout-infinite-xernel-full|3|889
 Arena Breakout Infinite|Xernel Full|arena-breakout-infinite-xernel-full|7|1469
 Arena Breakout Infinite|Xernel Full|arena-breakout-infinite-xernel-full|14|2209
 Arena Breakout Infinite|Xernel Full|arena-breakout-infinite-xernel-full|30|3309
+Ark Ascended|Arcane|ark-ascended-arcane|1|459
+Ark Ascended|Arcane|ark-ascended-arcane|7|1699
+Ark Ascended|Arcane|ark-ascended-arcane|30|3719
 Arma Reforger|Arcane|arma-reforger-arcane|1|389
 Arma Reforger|Arcane|arma-reforger-arcane|7|1699
 Arma Reforger|Arcane|arma-reforger-arcane|30|3099

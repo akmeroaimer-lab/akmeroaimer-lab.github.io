@@ -805,8 +805,53 @@
       ]
     },
     "ark-ascended-arcane": {
-      "buy": "https://funpay.com/users/7290355/",
-      "offers": []
+      "buy": "https://funpay.com/lots/offer?id=73267534",
+      "offers": [
+        {
+          "game": "Other Games Accounts",
+          "title": "🟥🟥DLC Arcane🟢|OFFICIAL SELLER|✅1 day🟥🟥",
+          "price": "6.69 $",
+          "href": "https://funpay.com/lots/offer?id=73267538",
+          "days": 1,
+          "game_key": "ark-ascended",
+          "product_key": "arcane"
+        },
+        {
+          "game": "Other Games Accounts",
+          "title": "🟥🟥DLC Arcane🟢|OFFICIAL SELLER|✅7 days🟥🟥",
+          "price": "24.73 $",
+          "href": "https://funpay.com/lots/offer?id=73267536",
+          "days": 7,
+          "game_key": "ark-ascended",
+          "product_key": "arcane"
+        },
+        {
+          "game": "Other Games Accounts",
+          "title": "🟥🟥DLC Arcane🟢|OFFICIAL SELLER|✅30 days🟥🟥",
+          "price": "54.13 $",
+          "href": "https://funpay.com/lots/offer?id=73267534",
+          "days": 30,
+          "game_key": "ark-ascended",
+          "product_key": "arcane"
+        }
+      ],
+      "tiers": [
+        {
+          "days": 1,
+          "price": 459,
+          "buy": "https://funpay.com/lots/offer?id=73267538"
+        },
+        {
+          "days": 7,
+          "price": 1699,
+          "buy": "https://funpay.com/lots/offer?id=73267536"
+        },
+        {
+          "days": 30,
+          "price": 3719,
+          "buy": "https://funpay.com/lots/offer?id=73267534"
+        }
+      ]
     },
     "arma-reforger-arcane": {
       "buy": "https://funpay.com/lots/offer?id=73260948",
@@ -2425,15 +2470,6 @@
           "product_key": "arcane"
         },
         {
-          "game": "Other Games Accounts",
-          "title": "Any game Any game 🟥🟥DLC Arcane🟢|OFFICIAL SELLER|✅30 days🟥🟥, Sale 47.78 $",
-          "price": "47.78 $",
-          "href": "https://funpay.com/lots/offer?id=73267534",
-          "days": 30,
-          "game_key": "other",
-          "product_key": "arcane"
-        },
-        {
           "game": "Counter-Strike 2 Other",
           "title": "🟥🟥DLC Arcane🟢|OFFICIAL SELLER|✅30 days🟥🟥, Guides 4.45 $",
           "price": "4.45 $",
@@ -2515,15 +2551,6 @@
           "product_key": "arcane"
         },
         {
-          "game": "Other Games Accounts",
-          "title": "Any game Any game 🟥🟥DLC Arcane🟢|OFFICIAL SELLER|✅7 days🟥🟥, Sale 21.83 $",
-          "price": "21.83 $",
-          "href": "https://funpay.com/lots/offer?id=73267536",
-          "days": 7,
-          "game_key": "other",
-          "product_key": "arcane"
-        },
-        {
           "game": "Apex Legends Other",
           "title": "PC PC 🟥🟥DLC Arcane🟢|OFFICIAL SELLER|✅1 day🟥🟥, Other 1 4.96 $",
           "price": "4.96 $",
@@ -2584,15 +2611,6 @@
           "href": "https://funpay.com/lots/offer?id=73261130",
           "days": 1,
           "game_key": "fortnite",
-          "product_key": "arcane"
-        },
-        {
-          "game": "Other Games Accounts",
-          "title": "Any game Any game 🟥🟥DLC Arcane🟢|OFFICIAL SELLER|✅1 day🟥🟥, Sale 5.90 $",
-          "price": "5.90 $",
-          "href": "https://funpay.com/lots/offer?id=73267538",
-          "days": 1,
-          "game_key": "other",
           "product_key": "arcane"
         },
         {
