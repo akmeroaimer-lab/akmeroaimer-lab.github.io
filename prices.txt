@@ -106,3 +106,6 @@ Other|unturned-medusa|unturned-medusa|7|499
 Other|unturned-medusa|unturned-medusa|30|999
 Other|xernel-ultimate-spoofer|xernel-ultimate-spoofer|7|1149
 Other|xernel-ultimate-spoofer|xernel-ultimate-spoofer|30|4199
+Counter-Strike 2|Ghost|counter-strike-2-ghost|1|68
+Counter-Strike 2|Ghost|counter-strike-2-ghost|7|135
+Counter-Strike 2|Ghost|counter-strike-2-ghost|30|405

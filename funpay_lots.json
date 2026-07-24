@@ -1710,6 +1710,55 @@
           "buy": "https://funpay.com/lots/offer?id=73269724"
         }
       ]
+    },
+    "counter-strike-2-ghost": {
+      "buy": "https://funpay.com/lots/offer?id=73607928",
+      "offers": [
+        {
+          "game": "Прочее Counter-Strike 2",
+          "title": "DLC Ghost 1d",
+          "price": "68 ₽",
+          "href": "https://funpay.com/lots/offer?id=73607924",
+          "days": 1,
+          "game_key": "counter-strike-2",
+          "product_key": "ghost"
+        },
+        {
+          "game": "Прочее Counter-Strike 2",
+          "title": "DLC Ghost 7d",
+          "price": "135 ₽",
+          "href": "https://funpay.com/lots/offer?id=73607926",
+          "days": 7,
+          "game_key": "counter-strike-2",
+          "product_key": "ghost"
+        },
+        {
+          "game": "Прочее Counter-Strike 2",
+          "title": "DLC Ghost 30d",
+          "price": "405 ₽",
+          "href": "https://funpay.com/lots/offer?id=73607928",
+          "days": 30,
+          "game_key": "counter-strike-2",
+          "product_key": "ghost"
+        }
+      ],
+      "tiers": [
+        {
+          "days": 1,
+          "price": 68,
+          "buy": "https://funpay.com/lots/offer?id=73607924"
+        },
+        {
+          "days": 7,
+          "price": 135,
+          "buy": "https://funpay.com/lots/offer?id=73607926"
+        },
+        {
+          "days": 30,
+          "price": 405,
+          "buy": "https://funpay.com/lots/offer?id=73607928"
+        }
+      ]
     }
   }
 }
