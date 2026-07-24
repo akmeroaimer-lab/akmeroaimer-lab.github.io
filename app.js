@@ -1141,6 +1141,51 @@
             mid.classList.add('is-recommended');
         }
 
+        function fmtRubTier(n) {
+            return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽';
+        }
+
+        function pageSlugFromPath() {
+            const m = (location.pathname || '').match(/\/([a-z0-9\-]+)\.html$/i);
+            return m ? m[1] : '';
+        }
+
+        async function syncFunpayPriceTiers() {
+            const grid = document.querySelector('.price-grid');
+            if (!grid) return;
+            const slug = pageSlugFromPath();
+            if (!slug) return;
+            let entry = null;
+            try {
+                const res = await fetch('funpay_lots.json', { cache: 'no-store' });
+                if (!res.ok) return;
+                const data = await res.json();
+                entry = (data.by_slug || {})[slug] || null;
+            } catch (e) {
+                return;
+            }
+            const tiers = (entry && entry.tiers) || [];
+            if (!tiers.length) return;
+            const byDays = new Map(tiers.map((t) => [Number(t.days), t]));
+            grid.querySelectorAll('a.price-tier').forEach((a) => {
+                let days = Number(a.getAttribute('data-days') || 0);
+                if (!days) {
+                    const txt = (a.textContent || '').replace(/\s+/g, ' ');
+                    if (/\b30\b/.test(txt)) days = 30;
+                    else if (/\b14\b/.test(txt)) days = 14;
+                    else if (/\b7\b/.test(txt)) days = 7;
+                    else if (/\b3\b/.test(txt)) days = 3;
+                    else if (/\b1\b/.test(txt)) days = 1;
+                }
+                const t = byDays.get(days);
+                if (!t || !t.buy) return;
+                a.href = t.buy;
+                a.setAttribute('data-days', String(days));
+                const amt = a.querySelector('.price-amount');
+                if (amt && t.price != null) amt.textContent = fmtRubTier(Number(t.price));
+            });
+        }
+
         function initRelativeUpdated() {
             document.querySelectorAll('[data-updated-ts]').forEach(el => {
                 const ts = Number(el.dataset.updatedTs || 0);
@@ -1180,6 +1225,7 @@
             initBrandMarkSpin();
             initFiltersSheet();
             initRecommendPrice();
+            syncFunpayPriceTiers();
             initRelativeUpdated();
             renderRecentRail();
             initPrefetch();

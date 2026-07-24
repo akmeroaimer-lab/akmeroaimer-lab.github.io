@@ -1,4 +1,4 @@
-const CACHE = 'aimer-docs-v6';
+const CACHE = 'aimer-docs-v7';
 const ASSETS = ['./favicon.svg', './manifest.webmanifest'];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));
