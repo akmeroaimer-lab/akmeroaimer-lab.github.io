@@ -41,9 +41,9 @@
 ## 🖲Sense
 
 * **2D Sense** – 2D-Sense
-* **Sense Zoom** – масштаб радара
-* **Sense Position & Size** – положение и размер радара
-* **Sense Transparency** – прозрачность радара
+* **Sense Zoom** – масштаб Sense
+* **Sense Position & Size** – положение и размер Sense
+* **Sense Transparency** – прозрачность Sense
 
 ## 🖥 Системные требования
 

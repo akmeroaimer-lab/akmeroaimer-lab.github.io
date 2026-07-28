@@ -62,7 +62,7 @@
 * **Grid Lines** – настройка толщины, прозрачности и цвета сетки
 * **Tick Marks** – настройка толщины, прозрачности и цвета отметок
 * **Show** – отображение Teammates / NPCs / Distance / Names
-* **Show on Sense** – отображение World Items / Farm / AI на радаре
+* **Show on Sense** – отображение World Items / Farm / AI на Sense
 
 ## 🌍 World ESP
 
