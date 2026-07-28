@@ -1,14 +1,14 @@
-# Pubg [ ☢ Arcane Radar ]
+# Pubg [ ☢ Arcane Sense ]
 
 ## 📸 Скриншоты
 
-![Скриншот 1](images/pubg-arcane-radar/photo_2026-07-19_18-10-33_2.jpg) ![Скриншот 2](images/pubg-arcane-radar/photo_2026-07-19_18-10-33_3.jpg) ![Скриншот 3](images/pubg-arcane-radar/photo_2026-07-19_18-10-33_4.jpg) ![Скриншот 4](images/pubg-arcane-radar/photo_2026-07-19_18-10-33_5.jpg) ![Скриншот 5](images/pubg-arcane-radar/photo_2026-07-19_18-10-33_6.jpg) ![Скриншот 6](images/pubg-arcane-radar/photo_2026-07-19_18-10-33.jpg)
+![Скриншот 1](images/pubg-arcane-sense/photo_2026-07-19_18-10-33_2.jpg) ![Скриншот 2](images/pubg-arcane-sense/photo_2026-07-19_18-10-33_3.jpg) ![Скриншот 3](images/pubg-arcane-sense/photo_2026-07-19_18-10-33_4.jpg) ![Скриншот 4](images/pubg-arcane-sense/photo_2026-07-19_18-10-33_5.jpg) ![Скриншот 5](images/pubg-arcane-sense/photo_2026-07-19_18-10-33_6.jpg) ![Скриншот 6](images/pubg-arcane-sense/photo_2026-07-19_18-10-33.jpg)
 
-* Функционал Pubg [ ☢ Arcane Radar ]:
+* Функционал Pubg [ ☢ Arcane Sense ]:
 
-## 📡 Radar
+## 📡 Sense
 
-* **Any Device** – возможность открыть радар на любом устройстве: втором мониторе, ноутбуке, планшете или смартфоне
+* **Any Device** – возможность открыть Sense на любом устройстве: втором мониторе, ноутбуке, планшете или смартфоне
 * **Show Players** – отображение всех игроков на карте с обновлением их позиций в реальном времени
 * **Show Vehicles** – отображение транспортных средств на карте
 * **Show Drops** – отображение местоположения аирдропов
@@ -22,7 +22,7 @@
 * **Ammo Count** – отображение текущего количества боеприпасов
 * **Distance** – отображение расстояния до игрока
 * ⚙️ Misc
-* **Share Radar Link** – создание ссылки для передачи доступа к радару другому пользователю
+* **Share Sense Link** – создание ссылки для передачи доступа к радару другому пользователю
 * **Browser Access** – открытие радара напрямую через браузер
 * **Second Monitor Support** – использование радара на дополнительном мониторе
 * **Mobile Access** – доступ к радару со смартфона
@@ -32,7 +32,7 @@
 
 ## 🖥 Системные требования
 
-* **Pubg [ ☢ Arcane Radar ]:** 
+* **Pubg [ ☢ Arcane Sense ]:** 
 * ⚙️ **️ Операционная система:** Windows 10 - 11
 * 🔲 **Процессор:** Intel / AMD
 * 🔲 **Видеокарта:** Nvidia / AMD

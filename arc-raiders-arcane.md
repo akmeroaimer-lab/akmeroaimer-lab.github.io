@@ -46,7 +46,7 @@
 * **Container** – отображение контейнеров
 * **Dropped Item** – отображение выброшенных предметов
 
-## 📡 Radar
+## 📡 Sense
 
 * **Enable** – активация радара
 * **Show Distance** – отображение дистанции на радаре
@@ -56,7 +56,7 @@
 * **Color Outline** – настройка цвета обводки
 * **Color Background** – настройка цвета фона
 
-## 📍 Radar Entities
+## 📍 Sense Entities
 
 * **Show Player** – отображение игроков
 * **Show AI** – отображение ботов

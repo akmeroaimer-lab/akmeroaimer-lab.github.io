@@ -15,9 +15,9 @@
 * **Offscreen Arrows** – отображение врагов за пределами экрана
 * **Colors** – настройка цветов для каждого элемента
 
-## 🎯 Radar
+## 🎯 Sense
 
-* **Built** – in Radar — встроенный радар
+* **Built** – in Sense — встроенный Sense
 * **Size / Zoom / Distance** – настройка размера, зума и дистанции
 * **Draw Outline / Draw Background** – отображение контура и фона
 * **Dot Style / Dot Size** – настройка стиля и размера точек

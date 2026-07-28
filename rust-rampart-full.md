@@ -52,7 +52,7 @@
 * **Separate colors** – отдельные цвета для Teammates / Wounded / Sleepers / Bots
 * **Separate bot distance** – отдельная дистанция отображения для ботов
 
-## 🧭 Radar
+## 🧭 Sense
 
 * **Minimap** – круглая или квадратная мини-карта
 * **Adjustable** – настройка размера, масштаба и позиции
@@ -62,7 +62,7 @@
 * **Grid Lines** – настройка толщины, прозрачности и цвета сетки
 * **Tick Marks** – настройка толщины, прозрачности и цвета отметок
 * **Show** – отображение Teammates / NPCs / Distance / Names
-* **Show on radar** – отображение World Items / Farm / AI на радаре
+* **Show on Sense** – отображение World Items / Farm / AI на радаре
 
 ## 🌍 World ESP
 

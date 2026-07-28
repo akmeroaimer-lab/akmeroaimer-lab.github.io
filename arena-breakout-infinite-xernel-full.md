@@ -38,12 +38,12 @@
 * **Custom Loot Colors** – пользовательские цвета лута
 * **Smart Loot Filter** – умный фильтр лута
 
-## 🖲Radar
+## 🖲Sense
 
-* **2D Radar** – 2D-радар
-* **Radar Zoom** – масштаб радара
-* **Radar Position & Size** – положение и размер радара
-* **Radar Transparency** – прозрачность радара
+* **2D Sense** – 2D-Sense
+* **Sense Zoom** – масштаб радара
+* **Sense Position & Size** – положение и размер радара
+* **Sense Transparency** – прозрачность радара
 
 ## 🖥 Системные требования
 

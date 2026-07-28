@@ -14,9 +14,9 @@ Other|apex-legends-rampart|apex-legends-rampart|30|1399
 Other|arc-raiders-arcane|arc-raiders-arcane|1|389
 Other|arc-raiders-arcane|arc-raiders-arcane|7|1699
 Other|arc-raiders-arcane|arc-raiders-arcane|30|3099
-Other|arc-raiders-arcane-radar|arc-raiders-arcane-radar|3|309
-Other|arc-raiders-arcane-radar|arc-raiders-arcane-radar|15|1399
-Other|arc-raiders-arcane-radar|arc-raiders-arcane-radar|30|2709
+Other|arc-raiders-arcane-sense|arc-raiders-arcane-sense|3|309
+Other|arc-raiders-arcane-sense|arc-raiders-arcane-sense|15|1399
+Other|arc-raiders-arcane-sense|arc-raiders-arcane-sense|30|2709
 Other|arena-breakout-infinite-ghost-esp|arena-breakout-infinite-ghost-esp|1|399
 Other|arena-breakout-infinite-ghost-esp|arena-breakout-infinite-ghost-esp|7|1999
 Other|arena-breakout-infinite-ghost-esp|arena-breakout-infinite-ghost-esp|30|3499
@@ -80,9 +80,9 @@ Other|pubg-arcane-esp|pubg-arcane-esp|30|2729
 Other|pubg-arcane-full|pubg-arcane-full|1|399
 Other|pubg-arcane-full|pubg-arcane-full|7|1719
 Other|pubg-arcane-full|pubg-arcane-full|30|3119
-Other|pubg-arcane-radar|pubg-arcane-radar|1|239
-Other|pubg-arcane-radar|pubg-arcane-radar|7|1179
-Other|pubg-arcane-radar|pubg-arcane-radar|30|2359
+Other|pubg-arcane-sense|pubg-arcane-sense|1|239
+Other|pubg-arcane-sense|pubg-arcane-sense|7|1179
+Other|pubg-arcane-sense|pubg-arcane-sense|30|2359
 Other|pubg-phoenix-full|pubg-phoenix-full|1|249
 Other|pubg-phoenix-full|pubg-phoenix-full|7|999
 Other|pubg-phoenix-full|pubg-phoenix-full|30|1749

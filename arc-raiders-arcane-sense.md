@@ -1,10 +1,10 @@
-# ARC Raiders [ ☢ Arcane Radar ]
+# ARC Raiders [ ☢ Arcane Sense ]
 
 ## 📸 Скриншоты
 
-![Скриншот 1](images/arc-raiders-arcane-radar/photo_2026-07-15_01-56-48_2.jpg) ![Скриншот 2](images/arc-raiders-arcane-radar/photo_2026-07-15_01-56-48.jpg) ![Скриншот 3](images/arc-raiders-arcane-radar/photo_2026-07-19_20-18-26.jpg)
+![Скриншот 1](images/arc-raiders-arcane-sense/photo_2026-07-15_01-56-48_2.jpg) ![Скриншот 2](images/arc-raiders-arcane-sense/photo_2026-07-15_01-56-48.jpg) ![Скриншот 3](images/arc-raiders-arcane-sense/photo_2026-07-19_20-18-26.jpg)
 
-* ункционал ARC Raiders [ ☢ Arcane Radar ]:
+* ункционал ARC Raiders [ ☢ Arcane Sense ]:
 
 ## 👥 Players
 
