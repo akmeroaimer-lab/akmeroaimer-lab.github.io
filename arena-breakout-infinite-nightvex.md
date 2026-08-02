@@ -2,7 +2,7 @@
 
 ## 📸 Скриншоты
 
-![Скриншот 1](images/arena-breakout-infinite-nightvex/photo_2026-06-21_14-53-25.jpg) ![Скриншот 2](images/arena-breakout-infinite-nightvex/photo_2026-08-02_03-07-22 (2).jpg) ![Скриншот 3](images/arena-breakout-infinite-nightvex/photo_2026-08-02_03-07-22 (3).jpg) ![Скриншот 4](images/arena-breakout-infinite-nightvex/photo_2026-08-02_03-07-22 (4).jpg) ![Скриншот 5](images/arena-breakout-infinite-nightvex/photo_2026-08-02_03-07-22 (5).jpg) ![Скриншот 6](images/arena-breakout-infinite-nightvex/photo_2026-08-02_03-07-22 (6).jpg) ![Скриншот 7](images/arena-breakout-infinite-nightvex/photo_2026-08-02_03-07-22 (7).jpg) ![Скриншот 8](images/arena-breakout-infinite-nightvex/photo_2026-08-02_03-07-22.jpg)
+![Скриншот 1](images/arena-breakout-infinite-nightvex/photo_2026-06-21_14-53-25.jpg) ![Скриншот 2](images/arena-breakout-infinite-nightvex/photo_2026-08-02_03-07-22_2_.jpg) ![Скриншот 3](images/arena-breakout-infinite-nightvex/photo_2026-08-02_03-07-22_3_.jpg) ![Скриншот 4](images/arena-breakout-infinite-nightvex/photo_2026-08-02_03-07-22_4_.jpg) ![Скриншот 5](images/arena-breakout-infinite-nightvex/photo_2026-08-02_03-07-22_5_.jpg) ![Скриншот 6](images/arena-breakout-infinite-nightvex/photo_2026-08-02_03-07-22_6_.jpg) ![Скриншот 7](images/arena-breakout-infinite-nightvex/photo_2026-08-02_03-07-22_7_.jpg) ![Скриншот 8](images/arena-breakout-infinite-nightvex/photo_2026-08-02_03-07-22.jpg)
 
 ## 👤 Player ESP
 
