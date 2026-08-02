@@ -109,3 +109,6 @@ Other|xernel-ultimate-spoofer|xernel-ultimate-spoofer|30|4199
 Counter-Strike 2|Ghost|counter-strike-2-ghost|1|68
 Counter-Strike 2|Ghost|counter-strike-2-ghost|7|135
 Counter-Strike 2|Ghost|counter-strike-2-ghost|30|405
+Arena Breakout Infinite|Nightvex|arena-breakout-infinite-nightvex|1|499
+Arena Breakout Infinite|Nightvex|arena-breakout-infinite-nightvex|7|1999
+Arena Breakout Infinite|Nightvex|arena-breakout-infinite-nightvex|30|3999

@@ -1759,6 +1759,55 @@
           "buy": "https://funpay.com/lots/offer?id=73607928"
         }
       ]
+    },
+    "arena-breakout-infinite-nightvex": {
+      "buy": "https://funpay.com/lots/offer?id=74167687",
+      "offers": [
+        {
+          "game": "Arena Breakout Infinite",
+          "title": "DLC Nightvex 1d",
+          "price": "499 ₽",
+          "href": "https://funpay.com/lots/offer?id=74167672",
+          "days": 1,
+          "game_key": "arena-breakout-infinite",
+          "product_key": "nightvex"
+        },
+        {
+          "game": "Arena Breakout Infinite",
+          "title": "DLC Nightvex 7d",
+          "price": "1999 ₽",
+          "href": "https://funpay.com/lots/offer?id=74167679",
+          "days": 7,
+          "game_key": "arena-breakout-infinite",
+          "product_key": "nightvex"
+        },
+        {
+          "game": "Arena Breakout Infinite",
+          "title": "DLC Nightvex 30d",
+          "price": "3999 ₽",
+          "href": "https://funpay.com/lots/offer?id=74167687",
+          "days": 30,
+          "game_key": "arena-breakout-infinite",
+          "product_key": "nightvex"
+        }
+      ],
+      "tiers": [
+        {
+          "days": 1,
+          "price": 499,
+          "buy": "https://funpay.com/lots/offer?id=74167672"
+        },
+        {
+          "days": 7,
+          "price": 1999,
+          "buy": "https://funpay.com/lots/offer?id=74167679"
+        },
+        {
+          "days": 30,
+          "price": 3999,
+          "buy": "https://funpay.com/lots/offer?id=74167687"
+        }
+      ]
     }
   }
 }
